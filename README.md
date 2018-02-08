@@ -1,6 +1,6 @@
 <p align="center">
     <img src="https://vectr.com/tygooch/cwliL01Vy.svg?width=1372.653&height=400&select=k1rqVfLtjJ,bg058HDeJ&source=selection"
-        height="300" width="100%">
+        height="50%" width="50%">
 </p>
 <p align="center">
     <a href="#" alt="Backers on Open Collective">
