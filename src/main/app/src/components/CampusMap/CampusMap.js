@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { Map, TileLayer, ZoomControl } from 'react-leaflet'
 import Locations from '../Location/locations'
 

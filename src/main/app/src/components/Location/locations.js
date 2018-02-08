@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import Location from './location'
 import ucsbBuildings from '../../util/ucsbBuildings.js'
 

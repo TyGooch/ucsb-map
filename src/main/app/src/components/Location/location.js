@@ -1,4 +1,4 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import { Polygon, Popup } from 'react-leaflet'
 
 class Location extends Component {
