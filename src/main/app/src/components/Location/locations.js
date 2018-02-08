@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
-import { Polygon, Popup, FeatureGroup } from 'react-leaflet'
+import { Component } from 'react';
 import Location from './location'
 import ucsbBuildings from '../../util/ucsbBuildings.js'
 
 
-class Locations extends React.Component {
+class Locations extends Component {
   constructor() {
     super()
 

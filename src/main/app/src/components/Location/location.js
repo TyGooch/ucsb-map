@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import { Polygon, Popup } from 'react-leaflet'
 
-class Location extends React.Component {
+class Location extends Component {
   // getPositions() {
   //   if(this.props.type === "polygon"){
   //     return this.props.positions
