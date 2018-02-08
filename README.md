@@ -23,6 +23,8 @@ http://ucsb-map.herokuapp.com
 
 ## Build locally using Maven
 ```
+git clone https://github.com/TyGooch/ucsb-map.git
+cd ucsb-map
 mvn clean package
 java -jar target/ucsb-map-0.0.1-SNAPSHOT.jar
 ```
