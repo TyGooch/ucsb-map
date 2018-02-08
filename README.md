@@ -14,7 +14,7 @@ Interactive UCSB Campus Map built using Spring Boot, React, and Leaflet
 
 http://ucsb-map.herokuapp.com
 
-## Build using Maven
+## Build locally using Maven
 <a href="#" alt="Backers on Open Collective">
     <img src="https://travis-ci.org/TyGooch/ucsb-map.svg?branch=master" /></a>
 
@@ -22,3 +22,4 @@ http://ucsb-map.herokuapp.com
 mvn clean package
 java -jar target/ucsb-map-0.0.1-SNAPSHOT.jar
 ```
+Then navigate to localhost:8080
