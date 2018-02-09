@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Map, TileLayer, ZoomControl } from 'react-leaflet'
+import { Map, TileLayer, Marker, Popup, Polygon, ZoomControl } from 'react-leaflet'
 import Locations from '../Location/locations'
 
-class CampusMap extends Component {
+class CampusMap extends React.Component {
   render() {
     const position = [34.4127, -119.8492]
 
