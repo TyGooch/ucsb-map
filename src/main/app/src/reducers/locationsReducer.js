@@ -4,20 +4,20 @@ import {
   RECEIVE_LOCATIONS
 } from '../actions/locationActions';
 
-const emergenciesReducer = (state = [], action) => {
+const locationsReducer = (state = [], action) => {
   Object.freeze(state)
   let newState = merge([], state);
 
   switch(action.type) {
-    case RECEIVE_LOCATION:
+    case RECEIVE_LOCATIONS:
       if(!state[0]){
-        return action.emergencies;
-      } else if(state[state.length -1]._id !== action.emergencies[action.emergencies.length - 1]._id){
-        var newEmergencies = [];
-        for(var i = state.length; i < action.emergencies.length; i++){
-          newEmergencies.push(action.emergencies[i])
+        return action.locations;
+    } else if(state[state.length -1]._id !== action.locations[action.locations.length - 1]._id){
+        var newLocations = [];
+        for(var i = state.length; i < action.locations.length; i++){
+          newLocations.push(action.locations[i])
         }
-        return newState.concat(newEmergencies);
+        return newState.concat(newLocations);
       } else {
         return state;
       }
@@ -26,4 +26,4 @@ const emergenciesReducer = (state = [], action) => {
   }
 };
 
-export default emergenciesReducer;
+export default locationsReducer;
