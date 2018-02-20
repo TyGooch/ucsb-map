@@ -11,7 +11,6 @@ const locationsReducer = (state = [], action) => {
   switch(action.type) {
     case RECEIVE_LOCATIONS:
       if(!state[0]){
-        // return JSON.parse(action.locations)
         let newLocations = []
         action.locations.forEach(location => {
           let newLocation = {}
@@ -23,14 +22,6 @@ const locationsReducer = (state = [], action) => {
         })
         
         return newLocations
-    // } else if(state[state.length -1]._id !== action.locations[action.locations.length - 1]._id){
-    //     var newLocations = []
-    //     for(var i = state.length i < action.locations.length i++){
-    //       newLocations.push(action.locations[i])
-    //     }
-    //     return newState.concat(newLocations)
-      } else {
-        return state
       }
     default:
       return state
