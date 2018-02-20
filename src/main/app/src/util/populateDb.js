@@ -5,7 +5,6 @@ function populateDb() {
   let locationObjs = {}
   
   ucsbBuildings.features.forEach(building => {
-    // let location = {}
 
     if(!building.properties.name)
       return
@@ -46,16 +45,6 @@ function populateDb() {
       locationObjs[building.properties.name].polygons.push(building.geometry.coordinates)
     }
 
-    // console.log(JSON.stringify(location))
-    // fetch('/api/locations', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(location)
-    // 
-    // })
   })
   Object.keys(locationObjs).forEach(obj => {
     locationObjs[obj].polygons = JSON.stringify(locationObjs[obj].polygons)

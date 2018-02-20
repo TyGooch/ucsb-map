@@ -9,7 +9,6 @@ import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection="locations")
-// @JsonIgnoreProperties(value = {"createdAt"}, allowGetters = true)
 public class Location {
     @Id
     private String id;
@@ -23,9 +22,7 @@ public class Location {
     
     @NotBlank
     private String polygons;
-        
-    // private Date createdAt = new Date();
-    
+            
     public Location() {
         super();
     }
