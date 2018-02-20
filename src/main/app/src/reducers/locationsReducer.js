@@ -17,7 +17,7 @@ const locationsReducer = (state = [], action) => {
           let newLocation = {}
           newLocation.name = location.name
           newLocation.category = location.category
-          newLocation.geometry = JSON.parse(location.geometry)
+          newLocation.polygons = JSON.parse(location.polygons)
           
           newLocations.push(newLocation)
         })

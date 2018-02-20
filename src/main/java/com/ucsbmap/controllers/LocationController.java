@@ -20,7 +20,6 @@ public class LocationController {
 
     @GetMapping("/locations")
     public List<Location> getAllLocations() {
-        // Sort sortByCreatedAtDesc = new Sort(Sort.Direction.DESC, "createdAt");
         return locationRepository.findAll();
     }
 

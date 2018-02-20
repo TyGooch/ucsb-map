@@ -22,7 +22,7 @@ public class Location {
     private String category;
     
     @NotBlank
-    private String geometry;
+    private String polygons;
         
     // private Date createdAt = new Date();
     
@@ -58,18 +58,18 @@ public class Location {
         this.category = category;
     }
     
-    public String getGeometry() {
-        return geometry;
+    public String getPolygons() {
+        return polygons;
     }
     
-    public void setGeometry(String geometry) {
-        this.geometry = geometry;
+    public void setPolygons(String polygons) {
+        this.polygons = polygons;
     }
         
     @Override
     public String toString() {
         return String.format(
-                "Location[id=%s, name='%s', category='%s', geometry='%s']",
-                id, name, category, geometry);
+                "Location[id=%s, name='%s', category='%s', polygons='%s']",
+                id, name, category, polygons);
     }
 }
