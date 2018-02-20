@@ -6,8 +6,6 @@ class CampusMap extends Component {
   render() {
     const position = [34.4127, -119.8492]
 
-    let locations = (this.props.locations ? <Locations locations={this.props.locations}/> : null)
-
     return (
       <Map id='map' center={position} zoom={16} zoomControl={false} ref="map">
         <TileLayer
@@ -15,7 +13,7 @@ class CampusMap extends Component {
           url='https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_nolabels/{z}/{x}/{y}.png'
         />
 
-        {locations}
+        <Locations locations={this.props.locations}/>
 
         <ZoomControl position="bottomright" />
       </Map>
