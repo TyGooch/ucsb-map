@@ -1,6 +1,6 @@
 import Search from 'react-search'
 import ReactDOM from 'react-dom'
-import React, { Component, PropTypes } from 'react'
+import React, { Component } from 'react'
 
 class MySearch extends Component {
 
@@ -20,17 +20,10 @@ class MySearch extends Component {
     return (
       <div>
 
-        <Search items={items}
-                placeholder='Enter the Building Name or ID'
-                maxSelected={3}
-                multiple={true}
-                maxSelected ={5}
-                onItemsChanged={this.HiItems.bind(this)} />
+      SEARCH
       </div>
     )
   }
 }
-
-ReactDOM.render( <MySearch />, document.getElementById('root'))
 
 export default MySearch;

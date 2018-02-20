@@ -45,7 +45,10 @@ class Locations extends Component {
         })
 
         this.addBuilding(building)
+        // console.log(building);
       }
+      if(building.properties.name === 'UCSB Library')
+      console.log(building.geometry.coordinates);
     })
   }
 
