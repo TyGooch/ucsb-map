@@ -77,7 +77,7 @@ class Locations extends Component {
 
   render() {
     var locations = this.props.locations.map(location => {
-        console.log(location);
+        // console.log(location);
       return(
         <div>
             <Location name={location.name} positions={location.geometry}/>
