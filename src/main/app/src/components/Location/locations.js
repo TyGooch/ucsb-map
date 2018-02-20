@@ -4,20 +4,20 @@ import ucsbBuildings from '../../util/ucsbBuildings.js'
 
 
 class Locations extends Component {
-  constructor() {
-    super()
+  // constructor() {
+  //   super()
+  // 
+  //   this.buildings = []
+  // }
 
-    this.buildings = []
-  }
+  // componentWillMount() {
+  //   this.setUpBuildings()
+  // }
 
-  componentWillMount() {
-    this.setUpBuildings()
-  }
-
-  addBuilding(building) {
-    var parsedBuilding = {name:`${building.properties.name}`, corners:building.geometry.coordinates}
-    this.buildings.push(parsedBuilding)
-  }
+  // addBuilding(building) {
+  //   var parsedBuilding = {name:`${building.properties.name}`, corners:building.geometry.coordinates}
+  //   this.buildings.push(parsedBuilding)
+  // }
 
   // setUpBuildings() {
   //   ucsbBuildings.features.forEach(building => {
@@ -73,17 +73,17 @@ class Locations extends Component {
 
 
   render() {
-    var buildings = this.buildings.map(building => {
+    var locations = this.props.locations.map(location => {
       return(
         <div>
-            <Location name={building.name} positions={building.corners}/>
+            <Location name={location.name} positions={location.geometry}/>
         </div>
       )
     })
 
     return (
       <div>
-        {buildings}
+        {locations}
       </div>
     )
   }
