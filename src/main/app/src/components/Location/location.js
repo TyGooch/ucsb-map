@@ -5,7 +5,7 @@ class Location extends Component {
   render() {
     let polygon = null
     if (this.props.positions !== null) {
-      polygon = (<Polygon id='location' color="grey" positions={this.props.positions}>
+      polygon = (<Polygon id='location' color="#6DAAD0" positions={this.props.positions}>
         <Popup>
           <span onClick={console.log('click')}>
              {this.props.name}
