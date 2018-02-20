@@ -18,11 +18,12 @@ const locationsReducer = (state = [], action) => {
           newLocation.category = location.category
           newLocation.polygons = JSON.parse(location.polygons)
           
-          newLocations.push(newLocation)
+          return newState.concat(newLocations.push(newLocation))
         })
         
         return newLocations
       }
+      break
     default:
       return state
   }

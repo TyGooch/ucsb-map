@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import Location from './location'
-import ucsbBuildings from '../../util/ucsbBuildings.js'
-
 
 class Locations extends Component {
   render() {
