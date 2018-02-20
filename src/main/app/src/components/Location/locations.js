@@ -13,17 +13,20 @@ class Locations extends Component {
   // componentWillMount() {
   //   this.setUpBuildings()
   // }
-
+  // 
   // addBuilding(building) {
   //   var parsedBuilding = {name:`${building.properties.name}`, corners:building.geometry.coordinates}
   //   this.buildings.push(parsedBuilding)
   // }
-
+  // 
   // setUpBuildings() {
   //   ucsbBuildings.features.forEach(building => {
   //     let location = {};
   // 
   //     if(!building.properties.name)
+  //       return
+  // 
+  //     if(["Lotte Lehmann Concert Hall", "Hatlen Theater", "Old Little Theatre"].includes(building.properties.name))
   //       return
   // 
   //     if( building.geometry.type === "polygon" && !building.properties.type){
@@ -74,6 +77,7 @@ class Locations extends Component {
 
   render() {
     var locations = this.props.locations.map(location => {
+        console.log(location);
       return(
         <div>
             <Location name={location.name} positions={location.geometry}/>

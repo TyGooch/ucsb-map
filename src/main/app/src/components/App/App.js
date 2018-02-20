@@ -1,7 +1,7 @@
 import React from 'react'
 
 import CampusMapContainer from '../CampusMap/CampusMapContainer'
-// import './app.css'
+import './App.css'
 
 class App extends React.Component {
   componentWillMount() {
