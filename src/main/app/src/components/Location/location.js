@@ -2,21 +2,20 @@ import React, { Component } from 'react';
 import { Polygon, Popup } from 'react-leaflet'
 
 class Location extends Component {
-  // getPositions() {
-  //   if(this.props.type === "polygon"){
-  //     return this.props.positions
-  //   }
-  // }
   render() {
+    let polygon = null
+    if (this.props.positions !== null) {
+      polygon = (<Polygon id='location' color="#6DAAD0" positions={this.props.positions}>
+        <Popup>
+          <span onClick={console.log('click')}>
+             {this.props.name}
+           </span>
+        </Popup>
+      </Polygon>)
+    }
     return (
       <div>
-        <Polygon id='location' color="grey" positions={this.props.positions}>
-          <Popup>
-            <span onClick={console.log('click')}>
-               {this.props.name}
-             </span>
-          </Popup>
-        </Polygon>
+        {polygon}
       </div>
     );
   }

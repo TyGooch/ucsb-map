@@ -1,10 +1,11 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-if (module.hot) {
-  module.hot.accept()
-}
+import Root from './components/Root'
+import configureStore from './store/store'
 
-ReactDOM.render(<App />, document.getElementById('root'));
+document.addEventListener('DOMContentLoaded', () => {
+  let store = configureStore()
+  const root = document.getElementById('root')
+  ReactDOM.render(<Root store={store} />, root)
+})
