@@ -16,6 +16,7 @@ class CampusMap extends Component {
 
     this._mapNode = null
     this.polygons = null
+    this.userLocation = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
   }
@@ -50,13 +51,13 @@ class CampusMap extends Component {
     let polygons = []
     this.props.locations.forEach(location => {
 
-      let polygon = L.polygon(location.polygons, {color: 'blue'})
+      let polygon = L.polygon(location.polygons, {color: '#6DAAD0', fillColor: '#6DAAD0'})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
       polygon.addTo(this.state.map)
       polygons.push(polygon)
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
-        polygon.setStyle({color: 'gold'})
+        polygon.setStyle({color: '#ebbd31'})
         var popup = L.popup()
           .setLatLng(polygon.getBounds().getCenter())
           .setContent(`<p>${location.name}</p>`)
@@ -72,9 +73,42 @@ class CampusMap extends Component {
       this.polygons.forEach(polygon => polygon.remove())
   }
 
+  getUserLocation(){
+    if(!this.state.map)
+      return
+
+    let map = this.state.map
+
+    map.locate().on('locationfound', e => {
+      if(this.userLocation){
+        this.userLocation.innerCircle.remove()
+        this.userLocation.outerCircle.remove()
+      }
+
+      var outerCircle = L.circle([e.latitude, e.longitude], e.accuracy/2, {
+          weight: 1,
+          color: 'white',
+          fillColor: 'blue',
+          fillOpacity: 0.1
+      });
+      map.addLayer(outerCircle);
+
+      var innerCircle = L.circle([e.latitude, e.longitude], 5, {
+          weight: 1,
+          color: 'white',
+          fillColor: 'blue',
+          fillOpacity: 1
+      });
+      map.addLayer(innerCircle);
+
+      this.userLocation = {innerCircle: innerCircle, outerCircle: outerCircle}
+    })
+  }
+
   render() {
     this.removePolygons()
     this.addPolygons()
+    this.getUserLocation()
 
     return (
       <div id="campusMapContainer">
