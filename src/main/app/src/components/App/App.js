@@ -19,6 +19,7 @@ class App extends React.Component {
           <SearchContainer />
         </div>
         <CampusMapContainer />
+        <img className='logo' src='https://vectr.com/tygooch/cwliL01Vy.svg?width=100&height=30.98&select=cwliL01Vypage0' />
       </div>
     )
   }
