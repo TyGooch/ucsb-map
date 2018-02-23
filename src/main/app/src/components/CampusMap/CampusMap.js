@@ -89,18 +89,20 @@ class CampusMap extends Component {
         this.userLocation.outerCircle.remove()
       }
 
-      var outerCircle = L.circle([e.latitude, e.longitude], 14, {
+      var outerCircle = L.circleMarker([e.latitude, e.longitude], {
+          radius: 15,
           weight: 1,
-          color: 'none',
-          fillColor: '#356DF0',
-          fillOpacity: 0.1
+          stroke: false,
+          fillColor: '#5387EC',
+          fillOpacity: 0.2
       });
       map.addLayer(outerCircle);
 
-      var innerCircle = L.circle([e.latitude, e.longitude], 7, {
+      var innerCircle = L.circleMarker([e.latitude, e.longitude], {
+          radius: 7,
           weight: 2,
           color: 'white',
-          fillColor: '#356DF0',
+          fillColor: '#5387EC',
           fillOpacity: 1
       });
       map.addLayer(innerCircle);
