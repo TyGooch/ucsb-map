@@ -1,5 +1,4 @@
-var allBuildings = 
-{
+var ucsbBuildings = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -25541,7 +25540,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269171",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -25580,7 +25580,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269172",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -25635,7 +25636,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269173",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -25674,7 +25676,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269174",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -25749,7 +25752,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269175",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -25820,7 +25824,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269176",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -25891,7 +25896,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269177",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -25958,7 +25964,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269178",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26029,7 +26036,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269179",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26100,7 +26108,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269180",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26167,7 +26176,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269181",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26242,7 +26252,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269182",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26313,7 +26324,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269183",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26384,7 +26396,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269184",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26459,7 +26472,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269185",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26534,7 +26548,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269188",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26713,7 +26728,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269189",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26784,7 +26800,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269190",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26859,7 +26876,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269191",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -26934,7 +26952,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269192",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27005,7 +27024,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269193",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27076,7 +27096,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269194",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27147,7 +27168,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269195",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27222,7 +27244,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269196",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27293,7 +27316,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269197",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27368,7 +27392,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269198",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27443,7 +27468,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269199",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27514,7 +27540,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269200",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27581,7 +27608,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269201",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27648,7 +27676,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269202",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27723,7 +27752,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269203",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27794,7 +27824,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269204",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27865,7 +27896,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269205",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -27940,7 +27972,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269209",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28011,7 +28044,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269210",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28082,7 +28116,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269211",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28153,7 +28188,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269212",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28220,7 +28256,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269213",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28291,7 +28328,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269214",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28362,7 +28400,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269215",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28429,7 +28468,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269216",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28504,7 +28544,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269217",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28579,7 +28620,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269218",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28646,7 +28688,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269219",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28713,7 +28756,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269220",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28784,7 +28828,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269221",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28895,7 +28940,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269223",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28930,7 +28976,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269225",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -28969,7 +29016,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269226",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29004,7 +29052,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269227",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29071,7 +29120,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269228",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29106,7 +29156,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269229",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29145,7 +29196,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269230",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29232,7 +29284,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269232",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29271,7 +29324,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269233",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29310,7 +29364,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/38269235",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29345,7 +29400,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/82456456",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29384,7 +29440,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/82456467",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29419,7 +29476,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/145625095",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29458,7 +29516,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/145625096",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -29497,7 +29556,8 @@ var allBuildings =
       "type": "Feature",
       "properties": {
         "@id": "way/462469183",
-        "building": "yes"
+        "building": "yes",
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -31228,4 +31288,4 @@ var allBuildings =
   ]
 }
 
-export default allBuildings; 
+export default ucsbBuildings

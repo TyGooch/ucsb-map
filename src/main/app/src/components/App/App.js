@@ -1,6 +1,7 @@
 import React from 'react'
 
 import CampusMapContainer from '../CampusMap/CampusMapContainer'
+import SearchContainer from '../Search/SearchContainer'
 import './App.css'
 
 // import {populateDb} from '../../util/populateDb'
@@ -14,6 +15,7 @@ class App extends React.Component {
   render() {
     return(
       <div className='app-container'>
+        <SearchContainer />
         <CampusMapContainer />
       </div>
     )
