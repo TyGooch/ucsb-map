@@ -42,9 +42,9 @@ class CampusMap extends Component {
   }
 
   handleMapClick(e){
-    console.log(e);
+    console.log(e.originalEvent.target);
     // console.log(e.touches[0]);
-    if(e.originalEvent.path[0] instanceof HTMLElement){
+    if(e.originalEvent.target instanceof HTMLElement){
       this.props.updateSelectedLocation(null)
     }
   }
