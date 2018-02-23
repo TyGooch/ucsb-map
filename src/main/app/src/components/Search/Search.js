@@ -3,6 +3,9 @@ import React, { Component } from 'react'
 import Autosuggest from 'react-autosuggest'
 import levenshtein from 'fast-levenshtein'
 
+// import theme from './searchTheme.js'
+import search from './search.css'
+
 
 
 class Search extends Component {
@@ -12,7 +15,8 @@ class Search extends Component {
 
   renderSuggestion(suggestion) {
     return (
-      <div>
+      <div className="suggestion-item">
+        <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" />
         {suggestion.name}
       </div>
     )
@@ -77,12 +81,18 @@ class Search extends Component {
     this.props.updateSelectedLocation(suggestion)
   }
 
+  renderInputComponent = inputProps => (
+    <div className="inputContainer">
+      <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ei-navicon.svg/1024px-Ei-navicon.svg.png" />
+      <input {...inputProps} />
+    </div>
+  );
 
   render() {
     const { value, suggestions } = this.state
 
     const inputProps = {
-      placeholder: 'Type a building name',
+      placeholder: this.props.selectedLocation ?  this.props.selectedLocation.name : 'Search UCSB',
       value,
       onChange: this.onChange
     }
@@ -93,8 +103,9 @@ class Search extends Component {
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
         onSuggestionSelected={this.onSuggestionSelected}
-        getSuggestionValue={this.getSuggestionValue.bind(this)}
-        renderSuggestion={this.renderSuggestion.bind(this)}
+        getSuggestionValue={this.getSuggestionValue}
+        renderSuggestion={this.renderSuggestion}
+        renderInputComponent={this.renderInputComponent}
         inputProps={inputProps}
       />
     )

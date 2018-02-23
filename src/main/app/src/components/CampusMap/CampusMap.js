@@ -4,6 +4,8 @@ import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
 import Locations from '../Location/locations'
 
+
+
 class CampusMap extends Component {
 
   constructor(){
@@ -15,7 +17,6 @@ class CampusMap extends Component {
 
     this._mapNode = null
     this.polygons = null
-    // this.selectedLocation = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
   }
@@ -30,7 +31,6 @@ class CampusMap extends Component {
 
     let map = L.map(id, config.mapOptions);
     map.on('click', this.handleMapClick)
-    // L.control.zoom({ position: "bottomright"}).addTo(map);
 
     let tileLayer = L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map);
 
@@ -38,38 +38,31 @@ class CampusMap extends Component {
   }
 
   handlePolygonClick(location, polygon){
-    var popup = L.popup()
-      .setLatLng(polygon.getBounds().getCenter())
-      .setContent(`<p>${location.name}</p>`)
-
-    this.state.map.openPopup(popup);
-
-    // polygon.setStyle({color: '#dddddd'})
-
-    // this.selectedLocation = polygon
     this.props.updateSelectedLocation(location)
   }
 
   handleMapClick(e){
-    //check if click was outside of polygon
     if(e.originalEvent.path[0] instanceof HTMLElement){
       this.props.updateSelectedLocation(null)
     }
-      // this.selectedLocation = null
-
-    // this.locations.forEach((polygon) => {
-    //   if(polygon !== this.props.selectedLocation)
-    //     polygon.setStyle({color: 'red'})
-    // })
   }
 
   addPolygons(){
     let polygons = []
-     this.props.locations.map(location => {
-        let polygon = L.polygon(location.polygons, {color: this.props.selectedLocation && this.props.selectedLocation.name === location.name ? 'red' : 'blue'})
-        polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
-        polygon.addTo(this.state.map)
-        polygons.push(polygon)
+    this.props.locations.map(location => {
+
+      let polygon = L.polygon(location.polygons, {color: 'blue'})
+      polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
+      polygon.addTo(this.state.map)
+      polygons.push(polygon)
+
+      if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
+        polygon.setStyle({color: 'gold'})
+        var popup = L.popup()
+          .setLatLng(polygon.getBounds().getCenter())
+          .setContent(`<p>${location.name}</p>`)
+        this.state.map.openPopup(popup);
+      }
     })
 
     this.polygons = polygons
@@ -81,7 +74,6 @@ class CampusMap extends Component {
   }
 
   render() {
-    // if(this.props.locations.length > 0)
     this.removePolygons()
     this.addPolygons()
 
@@ -91,7 +83,6 @@ class CampusMap extends Component {
       </div>
     )
   }
-
 }
 
 

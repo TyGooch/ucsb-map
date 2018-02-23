@@ -32,3 +32,16 @@
 body {
   margin: 0px;
 }
+
+.search-container {
+  position: fixed;
+  top:5px;
+  left:5px;
+  z-index: 999;
+  width: 100vw;
+  align-content: center;
+  /* align-items: center; */
+  align-self: center;
+  /* text-align: center; */
+  /* background: red; */
+}

@@ -15,7 +15,9 @@ class App extends React.Component {
   render() {
     return(
       <div className='app-container'>
-        <SearchContainer />
+        <div className='search-container'>
+          <SearchContainer />
+        </div>
         <CampusMapContainer />
       </div>
     )
