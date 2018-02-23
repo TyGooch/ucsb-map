@@ -29,12 +29,12 @@ class CampusMap extends Component {
   initializeMap(id) {
     if (this.state.map) return;
 
-    let map = L.map(id, config.mapOptions);
+    let map = L.map(id, config.mapOptions)
     map.on('click', this.handleMapClick)
 
-    L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map);
+    L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
 
-    this.setState({ map });
+    this.setState({ map })
   }
 
   handlePolygonClick(location, polygon){
@@ -42,7 +42,6 @@ class CampusMap extends Component {
   }
 
   handleMapClick(e){
-    console.log(e.originalEvent.target);
     if(e.originalEvent.target instanceof HTMLElement){
       this.props.updateSelectedLocation(null)
     }
@@ -96,8 +95,8 @@ class CampusMap extends Component {
           stroke: false,
           fillColor: '#5387EC',
           fillOpacity: 0.2
-      });
-      map.addLayer(outerCircle);
+      })
+      map.addLayer(outerCircle)
 
       var innerCircle = L.circleMarker([e.latitude, e.longitude], {
           radius: 7,
@@ -105,8 +104,8 @@ class CampusMap extends Component {
           color: 'white',
           fillColor: '#5387EC',
           fillOpacity: 1
-      });
-      map.addLayer(innerCircle);
+      })
+      map.addLayer(innerCircle)
 
       this.userLocation = {innerCircle: innerCircle, outerCircle: outerCircle}
     })
