@@ -14,8 +14,8 @@ class CampusMap extends Component {
     }
 
     this._mapNode = null
-    this.locations = null
-    this.selectedLocation = null
+    this.polygons = null
+    // this.selectedLocation = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
   }
@@ -44,37 +44,46 @@ class CampusMap extends Component {
 
     this.state.map.openPopup(popup);
 
-    polygon.setStyle({color: '#dddddd'})
+    // polygon.setStyle({color: '#dddddd'})
 
-    this.selectedLocation = polygon
+    // this.selectedLocation = polygon
+    this.props.updateSelectedLocation(location)
   }
 
   handleMapClick(e){
     //check if click was outside of polygon
-    if(e.originalEvent.path[0] instanceof HTMLElement)
-      this.selectedLocation = null
+    if(e.originalEvent.path[0] instanceof HTMLElement){
+      this.props.updateSelectedLocation(null)
+    }
+      // this.selectedLocation = null
 
-    this.locations.forEach((polygon) => {
-      if(polygon !== this.selectedLocation)
-        polygon.setStyle({color: 'red'})
-    })
+    // this.locations.forEach((polygon) => {
+    //   if(polygon !== this.props.selectedLocation)
+    //     polygon.setStyle({color: 'red'})
+    // })
   }
 
-  addLocations(){
-    let locations = []
+  addPolygons(){
+    let polygons = []
      this.props.locations.map(location => {
-        let polygon = L.polygon(location.polygons, {color: 'red'})
+        let polygon = L.polygon(location.polygons, {color: this.props.selectedLocation && this.props.selectedLocation.name === location.name ? 'red' : 'blue'})
         polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
         polygon.addTo(this.state.map)
-        locations.push(polygon)
+        polygons.push(polygon)
     })
 
-    this.locations = locations
+    this.polygons = polygons
+  }
 
+  removePolygons(){
+    if(this.polygons)
+      this.polygons.forEach(polygon => polygon.remove())
   }
 
   render() {
-    this.addLocations()
+    // if(this.props.locations.length > 0)
+    this.removePolygons()
+    this.addPolygons()
 
     return (
       <div id="campusMapContainer">

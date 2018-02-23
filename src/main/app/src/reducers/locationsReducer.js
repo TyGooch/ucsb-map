@@ -1,12 +1,17 @@
 import merge from 'lodash/merge'
 
 import {
-  RECEIVE_LOCATIONS
+  RECEIVE_LOCATIONS,
+  UPDATE_SELECTED_LOCATION
 } from '../actions/locationActions'
 
-const locationsReducer = (state = [], action) => {
+const defaultState = Object.freeze({
+  allLocations: [],
+  selectedLocation: null
+});
+
+const locationsReducer = (state = defaultState, action) => {
   Object.freeze(state)
-  let newState = merge([], state)
 
   switch(action.type) {
     case RECEIVE_LOCATIONS:
@@ -17,15 +22,19 @@ const locationsReducer = (state = [], action) => {
           newLocation.name = location.name
           newLocation.category = location.category
           newLocation.polygons = JSON.parse(location.polygons)
-          
-          return newState.concat(newLocations.push(newLocation))
+
+          newLocations.push(newLocation)
         })
-        
-        return newLocations
+
+
+        return merge({}, state, {allLocations: newLocations})
       }
-      break
-    default:
       return state
+    break
+    case UPDATE_SELECTED_LOCATION:
+      return merge({}, state, {selectedLocation: action.location})
+    default:
+      return defaultState
   }
 }
 

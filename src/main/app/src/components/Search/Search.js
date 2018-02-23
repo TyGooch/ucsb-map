@@ -3,16 +3,21 @@ import React, { Component } from 'react'
 import Autosuggest from 'react-autosuggest'
 import levenshtein from 'fast-levenshtein'
 
-const getSuggestionValue = suggestion => suggestion.name
-
-const renderSuggestion = suggestion => (
-  <div>
-    {suggestion.name}
-  </div>
-)
 
 
 class Search extends Component {
+  getSuggestionValue(suggestion){
+    return suggestion.name
+  }
+
+  renderSuggestion(suggestion) {
+    return (
+      <div>
+        {suggestion.name}
+      </div>
+    )
+  }
+
   getSuggestions(value) {
     let inputValue = value.trim().toLowerCase()
     let inputLength = inputValue.length
@@ -66,6 +71,13 @@ class Search extends Component {
     })
   }
 
+  onSuggestionSelected = (event, { suggestion }) => {
+    console.log('here');
+    console.log(suggestion);
+    this.props.updateSelectedLocation(suggestion)
+  }
+
+
   render() {
     const { value, suggestions } = this.state
 
@@ -80,8 +92,9 @@ class Search extends Component {
         suggestions={suggestions}
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
-        getSuggestionValue={getSuggestionValue}
-        renderSuggestion={renderSuggestion}
+        onSuggestionSelected={this.onSuggestionSelected}
+        getSuggestionValue={this.getSuggestionValue.bind(this)}
+        renderSuggestion={this.renderSuggestion.bind(this)}
         inputProps={inputProps}
       />
     )
