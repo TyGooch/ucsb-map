@@ -43,7 +43,6 @@ class CampusMap extends Component {
 
   handleMapClick(e){
     console.log(e.originalEvent.target);
-    // console.log(e.touches[0]);
     if(e.originalEvent.target instanceof HTMLElement){
       this.props.updateSelectedLocation(null)
     }
@@ -65,11 +64,13 @@ class CampusMap extends Component {
           .setContent(`<p>${location.name}</p>`)
         this.state.map.openPopup(popup)
       }
-
-      polygon.bringToFront()
     })
 
     this.polygons = polygons
+    if(this.userLocation){
+      this.userLocation.outerCircle.bringToFront()
+      this.userLocation.innerCircle.bringToFront()
+    }
   }
 
   removePolygons(){
