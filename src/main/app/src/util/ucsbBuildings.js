@@ -1694,7 +1694,7 @@ var ucsbBuildings = {
       "properties": {
         "@id": "relation/2927469",
         "building": "university",
-        "name": "Tower",
+        "name": "San Rafael Hall",
         "ref": "586",
         "type": "multipolygon",
       },

@@ -1,0 +1,57 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2018-02-21T06:36:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/38414902",
+        "addr:city": "Isla Vista",
+        "addr:county": "Santa Barbara",
+        "addr:housenumber": "6543",
+        "addr:postcode": "93117",
+        "addr:street": "El Colegio Road",
+        "building": "apartments",
+        "name": "Westgate Apartments"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8559307,
+              34.4171801
+            ],
+            [
+              -119.8559323,
+              34.4170066
+            ],
+            [
+              -119.8557228,
+              34.4170053
+            ],
+            [
+              -119.8557262,
+              34.4166327
+            ],
+            [
+              -119.8555212,
+              34.4166314
+            ],
+            [
+              -119.8555162,
+              34.4171775
+            ],
+            [
+              -119.8559307,
+              34.4171801
+            ]
+          ]
+        ]
+      },
+      "id": "way/38414902"
+    }
+  ]
+}
