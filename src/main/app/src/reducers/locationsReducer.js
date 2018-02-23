@@ -30,7 +30,6 @@ const locationsReducer = (state = defaultState, action) => {
         return merge({}, state, {allLocations: newLocations})
       }
       return state
-    break
     case UPDATE_SELECTED_LOCATION:
       return merge({}, state, {selectedLocation: action.location})
     default:

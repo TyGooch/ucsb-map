@@ -4,7 +4,7 @@ import Autosuggest from 'react-autosuggest'
 import levenshtein from 'fast-levenshtein'
 
 // import theme from './searchTheme.js'
-import search from './search.css'
+import './search.css'
 
 
 
@@ -16,7 +16,7 @@ class Search extends Component {
   renderSuggestion(suggestion) {
     return (
       <div className="suggestion-item">
-        <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" />
+        <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" alt="Magnifying Glass" />
         {suggestion.name}
       </div>
     )
@@ -39,7 +39,7 @@ class Search extends Component {
 
     if(secondarySuggestions.length > 1){
       secondarySuggestions = secondarySuggestions.sort((suggestion1, suggestion2) => {
-        levenshtein.get(suggestion1, inputValue) - levenshtein.get(suggestion2, inputValue)
+        return levenshtein.get(suggestion1, inputValue) - levenshtein.get(suggestion2, inputValue)
       })
     }
 
@@ -83,7 +83,7 @@ class Search extends Component {
 
   renderInputComponent = inputProps => (
     <div className="inputContainer">
-      <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ei-navicon.svg/1024px-Ei-navicon.svg.png" />
+      <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ei-navicon.svg/1024px-Ei-navicon.svg.png" alt="Menu" />
       <input {...inputProps} />
     </div>
   );

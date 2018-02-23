@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
-import Locations from '../Location/locations'
 
 
 
@@ -32,7 +31,7 @@ class CampusMap extends Component {
     let map = L.map(id, config.mapOptions);
     map.on('click', this.handleMapClick)
 
-    let tileLayer = L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map);
+    L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map);
 
     this.setState({ map });
   }
@@ -49,7 +48,7 @@ class CampusMap extends Component {
 
   addPolygons(){
     let polygons = []
-    this.props.locations.map(location => {
+    this.props.locations.forEach(location => {
 
       let polygon = L.polygon(location.polygons, {color: 'blue'})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
