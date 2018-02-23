@@ -108,7 +108,7 @@ class CampusMap extends Component {
   render() {
     this.removePolygons()
     this.addPolygons()
-    this.getUserLocation()
+    // this.getUserLocation()
 
     return (
       <div id="campusMapContainer">
