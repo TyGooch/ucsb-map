@@ -38,6 +38,7 @@ body {
   top:10px;
   left:10px;
   z-index: 999;
+  background: red;
   /* width: 100vw; */
   align-content: center;
   /* align-items: center; */
@@ -46,6 +47,6 @@ body {
   /* background: red; */
 }
 
-.leaflet-map-pane{
+/* .leaflet-map-pane{
     z-index: 100;
-}
+} */
