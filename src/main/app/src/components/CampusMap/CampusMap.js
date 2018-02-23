@@ -42,6 +42,7 @@ class CampusMap extends Component {
   }
 
   handleMapClick(e){
+    console.log(e.layer);
     if(e.originalEvent.path[0] instanceof HTMLElement){
       this.props.updateSelectedLocation(null)
     }
@@ -110,7 +111,7 @@ class CampusMap extends Component {
   render() {
     this.removePolygons()
     this.addPolygons()
-    // this.getUserLocation()
+    this.getUserLocation()
 
     return (
       <div id="campusMapContainer">
