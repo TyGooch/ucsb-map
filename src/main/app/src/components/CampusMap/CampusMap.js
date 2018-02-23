@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Map, TileLayer, ZoomControl } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
@@ -11,12 +10,14 @@ class CampusMap extends Component {
     super()
 
     this.state = {
-      map: null,
-      titleLayer: null,
-      locations: null,
+      map: null
     }
 
     this._mapNode = null
+    this.locations = null
+    this.selectedLocation = null
+
+    this.handleMapClick = this.handleMapClick.bind(this)
   }
 
   componentDidMount(){
@@ -26,40 +27,53 @@ class CampusMap extends Component {
 
   initializeMap(id) {
     if (this.state.map) return;
-    // this function creates the Leaflet map object and is called after the Map component mounts
+
     let map = L.map(id, config.mapOptions);
-    L.control.zoom({ position: "bottomright"}).addTo(map);
+    map.on('click', this.handleMapClick)
+    // L.control.zoom({ position: "bottomright"}).addTo(map);
 
-    // a TileLayer is used as the "basemap"
-    const tileLayer = L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map);
+    let tileLayer = L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map);
 
-    // set our state to include the tile layer
-    this.setState({ map, tileLayer });
+    this.setState({ map });
   }
 
-  addLocations(){
-    console.log(this.props.locations.slice(0,2));
-     this.props.locations.map(location => {
-        // let polygons = location.polygons.map(polygon => {
-        //   // console.log(polygon);
-        //   return(
-        //     <div>
-        //       <Location name={location.name} positions={polygon}/>
-        //     </div>
-        //   )
-        // })
+  handlePolygonClick(location, polygon){
+    var popup = L.popup()
+      .setLatLng(polygon.getBounds().getCenter())
+      .setContent(`<p>${location.name}</p>`)
 
-        // console.log(polygons);
-        console.log(location);
-        if(location.name === "San Rafael Hall")
-          console.log(location);
-        L.polygon(location.polygons, {color: 'red'}).addTo(this.state.map)
-        // console.log(location);
+    this.state.map.openPopup(popup);
+
+    polygon.setStyle({color: '#dddddd'})
+
+    this.selectedLocation = polygon
+  }
+
+  handleMapClick(e){
+    //check if click was outside of polygon
+    if(e.originalEvent.path[0] instanceof HTMLElement)
+      this.selectedLocation = null
+
+    this.locations.forEach((polygon) => {
+      if(polygon !== this.selectedLocation)
+        polygon.setStyle({color: 'red'})
     })
   }
 
-  render() {
+  addLocations(){
+    let locations = []
+     this.props.locations.map(location => {
+        let polygon = L.polygon(location.polygons, {color: 'red'})
+        polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
+        polygon.addTo(this.state.map)
+        locations.push(polygon)
+    })
 
+    this.locations = locations
+
+  }
+
+  render() {
     this.addLocations()
 
     return (
@@ -68,6 +82,7 @@ class CampusMap extends Component {
       </div>
     )
   }
+
 }
 
 
