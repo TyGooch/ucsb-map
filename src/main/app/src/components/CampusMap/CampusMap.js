@@ -61,8 +61,10 @@ class CampusMap extends Component {
         var popup = L.popup()
           .setLatLng(polygon.getBounds().getCenter())
           .setContent(`<p>${location.name}</p>`)
-        this.state.map.openPopup(popup);
+        this.state.map.openPopup(popup)
       }
+
+      polygon.bringToFront()
     })
 
     this.polygons = polygons

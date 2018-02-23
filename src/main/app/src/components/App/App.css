@@ -45,3 +45,7 @@ body {
   /* text-align: center; */
   /* background: red; */
 }
+
+.leaflet-map-pane{
+    z-index: 100;
+}
