@@ -21,7 +21,7 @@ Interactive UCSB Campus Map built using Spring Boot, React, and Leaflet
 
 http://ucsb-map.herokuapp.com
 
-## Build locally using Maven
+## Or build locally using Maven
 ```
 git clone https://github.com/TyGooch/ucsb-map.git
 cd ucsb-map
@@ -29,11 +29,3 @@ mvn clean package
 java -jar target/ucsb-map-0.0.1-SNAPSHOT.jar
 ```
 Then navigate to localhost:8080
-
-## TODO
-* Redux
-* Convert to vanilla Leaflet
-* Add google maps base layer with custom styling (http://snazzymaps.com)
-* Add hover and "selection" styling to polygons
-* Add react component (e.g. a pane) that renders building info on onClick
-* Search
