@@ -34,8 +34,9 @@
   width: 25px;
   padding: none !important;
   margin: none !important;
-  align-self: center;
-  justify-content: center;
+  /* align-self: center;
+  justify-content: center; */
+  align-content: space-around;
   opacity: 0.6;
   /* background: red; */
 }
