@@ -169,7 +169,7 @@ class CampusMap extends Component {
       //   ]
       // })
       let panToLocationButton = L.easyButton(
-        '<img src="https://www.shareicon.net/data/128x128/2015/09/13/100389_my_512x512.png" class="location-button-image"/>',
+        '<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" class="location-button-image"/>',
         this.panToUserLocation.bind(this),
         'Your Location',
         'location-button'
