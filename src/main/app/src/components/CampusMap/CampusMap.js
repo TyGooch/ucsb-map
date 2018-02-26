@@ -15,7 +15,8 @@ class CampusMap extends Component {
     super()
 
     this.state = {
-      map: null
+      map: null,
+      allowsLocation: null
     }
 
     this._mapNode = null
@@ -144,12 +145,16 @@ class CampusMap extends Component {
       // map.addLayer(pulsingRingDelayed)
       map.addLayer(innerUserLocationCircle)
 
+      if(!this.state.allowsLocation){
+        this.setState({allowsLocation: true})
+      }
+
       this.userLocation = {
         markers: [uncertaintyCircle, outerUserLocationCircle, innerUserLocationCircle],
         latlng: [e.latitude, e.longitude]
       }
 
-      this.addUserLocationButton()
+      // this.addUserLocationButton()
     })
   }
 
@@ -158,28 +163,40 @@ class CampusMap extends Component {
   }
 
   addUserLocationButton(){
-    if(this.state.map && this.userLocation && !this.mapControls){
-      // let panToLocationButton = L.easyButton({
-      //   states:[
-      //     {
-      //       stateName: 'panToUser',
-      //       icon: 'fa-location-arrow',
-      //       title: 'load image',
-      //       onClick: this.panToUserLocation.bind(this)
-      //     }
-      //   ]
-      // })
-      let panToLocationButton = L.easyButton(
-        '<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" class="location-button-image"/>',
-        this.panToUserLocation.bind(this),
-        'Your Location',
-        'location-button'
+    if(this.state.allowsLocation){
+      // console.log('addButton');
+      return (
+        <div className="location-button-container" onClick={this.panToUserLocation.bind(this)}>
+          <div className="location-button">
+            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" className="location-button-image"/>
+          </div>
+        </div>
       )
-
-      panToLocationButton.addTo(this.state.map)
-      this.mapControls = panToLocationButton
     }
   }
+  // addUserLocationButton(){
+  //   if(this.state.map && this.userLocation && !this.mapControls){
+  //     // let panToLocationButton = L.easyButton({
+  //     //   states:[
+  //     //     {
+  //     //       stateName: 'panToUser',
+  //     //       icon: 'fa-location-arrow',
+  //     //       title: 'load image',
+  //     //       onClick: this.panToUserLocation.bind(this)
+  //     //     }
+  //     //   ]
+  //     // })
+  //     let panToLocationButton = L.easyButton(
+  //       '<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" class="location-button-image"/>',
+  //       this.panToUserLocation.bind(this),
+  //       'Your Location',
+  //       'location-button'
+  //     )
+  //
+  //     panToLocationButton.addTo(this.state.map)
+  //     this.mapControls = panToLocationButton
+  //   }
+  // }
 
   loadSpinner(){
     if(this.state.map && this.props.locations.length === 0){
@@ -201,6 +218,7 @@ class CampusMap extends Component {
       <div id="campusMapContainer">
         <div ref={(node) => this._mapNode = node} id="map" />
         {this.loadSpinner()}
+        {this.addUserLocationButton()}
       </div>
     )
   }
