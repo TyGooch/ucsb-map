@@ -166,7 +166,7 @@ class CampusMap extends Component {
       return (
         <div className="location-button-container" onClick={this.panToUserLocation.bind(this)}>
           <div className="location-button">
-            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" className="location-button-image"/>
+            <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" alt="locate" className="location-button-image"/>
           </div>
         </div>
       )
