@@ -91,9 +91,11 @@ class CampusMap extends Component {
 
       var uncertaintyCircle = L.circleMarker([e.latitude, e.longitude], {
           radius: e.accuracy/2,
-          stroke: false,
-          fillColor: '#5387EC',
-          fillOpacity: 0.2
+          weight: 1,
+          color: '#5384ec',
+          opacity: 0.4,
+          fillColor: '#5384ec',
+          fillOpacity: 0.15
       })
 
       var outerUserLocationCircle = L.circleMarker([e.latitude, e.longitude], {
