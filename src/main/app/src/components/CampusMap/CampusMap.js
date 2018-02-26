@@ -115,7 +115,7 @@ class CampusMap extends Component {
   }
 
   loadSpinner(){
-    if(this.props.locations.length === 0){
+    if(this.state.map && this.props.locations.length === 0){
       return (
         <div className="spinner-container">
           <Spinner overrideSpinnerClassName="spinner" name="circle" color="#6DAAD0"/>
