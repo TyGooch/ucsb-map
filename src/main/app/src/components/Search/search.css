@@ -4,10 +4,11 @@ body {
 
 .react-autosuggest__container {
   position: relative;
+  -webkit-transform: translate(0);
 }
 
 .react-autosuggest__input {
-  width: 300px;
+  width: 292px;
   height: 30px;
   padding: 10px 20px 10px 40px;
   font-family: Roboto, sans-serif;
