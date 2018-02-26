@@ -58,25 +58,32 @@ class Search extends Component {
   }
 
   componentWillReceiveProps(nextProps){
-
+    if( nextProps.selectedLocation){
+      this.setState({value: nextProps.selectedLocation.name})
+    }
+    else{
+      this.setState({value: ''})
+    }
   }
 
   onChange = (event, { newValue, method }) => {
-    if(this.props.selectedLocation && method === 'type')
-      this.props.updateSelectedLocation(null)
-
-    this.setState({
-      value: newValue
-    })
+    // if(this.props.selectedLocation){
+    //   this.setState({value: ''})
+    // }
+    // else{
+      this.setState({
+        value: newValue
+      })
+    // }
   }
 
-  onBlur = (event, { highlightedSuggestion }) => {
-    // if(this.props.selectedLocation)
-    //   this.props.updateSelectedLocation(null)
-    this.setState({
-      value: ''
-    })
-  }
+  // onBlur = (event, { highlightedSuggestion }) => {
+  //   // if(this.props.selectedLocation)
+  //   //   this.props.updateSelectedLocation(null)
+  //   this.setState({
+  //     value: ''
+  //   })
+  // }
 
   onSuggestionsFetchRequested = ({ value }) => {
     this.setState({
@@ -106,7 +113,7 @@ class Search extends Component {
 
     const inputProps = {
       placeholder: 'Search UCSB',
-      value: this.props.selectedLocation && value !== this.props.selectedLocation.name ? this.props.selectedLocation.name : value,
+      value,
       onChange: this.onChange,
       onBlur: this.onBlur
     }
