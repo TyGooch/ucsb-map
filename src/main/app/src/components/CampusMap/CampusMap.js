@@ -7,7 +7,6 @@ import Spinner from 'react-spinkit'
 import './campusMap.css'
 
 
-
 class CampusMap extends Component {
 
   constructor(){
@@ -70,8 +69,7 @@ class CampusMap extends Component {
 
     this.polygons = polygons
     if(this.userLocation){
-      this.userLocation.outerCircle.bringToFront()
-      this.userLocation.innerCircle.bringToFront()
+      this.userLocation.marker.forEach(marker => marker.bringToFront())
     }
   }
 
@@ -88,29 +86,50 @@ class CampusMap extends Component {
 
     map.locate().on('locationfound', e => {
       if(this.userLocation){
-        this.userLocation.innerCircle.remove()
-        this.userLocation.outerCircle.remove()
+        this.userLocation.markers.forEach(marker => marker.remove())
       }
 
       var outerCircle = L.circleMarker([e.latitude, e.longitude], {
-          radius: 15,
-          weight: 1,
+          radius: e.accuracy/2,
           stroke: false,
           fillColor: '#5387EC',
           fillOpacity: 0.2
       })
-      map.addLayer(outerCircle)
 
-      var innerCircle = L.circleMarker([e.latitude, e.longitude], {
-          radius: 7,
-          weight: 2,
-          color: 'white',
-          fillColor: '#5387EC',
-          fillOpacity: 1
+      var pulsingRingIcon = L.divIcon({
+        className: 'pulse-icon',
+        html: '<div class="gps_ring"></div>',
+        iconSize: [e.accuracy/4 ,e.accuracy/4]
       })
+
+      var pulsingCircleIcon = L.divIcon({
+        className: 'pulse-icon',
+        html: '<div class="gps_ring2"></div>',
+        iconSize: [e.accuracy/4 ,e.accuracy/4]
+      })
+
+      var pulsingRing = L.marker([e.latitude, e.longitude], {icon: pulsingRingIcon})
+      var innerCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon})
+
+      map.addLayer(outerCircle)
+      map.addLayer(pulsingRing)
       map.addLayer(innerCircle)
 
-      this.userLocation = {innerCircle: innerCircle, outerCircle: outerCircle}
+      // var innerCircle = L.circleMarker([e.latitude, e.longitude], {
+      //     className: 'user-location',
+      //     radius: e.accuracy/8,
+      //     weight: 2,
+      //     color: 'white',
+      //     fillColor: '#5387EC',
+      //     fillOpacity: 1
+      // })
+      // map.addLayer(innerCircle)
+
+
+      this.userLocation = {
+        markers: [outerCircle, pulsingRing, innerCircle],
+        latlng: [e.latitude, e.longitude]
+      }
     })
   }
 
