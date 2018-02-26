@@ -27,14 +27,14 @@ class Search extends Component {
     let inputLength = inputValue.length
 
     let primarySuggestions = inputLength === 0 ? [] : this.props.locations.filter(location => {
-      if(location.name.toLowerCase().split(' ')[0] === 'the')
+      if(location.name.toLowerCase().replace('(','').replace(')','').split(' ')[0] === 'the')
         return location.name.toLowerCase().split(' ')[1].slice(0, inputLength) === inputValue
 
       return location.name.toLowerCase().slice(0, inputLength) === inputValue
     })
 
     let secondarySuggestions = inputLength === 0 ? [] : this.props.locations.filter(location =>
-      location.name.toLowerCase().split(' ').slice(1).some(name => name.slice(0, inputLength) === inputValue)
+      location.name.toLowerCase().replace('(','').replace(')','').split(' ').slice(1).some(name => name.slice(0, inputLength) === inputValue)
     )
 
     if(secondarySuggestions.length > 1){
@@ -57,9 +57,24 @@ class Search extends Component {
     }
   }
 
-  onChange = (event, { newValue }) => {
+  componentWillReceiveProps(nextProps){
+
+  }
+
+  onChange = (event, { newValue, method }) => {
+    if(this.props.selectedLocation && method === 'type')
+      this.props.updateSelectedLocation(null)
+
     this.setState({
       value: newValue
+    })
+  }
+
+  onBlur = (event, { highlightedSuggestion }) => {
+    // if(this.props.selectedLocation)
+    //   this.props.updateSelectedLocation(null)
+    this.setState({
+      value: ''
     })
   }
 
@@ -76,8 +91,6 @@ class Search extends Component {
   }
 
   onSuggestionSelected = (event, { suggestion }) => {
-    console.log('here');
-    console.log(suggestion);
     this.props.updateSelectedLocation(suggestion)
   }
 
@@ -92,9 +105,10 @@ class Search extends Component {
     const { value, suggestions } = this.state
 
     const inputProps = {
-      placeholder: this.props.selectedLocation ?  this.props.selectedLocation.name : 'Search UCSB',
-      value,
-      onChange: this.onChange
+      placeholder: 'Search UCSB',
+      value: this.props.selectedLocation && value !== this.props.selectedLocation.name ? this.props.selectedLocation.name : value,
+      onChange: this.onChange,
+      onBlur: this.onBlur
     }
 
     return (
