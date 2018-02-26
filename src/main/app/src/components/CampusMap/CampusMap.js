@@ -68,9 +68,11 @@ class CampusMap extends Component {
     })
 
     this.polygons = polygons
-    if(this.userLocation){
-      this.userLocation.markers.forEach(marker => marker.bringToFront())
-    }
+    // if(this.userLocation && this.userLocation.markers.){
+      // debugger;
+      // this.userLocation.markers.map(marker => marker.bringToFront())
+    // }
+    this.getUserLocation()
   }
 
   removePolygons(){
