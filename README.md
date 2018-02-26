@@ -19,7 +19,7 @@ Interactive UCSB Campus Map built using Spring Boot, React, and Leaflet
 
 ![Heroku](http://heroku-badge.herokuapp.com/?app=angularjs-crypto&style=flat&svg=1)
 
-http://ucsb-map.herokuapp.com
+https://ucsb-map.herokuapp.com
 
 ## Or build locally using Maven
 ```
