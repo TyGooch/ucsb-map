@@ -5,6 +5,9 @@ body {
 .react-autosuggest__container {
   position: relative;
   -webkit-transform: translate(0);
+  box-shadow: 0px 1px 5px #c0c0c0;
+  border: none;
+  
 }
 
 .react-autosuggest__input {
@@ -12,10 +15,19 @@ body {
   height: 30px;
   padding: 10px 20px 10px 40px;
   font-family: Roboto, sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
-  border: 1px solid #aaa;
-  border-radius: 4px;
+  border: none;
+  /* border: 1px solid #aaa; */
+  /* border-radius: 4px; */
+}
+
+::-webkit-input-placeholder {
+  /* font-family: Roboto, sans-serif; */
+  font-weight: normal !important;
+  font-size: 16px !important;
+  color: #c0c0c0;
+  /* text-shadow: 0px 0px 0.5px #c0c0c0; */
 }
 
 .react-autosuggest__input--focused {
@@ -29,13 +41,14 @@ body {
 
 .react-autosuggest__suggestions-container {
   display: none;
+  width: 292px;
 }
 
 .react-autosuggest__suggestions-container--open {
   display: block;
   position: absolute;
   top: 51px;
-  width: 300px;
+  width: 292px;
   border: 1px solid #aaa;
   background-color: #fff;
   font-family: Roboto, sans-serif;
@@ -44,6 +57,10 @@ body {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   z-index: 2;
+
+  border: none;
+  /* border-top: 1px solid #c0c0c0; */
+  box-shadow: 0px 1px 5px #c0c0c0;
 }
 
 .react-autosuggest__suggestions-list {
@@ -71,6 +88,7 @@ body {
   left: 10px;
   width: 24px;
   height: 24px;
+  opacity: 0.7;
 }
 
 .icon-search {
