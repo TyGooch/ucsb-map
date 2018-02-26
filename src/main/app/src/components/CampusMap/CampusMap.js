@@ -69,7 +69,7 @@ class CampusMap extends Component {
 
     this.polygons = polygons
     if(this.userLocation){
-      this.userLocation.marker.forEach(marker => marker.bringToFront())
+      this.userLocation.markers.forEach(marker => marker.bringToFront())
     }
   }
 
@@ -89,45 +89,59 @@ class CampusMap extends Component {
         this.userLocation.markers.forEach(marker => marker.remove())
       }
 
-      var outerCircle = L.circleMarker([e.latitude, e.longitude], {
+      var uncertaintyCircle = L.circleMarker([e.latitude, e.longitude], {
           radius: e.accuracy/2,
           stroke: false,
           fillColor: '#5387EC',
           fillOpacity: 0.2
       })
 
-      var pulsingRingIcon = L.divIcon({
-        className: 'pulse-icon',
-        html: '<div class="gps_ring"></div>',
-        iconSize: [e.accuracy/4 ,e.accuracy/4]
+      var outerUserLocationCircle = L.circleMarker([e.latitude, e.longitude], {
+          radius: 7,
+          weight: 2,
+          color: 'white',
+          fillColor: 'white',
+          fillOpacity:1
       })
+
+      // var pulsingRingIcon = L.divIcon({
+      //   className: 'pulse-icon-ring',
+      //   html: '<div class="pulsing-ring"></div>',
+      //   iconSize: [e.accuracy ,e.accuracy]
+      // })
+      //
+      // var pulsingRingIconDelayed = L.divIcon({
+      //   className: 'pulse-icon-ring',
+      //   html: '<div class="pulsing-ring delay"></div>',
+      //   iconSize: [e.accuracy ,e.accuracy]
+      // })
 
       var pulsingCircleIcon = L.divIcon({
-        className: 'pulse-icon',
-        html: '<div class="gps_ring2"></div>',
-        iconSize: [e.accuracy/4 ,e.accuracy/4]
+        className: 'pulse-icon-circle',
+        html: '<div class="pulsing-circle"></div>',
+        // iconSize: [e.accuracy/4 ,e.accuracy/4]
+        iconSize: [12, 12]
       })
 
-      var pulsingRing = L.marker([e.latitude, e.longitude], {icon: pulsingRingIcon})
-      var innerCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon})
-
-      map.addLayer(outerCircle)
-      map.addLayer(pulsingRing)
-      map.addLayer(innerCircle)
-
-      // var innerCircle = L.circleMarker([e.latitude, e.longitude], {
-      //     className: 'user-location',
-      //     radius: e.accuracy/8,
-      //     weight: 2,
-      //     color: 'white',
-      //     fillColor: '#5387EC',
-      //     fillOpacity: 1
+      // var pulsingCircleInnerIcon = L.divIcon({
+      //   className: 'pulse-icon-circle',
+      //   html: '<div class="pulsing-circle"></div>',
+      //   // iconSize: [e.accuracy/4 ,e.accuracy/4]
+      //   iconSize: [15 ,15]
       // })
-      // map.addLayer(innerCircle)
+      //
+      // var pulsingRing = L.marker([e.latitude, e.longitude], {icon: pulsingRingIcon})
+      // var pulsingRingDelayed = L.marker([e.latitude, e.longitude], {icon: pulsingRingIconDelayed})
+      var innerUserLocationCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon})
 
+      map.addLayer(uncertaintyCircle)
+      map.addLayer(outerUserLocationCircle)
+      // map.addLayer(pulsingRing)
+      // map.addLayer(pulsingRingDelayed)
+      map.addLayer(innerUserLocationCircle)
 
       this.userLocation = {
-        markers: [outerCircle, pulsingRing, innerCircle],
+        markers: [uncertaintyCircle, outerUserLocationCircle, innerUserLocationCircle],
         latlng: [e.latitude, e.longitude]
       }
     })
