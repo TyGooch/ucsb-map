@@ -3,6 +3,9 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
 
+import Spinner from 'react-spinkit'
+import './campusMap.css'
+
 
 
 class CampusMap extends Component {
@@ -111,6 +114,16 @@ class CampusMap extends Component {
     })
   }
 
+  loadSpinner(){
+    if(this.props.locations.length === 0){
+      return (
+        <div className="spinner-container">
+          <Spinner overrideSpinnerClassName="spinner" name="circle" color="#6DAAD0"/>
+        </div>
+      )
+    }
+  }
+
   render() {
     this.removePolygons()
     this.addPolygons()
@@ -119,6 +132,7 @@ class CampusMap extends Component {
     return (
       <div id="campusMapContainer">
         <div ref={(node) => this._mapNode = node} id="map" />
+        {this.loadSpinner()}
       </div>
     )
   }
