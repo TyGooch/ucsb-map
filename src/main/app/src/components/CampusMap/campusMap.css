@@ -68,6 +68,11 @@
   margin: none !important;
 }
 
+#button {
+  padding: none !important;
+  margin: none !important;
+}
+
 .pulse-icon-circle {
   display: flex;
   justify-content: center;
