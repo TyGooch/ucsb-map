@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
-import 'leaflet-easybutton'
 import config from './mapConfig.js'
 
 import Spinner from 'react-spinkit'
-import FontAwesome from 'react-fontawesome'
 import './campusMap.css'
 
 
