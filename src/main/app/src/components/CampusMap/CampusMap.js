@@ -1,6 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
+import 'leaflet-easybutton'
 import config from './mapConfig.js'
 
 import Spinner from 'react-spinkit'
@@ -19,6 +20,7 @@ class CampusMap extends Component {
     this._mapNode = null
     this.polygons = null
     this.userLocation = null
+    this.mapControls = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
   }
@@ -29,7 +31,8 @@ class CampusMap extends Component {
   }
 
   initializeMap(id) {
-    if (this.state.map) return;
+    if (this.state.map)
+      return
 
     let map = L.map(id, config.mapOptions)
     map.on('click', this.handleMapClick)
@@ -68,10 +71,6 @@ class CampusMap extends Component {
     })
 
     this.polygons = polygons
-    // if(this.userLocation && this.userLocation.markers.){
-      // debugger;
-      // this.userLocation.markers.map(marker => marker.bringToFront())
-    // }
     this.getUserLocation()
   }
 
@@ -148,7 +147,37 @@ class CampusMap extends Component {
         markers: [uncertaintyCircle, outerUserLocationCircle, innerUserLocationCircle],
         latlng: [e.latitude, e.longitude]
       }
+
+      this.addUserLocationButton()
     })
+  }
+
+  panToUserLocation(){
+    this.state.map.setView(this.userLocation.latlng)
+  }
+
+  addUserLocationButton(){
+    if(this.state.map && this.userLocation && !this.mapControls){
+      // let panToLocationButton = L.easyButton({
+      //   states:[
+      //     {
+      //       stateName: 'panToUser',
+      //       icon: 'fa-location-arrow',
+      //       title: 'load image',
+      //       onClick: this.panToUserLocation.bind(this)
+      //     }
+      //   ]
+      // })
+      let panToLocationButton = L.easyButton(
+        '<img src="https://www.shareicon.net/data/128x128/2015/09/13/100389_my_512x512.png" class="location-button-image"/>',
+        this.panToUserLocation.bind(this),
+        'Your Location',
+        'location-button'
+      )
+
+      panToLocationButton.addTo(this.state.map)
+      this.mapControls = panToLocationButton
+    }
   }
 
   loadSpinner(){
@@ -165,6 +194,7 @@ class CampusMap extends Component {
     this.removePolygons()
     this.addPolygons()
     this.getUserLocation()
+    // this.panToUserLocationButton()
 
     return (
       <div id="campusMapContainer">

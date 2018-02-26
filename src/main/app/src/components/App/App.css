@@ -48,8 +48,8 @@ body {
 
 .logo {
   position: fixed;
-  right: 2px;
-  bottom: 16px;
+  left: 10px;
+  bottom: 2px;
   z-index: 1000;
   opacity: 0.8;
   /* background-color: rgba(255,255,255,0.9); */

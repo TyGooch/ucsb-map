@@ -21,6 +21,24 @@
   z-index: 99999;
 }
 
+.location-button-image {
+  max-height: 20px;
+  max-width: 20px;
+}
+#location-button {
+  /* max-height: 20px;
+  max-width: 20px; */
+  position: fixed;
+  bottom: 50px;
+  right: 2px;
+  /* background-color: none; */
+  background: none;
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
 .pulse-icon-circle {
   display: flex;
   justify-content: center;
