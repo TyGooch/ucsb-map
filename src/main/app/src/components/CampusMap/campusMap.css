@@ -160,7 +160,8 @@
    display: inline-block;
    /* background-color: green; */
    /* font-size: 10px; */
-   line-height: auto;
+   /* background-color: #6DAAD0; */
+   opacity: 0.5;
  }
 
   .leaflet-tooltip {

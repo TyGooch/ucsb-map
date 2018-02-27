@@ -114,13 +114,13 @@ class CampusMap extends Component {
     this.props.locations.forEach(location => {
       if(location.name === 'Engineering 2' || location.name.split(' ')[0] === 'Building')
         return
-      if(turf.area(turf.multiPolygon(location.polygons)) < 300)
+      if(turf.area(turf.multiPolygon(location.polygons)) < 300 && this.state.map.getZoom() < 19)
         return
 
       console.log(location.name)
       console.log(turf.area(turf.multiPolygon(location.polygons)))
 
-      var fontSize = this.state.map.getZoom() <= 18 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 16
+      var fontSize = this.state.map.getZoom() <= 17 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 15
       if(fontSize <= 4)
         fontSize = 0
 
