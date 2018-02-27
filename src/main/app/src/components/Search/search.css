@@ -105,6 +105,7 @@ body {
   right: 20px;
   width: 24px;
   height: 24px;
+  opacity: 0.8;
 }
 
 .clear-input-button :hover {

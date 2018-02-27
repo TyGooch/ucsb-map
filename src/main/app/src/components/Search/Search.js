@@ -117,7 +117,7 @@ class Search extends Component {
     if(this.state.value !== ''){
       return(
         <div className="clear-input-button" onClick={this.clearInput.bind(this)}>
-          <img className="clear-input-icon" src="http://www.pvhc.net/img223/lvzjzwhxuoczayxvifvz.png" alt="clear-input"/>
+          <img className="clear-input-icon" src="https://www.materialui.co/materialIcons/navigation/close_grey_192x192.png" alt="clear-input"/>
         </div>
       )
     }
