@@ -101,16 +101,12 @@ class Search extends Component {
   }
 
   onSuggestionSelected = (event, { suggestion }) => {
-    // this.refs.autosuggest.input.blur()
     this.props.updateSelectedLocation(suggestion)
     this.setState({selectedSuggestion: true})
   }
 
   clearInput() {
     this.setState({value: '', clickedClear: true})
-
-    // if(this.props.selectedLocation)
-    //   this.props.updateSelectedLocation(null)
   }
 
   clearInputButton() {
