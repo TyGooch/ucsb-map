@@ -2,7 +2,11 @@ import React, { Component } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
-// import 'leaflet-draw'
+// import centroid from '@turf/centroid'
+import centerOfMass from '@turf/center-of-mass'
+import {getCoords} from '@turf/invariant'
+import turf from 'turf'
+
 import Spinner from 'react-spinkit'
 import './campusMap.css'
 
@@ -101,6 +105,27 @@ class CampusMap extends Component {
       polygon.on('mouseover', () => {this.handlePolygonMouseOver(location, polygon)})
       polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
       polygon.addTo(this.state.map)
+
+      var divIcon = L.divIcon({
+        className: 'label-container',
+        html: `<div class="label">${location.name}</div>`,
+        // iconSize: [e.accuracy/4 ,e.accuracy/4]
+        // iconSize: [12, 12]
+      })
+      // console.log(location.name);
+      // console.log(location.polygons[0]);
+      if(location.name === 'Engineering 2')
+        return
+      let centroid = centerOfMass(turf.multiPolygon(location.polygons))
+      // console.log(centroid);
+      // console.log(getCoords(centroid));
+      let coords = getCoords(centroid)
+      // console.log(coords);
+      var label = L.marker({lat: coords[0], lng: coords[1]}, {icon: divIcon})
+      this.state.map.addLayer(label)
+      console.log(label);
+
+
       // var fontSize = L.GeometryUtil.geodesicArea(polygon.getLatLngs()) / this.state.map.getZoom() * 30000;
       // polygon.bindTooltip("<span>" + location.name + "</span>", {
       //   className: "label",
