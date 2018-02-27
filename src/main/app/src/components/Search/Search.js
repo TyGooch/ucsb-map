@@ -54,7 +54,8 @@ class Search extends Component {
     this.state = {
       value: '',
       suggestions: [],
-      clickedClear: null
+      clickedClear: null,
+      selectedSuggestion: null
     }
   }
 
@@ -72,6 +73,11 @@ class Search extends Component {
       this.props.updateSelectedLocation(null)
       this.refs.autosuggest.input.focus()
       this.setState({clickedClear: false})
+    }
+
+    if(this.state.selectedSuggestion){
+      this.refs.autosuggest.input.blur()
+      this.setState({selectedSuggestion: false})
     }
   }
 
@@ -95,7 +101,9 @@ class Search extends Component {
   }
 
   onSuggestionSelected = (event, { suggestion }) => {
+    // this.refs.autosuggest.input.blur()
     this.props.updateSelectedLocation(suggestion)
+    this.setState({selectedSuggestion: true})
   }
 
   clearInput() {
