@@ -50,7 +50,7 @@ body {
 .logo {
   position: fixed;
   left: 10px;
-  bottom: 2px;
+  bottom: 0px;
   width: 100px;
   z-index: 1000;
   opacity: 0.8;

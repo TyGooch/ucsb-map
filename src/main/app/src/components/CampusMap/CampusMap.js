@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
-
+// import 'leaflet-draw'
 import Spinner from 'react-spinkit'
 import './campusMap.css'
 
@@ -36,6 +36,33 @@ class CampusMap extends Component {
 
     let map = L.map(id, config.mapOptions)
     map.on('click', this.handleMapClick)
+    // map.on('zoomstart', function () {
+    //   var zoomLevel = map.getZoom();
+    //   var tooltip = L.tooltip;
+    //
+    //   switch (zoomLevel) {
+    //       case -2:
+    //           tooltip.setStyle({'font-size': 7});
+    //           break;
+    //       case -1:
+    //           tooltip.setStyle({'font-size': 10});
+    //           break;
+    //       case 0:
+    //           tooltip.setStyle({'font-size': 12});
+    //           break;
+    //       case 1:
+    //           tooltip.setStyle({'font-size': 14});
+    //           break;
+    //       case 2:
+    //           tooltip.setStyle({'font-size': 16});
+    //           break;
+    //       case 3:
+    //           tooltip.setStyle({'font-size': 18});
+    //           break;
+    //       default:
+    //           tooltip.setStyle({'font-size': 14});
+    //   }
+    // })
 
     L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
 
@@ -44,6 +71,19 @@ class CampusMap extends Component {
 
   handlePolygonClick(location, polygon){
     this.props.updateSelectedLocation(location)
+  }
+
+  handlePolygonMouseOver(location, polygon) {
+    // this.props.selectedLocation && location.name !== this.props.selectedLocation.name ? polygon.setStyle({color: '#ebbd31'}) : null
+    if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
+      polygon.setStyle({color: '#ebbd31'})
+    }
+  }
+
+  handlePolygonMouseOut(location, polygon) {
+    if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
+      polygon.setStyle({color: '#6DAAD0'})
+    }
   }
 
   handleMapClick(e){
@@ -58,7 +98,15 @@ class CampusMap extends Component {
 
       let polygon = L.polygon(location.polygons, {color: '#6DAAD0', fillColor: '#6DAAD0'})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
+      polygon.on('mouseover', () => {this.handlePolygonMouseOver(location, polygon)})
+      polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
       polygon.addTo(this.state.map)
+      // var fontSize = L.GeometryUtil.geodesicArea(polygon.getLatLngs()) / this.state.map.getZoom() * 30000;
+      // polygon.bindTooltip("<span>" + location.name + "</span>", {
+      //   className: "label",
+      //   permanent: true,
+      //   direction: "center"
+      // }).openTooltip();
       polygons.push(polygon)
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){

@@ -91,33 +91,33 @@
 
 
 
-	.pulsing-ring {
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 50%;
-		border: 4px solid #5387EC;
-    opacity: 0.1;
-		 width: inherit;
-	    -webkit-animation: pulsate2 4s linear;
-	    /* -webkit-animation: pulsate 4s ease-out; */
-	    -webkit-animation-iteration-count: infinite;
-      /* transition: max-height 4s ease-out; */
-	}
+.pulsing-ring {
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 50%;
+	border: 4px solid #5387EC;
+  opacity: 0.1;
+	 width: inherit;
+    -webkit-animation: pulsate2 4s linear;
+    /* -webkit-animation: pulsate 4s ease-out; */
+    -webkit-animation-iteration-count: infinite;
+    /* transition: max-height 4s ease-out; */
+}
 
-  .delay {
-    animation-delay: 2s;
-  }
+.delay {
+  animation-delay: 2s;
+}
 
-	.pulsing-circle {
-    position: relative;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 50%;
-    background-color: #5384ec;
-		 width: inherit;
-	    -webkit-animation: pulse 3s ease;
-	    -webkit-animation-iteration-count: infinite;
+.pulsing-circle {
+  position: relative;
+  margin: 0px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: #5384ec;
+	 width: inherit;
+    -webkit-animation: pulse 3s ease;
+    -webkit-animation-iteration-count: infinite;
 	}
 
 	@-webkit-keyframes pulse {
@@ -130,3 +130,18 @@
 		    0% {-webkit-transform: scale(0, 0); opacity: 0.1;}
         100% {-webkit-transform: scale(1, 1); opacity: 0.3;}
 	}
+
+/* .label {
+  width: inherit;
+  background: black;
+ } */
+
+  .leaflet-tooltip.label {
+  background-color: transparent;
+  border: transparent;
+  box-shadow: none;
+  width: 20px !important;
+  background-color: red;
+  text-align: center;
+  color: transparent;
+  }
