@@ -53,7 +53,8 @@ class Search extends Component {
 
     this.state = {
       value: '',
-      suggestions: []
+      suggestions: [],
+      clickedClear: null
     }
   }
 
@@ -61,29 +62,25 @@ class Search extends Component {
     if( nextProps.selectedLocation){
       this.setState({value: nextProps.selectedLocation.name})
     }
-    else{
+    else {
       this.setState({value: ''})
     }
   }
 
-  onChange = (event, { newValue, method }) => {
-    // if(this.props.selectedLocation){
-    //   this.setState({value: ''})
-    // }
-    // else{
-      this.setState({
-        value: newValue
-      })
-    // }
+  componentDidUpdate(prevProps, nextProps) {
+    if(this.state.clickedClear){
+      this.props.updateSelectedLocation(null)
+      this.refs.autosuggest.input.focus()
+      this.setState({clickedClear: false})
+    }
   }
 
-  // onBlur = (event, { highlightedSuggestion }) => {
-  //   // if(this.props.selectedLocation)
-  //   //   this.props.updateSelectedLocation(null)
-  //   this.setState({
-  //     value: ''
-  //   })
-  // }
+  onChange = (event, { newValue, method }) => {
+      this.setState({
+        value: newValue,
+        clickedClear: false
+      })
+  }
 
   onSuggestionsFetchRequested = ({ value }) => {
     this.setState({
@@ -101,17 +98,42 @@ class Search extends Component {
     this.props.updateSelectedLocation(suggestion)
   }
 
+  clearInput() {
+    this.setState({value: '', clickedClear: true})
+
+    // if(this.props.selectedLocation)
+    //   this.props.updateSelectedLocation(null)
+  }
+
+  clearInputButton() {
+    if(this.state.value !== ''){
+      return(
+        <div className="clear-input-button" onClick={this.clearInput.bind(this)}>
+          <img className="clear-input-icon" src="http://www.pvhc.net/img223/lvzjzwhxuoczayxvifvz.png" alt="clear-input"/>
+        </div>
+      )
+    }
+  }
+
   renderInputComponent = inputProps => (
     <div className="inputContainer">
       <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ei-navicon.svg/1024px-Ei-navicon.svg.png" alt="Menu" />
       <input {...inputProps} />
+      {this.clearInputButton()}
     </div>
-  );
+  )
+
+  storeInputReference(autosuggest) {
+    if (autosuggest !== null) {
+      this.input = autosuggest.input;
+    }
+  }
 
   render() {
     const { value, suggestions } = this.state
 
     const inputProps = {
+      ref: this.storeInputReference,
       placeholder: 'Search UCSB',
       value,
       onChange: this.onChange,
@@ -120,6 +142,7 @@ class Search extends Component {
 
     return (
       <Autosuggest
+        ref={'autosuggest'}
         suggestions={suggestions}
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
-// import centroid from '@turf/centroid'
 import centerOfMass from '@turf/center-of-mass'
 import {getCoords} from '@turf/invariant'
 import turf from 'turf'
@@ -117,14 +116,16 @@ class CampusMap extends Component {
       if(turf.area(turf.multiPolygon(location.polygons)) < 300 && this.state.map.getZoom() < 19)
         return
 
-      console.log(location.name)
-      console.log(turf.area(turf.multiPolygon(location.polygons)))
+      // console.log(location.name)
+      // console.log(turf.area(turf.multiPolygon(location.polygons)))
 
       var fontSize = this.state.map.getZoom() <= 17 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 15
       if(fontSize <= 4)
         fontSize = 0
+      if(location.name.length <= 5)
+        fontSize *= 2
 
-      console.log(fontSize)
+      // console.log(fontSize)
 
       var divIcon = L.divIcon({
         className: 'label-container',
@@ -176,7 +177,6 @@ class CampusMap extends Component {
       var pulsingCircleIcon = L.divIcon({
         className: 'pulse-icon-circle',
         html: '<div class="pulsing-circle"></div>',
-        // iconSize: [e.accuracy/4 ,e.accuracy/4]
         iconSize: [12, 12]
       })
 
