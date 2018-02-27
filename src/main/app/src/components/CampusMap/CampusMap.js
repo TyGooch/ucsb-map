@@ -23,6 +23,7 @@ class CampusMap extends Component {
 
     this._mapNode = null
     this.polygons = null
+    this.labels = null
     this.userLocation = null
     this.mapControls = null
 
@@ -40,33 +41,11 @@ class CampusMap extends Component {
 
     let map = L.map(id, config.mapOptions)
     map.on('click', this.handleMapClick)
-    // map.on('zoomstart', function () {
-    //   var zoomLevel = map.getZoom();
-    //   var tooltip = L.tooltip;
-    //
-    //   switch (zoomLevel) {
-    //       case -2:
-    //           tooltip.setStyle({'font-size': 7});
-    //           break;
-    //       case -1:
-    //           tooltip.setStyle({'font-size': 10});
-    //           break;
-    //       case 0:
-    //           tooltip.setStyle({'font-size': 12});
-    //           break;
-    //       case 1:
-    //           tooltip.setStyle({'font-size': 14});
-    //           break;
-    //       case 2:
-    //           tooltip.setStyle({'font-size': 16});
-    //           break;
-    //       case 3:
-    //           tooltip.setStyle({'font-size': 18});
-    //           break;
-    //       default:
-    //           tooltip.setStyle({'font-size': 14});
-    //   }
-    // })
+
+    map.on('zoomend', () => {
+      this.removeLabels()
+      this.addLabels()
+    })
 
     L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
 
@@ -78,7 +57,6 @@ class CampusMap extends Component {
   }
 
   handlePolygonMouseOver(location, polygon) {
-    // this.props.selectedLocation && location.name !== this.props.selectedLocation.name ? polygon.setStyle({color: '#ebbd31'}) : null
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
       polygon.setStyle({color: '#ebbd31'})
     }
@@ -98,6 +76,7 @@ class CampusMap extends Component {
 
   addPolygons(){
     let polygons = []
+    let labels = []
     this.props.locations.forEach(location => {
 
       let polygon = L.polygon(location.polygons, {color: '#6DAAD0', fillColor: '#6DAAD0'})
@@ -106,32 +85,6 @@ class CampusMap extends Component {
       polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
       polygon.addTo(this.state.map)
 
-      var divIcon = L.divIcon({
-        className: 'label-container',
-        html: `<div class="label">${location.name}</div>`,
-        // iconSize: [e.accuracy/4 ,e.accuracy/4]
-        // iconSize: [12, 12]
-      })
-      // console.log(location.name);
-      // console.log(location.polygons[0]);
-      if(location.name === 'Engineering 2')
-        return
-      let centroid = centerOfMass(turf.multiPolygon(location.polygons))
-      // console.log(centroid);
-      // console.log(getCoords(centroid));
-      let coords = getCoords(centroid)
-      // console.log(coords);
-      var label = L.marker({lat: coords[0], lng: coords[1]}, {icon: divIcon})
-      this.state.map.addLayer(label)
-      console.log(label);
-
-
-      // var fontSize = L.GeometryUtil.geodesicArea(polygon.getLatLngs()) / this.state.map.getZoom() * 30000;
-      // polygon.bindTooltip("<span>" + location.name + "</span>", {
-      //   className: "label",
-      //   permanent: true,
-      //   direction: "center"
-      // }).openTooltip();
       polygons.push(polygon)
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
@@ -144,12 +97,52 @@ class CampusMap extends Component {
     })
 
     this.polygons = polygons
+    this.labels = labels
     this.getUserLocation()
   }
 
   removePolygons(){
     if(this.polygons)
       this.polygons.forEach(polygon => polygon.remove())
+  }
+
+  addLabels(){
+    if(!this.polygons)
+      return
+
+    let labels = []
+    this.props.locations.forEach(location => {
+      if(location.name === 'Engineering 2' || location.name.split(' ')[0] === 'Building')
+        return
+      if(turf.area(turf.multiPolygon(location.polygons)) < 300)
+        return
+
+      console.log(location.name)
+      console.log(turf.area(turf.multiPolygon(location.polygons)))
+
+      var fontSize = this.state.map.getZoom() <= 18 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 16
+      if(fontSize <= 4)
+        fontSize = 0
+
+      console.log(fontSize)
+
+      var divIcon = L.divIcon({
+        className: 'label-container',
+        html: `<div class="label"><div class="label-text ${location.name}" style="font-size:${fontSize}px !important;">${location.name}</div></div>`,
+      })
+        let centroid = centerOfMass(turf.multiPolygon(location.polygons))
+        let coords = getCoords(centroid)
+        var label = L.marker({lat: coords[0], lng: coords[1]}, {icon: divIcon, interactive: false})
+
+        label.addTo(this.state.map)
+        labels.push(label)
+    })
+    this.labels = labels
+  }
+
+  removeLabels(){
+    if(this.labels)
+      this.labels.forEach(label => label.remove())
   }
 
   getUserLocation(){
@@ -163,7 +156,7 @@ class CampusMap extends Component {
         this.userLocation.markers.forEach(marker => marker.remove())
       }
 
-      var uncertaintyCircle = L.circleMarker([e.latitude, e.longitude], {
+      var uncertaintyCircle = L.circle([e.latitude, e.longitude], {
           radius: e.accuracy/2,
           weight: 1,
           color: '#5384ec',
@@ -180,18 +173,6 @@ class CampusMap extends Component {
           fillOpacity:1
       })
 
-      // var pulsingRingIcon = L.divIcon({
-      //   className: 'pulse-icon-ring',
-      //   html: '<div class="pulsing-ring"></div>',
-      //   iconSize: [e.accuracy ,e.accuracy]
-      // })
-      //
-      // var pulsingRingIconDelayed = L.divIcon({
-      //   className: 'pulse-icon-ring',
-      //   html: '<div class="pulsing-ring delay"></div>',
-      //   iconSize: [e.accuracy ,e.accuracy]
-      // })
-
       var pulsingCircleIcon = L.divIcon({
         className: 'pulse-icon-circle',
         html: '<div class="pulsing-circle"></div>',
@@ -199,21 +180,10 @@ class CampusMap extends Component {
         iconSize: [12, 12]
       })
 
-      // var pulsingCircleInnerIcon = L.divIcon({
-      //   className: 'pulse-icon-circle',
-      //   html: '<div class="pulsing-circle"></div>',
-      //   // iconSize: [e.accuracy/4 ,e.accuracy/4]
-      //   iconSize: [15 ,15]
-      // })
-      //
-      // var pulsingRing = L.marker([e.latitude, e.longitude], {icon: pulsingRingIcon})
-      // var pulsingRingDelayed = L.marker([e.latitude, e.longitude], {icon: pulsingRingIconDelayed})
       var innerUserLocationCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon})
 
       map.addLayer(uncertaintyCircle)
       map.addLayer(outerUserLocationCircle)
-      // map.addLayer(pulsingRing)
-      // map.addLayer(pulsingRingDelayed)
       map.addLayer(innerUserLocationCircle)
 
       if(!this.state.allowsLocation){
@@ -224,8 +194,6 @@ class CampusMap extends Component {
         markers: [uncertaintyCircle, outerUserLocationCircle, innerUserLocationCircle],
         latlng: [e.latitude, e.longitude]
       }
-
-      // this.addUserLocationButton()
     })
   }
 
@@ -235,7 +203,6 @@ class CampusMap extends Component {
 
   addUserLocationButton(){
     if(this.state.allowsLocation){
-      // console.log('addButton');
       return (
         <div className="location-button-container" onClick={this.panToUserLocation.bind(this)}>
           <div className="location-button">
@@ -245,29 +212,6 @@ class CampusMap extends Component {
       )
     }
   }
-  // addUserLocationButton(){
-  //   if(this.state.map && this.userLocation && !this.mapControls){
-  //     // let panToLocationButton = L.easyButton({
-  //     //   states:[
-  //     //     {
-  //     //       stateName: 'panToUser',
-  //     //       icon: 'fa-location-arrow',
-  //     //       title: 'load image',
-  //     //       onClick: this.panToUserLocation.bind(this)
-  //     //     }
-  //     //   ]
-  //     // })
-  //     let panToLocationButton = L.easyButton(
-  //       '<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" class="location-button-image"/>',
-  //       this.panToUserLocation.bind(this),
-  //       'Your Location',
-  //       'location-button'
-  //     )
-  //
-  //     panToLocationButton.addTo(this.state.map)
-  //     this.mapControls = panToLocationButton
-  //   }
-  // }
 
   loadSpinner(){
     if(this.state.map && this.props.locations.length === 0){
@@ -281,9 +225,10 @@ class CampusMap extends Component {
 
   render() {
     this.removePolygons()
+    this.removeLabels()
     this.addPolygons()
+    this.addLabels()
     this.getUserLocation()
-    // this.panToUserLocationButton()
 
     return (
       <div id="campusMapContainer">
