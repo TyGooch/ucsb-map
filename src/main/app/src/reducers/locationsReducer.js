@@ -8,7 +8,7 @@ import {
 const defaultState = Object.freeze({
   allLocations: [],
   selectedLocation: null
-});
+})
 
 const locationsReducer = (state = defaultState, action) => {
   Object.freeze(state)
@@ -16,6 +16,7 @@ const locationsReducer = (state = defaultState, action) => {
   switch(action.type) {
     case RECEIVE_LOCATIONS:
       if(!state[0]){
+
         let newLocations = []
         action.locations.forEach(location => {
           let newLocation = {}
@@ -25,7 +26,6 @@ const locationsReducer = (state = defaultState, action) => {
 
           newLocations.push(newLocation)
         })
-
 
         return merge({}, state, {allLocations: newLocations})
       }

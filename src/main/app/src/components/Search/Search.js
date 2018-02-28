@@ -129,7 +129,7 @@ class Search extends Component {
 
   storeInputReference(autosuggest) {
     if (autosuggest !== null) {
-      this.input = autosuggest.input;
+      this.input = autosuggest.input
     }
   }
 
