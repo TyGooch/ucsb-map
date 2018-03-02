@@ -55,16 +55,24 @@ class CampusMap extends Component {
     this.props.updateSelectedLocation(location)
   }
 
-  handlePolygonMouseOver(location, polygon) {
+  handlePolygonMouseOver(e, location, polygon) {
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
       polygon.setStyle({color: '#ebbd31'})
     }
+    
+    polygon.closePopup()
+    
+    polygon.getPopup().setLatLng(e.latlng).openOn(this.state.map)
+    
+    // polygon.openPopup()
   }
 
   handlePolygonMouseOut(location, polygon) {
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
       polygon.setStyle({color: '#6DAAD0'})
     }
+    
+    polygon.closePopup()
   }
 
   handleMapClick(e){
@@ -77,21 +85,30 @@ class CampusMap extends Component {
     let polygons = []
     let labels = []
     this.props.locations.forEach(location => {
-
-      let polygon = L.polygon(location.polygons, {color: '#6DAAD0', fillColor: '#6DAAD0'})
+      let polygonColor = location.category === "parking" ? '#555555' : '#6DAAD0'
+      let polygonFillColor = location.category === "parking" ? 'gold' : '#6DAAD0'
+      let polygon = L.polygon(location.polygons, {color: polygonColor, fillColor: polygonFillColor})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
-      polygon.on('mouseover', () => {this.handlePolygonMouseOver(location, polygon)})
+      polygon.on('mouseover', (e) => {this.handlePolygonMouseOver(e, location, polygon)})
       polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
       polygon.addTo(this.state.map)
+      
+      var popup = L.popup({closeButton: false})
+      // .setLatLng(polygon.getBounds().getCenter())
+      .setContent(`<p>${location.name}</p>`)
+      // this.state.map.openPopup(popup)
+      polygon.bindPopup(popup)
+      // polygon.on('mouseover', function (e) {
+      //       this.openPopup()
+      //   })
+      //   polygon.on('mouseout', function (e) {
+      //       this.closePopup()
+      //   })
 
       polygons.push(polygon)
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
         polygon.setStyle({color: '#ebbd31'})
-        var popup = L.popup()
-          .setLatLng(polygon.getBounds().getCenter())
-          .setContent(`<p>${location.name}</p>`)
-        this.state.map.openPopup(popup)
       }
     })
 
