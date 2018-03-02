@@ -89,10 +89,6 @@ class CampusMap extends Component {
   
   addBikePath(map, bikePath){
     bikePath.features.forEach(pathSegment => {
-      // debugger;
-      // let coords = []
-      // pathSegment.geometry.coordinates.forEach(coord => {coords.push([coord[1], coord[0]])})
-      // console.log(coords);
       L.geoJSON(pathSegment, {style: {weight: 0.5, color: 'black', opacity: 0.5}, interactive:false})
       .addTo(map);
     })

@@ -48,6 +48,8 @@ function populateDb() {
         let location = {}
         let name
         if(!building.properties.name) {
+          if(!building.properties.ref)
+            return
           name = `Building ${building.properties.ref}`
         } else if(building.properties.name.includes('Parking') && building.properties.name !== 'Parking Services') {
           name = `Lot ${building.properties.name.split(' ')[0]}`
