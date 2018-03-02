@@ -5,8 +5,9 @@ import config from './mapConfig.js'
 import centerOfMass from '@turf/center-of-mass'
 import {getCoords} from '@turf/invariant'
 import turf from 'turf'
-
 import Spinner from 'react-spinkit'
+
+import bikePath from '../../util/locationData/bikePath/bikePath.js'
 import './campusMap.css'
 
 
@@ -32,6 +33,10 @@ class CampusMap extends Component {
   componentDidMount(){
     if(!this.state.map)
       this.initializeMap(this._mapNode)
+      
+    if(this.state.map)
+      this.addBikePath(bikePath)
+      
   }
 
   initializeMap(id) {
@@ -48,6 +53,7 @@ class CampusMap extends Component {
 
     L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
 
+    this.addBikePath(map, bikePath)
     this.setState({ map })
   }
 
@@ -79,6 +85,17 @@ class CampusMap extends Component {
     if(e.originalEvent.target instanceof HTMLElement){
       this.props.updateSelectedLocation(null)
     }
+  }
+  
+  addBikePath(map, bikePath){
+    bikePath.features.forEach(pathSegment => {
+      // debugger;
+      // let coords = []
+      // pathSegment.geometry.coordinates.forEach(coord => {coords.push([coord[1], coord[0]])})
+      // console.log(coords);
+      L.geoJSON(pathSegment, {style: {weight: 0.5, color: 'black', opacity: 0.5}, interactive:false})
+      .addTo(map);
+    })
   }
 
   addPolygons(){

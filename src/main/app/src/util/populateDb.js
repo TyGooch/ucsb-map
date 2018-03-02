@@ -46,7 +46,17 @@ function populateDb() {
       
       if(!Object.keys(locationObjs).includes(building.properties.name)){
         let location = {}
-        location.name =( building.properties.name ? building.properties.name : `Building ${building.properties.ref}` )
+        let name
+        if(!building.properties.name) {
+          name = `Building ${building.properties.ref}`
+        } else if(building.properties.name.includes('Parking') && building.properties.name !== 'Parking Services') {
+          name = `Lot ${building.properties.name.split(' ')[0]}`
+          if(building.properties.name.includes('Mesa'))
+            name = `Lot ${building.properties.name.split(' ')[1]} (Mesa Lot)`
+        } else {
+          name = building.properties.name
+        }
+        location.name = name
         location.category = locations
         location.polygons = [building.geometry.coordinates]
         location.color = locations === "parking" ? '#555555' : '#6DAAD0'
