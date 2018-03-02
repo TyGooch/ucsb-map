@@ -25,7 +25,7 @@ class Menu extends Component {
     }
     return (
       <div className="menu" style={style}>
-        {this.props.selectedLocation ? this.props.selectedLocation.name : "none selected"}
+        <span className = 'popup-header'>{this.props.selectedLocation ? this.props.selectedLocation.name : "none selected"}</span>
       </div>
     )
   }
