@@ -49,6 +49,8 @@ function populateDb() {
         location.name =( building.properties.name ? building.properties.name : `Building ${building.properties.ref}` )
         location.category = locations
         location.polygons = [building.geometry.coordinates]
+        location.color = locations === "parking" ? '#555555' : '#6DAAD0'
+
         locationObjs[location.name] = location
       } else {
         locationObjs[building.properties.name].polygons.push(building.geometry.coordinates)

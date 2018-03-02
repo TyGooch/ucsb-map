@@ -22,6 +22,9 @@ public class Location {
     
     @NotBlank
     private String polygons;
+    
+    @NotBlank
+    private String color;
             
     public Location() {
         super();
@@ -62,11 +65,19 @@ public class Location {
     public void setPolygons(String polygons) {
         this.polygons = polygons;
     }
+    
+    public String getColor() {
+        return color;
+    }
+    
+    public void setColor(String color) {
+        this.color = color;
+    }
         
     @Override
     public String toString() {
         return String.format(
-                "Location[id=%s, name='%s', category='%s', polygons='%s']",
-                id, name, category, polygons);
+                "Location[id=%s, name='%s', category='%s', polygons='%s', color='%s']",
+                id, name, category, polygons, color);
     }
 }

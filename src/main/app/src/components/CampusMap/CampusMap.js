@@ -69,7 +69,7 @@ class CampusMap extends Component {
 
   handlePolygonMouseOut(location, polygon) {
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
-      polygon.setStyle({color: '#6DAAD0'})
+      polygon.setStyle({color: location.color})
     }
     
     polygon.closePopup()
@@ -85,9 +85,9 @@ class CampusMap extends Component {
     let polygons = []
     let labels = []
     this.props.locations.forEach(location => {
-      let polygonColor = location.category === "parking" ? '#555555' : '#6DAAD0'
-      let polygonFillColor = location.category === "parking" ? 'gold' : '#6DAAD0'
-      let polygon = L.polygon(location.polygons, {color: polygonColor, fillColor: polygonFillColor})
+      // let polygonColor = location.category === "parking" ? '#555555' : '#6DAAD0'
+      // let polygonFillColor = location.category === "parking" ? 'gold' : '#6DAAD0'
+      let polygon = L.polygon(location.polygons, {color: location.color, fillColor: location.color})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
       polygon.on('mouseover', (e) => {this.handlePolygonMouseOver(e, location, polygon)})
       polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
