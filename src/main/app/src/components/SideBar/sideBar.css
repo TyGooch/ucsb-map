@@ -1,0 +1,48 @@
+.sidebar-container {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: 9999;
+  height: 100vmax;
+  background: white;
+  width: 300px;
+  box-shadow: 0px 1px 5px #c0c0c0;
+}
+
+.sidebar-header {
+  /* background-color: red; */
+  height: 50px;
+  /* border-bottom: 1px solid gray; */
+  border-bottom: 0.5px solid #d9d9d9;
+  /* box-shadow: 0px 1px 5px #c0c0c0; */
+}
+
+.sidebar-logo {
+  position: absolute;
+  left: 15px;
+  top: 5px;
+  /* width: 120px; */
+  height: 40px;
+  opacity: 0.8;
+}
+
+.sidebar-collapse-button-image {
+  /* position: absolute; */
+  /* right: 10px; */
+  /* top: 15px; */
+  width: 20px;
+  height: 20px;
+  /* opacity: 0.4; */
+}
+.sidebar-collapse-button-image {
+  position: absolute;
+  right: 10px;
+  top: 17.5px;
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+}
+
+.sidebar-collapse-button :hover {
+  cursor: pointer;
+}

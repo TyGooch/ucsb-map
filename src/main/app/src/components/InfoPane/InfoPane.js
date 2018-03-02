@@ -5,13 +5,6 @@ import './infoPane.css'
 class InfoPane extends Component {
   constructor() {
     super()
-
-    this.state = {
-      value: '',
-      suggestions: [],
-      clickedClear: null,
-      selectedSuggestion: null
-    }
   }
   
   getName() {

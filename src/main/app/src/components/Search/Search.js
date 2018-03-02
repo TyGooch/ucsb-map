@@ -121,7 +121,9 @@ class Search extends Component {
 
   renderInputComponent = inputProps => (
     <div className="inputContainer">
-      <img className="icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ei-navicon.svg/1024px-Ei-navicon.svg.png" alt="Menu" />
+      <div className="input-sidebar-button" onClick={this.props.toggleSideBar}>
+        <img className="input-sidebar-button-image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Ei-navicon.svg/1024px-Ei-navicon.svg.png" alt="Menu" />
+      </div>
       <input {...inputProps} />
       {this.clearInputButton()}
     </div>

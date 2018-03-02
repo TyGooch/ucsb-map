@@ -34,7 +34,7 @@ const locationsReducer = (state = defaultState, action) => {
     case UPDATE_SELECTED_LOCATION:
       return merge({}, state, {selectedLocation: action.location})
     default:
-      return defaultState
+      return state
   }
 }
 

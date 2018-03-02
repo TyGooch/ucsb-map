@@ -2,6 +2,7 @@ import { connect } from 'react-redux'
 
 import Search from './Search'
 import { updateSelectedLocation } from '../../actions/locationActions'
+import { toggleSideBar } from '../../actions/sideBarActions'
 
 
 const mapStateToProps = state => ({
@@ -10,7 +11,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  updateSelectedLocation: (location) => dispatch(updateSelectedLocation(location))
+  updateSelectedLocation: (location) => dispatch(updateSelectedLocation(location)),
+  toggleSideBar: () => dispatch(toggleSideBar())
 })
 
 
