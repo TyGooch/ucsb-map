@@ -4566,7 +4566,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269171",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -4606,7 +4606,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269172",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -4662,7 +4662,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269173",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -4702,7 +4702,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269174",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -4778,7 +4778,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269175",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -4850,7 +4850,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269176",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -4922,7 +4922,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269177",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -4990,7 +4990,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269178",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5062,7 +5062,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269179",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5134,7 +5134,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269180",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5202,7 +5202,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269181",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5278,7 +5278,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269182",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5350,7 +5350,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269183",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5422,7 +5422,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269184",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5498,7 +5498,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269185",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5574,7 +5574,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269188",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5754,7 +5754,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269189",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5826,7 +5826,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269190",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5902,7 +5902,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269191",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -5978,7 +5978,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269192",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6050,7 +6050,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269193",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6122,7 +6122,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269194",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6194,7 +6194,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269195",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6270,7 +6270,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269196",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6342,7 +6342,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269197",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6418,7 +6418,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269198",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6494,7 +6494,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269199",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6566,7 +6566,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269200",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6634,7 +6634,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269201",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6702,7 +6702,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269202",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6778,7 +6778,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269203",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6850,7 +6850,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269204",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6922,7 +6922,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269205",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -6998,7 +6998,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269209",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7070,7 +7070,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269210",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7142,7 +7142,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269211",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7219,7 +7219,7 @@ var apartments = {
         "fill-opacity": 0.5,
         "@id": "way/38269212",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7287,7 +7287,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269213",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7359,7 +7359,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269214",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7431,7 +7431,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269215",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7499,7 +7499,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269216",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7575,7 +7575,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269217",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7651,7 +7651,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269218",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7719,7 +7719,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269219",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7787,7 +7787,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269220",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7859,7 +7859,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269221",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7940,7 +7940,7 @@ var apartments = {
         "fill-opacity": 0.5,
         "@id": "way/38269222",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -7976,7 +7976,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269223",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8012,7 +8012,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269225",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8052,7 +8052,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269226",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8088,7 +8088,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269227",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8156,7 +8156,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269228",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8192,7 +8192,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269229",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8237,7 +8237,7 @@ var apartments = {
         "fill-opacity": 0.5,
         "@id": "way/38269230",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8294,7 +8294,7 @@ var apartments = {
         "fill-opacity": 0.5,
         "@id": "way/38269231",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8330,7 +8330,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269232",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8370,7 +8370,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269233",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8410,7 +8410,7 @@ var apartments = {
       "properties": {
         "@id": "way/38269235",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8446,7 +8446,7 @@ var apartments = {
       "properties": {
         "@id": "way/82456456",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8486,7 +8486,7 @@ var apartments = {
       "properties": {
         "@id": "way/82456467",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8522,7 +8522,7 @@ var apartments = {
       "properties": {
         "@id": "way/145625095",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8562,7 +8562,7 @@ var apartments = {
       "properties": {
         "@id": "way/145625096",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8602,7 +8602,7 @@ var apartments = {
       "properties": {
         "@id": "way/462469183",
         "building": "yes",
-        "name": "Santa Ynez Apartments"
+        "name": "Santa Ynez"
       },
       "geometry": {
         "type": "Polygon",
@@ -8769,298 +8769,6 @@ var apartments = {
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "@id": "way/545655305",
-        "addr:city": "Santa Barbara",
-        "addr:housenumber": 505,
-        "addr:street": "Storke Road",
-        "building": "residential",
-        "name": "Sierra Madre Apartments"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8704054,
-              34.4222244
-            ],
-            [
-              -119.8704651,
-              34.4222239
-            ],
-            [
-              -119.8704655,
-              34.4222831
-            ],
-            [
-              -119.8705194,
-              34.4222834
-            ],
-            [
-              -119.8705182,
-              34.4222239
-            ],
-            [
-              -119.8705357,
-              34.4222238
-            ],
-            [
-              -119.8705356,
-              34.4222825
-            ],
-            [
-              -119.8705597,
-              34.4222826
-            ],
-            [
-              -119.8705593,
-              34.4222926
-            ],
-            [
-              -119.8706627,
-              34.4222935
-            ],
-            [
-              -119.8706626,
-              34.4222557
-            ],
-            [
-              -119.8706316,
-              34.4222551
-            ],
-            [
-              -119.8706316,
-              34.4221946
-            ],
-            [
-              -119.8706441,
-              34.4221947
-            ],
-            [
-              -119.8706425,
-              34.4220508
-            ],
-            [
-              -119.8706228,
-              34.4220506
-            ],
-            [
-              -119.8706237,
-              34.422005
-            ],
-            [
-              -119.8706475,
-              34.4220047
-            ],
-            [
-              -119.8706482,
-              34.4219761
-            ],
-            [
-              -119.8706553,
-              34.4219761
-            ],
-            [
-              -119.8706554,
-              34.4219284
-            ],
-            [
-              -119.8706466,
-              34.4219286
-            ],
-            [
-              -119.8706463,
-              34.4218574
-            ],
-            [
-              -119.8706231,
-              34.4218573
-            ],
-            [
-              -119.8706223,
-              34.4218103
-            ],
-            [
-              -119.8706462,
-              34.4218103
-            ],
-            [
-              -119.8706445,
-              34.4217339
-            ],
-            [
-              -119.8706245,
-              34.4217339
-            ],
-            [
-              -119.8706245,
-              34.4216888
-            ],
-            [
-              -119.8706465,
-              34.4216889
-            ],
-            [
-              -119.8706489,
-              34.4216132
-            ],
-            [
-              -119.8706406,
-              34.4216132
-            ],
-            [
-              -119.8706412,
-              34.4215832
-            ],
-            [
-              -119.8705844,
-              34.4215835
-            ],
-            [
-              -119.8705837,
-              34.4215679
-            ],
-            [
-              -119.8705108,
-              34.4215681
-            ],
-            [
-              -119.8705103,
-              34.421551
-            ],
-            [
-              -119.870421,
-              34.4215517
-            ],
-            [
-              -119.8704213,
-              34.4215611
-            ],
-            [
-              -119.8703842,
-              34.4215616
-            ],
-            [
-              -119.8703852,
-              34.4216493
-            ],
-            [
-              -119.8704273,
-              34.4216493
-            ],
-            [
-              -119.8704279,
-              34.4217027
-            ],
-            [
-              -119.8704032,
-              34.4217027
-            ],
-            [
-              -119.8704012,
-              34.4216637
-            ],
-            [
-              -119.8703471,
-              34.4216631
-            ],
-            [
-              -119.8703478,
-              34.4217197
-            ],
-            [
-              -119.8703935,
-              34.4217198
-            ],
-            [
-              -119.8703927,
-              34.421777
-            ],
-            [
-              -119.8704031,
-              34.421777
-            ],
-            [
-              -119.8704035,
-              34.4218502
-            ],
-            [
-              -119.8704234,
-              34.4218503
-            ],
-            [
-              -119.870423,
-              34.4218955
-            ],
-            [
-              -119.8704034,
-              34.4218955
-            ],
-            [
-              -119.8704033,
-              34.4219245
-            ],
-            [
-              -119.8703936,
-              34.4219245
-            ],
-            [
-              -119.870394,
-              34.4219614
-            ],
-            [
-              -119.8704027,
-              34.4219613
-            ],
-            [
-              -119.8704032,
-              34.4220438
-            ],
-            [
-              -119.8704232,
-              34.4220439
-            ],
-            [
-              -119.8704236,
-              34.4220897
-            ],
-            [
-              -119.8704035,
-              34.42209
-            ],
-            [
-              -119.8704028,
-              34.4221277
-            ],
-            [
-              -119.8703957,
-              34.4221278
-            ],
-            [
-              -119.8703955,
-              34.4221701
-            ],
-            [
-              -119.8704056,
-              34.42217
-            ],
-            [
-              -119.8704054,
-              34.4222244
-            ]
-          ]
-        ]
-      },
-      "id": "way/545655305"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/539925891",
         "building": "yes",
         "shop": "convenience",
@@ -9122,18 +8830,12 @@ var apartments = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/539925893",
         "addr:city": "Santa Barbara",
-        "addr:housenumber": 555,
+        "addr:housenumber": "555",
         "addr:street": "Storke Road",
         "building": "residential",
-        "building:levels": 3,
-        "alt-name": "Sierra Madre Villages",
+        "building:levels": "3",
         "name": "Miramar Center"
       },
       "geometry": {
@@ -9268,19 +8970,13 @@ var apartments = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/539936979",
         "addr:city": "Santa Barbara",
-        "addr:housenumber": 555,
+        "addr:housenumber": "555",
         "addr:street": "Storke Road",
         "building": "residential",
-        "building:levels": 3,
-        "alt-name": "Havasu Village",
-        "name": "Sierra Madre Villages"
+        "building:levels": "3",
+        "name": "Havasu Village"
       },
       "geometry": {
         "type": "Polygon",
@@ -9580,19 +9276,13 @@ var apartments = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/557563248",
         "addr:city": "Santa Barbara",
-        "addr:housenumber": 555,
+        "addr:housenumber": "555",
         "addr:street": "Storke Road",
         "building": "residential",
-        "building:levels": 3,
-        "alt-name": "Nacimiento Village",
-        "name": "Sierra Madre Villages"
+        "building:levels": "3",
+        "name": "Nacimiento Village"
       },
       "geometry": {
         "type": "Polygon",
@@ -9834,19 +9524,13 @@ var apartments = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/557563249",
         "addr:city": "Santa Barbara",
-        "addr:housenumber": 555,
+        "addr:housenumber": "555",
         "addr:street": "Storke Road",
         "building": "residential",
-        "building:levels": 3,
-        "alt-name": "Toluca Village",
-        "name": "Sierra Madre Villages"
+        "building:levels": "3",
+        "name": "Toluca Village"
       },
       "geometry": {
         "type": "Polygon",
@@ -10064,19 +9748,13 @@ var apartments = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/557563250",
         "addr:city": "Santa Barbara",
-        "addr:housenumber": 555,
+        "addr:housenumber": "555",
         "addr:street": "Storke Road",
         "building": "residential",
-        "building:levels": 3,
-        "alt-name": "Laguna Village",
-        "name": "Sierra Madre Villages"
+        "building:levels": "3",
+        "name": "Laguna Village"
       },
       "geometry": {
         "type": "Polygon",
@@ -10242,19 +9920,13 @@ var apartments = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/557563251",
         "addr:city": "Santa Barbara",
-        "addr:housenumber": 555,
+        "addr:housenumber": "555",
         "addr:street": "Storke Road",
         "building": "residential",
-        "building:levels": 3,
-        "alt-name": "Berryessa Village",
-        "name": "Sierra Madre Villages"
+        "building:levels": "3",
+        "name": "Berryessa Village"
       },
       "geometry": {
         "type": "Polygon",
@@ -14598,1614 +14270,6 @@ var apartments = {
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/49127000",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8710728,
-              34.4179017
-            ],
-            [
-              -119.8710728,
-              34.4178237
-            ],
-            [
-              -119.870695,
-              34.4178238
-            ],
-            [
-              -119.870695,
-              34.4179018
-            ],
-            [
-              -119.8710728,
-              34.4179017
-            ]
-          ]
-        ]
-      },
-      "id": "way/49127000"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49127002",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8710749,
-              34.4176956
-            ],
-            [
-              -119.8710756,
-              34.4176152
-            ],
-            [
-              -119.8706954,
-              34.417613
-            ],
-            [
-              -119.8706947,
-              34.4176934
-            ],
-            [
-              -119.8710749,
-              34.4176956
-            ]
-          ]
-        ]
-      },
-      "id": "way/49127002"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49127005",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.871255,
-              34.4178492
-            ],
-            [
-              -119.871253,
-              34.4176005
-            ],
-            [
-              -119.8712529,
-              34.417587
-            ],
-            [
-              -119.8711657,
-              34.4175875
-            ],
-            [
-              -119.8711678,
-              34.4178497
-            ],
-            [
-              -119.871255,
-              34.4178492
-            ]
-          ]
-        ]
-      },
-      "id": "way/49127005"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49127008",
-        "addr:housenumber": "704",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8712095,
-              34.4179034
-            ],
-            [
-              -119.8712094,
-              34.4179697
-            ],
-            [
-              -119.8715657,
-              34.41797
-            ],
-            [
-              -119.8715658,
-              34.4179037
-            ],
-            [
-              -119.8712095,
-              34.4179034
-            ]
-          ]
-        ]
-      },
-      "id": "way/49127008"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49127011",
-        "addr:housenumber": "713",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8715435,
-              34.4178557
-            ],
-            [
-              -119.8715429,
-              34.4175846
-            ],
-            [
-              -119.871457,
-              34.4175847
-            ],
-            [
-              -119.871457,
-              34.4175997
-            ],
-            [
-              -119.8714576,
-              34.4178558
-            ],
-            [
-              -119.8715435,
-              34.4178557
-            ]
-          ]
-        ]
-      },
-      "id": "way/49127011"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49127018",
-        "addr:housenumber": "706",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8710277,
-              34.4182219
-            ],
-            [
-              -119.8710281,
-              34.4181401
-            ],
-            [
-              -119.8706929,
-              34.418139
-            ],
-            [
-              -119.8706925,
-              34.4182208
-            ],
-            [
-              -119.8710277,
-              34.4182219
-            ]
-          ]
-        ]
-      },
-      "id": "way/49127018"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49127021",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.870695,
-              34.4180085
-            ],
-            [
-              -119.8710708,
-              34.4180077
-            ],
-            [
-              -119.8710699,
-              34.4179268
-            ],
-            [
-              -119.8706951,
-              34.4179262
-            ],
-            [
-              -119.870695,
-              34.4180085
-            ]
-          ]
-        ]
-      },
-      "id": "way/49127021"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49436986",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.871544,
-              34.4185364
-            ],
-            [
-              -119.8715386,
-              34.418189
-            ],
-            [
-              -119.8714528,
-              34.4181868
-            ],
-            [
-              -119.8714555,
-              34.4185364
-            ],
-            [
-              -119.871544,
-              34.4185364
-            ]
-          ]
-        ]
-      },
-      "id": "way/49436986"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648557",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8725283,
-              34.4179317
-            ],
-            [
-              -119.8726226,
-              34.4179318
-            ],
-            [
-              -119.8726227,
-              34.4178287
-            ],
-            [
-              -119.8725284,
-              34.4178286
-            ],
-            [
-              -119.8725283,
-              34.4179317
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648557"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648561",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8726244,
-              34.4178032
-            ],
-            [
-              -119.8726235,
-              34.417713
-            ],
-            [
-              -119.8726224,
-              34.4175942
-            ],
-            [
-              -119.872546,
-              34.4175947
-            ],
-            [
-              -119.872548,
-              34.4178038
-            ],
-            [
-              -119.8726244,
-              34.4178032
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648561"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648564",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8730915,
-              34.4177011
-            ],
-            [
-              -119.8730916,
-              34.4176208
-            ],
-            [
-              -119.8727108,
-              34.4176206
-            ],
-            [
-              -119.8727108,
-              34.4177009
-            ],
-            [
-              -119.8730915,
-              34.4177011
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648564"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648569",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.872609,
-              34.4185336
-            ],
-            [
-              -119.8726087,
-              34.4184695
-            ],
-            [
-              -119.8722258,
-              34.4184706
-            ],
-            [
-              -119.872226,
-              34.4185347
-            ],
-            [
-              -119.872609,
-              34.4185336
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648569"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648573",
-        "addr:city": "Goleta",
-        "addr:housenumber": "724",
-        "addr:postcode": "93117",
-        "addr:state": "CA",
-        "addr:street": "Kroeber Walk",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8722584,
-              34.4183577
-            ],
-            [
-              -119.8726077,
-              34.4183598
-            ],
-            [
-              -119.8726083,
-              34.4182876
-            ],
-            [
-              -119.872259,
-              34.4182856
-            ],
-            [
-              -119.8722584,
-              34.4183577
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648573"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648578",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8722596,
-              34.4182608
-            ],
-            [
-              -119.8726079,
-              34.4182627
-            ],
-            [
-              -119.8726375,
-              34.4182629
-            ],
-            [
-              -119.8726382,
-              34.4181837
-            ],
-            [
-              -119.8722602,
-              34.4181816
-            ],
-            [
-              -119.8722596,
-              34.4182608
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648578"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648581",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8726235,
-              34.4180791
-            ],
-            [
-              -119.8726226,
-              34.4180133
-            ],
-            [
-              -119.8726034,
-              34.4180133
-            ],
-            [
-              -119.8722809,
-              34.4180131
-            ],
-            [
-              -119.8722811,
-              34.4180802
-            ],
-            [
-              -119.8726235,
-              34.4180791
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648581"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648584",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8722373,
-              34.4179325
-            ],
-            [
-              -119.8723234,
-              34.4179327
-            ],
-            [
-              -119.8723247,
-              34.4175948
-            ],
-            [
-              -119.8722386,
-              34.4175946
-            ],
-            [
-              -119.8722373,
-              34.4179325
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648584"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648591",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8724805,
-              34.4190625
-            ],
-            [
-              -119.8725738,
-              34.4190627
-            ],
-            [
-              -119.8725749,
-              34.4187469
-            ],
-            [
-              -119.8724815,
-              34.4187467
-            ],
-            [
-              -119.8724805,
-              34.4190625
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648591"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648596",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8725648,
-              34.4186826
-            ],
-            [
-              -119.8725649,
-              34.4186065
-            ],
-            [
-              -119.872224,
-              34.4186063
-            ],
-            [
-              -119.872224,
-              34.4186824
-            ],
-            [
-              -119.8725648,
-              34.4186826
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648596"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648598",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8727043,
-              34.4190196
-            ],
-            [
-              -119.8730816,
-              34.4190196
-            ],
-            [
-              -119.8730816,
-              34.4189388
-            ],
-            [
-              -119.8727044,
-              34.4189388
-            ],
-            [
-              -119.8727043,
-              34.4190196
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648598"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648601",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8727043,
-              34.4189135
-            ],
-            [
-              -119.873081,
-              34.4189135
-            ],
-            [
-              -119.873081,
-              34.4188292
-            ],
-            [
-              -119.8727042,
-              34.4188292
-            ],
-            [
-              -119.8727043,
-              34.4189135
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648601"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648606",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.872673,
-              34.4186987
-            ],
-            [
-              -119.8730736,
-              34.4186993
-            ],
-            [
-              -119.8730738,
-              34.4186279
-            ],
-            [
-              -119.8726732,
-              34.4186272
-            ],
-            [
-              -119.872673,
-              34.4186987
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648606"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648620",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8711923,
-              34.4188586
-            ],
-            [
-              -119.8712851,
-              34.4188586
-            ],
-            [
-              -119.8712852,
-              34.4187745
-            ],
-            [
-              -119.8712978,
-              34.4187745
-            ],
-            [
-              -119.8712978,
-              34.4187442
-            ],
-            [
-              -119.8712851,
-              34.4187442
-            ],
-            [
-              -119.8712851,
-              34.4187201
-            ],
-            [
-              -119.8711924,
-              34.4187201
-            ],
-            [
-              -119.8711923,
-              34.4188586
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648620"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648622",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8721327,
-              34.4188595
-            ],
-            [
-              -119.8721326,
-              34.4187916
-            ],
-            [
-              -119.8716397,
-              34.418792
-            ],
-            [
-              -119.8716397,
-              34.4188599
-            ],
-            [
-              -119.8721327,
-              34.4188595
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648622"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648631",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8722104,
-              34.4192165
-            ],
-            [
-              -119.8726242,
-              34.4192169
-            ],
-            [
-              -119.8726243,
-              34.4191461
-            ],
-            [
-              -119.8723125,
-              34.4191458
-            ],
-            [
-              -119.8722105,
-              34.4191457
-            ],
-            [
-              -119.8722104,
-              34.4192165
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648631"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648638",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8726705,
-              34.4192186
-            ],
-            [
-              -119.8730731,
-              34.4192186
-            ],
-            [
-              -119.8730731,
-              34.4191491
-            ],
-            [
-              -119.8726705,
-              34.4191491
-            ],
-            [
-              -119.8726705,
-              34.4192186
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648638"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648642",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8723576,
-              34.4190607
-            ],
-            [
-              -119.8723593,
-              34.4187474
-            ],
-            [
-              -119.8722629,
-              34.4187471
-            ],
-            [
-              -119.8722612,
-              34.4190603
-            ],
-            [
-              -119.8723126,
-              34.4190605
-            ],
-            [
-              -119.8723576,
-              34.4190607
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648642"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648657",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8710746,
-              34.4187937
-            ],
-            [
-              -119.8710751,
-              34.4187105
-            ],
-            [
-              -119.8707403,
-              34.418709
-            ],
-            [
-              -119.8707397,
-              34.4187922
-            ],
-            [
-              -119.8710746,
-              34.4187937
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648657"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648659",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8707691,
-              34.4188007
-            ],
-            [
-              -119.8706833,
-              34.4188005
-            ],
-            [
-              -119.8706815,
-              34.4191872
-            ],
-            [
-              -119.8707673,
-              34.4191875
-            ],
-            [
-              -119.8707691,
-              34.4188007
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648659"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648666",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8710582,
-              34.4191966
-            ],
-            [
-              -119.8710615,
-              34.4188749
-            ],
-            [
-              -119.8709627,
-              34.4188743
-            ],
-            [
-              -119.8709594,
-              34.4191959
-            ],
-            [
-              -119.8710582,
-              34.4191966
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648666"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648670",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.871319,
-              34.4191989
-            ],
-            [
-              -119.8713189,
-              34.4188801
-            ],
-            [
-              -119.8712195,
-              34.4188801
-            ],
-            [
-              -119.8712195,
-              34.4189262
-            ],
-            [
-              -119.8712196,
-              34.4191989
-            ],
-            [
-              -119.871319,
-              34.4191989
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648670"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648675",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8714547,
-              34.4192063
-            ],
-            [
-              -119.8715378,
-              34.419206
-            ],
-            [
-              -119.8715355,
-              34.4188011
-            ],
-            [
-              -119.8714524,
-              34.4188014
-            ],
-            [
-              -119.8714547,
-              34.4192063
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648675"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648686",
-        "building": "apartments",
-        "levels": "2"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8721124,
-              34.4180801
-            ],
-            [
-              -119.872024,
-              34.4180801
-            ],
-            [
-              -119.872024,
-              34.4183987
-            ],
-            [
-              -119.8721124,
-              34.4183987
-            ],
-            [
-              -119.8721124,
-              34.4180801
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648686"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648693",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8720786,
-              34.4184356
-            ],
-            [
-              -119.8716951,
-              34.4184356
-            ],
-            [
-              -119.8716951,
-              34.4185131
-            ],
-            [
-              -119.8720786,
-              34.4185131
-            ],
-            [
-              -119.8720786,
-              34.4184356
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648693"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648698",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8716586,
-              34.41868
-            ],
-            [
-              -119.8721352,
-              34.4186819
-            ],
-            [
-              -119.8721356,
-              34.4186126
-            ],
-            [
-              -119.871659,
-              34.4186107
-            ],
-            [
-              -119.8716586,
-              34.41868
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648698"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648705",
-        "building": "undefined",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8712907,
-              34.4184953
-            ],
-            [
-              -119.8712925,
-              34.4181792
-            ],
-            [
-              -119.871193,
-              34.4181789
-            ],
-            [
-              -119.8711913,
-              34.4184949
-            ],
-            [
-              -119.8712907,
-              34.4184953
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648705"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648711",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8715412,
-              34.4185438
-            ],
-            [
-              -119.8711615,
-              34.4185422
-            ],
-            [
-              -119.871161,
-              34.4186234
-            ],
-            [
-              -119.8715407,
-              34.418625
-            ],
-            [
-              -119.8715412,
-              34.4185438
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648711"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648722",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8715455,
-              34.4181316
-            ],
-            [
-              -119.8715461,
-              34.4180497
-            ],
-            [
-              -119.8711616,
-              34.418049
-            ],
-            [
-              -119.871161,
-              34.4181313
-            ],
-            [
-              -119.8715455,
-              34.4181316
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648722"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/49648728",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8716951,
-              34.4179545
-            ],
-            [
-              -119.8716949,
-              34.418046
-            ],
-            [
-              -119.872089,
-              34.4180464
-            ],
-            [
-              -119.8720892,
-              34.4179548
-            ],
-            [
-              -119.8716951,
-              34.4179545
-            ]
-          ]
-        ]
-      },
-      "id": "way/49648728"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/426489967",
-        "addr:city": "Goleta",
-        "addr:housenumber": "715",
-        "addr:postcode": "93117",
-        "addr:state": "CA",
-        "addr:street": "Gayley Walk",
-        "building": "apartments",
-        "building:levels": "2"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8717511,
-              34.4184211
-            ],
-            [
-              -119.8717472,
-              34.4180781
-            ],
-            [
-              -119.8716607,
-              34.4180788
-            ],
-            [
-              -119.8716646,
-              34.4184218
-            ],
-            [
-              -119.8717511,
-              34.4184211
-            ]
-          ]
-        ]
-      },
-      "id": "way/426489967"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/556264681",
-        "building": "yes"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8724778,
-              34.4179256
-            ],
-            [
-              -119.8724784,
-              34.4178915
-            ],
-            [
-              -119.8724341,
-              34.4178909
-            ],
-            [
-              -119.8724335,
-              34.417925
-            ],
-            [
-              -119.8724778,
-              34.4179256
-            ]
-          ]
-        ]
-      },
-      "id": "way/556264681"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/556264684",
-        "building": "yes",
-        "name": "West Campus Family Student Housing",
-        "landuse": "residential"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8730673,
-              34.4179068
-            ],
-            [
-              -119.8730677,
-              34.4178305
-            ],
-            [
-              -119.8727066,
-              34.4178293
-            ],
-            [
-              -119.8727063,
-              34.4179056
-            ],
-            [
-              -119.8730673,
-              34.4179068
-            ]
-          ]
-        ]
-      },
-      "id": "way/556264684"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "way/556409139",
-        "building": "yes"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8713275,
-              34.418775
-            ],
-            [
-              -119.8714484,
-              34.4187761
-            ],
-            [
-              -119.8714489,
-              34.41874
-            ],
-            [
-              -119.8713279,
-              34.418739
-            ],
-            [
-              -119.8713275,
-              34.418775
-            ]
-          ]
-        ]
-      },
-      "id": "way/556409139"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "@id": "way/38414902",
         "addr:city": "Isla Vista",
         "addr:county": "Santa Barbara",
@@ -16366,5 +14430,4 @@ var apartments = {
     }
   ]
 }
-
 export default apartments

@@ -1936,13 +1936,18 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/49425354",
         "amenity": "parking",
         "building": "yes",
-        "capacity": "1128",
+        "capacity": 1128,
         "disabled_spaces": "yes",
         "fee": "yes",
-        "name": "22 Parking",
+        "name": "Lot 22",
         "parking": "multi-storey"
       },
       "geometry": {
@@ -2001,11 +2006,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/49425356",
         "amenity": "parking",
         "disabled_spaces": "yes",
         "fee": "yes",
-        "name": "22 Parking",
+        "name": "Lot 22",
         "parking": "surface"
       },
       "geometry": {
@@ -2502,9 +2512,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "relation/7967725",
         "amenity": "parking",
-        "name": "65 Parking",
+        "name": "Lot 65",
         "type": "multipolygon"
       },
       "geometry": {
@@ -3289,9 +3304,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/373834443",
         "amenity": "parking",
-        "name": "61 Parking",
+        "name": "Lot 63",
         "parking": "surface"
       },
       "geometry": {
@@ -3350,9 +3370,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/373834444",
         "amenity": "parking",
-        "name": "61 Parking",
+        "name": "Lot 62",
         "parking": "surface"
       },
       "geometry": {
@@ -3387,9 +3412,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/373834445",
         "amenity": "parking",
-        "name": "61 Parking",
+        "name": "Lot 64",
         "parking": "surface"
       },
       "geometry": {
@@ -3480,9 +3510,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/481702998",
         "amenity": "parking",
-        "name": "65 Parking"
+        "name": "Lot 65"
       },
       "geometry": {
         "type": "Polygon",
@@ -3756,6 +3791,11 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/545655298",
         "amenity": "parking",
         "name": "71 Parking"
@@ -3824,9 +3864,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/545655301",
         "amenity": "parking",
-        "name": "67 Parking"
+        "name": "Lot 67"
       },
       "geometry": {
         "type": "Polygon",
@@ -3936,9 +3981,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/556264664",
         "amenity": "parking",
-        "name": "61 Parking"
+        "name": "Lot 61"
       },
       "geometry": {
         "type": "Polygon",
@@ -3972,9 +4022,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/556264673",
         "amenity": "parking",
-        "name": "Lot 37"
+        "name": "Lot 61"
       },
       "geometry": {
         "type": "Polygon",
@@ -4232,9 +4287,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "@id": "way/561897643",
         "amenity": "parking",
-        "name": "67 Parking"
+        "name": "Lot 67"
       },
       "geometry": {
         "type": "Polygon",
@@ -4340,6 +4400,640 @@ var parking = {
         ]
       },
       "id": "way/561897643"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/220838200",
+        "amenity": "parking",
+        "name": "Lot 32"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8525157,
+              34.4222501
+            ],
+            [
+              -119.8525117,
+              34.4223039
+            ],
+            [
+              -119.8529709,
+              34.4224556
+            ],
+            [
+              -119.8529579,
+              34.4228623
+            ],
+            [
+              -119.8530348,
+              34.4228645
+            ],
+            [
+              -119.8530387,
+              34.4224685
+            ],
+            [
+              -119.8530218,
+              34.4224362
+            ],
+            [
+              -119.8530048,
+              34.4224104
+            ],
+            [
+              -119.8525157,
+              34.4222501
+            ]
+          ]
+        ]
+      },
+      "id": "way/220838200"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/220838201",
+        "amenity": "parking",
+        "name": "Lot 32"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8523283,
+              34.4223051
+            ],
+            [
+              -119.8523453,
+              34.4222694
+            ],
+            [
+              -119.8522849,
+              34.4222498
+            ],
+            [
+              -119.8522678,
+              34.4222855
+            ],
+            [
+              -119.8523283,
+              34.4223051
+            ]
+          ]
+        ]
+      },
+      "id": "way/220838201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/220838202",
+        "amenity": "parking",
+        "name": "Lot 32"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8530183,
+              34.4223336
+            ],
+            [
+              -119.8530437,
+              34.4222206
+            ],
+            [
+              -119.8525268,
+              34.4220448
+            ],
+            [
+              -119.8524782,
+              34.422145
+            ],
+            [
+              -119.8530183,
+              34.4223336
+            ]
+          ]
+        ]
+      },
+      "id": "way/220838202"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/220838203",
+        "amenity": "parking",
+        "name": "Lot 32"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8523471,
+              34.4221849
+            ],
+            [
+              -119.8523615,
+              34.4221334
+            ],
+            [
+              -119.8523154,
+              34.4221246
+            ],
+            [
+              -119.8523009,
+              34.4221761
+            ],
+            [
+              -119.8523471,
+              34.4221849
+            ]
+          ]
+        ]
+      },
+      "id": "way/220838203"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/220909310",
+        "amenity": "parking",
+        "parking": "surface",
+        "name": "Lot 17"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8500269,
+              34.420347
+            ],
+            [
+              -119.8501698,
+              34.4201841
+            ],
+            [
+              -119.8502396,
+              34.4202259
+            ],
+            [
+              -119.8503922,
+              34.4200527
+            ],
+            [
+              -119.8503477,
+              34.4200259
+            ],
+            [
+              -119.8503549,
+              34.4200178
+            ],
+            [
+              -119.8505511,
+              34.4201397
+            ],
+            [
+              -119.8506371,
+              34.4200456
+            ],
+            [
+              -119.8504854,
+              34.4199514
+            ],
+            [
+              -119.8504517,
+              34.4199883
+            ],
+            [
+              -119.8504477,
+              34.4199858
+            ],
+            [
+              -119.850497,
+              34.4199318
+            ],
+            [
+              -119.8504294,
+              34.4198897
+            ],
+            [
+              -119.8504644,
+              34.4198515
+            ],
+            [
+              -119.850398,
+              34.41981
+            ],
+            [
+              -119.8503775,
+              34.4198322
+            ],
+            [
+              -119.8503217,
+              34.4197969
+            ],
+            [
+              -119.8500237,
+              34.4201177
+            ],
+            [
+              -119.8500752,
+              34.4201503
+            ],
+            [
+              -119.8499698,
+              34.4202634
+            ],
+            [
+              -119.8499433,
+              34.4202897
+            ],
+            [
+              -119.8499842,
+              34.4203177
+            ],
+            [
+              -119.8500269,
+              34.420347
+            ]
+          ]
+        ]
+      },
+      "id": "way/220909310"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/265975983",
+        "amenity": "parking",
+        "capacity": 50,
+        "fee": "yes",
+        "name": "Lot 31",
+        "parking": "surface"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8520769,
+              34.4212511
+            ],
+            [
+              -119.8522875,
+              34.4209977
+            ],
+            [
+              -119.851574,
+              34.4205497
+            ],
+            [
+              -119.8514506,
+              34.4208849
+            ],
+            [
+              -119.8519688,
+              34.4211879
+            ],
+            [
+              -119.8520769,
+              34.4212511
+            ]
+          ]
+        ]
+      },
+      "id": "way/265975983"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "Lot 33"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.85317945480347,
+              34.42164214078547
+            ],
+            [
+              -119.85268056392668,
+              34.421478411605925
+            ],
+            [
+              -119.8526081442833,
+              34.42161559012948
+            ],
+            [
+              -119.85312044620512,
+              34.4217748939389
+            ],
+            [
+              -119.85317945480347,
+              34.42164214078547
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "Lot 34"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.86284077167511,
+              34.42273513547234
+            ],
+            [
+              -119.86266911029814,
+              34.42247848213319
+            ],
+            [
+              -119.86219704151154,
+              34.422706372637336
+            ],
+            [
+              -119.86162573099135,
+              34.42192977235154
+            ],
+            [
+              -119.86131459474564,
+              34.422082437934606
+            ],
+            [
+              -119.86205756664275,
+              34.423102413880365
+            ],
+            [
+              -119.86284077167511,
+              34.42273513547234
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "Lot 35"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.86381441354752,
+              34.42351172827747
+            ],
+            [
+              -119.86420333385466,
+              34.42348960322614
+            ],
+            [
+              -119.86448496580122,
+              34.423498453247376
+            ],
+            [
+              -119.86470490694046,
+              34.423449778119036
+            ],
+            [
+              -119.86480951309206,
+              34.42330817758451
+            ],
+            [
+              -119.86460030078887,
+              34.423007275652395
+            ],
+            [
+              -119.86425966024399,
+              34.42316878932414
+            ],
+            [
+              -119.86405313014984,
+              34.42330596507427
+            ],
+            [
+              -119.86380636692047,
+              34.42342544054423
+            ],
+            [
+              -119.86381441354752,
+              34.42351172827747
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "name": "Lot 36"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.86465394496918,
+              34.42167311654013
+            ],
+            [
+              -119.86387610435484,
+              34.42051815563923
+            ],
+            [
+              -119.86322700977324,
+              34.42082349168161
+            ],
+            [
+              -119.8635059595108,
+              34.42121290414679
+            ],
+            [
+              -119.86393511295319,
+              34.421004922714886
+            ],
+            [
+              -119.86448764801027,
+              34.421752768427964
+            ],
+            [
+              -119.86465394496918,
+              34.42167311654013
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/38171416",
+        "amenity": "parking",
+        "capacity:disabled": "yes",
+        "fee": "yes",
+        "name": "Lot 40"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8542745,
+              34.4114453
+            ],
+            [
+              -119.8544729,
+              34.4114461
+            ],
+            [
+              -119.8544743,
+              34.411214
+            ],
+            [
+              -119.8542758,
+              34.4112132
+            ],
+            [
+              -119.8542745,
+              34.4114453
+            ]
+          ]
+        ]
+      },
+      "id": "way/38171416"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/553042857",
+        "amenity": "parking",
+        "name": "Lot 39"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8559259,
+              34.4123744
+            ],
+            [
+              -119.8561245,
+              34.4123748
+            ],
+            [
+              -119.8561226,
+              34.4118587
+            ],
+            [
+              -119.8555042,
+              34.4118581
+            ],
+            [
+              -119.8555061,
+              34.4119756
+            ],
+            [
+              -119.8555245,
+              34.4119752
+            ],
+            [
+              -119.8560229,
+              34.411976
+            ],
+            [
+              -119.8560223,
+              34.4122449
+            ],
+            [
+              -119.8559261,
+              34.4122446
+            ],
+            [
+              -119.8559259,
+              34.4123744
+            ]
+          ]
+        ]
+      },
+      "id": "way/553042857"
     }
   ]
 }
