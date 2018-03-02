@@ -11,7 +11,7 @@ class InfoPane extends Component {
     if(!this.props.selectedLocation)
       return
     return(
-      <div className="popup-header-name" style={{paddingTop: window.innerWidth < 600 ? '15px' : '0px'}}>
+      <div className="popup-header-name" style={{paddingTop: window.innerWidth < 800 ? '15px' : '0px'}}>
       {this.props.selectedLocation ? this.props.selectedLocation.name : ""}
       </div>
     )
@@ -30,11 +30,11 @@ class InfoPane extends Component {
   render() {
     let style = {
       display: this.props.selectedLocation ? 'block' : 'none',
-      width: window.innerWidth < 600 ? '100vmin' : '375px',
-      height: window.innerWidth < 600 ? '150px' : '100vmax',
-      top: window.innerWidth < 600 ? null : 0,
-      bottom: window.innerWidth < 600 ? 0 : null,
-      paddingTop: window.innerWidth < 600 ? '5px' : '65px',
+      width: window.innerWidth < 800 ? '100%' : '375px',
+      height: window.innerWidth < 800 ? '150px' : '100vmax',
+      top: window.innerWidth < 800 ? null : 0,
+      bottom: window.innerWidth < 800 ? 0 : null,
+      paddingTop: window.innerWidth < 800 ? '5px' : '65px',
     }
     return (
       <div className="menu" style={style}>
