@@ -1,8 +1,17 @@
-/* .leaflet-control-attribution {
+.leaflet-control-attribution {
   position: relative;
   bottom: 0;
   right: 0;
-} */
+}
+
+.campus-map-container {
+  /* width: 100vmax;
+  height: 100vmax; */
+  /* position: absolute; */
+  /* width: 100%; */
+  /* width: calc(100% - 400px); */
+  /* margin-left: 400px; */
+}
 
 .spinner-container {
   position: fixed;
@@ -43,9 +52,23 @@
 
 }
 
+.location-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 0px solid #aaa;
+  box-shadow: 0px 0.5px 1px grey;
+  z-index: 99999;
+  background: white;
+}
 .location-button-container :hover {
   cursor: pointer;
-
 }
 
 .location-button {
@@ -54,19 +77,19 @@
   justify-content: center;
   /* max-height: 20px;
   max-width: 20px; */
-  position: absolute;
-  bottom: 20px;
+  /* position: absolute; */
+  /* bottom: 20px;
   right: 10px;
   width: 50px;
-  height: 50px;
-  background: white;
+  height: 50px; */
+  /* background: white; */
   /* background-color: white; */
   /* height: 40px;
   width: 40px; */
-  border-radius: 50%;
+  /* border-radius: 50%;
   border: 0px solid #aaa;
   box-shadow: 0px 0.5px 1px grey;
-  z-index: 99999;
+  z-index: 99999; */
 }
 
 .location-button :hover {

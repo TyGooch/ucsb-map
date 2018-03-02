@@ -1,9 +1,9 @@
 .menu {
-  position: fixed;
+  position: absolute;
   left:0;
   /* top: 0; */
   /* height: 100vmax; */
-  z-index: 998;
+  z-index: 1001;
   background-color: white;
   /* padding-top: 75px; */
 }

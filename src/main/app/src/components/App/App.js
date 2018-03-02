@@ -20,10 +20,7 @@ class App extends React.Component {
           <SearchContainer />
         </div>
         <MenuContainer />
-        <div className='map-container'>
           <CampusMapContainer />
-          <img className='logo' src='https://preview.ibb.co/dSeKTH/ucsb_map_logo.png' alt='logo' />
-        </div>
       </div>
     )
   }

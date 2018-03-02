@@ -4,16 +4,17 @@ body {
 }
 
 .app-container {
-  display: block;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-/* #map { width: 600px;} */
+/* #map { width: inherit; height: inherit;} */
 
 .map-container {
   /* display: flex; */
-  /* width:100%; */
-  /* background: red; */
+  width: auto;
+  height: auto;
 }
 
 /* .menu-container {
@@ -26,7 +27,7 @@ body {
   position: fixed;
   top:10px;
   left:10px;
-  z-index: 999;
+  z-index: 1002;
   /* width: 100vw; */
   align-content: center;
   /* align-items: center; */

@@ -16,9 +16,9 @@ class Menu extends Component {
 
   render() {
     let style = {
-      display: this.props.selectedLocation ? 'flex' : 'none',
+      display: this.props.selectedLocation ? 'block' : 'none',
       width: window.innerWidth < 600 ? '100vmin' : '375px',
-      height: window.innerWidth < 600 ? '100px' : '100vmax',
+      height: window.innerWidth < 600 ? '150px' : '100vmax',
       top: window.innerWidth < 600 ? null : 0,
       bottom: window.innerWidth < 600 ? 0 : null,
       paddingTop: window.innerWidth < 600 ? '5px' : '75px',

@@ -217,8 +217,14 @@ class CampusMap extends Component {
 
   addUserLocationButton(){
     if(this.state.allowsLocation){
+      let offset = {}
+      if(this.props.selectedLocation){
+        if(window.innerWidth < 600){
+          offset={bottom: '130px'}
+        }
+      }
       return (
-        <div className="location-button-container" onClick={this.panToUserLocation.bind(this)}>
+        <div className="location-button-container" onClick={this.panToUserLocation.bind(this)} style={offset}>
           <div className="location-button">
             <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/34744-200.png" alt="locate" className="location-button-image"/>
           </div>
@@ -272,13 +278,23 @@ class CampusMap extends Component {
     this.addLabels()
     this.getUserLocation()
     
+    let offset = {}
+    if(this.props.selectedLocation){
+      if(window.innerWidth < 600){
+        offset={bottom: '155px'}
+      } else {
+        offset={left: '385px'}
+      }
+    }
+    
     let mapStyle = { height: (window.isSafari && window.iOS ? window.innerHeight + 'px' : '100vh')}
 
     return (
-      <div id="campusMapContainer">
+      <div className="campus-map-container">
         <div ref={(node) => this._mapNode = node} id="map" style={ mapStyle} />
         {this.loadSpinner()}
         {this.addUserLocationButton()}
+        <img className='logo' src='https://preview.ibb.co/dSeKTH/ucsb_map_logo.png' alt='logo' style={offset} />
       </div>
     )
   }
