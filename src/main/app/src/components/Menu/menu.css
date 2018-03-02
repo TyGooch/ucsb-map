@@ -26,4 +26,6 @@
 .popup-header-category {
   font-size: 20px;
   font-weight: lighter;
+  color: white;
+  opacity: 0.8;
 }
