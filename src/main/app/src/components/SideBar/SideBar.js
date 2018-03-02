@@ -9,7 +9,7 @@ class SideBar extends Component {
   
   render() {
     return (
-      <div className="sidebar-container" style={this.props.sideBarOpened ? {display: 'flex'} : {display: 'none'}} >
+      <div className="sidebar-container" style={this.props.sideBarOpened ? {display: 'block'} : {display: 'none'}} >
         <div className="sidebar-header">
           <img className='sidebar-logo' src='https://preview.ibb.co/dSeKTH/ucsb_map_logo.png' alt='logo' />
           <div className='sidebar-collapse-button' onClick={this.props.toggleSideBar}>
