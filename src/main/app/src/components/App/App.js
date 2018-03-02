@@ -20,7 +20,7 @@ class App extends React.Component {
           <SearchContainer />
         </div>
         <MenuContainer />
-          <CampusMapContainer />
+        <CampusMapContainer />
       </div>
     )
   }

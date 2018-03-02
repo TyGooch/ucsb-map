@@ -14,6 +14,16 @@ class Menu extends Component {
     }
   }
   
+  getName() {
+    if(!this.props.selectedLocation)
+      return
+    return(
+      <div className="popup-header-name" style={{paddingTop: window.innerWidth < 600 ? '15px' : '0px'}}>
+      {this.props.selectedLocation ? this.props.selectedLocation.name : ""}
+      </div>
+    )
+  }
+  
   getCategory() {
     if(this.props.selectedLocation) {
       return(
@@ -36,8 +46,7 @@ class Menu extends Component {
     return (
       <div className="menu" style={style}>
         <div className = 'popup-header'>
-          {this.props.selectedLocation ? this.props.selectedLocation.name : ""}
-          <br />
+          {this.getName()}
           {this.getCategory()}
         </div>
       </div>
