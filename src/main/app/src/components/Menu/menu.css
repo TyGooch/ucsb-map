@@ -1,0 +1,9 @@
+.menu {
+  position: fixed;
+  left:0;
+  /* top: 0; */
+  /* height: 100vmax; */
+  z-index: 998;
+  background-color: white;
+  /* padding-top: 75px; */
+}

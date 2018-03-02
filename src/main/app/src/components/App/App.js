@@ -2,6 +2,7 @@ import React from 'react'
 
 import CampusMapContainer from '../CampusMap/CampusMapContainer'
 import SearchContainer from '../Search/SearchContainer'
+import MenuContainer from '../Menu/MenuContainer'
 import './App.css'
 
 // import {populateDb} from '../../util/populateDb'
@@ -18,8 +19,11 @@ class App extends React.Component {
         <div className='search-container'>
           <SearchContainer />
         </div>
-        <CampusMapContainer />
-        <img className='logo' src='https://preview.ibb.co/dSeKTH/ucsb_map_logo.png' alt='logo' />
+        <MenuContainer />
+        <div className='map-container'>
+          <CampusMapContainer />
+          <img className='logo' src='https://preview.ibb.co/dSeKTH/ucsb_map_logo.png' alt='logo' />
+        </div>
       </div>
     )
   }

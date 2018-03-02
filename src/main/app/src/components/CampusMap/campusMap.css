@@ -1,8 +1,8 @@
-.leaflet-control-attribution {
-  position: fixed;
+/* .leaflet-control-attribution {
+  position: relative;
   bottom: 0;
   right: 0;
-}
+} */
 
 .spinner-container {
   position: fixed;
@@ -54,7 +54,7 @@
   justify-content: center;
   /* max-height: 20px;
   max-width: 20px; */
-  position: fixed;
+  position: absolute;
   bottom: 20px;
   right: 10px;
   width: 50px;
