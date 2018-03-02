@@ -1,12 +1,23 @@
 .menu {
+  display: flex;
+  flex-direction: column;
   position: absolute;
   left:0;
   z-index: 1001;
-  background-color: white;
-  text-align: center;
+  background-color: #1e3154;
+  opacity: 1;
+  text-align: left;
+  padding-left: 10px;
 }
 
 .popup-header {
+  /* background: blue; */
   font-size: 26px;
   font-weight: bold;
+  color: #e4bf4f;
+}
+
+.popup-header-category {
+  font-size: 20px;
+  font-weight: lighter;
 }

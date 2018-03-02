@@ -13,6 +13,16 @@ class Menu extends Component {
       selectedSuggestion: null
     }
   }
+  
+  getCategory() {
+    if(this.props.selectedLocation) {
+      return(
+        <span className='popup-header-category'>
+          {this.props.selectedLocation.category[0].toUpperCase() + this.props.selectedLocation.category.substr(1,this.props.selectedLocation.category.length)}
+        </span>
+      )
+    }
+  }
 
   render() {
     let style = {
@@ -21,11 +31,15 @@ class Menu extends Component {
       height: window.innerWidth < 600 ? '150px' : '100vmax',
       top: window.innerWidth < 600 ? null : 0,
       bottom: window.innerWidth < 600 ? 0 : null,
-      paddingTop: window.innerWidth < 600 ? '5px' : '75px',
+      paddingTop: window.innerWidth < 600 ? '5px' : '65px',
     }
     return (
       <div className="menu" style={style}>
-        <span className = 'popup-header'>{this.props.selectedLocation ? this.props.selectedLocation.name : "none selected"}</span>
+        <div className = 'popup-header'>
+          {this.props.selectedLocation ? this.props.selectedLocation.name : ""}
+          <br />
+          {this.getCategory()}
+        </div>
       </div>
     )
   }

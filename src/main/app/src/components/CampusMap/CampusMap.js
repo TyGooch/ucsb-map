@@ -257,7 +257,7 @@ class CampusMap extends Component {
       let newBound
       let bounds
       if(this.state.map.getSize().x < 600){
-        newBound = L.point(size.x, size.y - 100)
+        newBound = L.point(size.x, size.y - 150)
         bounds = L.latLngBounds(this.state.map.containerPointToLatLng([0,75]), this.state.map.containerPointToLatLng(newBound))  
       } else {
         newBound = L.point(size.x, size.y - 50)
