@@ -27,7 +27,7 @@
   to { transform: rotate(360deg); }
 }
 
-#map { height: 100vh;}
+/* #map { height: 100vmax;} */
 
 body {
   margin: 0px;

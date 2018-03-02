@@ -6,10 +6,11 @@ config.mapOptions = {
   zoom: 16,
   maxZoom: 19,
   minZoom: 14,
-  scrollwheel: false,
+  // scrollwheel: false,
   legends: false,
   infoControl: false,
-  attributionControl: true
+  attributionControl: true,
+  bounceAtZoomLimits: false,
 }
 
 config.tileLayer = {

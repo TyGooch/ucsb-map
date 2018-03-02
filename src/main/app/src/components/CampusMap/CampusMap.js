@@ -8,6 +8,7 @@ import turf from 'turf'
 import Spinner from 'react-spinkit'
 
 import bikePath from '../../util/locationData/bikePath/bikePath.js'
+import grass from '../../util/locationData/grass/grass.js'
 import './campusMap.css'
 
 
@@ -28,6 +29,7 @@ class CampusMap extends Component {
     this.mapControls = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
+    // this.pantoSelection = this.pantoSelection.bind(this)
   }
 
   componentDidMount(){
@@ -54,6 +56,7 @@ class CampusMap extends Component {
     L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
 
     this.addBikePath(map, bikePath)
+    // this.addGrass(map, grass)
     this.setState({ map })
   }
 
@@ -93,6 +96,13 @@ class CampusMap extends Component {
       .addTo(map);
     })
   }
+  
+  addGrass(map, grass){
+    grass.features.forEach(grassPatch => {
+      L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
+      .addTo(map);
+    })
+  }
 
   addPolygons(){
     let polygons = []
@@ -100,7 +110,7 @@ class CampusMap extends Component {
     this.props.locations.forEach(location => {
       // let polygonColor = location.category === "parking" ? '#555555' : '#6DAAD0'
       // let polygonFillColor = location.category === "parking" ? 'gold' : '#6DAAD0'
-      let polygon = L.polygon(location.polygons, {color: location.color, fillColor: location.color})
+      let polygon = L.polygon(location.polygons, {weight: 1.5, color: location.color, fillColor: location.color})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
       polygon.on('mouseover', (e) => {this.handlePolygonMouseOver(e, location, polygon)})
       polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
@@ -118,11 +128,11 @@ class CampusMap extends Component {
       //       this.closePopup()
       //   })
 
-      polygons.push(polygon)
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
         polygon.setStyle({color: '#ebbd31'})
       }
+      polygons.push({polygon: polygon, location: location})
     })
 
     this.polygons = polygons
@@ -132,7 +142,7 @@ class CampusMap extends Component {
 
   removePolygons(){
     if(this.polygons)
-      this.polygons.forEach(polygon => polygon.remove())
+      this.polygons.forEach(polygon => polygon.polygon.remove())
   }
 
   addLabels(){
@@ -252,17 +262,48 @@ class CampusMap extends Component {
       )
     }
   }
+  
+  pantoSelection(){
+    if(this.props.selectedLocation){
+      // debugger;
+      let selectedLocation = this.props.selectedLocation
+      let selectedPolygon
+      for (let {polygon, location} of this.polygons) {
+        if(location.name === selectedLocation.name)
+          selectedPolygon = polygon
+      }
+      
+      let size = this.state.map.getSize()
+      let newBound
+      let bounds
+      if(this.state.map.getSize().x < 600){
+        newBound = L.point(size.x, size.y - 100)
+        bounds = L.latLngBounds(this.state.map.containerPointToLatLng([0,75]), this.state.map.containerPointToLatLng(newBound))  
+      } else {
+        newBound = L.point(size.x, size.y - 50)
+        bounds = L.latLngBounds(this.state.map.containerPointToLatLng([365,65]), this.state.map.containerPointToLatLng(newBound))
+      }
+        
+      // L.rectangle(bounds, {color: 'red', fillColor: 'red', weight: 1}).addTo(this.state.map)
+      // debugger;
+      if(!bounds.contains(selectedPolygon.getBounds()))
+        this.state.map.panInsideBounds(selectedPolygon.getBounds())
+    }
+  }
 
   render() {
+    this.pantoSelection()
     this.removePolygons()
     this.removeLabels()
     this.addPolygons()
     this.addLabels()
     this.getUserLocation()
+    
+    let mapStyle = { height: (window.isSafari && window.iOS ? window.innerHeight + 'px' : '100vh')}
 
     return (
       <div id="campusMapContainer">
-        <div ref={(node) => this._mapNode = node} id="map" />
+        <div ref={(node) => this._mapNode = node} id="map" style={ mapStyle} />
         {this.loadSpinner()}
         {this.addUserLocationButton()}
       </div>
