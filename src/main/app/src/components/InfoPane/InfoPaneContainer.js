@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import Menu from './Menu'
+import InfoPane from './InfoPane'
 // import { updateSelectedLocation } from '../../actions/locationActions'
 
 
@@ -17,4 +17,4 @@ const mapStateToProps = state => ({
 export default connect(
   mapStateToProps,
   null
-)(Menu)
+)(InfoPane)

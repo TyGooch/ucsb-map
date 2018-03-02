@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 
-import './menu.css'
+import './infoPane.css'
 
-class Menu extends Component {
+class InfoPane extends Component {
   constructor() {
     super()
 
@@ -54,4 +54,4 @@ class Menu extends Component {
   }
 }
 
-export default Menu
+export default InfoPane
