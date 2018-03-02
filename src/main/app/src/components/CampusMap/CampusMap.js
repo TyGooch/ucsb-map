@@ -8,7 +8,7 @@ import turf from 'turf'
 import Spinner from 'react-spinkit'
 
 import bikePath from '../../util/locationData/bikePath/bikePath.js'
-import grass from '../../util/locationData/grass/grass.js'
+// import grass from '../../util/locationData/grass/grass.js'
 import './campusMap.css'
 
 
@@ -68,20 +68,12 @@ class CampusMap extends Component {
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
       polygon.setStyle({color: '#ebbd31'})
     }
-    
-    polygon.closePopup()
-    
-    polygon.getPopup().setLatLng(e.latlng).openOn(this.state.map)
-    
-    // polygon.openPopup()
   }
 
   handlePolygonMouseOut(location, polygon) {
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
       polygon.setStyle({color: location.color})
     }
-    
-    polygon.closePopup()
   }
 
   handleMapClick(e){
@@ -97,37 +89,24 @@ class CampusMap extends Component {
     })
   }
   
-  addGrass(map, grass){
-    grass.features.forEach(grassPatch => {
-      L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
-      .addTo(map);
-    })
-  }
+  // addGrass(map, grass){
+  //   grass.features.forEach(grassPatch => {
+  //     L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
+  //     .addTo(map);
+  //   })
+  // }
 
   addPolygons(){
     let polygons = []
     let labels = []
     this.props.locations.forEach(location => {
-      // let polygonColor = location.category === "parking" ? '#555555' : '#6DAAD0'
-      // let polygonFillColor = location.category === "parking" ? 'gold' : '#6DAAD0'
       let polygon = L.polygon(location.polygons, {weight: 1.5, color: location.color, fillColor: location.color})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
       polygon.on('mouseover', (e) => {this.handlePolygonMouseOver(e, location, polygon)})
       polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
       polygon.addTo(this.state.map)
       
-      var popup = L.popup({closeButton: false})
-      // .setLatLng(polygon.getBounds().getCenter())
-      .setContent(`<p>${location.name}</p>`)
-      // this.state.map.openPopup(popup)
-      polygon.bindPopup(popup)
-      // polygon.on('mouseover', function (e) {
-      //       this.openPopup()
-      //   })
-      //   polygon.on('mouseout', function (e) {
-      //       this.closePopup()
-      //   })
-
+      polygon.bindTooltip(`<p>${location.name}</p>`, {closeButton: false, sticky: true, direction: 'top', className:'hover-label'})
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
         polygon.setStyle({color: '#ebbd31'})
@@ -156,16 +135,11 @@ class CampusMap extends Component {
       if(turf.area(turf.multiPolygon(location.polygons)) < 300 && this.state.map.getZoom() < 19)
         return
 
-      // console.log(location.name)
-      // console.log(turf.area(turf.multiPolygon(location.polygons)))
-
       var fontSize = this.state.map.getZoom() <= 17 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 15
       if(fontSize <= 4)
         fontSize = 0
       if(location.name.length <= 5)
         fontSize *= 2
-
-      // console.log(fontSize)
 
       var divIcon = L.divIcon({
         className: 'label-container',
@@ -285,7 +259,6 @@ class CampusMap extends Component {
       }
         
       // L.rectangle(bounds, {color: 'red', fillColor: 'red', weight: 1}).addTo(this.state.map)
-      // debugger;
       if(!bounds.contains(selectedPolygon.getBounds()))
         this.state.map.panInsideBounds(selectedPolygon.getBounds())
     }
