@@ -1,4 +1,4 @@
-var campus = {
+{
   "type": "FeatureCollection",
   "features": [
     {
@@ -8,8 +8,10 @@ var campus = {
         "building": "university",
         "name": "Marine Science Research Building",
         "name:en1": "MSRB",
-        "ref": "520",
-        "type": "multipolygon"
+        "ref": 520,
+        "type": "multipolygon",
+        "website": "http://msi.ucsb.edu/facilities-services/marine-science-research-building",
+        "image": "http://msi.ucsb.edu/sites/msi.ucsb.edu/files/styles/main_image/public/images/MS-building-at-night.jpg?itok=l2YkL4OI"
       },
       "geometry": {
         "type": "Polygon",
@@ -288,8 +290,10 @@ var campus = {
         "@id": "relation/2925045",
         "building": "university",
         "name": "Bren Hall",
-        "ref": "521",
-        "type": "multipolygon"
+        "ref": 521,
+        "type": "multipolygon",
+        "website": "https://www.bren.ucsb.edu/about/bren_hall.html",
+        "image": "http://www.bren.ucsb.edu/facilities/images/BrenHall-fromNorth-780-Web_000.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -560,8 +564,10 @@ var campus = {
         "@id": "relation/2925105",
         "building": "university",
         "name": "Student Communications Building",
-        "ref": "589",
-        "type": "multipolygon"
+        "ref": 589,
+        "type": "multipolygon",
+        "website": "http://www.comm.ucsb.edu/",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -647,8 +653,10 @@ var campus = {
         "amenity": "hospital",
         "building": "university",
         "name": "UCSB Student Health Center",
-        "ref": "588",
-        "type": "multipolygon"
+        "ref": 588,
+        "type": "multipolygon",
+        "website": "http://studenthealth.sa.ucsb.edu/",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -945,8 +953,10 @@ var campus = {
         "@id": "relation/2925122",
         "building": "university",
         "name": "Phelps Hall",
-        "ref": "560",
-        "type": "multipolygon"
+        "ref": 560,
+        "type": "multipolygon",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -1091,11 +1101,13 @@ var campus = {
       "type": "Feature",
       "properties": {
         "@id": "relation/2925123",
-        "bldg_no": "503",
+        "bldg_no": 503,
         "building": "university",
         "name": "Engineering 2",
-        "ref": "503",
-        "type": "multipolygon"
+        "ref": 503,
+        "type": "multipolygon",
+        "website": "https://engineering.ucsb.edu/",
+        "image": "http://www.ucsbgauchos.com/sports/m-swimonly/2014-15/Engineering_Sciences__ad_hoc.jpg"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1244,8 +1256,10 @@ var campus = {
         "@id": "relation/2925147",
         "building": "university",
         "name": "Harold Frank Hall",
-        "ref": "556",
-        "type": "multipolygon"
+        "ref": 556,
+        "type": "multipolygon",
+        "website": "",
+        "image": "http://www.u-see.org/UCSB/elements/graphics/HaroldFrankHall_T.Khoury_750w.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -1420,8 +1434,10 @@ var campus = {
         "@id": "relation/2927468",
         "building": "university",
         "name": "Faculty Club",
-        "ref": "581",
-        "type": "multipolygon"
+        "ref": 581,
+        "type": "multipolygon",
+        "website": "www.theclub.ucsb.edu/",
+        "image": "data:image/jpeg;base64,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"
       },
       "geometry": {
         "type": "Polygon",
@@ -1692,8 +1708,10 @@ var campus = {
         "@id": "relation/2927470",
         "building": "university",
         "name": "Arts",
-        "ref": "534",
-        "type": "multipolygon"
+        "ref": 534,
+        "type": "multipolygon",
+        "website": "",
+        "image": "http://www.arthistory.ucsb.edu/HAAnewsletter/Fall2013/arts3.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -1830,8 +1848,10 @@ var campus = {
         "@id": "relation/2927474",
         "building": "university",
         "name": "Music",
-        "ref": "531",
-        "type": "multipolygon"
+        "ref": 531,
+        "type": "multipolygon",
+        "website": "www.music.ucsb.edu",
+        "image": "http://www.music.ucsb.edu/sites/secure.lsit.ucsb.edu.musi.d7-2/files/sitefiles/about/MusicBldgPhoto.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2087,7 +2107,9 @@ var campus = {
         "building": "university",
         "name": "Woodhouse Laboratory",
         "ref": "546",
-        "type": "multipolygon"
+        "type": "multipolygon",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2154,7 +2176,9 @@ var campus = {
         "@id": "way/32274168",
         "building": "yes",
         "leisure": "sports_centre",
-        "name": "UCSB Pavillion Gym"
+        "name": "UCSB Pavillion Gym",
+        "website": "recreation.sa.ucsb.edu/facilities",
+        "image": "http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsb/photos/UCSB_27_rf.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2235,7 +2259,9 @@ var campus = {
         "@id": "way/38099471",
         "building": "university",
         "name": "College of Creative Studies",
-        "ref": "494"
+        "ref": 494,
+        "website": "https://www.ccs.ucsb.edu/",
+        "image": "https://i0.wp.com/dailynexus.com/wp-content/uploads/2016/05/CCS-5-17-1-1024x682.jpg?resize=750%2C500"
       },
       "geometry": {
         "type": "Polygon",
@@ -2327,12 +2353,14 @@ var campus = {
       "properties": {
         "@id": "way/38171414",
         "addr:city": "Isla Vista",
-        "addr:housenumber": "935",
-        "addr:postcode": "93117",
+        "addr:housenumber": 935,
+        "addr:postcode": 93117,
         "addr:street": "Embarcadero del Norte",
         "amenity": "university",
         "building": "yes",
-        "name": "Embarcadero Hall"
+        "name": "Embarcadero Hall",
+        "website": "embarcadero.classroom.id.ucsb.edu/",
+        "image": "http://mw2.google.com/mw-panoramio/photos/medium/50536309.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2386,13 +2414,15 @@ var campus = {
         "addr:state": "CA",
         "amenity": "university",
         "building": "yes",
-        "ele": "15",
+        "ele": 15,
         "gnis:county_name": "Santa Barbara",
-        "gnis:feature_id": "1665573",
+        "gnis:feature_id": 1665573,
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "Isla Vista Theater",
-        "source": "USGS Geonames"
+        "source": "USGS Geonames",
+        "website": "ivtheaters.classroom.id.ucsb.edu/",
+        "image": "http://photos.cinematreasures.org/production/photos/89499/1386431292/large.jpg?1386431292"
       },
       "geometry": {
         "type": "Polygon",
@@ -2481,7 +2511,9 @@ var campus = {
         "@id": "way/42754953",
         "building": "yes",
         "name": "Pardall Center",
-        "office": "coworking"
+        "office": "coworking",
+        "website": "https://pardallcenter.as.ucsb.edu/",
+        "image": "https://independent.media.clients.ellingtoncms.com/img/photos/2016/03/07/Pardall_center.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2534,15 +2566,17 @@ var campus = {
         "@id": "way/43080366",
         "addr:state": "CA",
         "building": "school",
-        "ele": "14",
+        "ele": 14,
         "gnis:county_name": "Santa Barbara",
-        "gnis:feature_id": "1665582",
+        "gnis:feature_id": 1665582,
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "UCSB Bike Shop",
         "operator": "Associated Students",
         "shop": "bicycle",
-        "source": "USGS Geonames"
+        "source": "USGS Geonames",
+        "website": "bikeshop.as.ucsb.edu",
+        "image": "https://bikeshop.as.ucsb.edu/files/2011/07/bikeshopx2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2579,7 +2613,9 @@ var campus = {
         "@id": "way/59153736",
         "building": "university",
         "name": "Associated Students Recycling",
-        "ref": "314"
+        "ref": "314",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2614,32 +2650,34 @@ var campus = {
       "type": "Feature",
       "properties": {
         "@id": "way/218518103",
-        "addr:postcode": "93106",
+        "addr:postcode": 93106,
         "alt_name": "Outreach Center for Teaching Ocean Science",
         "area_1": "0.00000000",
         "basicmaint": "Unknown",
-        "bldg_heigh": "0",
+        "bldg_heigh": 0,
         "bldg_no": "508.00000000",
         "building": "university",
-        "building_u": "0",
-        "buildingpr": "0",
+        "building_u": 0,
+        "buildingpr": 0,
         "dcs_load_1": "0.00000000",
         "dcs_loader": "0.00000000",
-        "label": "0",
+        "label": 0,
         "len_1": "0.00000000",
-        "meth_of_co": "4",
+        "meth_of_co": 4,
         "name": "Ocean Science Education Building",
         "name_1": "OSEB",
         "name_2": "Ocean Science Education Building",
-        "objectid": "901",
-        "pf_zone": "0",
-        "ref": "514",
+        "objectid": 901,
+        "pf_zone": 0,
+        "ref": 514,
         "source": "Construction documents",
         "st_area_sh": "8942.24819863000",
         "st_length_": "450.34167123500",
-        "status": "2",
-        "strbl_id": "508",
-        "util_fundi": "recharge"
+        "status": 2,
+        "strbl_id": 508,
+        "util_fundi": "recharge",
+        "website": "https://www.usgbc.org/projects/ucsb-ocean-science-education-building",
+        "image": "http://www.ehdd.com/sites/ehdd2/images/7911/UCSB%20OSEB%20main%20building%20940x490.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2712,7 +2750,9 @@ var campus = {
         "@id": "way/220504812",
         "building": "university",
         "name": "Pharmacology",
-        "ref": "569"
+        "ref": 569,
+        "website": "https://undergrad.biology.ucsb.edu/majors/pharmacology",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2757,7 +2797,9 @@ var campus = {
         "@id": "way/220504813",
         "building": "university",
         "name": "Greenhouse",
-        "ref": "540"
+        "ref": 540,
+        "website": "https://www.eemb.ucsb.edu/services/greenhouse",
+        "image": "https://greenhouse.eemb.ucsb.edu/sites/greenhouse.eemb.ucsb.edu/files/styles/full/public/inst/wooden-gh.jpg?itok=QsuXSRAQ"
       },
       "geometry": {
         "type": "Polygon",
@@ -2810,7 +2852,9 @@ var campus = {
         "@id": "way/220506929",
         "building": "university",
         "name": "Head House",
-        "ref": "540"
+        "ref": "540",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2863,7 +2907,9 @@ var campus = {
         "@id": "way/220506931",
         "building": "university",
         "name": "Lath House",
-        "ref": "540"
+        "ref": "540",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2899,10 +2945,11 @@ var campus = {
       "properties": {
         "@id": "way/220634524",
         "building": "university",
-        "building:levels": "1",
+        "building:levels": 1,
         "name": "Sea Water Pump House",
-        "ref": "502",
-        "website": "http://marineops.eemb.ucsb.edu/services/seawater-system"
+        "ref": 502,
+        "website": "http://marineops.eemb.ucsb.edu/services/seawater-system",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2955,7 +3002,9 @@ var campus = {
         "@id": "way/220634937",
         "building": "university",
         "building:levels": "1",
-        "ref": "550"
+        "ref": "550",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -2992,7 +3041,9 @@ var campus = {
         "@id": "way/221233453",
         "building": "university",
         "name": "Biology II",
-        "ref": "571"
+        "ref": 571,
+        "website": "https://biology.ucsb.edu/",
+        "image": "https://labs.mcdb.ucsb.edu/ruoslahti/erkki/visitor/bio-2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3053,7 +3104,9 @@ var campus = {
         "@id": "way/221233454",
         "building": "university",
         "name": "Biology II",
-        "ref": "571"
+        "ref": 571,
+        "website": "https://biology.ucsb.edu/",
+        "image": "https://labs.mcdb.ucsb.edu/ruoslahti/erkki/visitor/bio-2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3106,7 +3159,9 @@ var campus = {
         "@id": "way/221234034",
         "building": "university",
         "name": "Life Sciences",
-        "ref": "235"
+        "ref": "235",
+        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/archive/2284-1.jpg?itok=MpBsGXXR",
+        "website": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -3163,7 +3218,9 @@ var campus = {
         "@id": "way/221234035",
         "building": "university",
         "name": "Life Sciences",
-        "ref": "235"
+        "ref": 235,
+        "website": "",
+        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/archive/2284-1.jpg?itok=MpBsGXXR"
       },
       "geometry": {
         "type": "Polygon",
@@ -3332,7 +3389,9 @@ var campus = {
         "@id": "way/221234145",
         "building": "university",
         "name": "Psychology",
-        "ref": "551"
+        "ref": 551,
+        "website": "https://www.psych.ucsb.edu",
+        "image": "https://www.psych.ucsb.edu/sites/www.psych.ucsb.edu/files/images/grad/PnBS.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3369,7 +3428,9 @@ var campus = {
         "@id": "way/221234146",
         "building": "university",
         "name": "Psychology Addition",
-        "ref": "251"
+        "ref": "251",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -3478,7 +3539,9 @@ var campus = {
         "@id": "way/221234147",
         "building": "university",
         "name": "Psychology",
-        "ref": "551"
+        "ref": "551",
+        "website": "https://www.psych.ucsb.edu",
+        "image": "https://www.psych.ucsb.edu/sites/www.psych.ucsb.edu/files/images/grad/PnBS.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3515,7 +3578,9 @@ var campus = {
         "@id": "way/221234881",
         "building": "university",
         "name": "University Center (UCEN)",
-        "ref": "558"
+        "ref": "558",
+        "website": "www.ucen.ucsb.edu/",
+        "image": "https://artsandlectures.ucsb.edu/img/venues/ucen-entrance.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3632,7 +3697,9 @@ var campus = {
         "@id": "way/221234882",
         "building": "commercial",
         "name": "University Center (UCEN)",
-        "ref": "558"
+        "ref": 558,
+        "website": "www.ucen.ucsb.edu/",
+        "image": "https://artsandlectures.ucsb.edu/img/venues/ucen-entrance.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3829,7 +3896,9 @@ var campus = {
         "@id": "way/221235842",
         "building": "university",
         "name": "Filter Building",
-        "ref": "205"
+        "ref": "205",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -3881,8 +3950,10 @@ var campus = {
       "properties": {
         "@id": "way/221235843",
         "building": "university",
-        "name": "Marine Science Institute",
-        "ref": "555"
+        "name": "Marine Biotechnology Lab",
+        "ref": 555,
+        "website": "http://msi.ucsb.edu/marine-biotechnology-center",
+        "image": "http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsb/photos/UCSB_31_rf.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3998,7 +4069,9 @@ var campus = {
       "properties": {
         "@id": "way/221235844",
         "building": "university",
-        "ref": "200"
+        "ref": "200",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -4050,7 +4123,9 @@ var campus = {
       "properties": {
         "@id": "way/221235845",
         "building": "university",
-        "ref": "465"
+        "ref": "465",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -4119,7 +4194,9 @@ var campus = {
         "@id": "way/221235914",
         "building": "university",
         "name": "Multicultural Center",
-        "ref": "558"
+        "ref": "558",
+        "website": "mcc.sa.ucsb.edu/",
+        "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2017/11/Multicultural-Center-UCSB.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -4244,7 +4321,9 @@ var campus = {
         "@id": "way/221236506",
         "building": "university",
         "name": "Student Resource Building",
-        "ref": "221"
+        "ref": "221",
+        "website": "www.sa.ucsb.edu/student-resource-building/home",
+        "image": "http://food.ucsb.edu/images/default-source/default-album/srb-building8867cff45cd0.jpg?sfvrsn=7a564969_0"
       },
       "geometry": {
         "type": "Polygon",
@@ -4518,7 +4597,8 @@ var campus = {
         "building": "university",
         "name": "Events Center (Thunderdome)",
         "ref": "505",
-        "website": "http://eventscenter.ucsb.edu/index.php"
+        "website": "http://eventscenter.ucsb.edu/index.php",
+        "image": "https://fthmb.tqn.com/WD84tV_en1nFyGQCXnfLJJntrqk=/1000x667/filters:no_upscale()/Events-Center-Thunderdome-UCSB-56a186873df78cf7726bbc43.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -4747,7 +4827,9 @@ var campus = {
         "@id": "way/221237576",
         "building": "university",
         "name": "Humanities and Social Sciences",
-        "ref": "515"
+        "ref": "515",
+        "website": "",
+        "image": "http://www.history.ucsb.edu/wp-content/uploads/Humanities_and_Social_Sciences-UCSB.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -5136,7 +5218,9 @@ var campus = {
         "@id": "way/221238562",
         "building": "university",
         "name": "Women's Center",
-        "ref": "434"
+        "ref": "434",
+        "website": "wgse.sa.ucsb.edu/",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -5293,7 +5377,9 @@ var campus = {
         "@id": "way/221238566",
         "building": "university",
         "name": "Counseling & Career Services",
-        "ref": "599"
+        "ref": "599",
+        "website": "career.sa.ucsb.edu/students/career-counseling",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -5502,7 +5588,9 @@ var campus = {
         "@id": "way/221239593",
         "building": "university",
         "name": "Education",
-        "ref": "275"
+        "ref": "275",
+        "website": "https://education.ucsb.edu/",
+        "image": "https://education.ucsb.edu/sites/default/files/styles/full_width/public/homepage_slideshow/temp2.jpg?itok=ji9cwI0o"
       },
       "geometry": {
         "type": "Polygon",
@@ -5843,7 +5931,9 @@ var campus = {
         "@id": "way/221239594",
         "building": "university",
         "name": "Social Sciences and Media Studies",
-        "ref": "276"
+        "ref": "276",
+        "website": "http://www.socialsciences.ucsb.edu/giving/ssms-building",
+        "image": "http://www.socialsciences.ucsb.edu/sites/secure.lsit.ucsb.edu.ltsc.d7_ss/files/sitefiles/giving/photo_ssms_tower.JPG"
       },
       "geometry": {
         "type": "Polygon",
@@ -6011,8 +6101,10 @@ var campus = {
       "properties": {
         "@id": "way/221239595",
         "building": "university",
-        "name": "Koegl Autism Center",
-        "ref": "275"
+        "name": "Koegel Autism Center",
+        "ref": "275",
+        "website": "https://education.ucsb.edu/autism",
+        "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -6122,7 +6214,9 @@ var campus = {
         "amenity": "theatre",
         "building": "yes",
         "name": "Pollock Theater",
-        "ref": "277"
+        "ref": "277",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -6475,7 +6569,9 @@ var campus = {
         "@id": "way/221239599",
         "building": "university",
         "name": "Social Sciences and Media Studies",
-        "ref": "276"
+        "ref": "276",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -6728,7 +6824,9 @@ var campus = {
         "@id": "way/221239600",
         "building": "university",
         "name": "Social Sciences and Media Studies",
-        "ref": "276"
+        "ref": "276",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -6874,7 +6972,9 @@ var campus = {
         "building": "university",
         "leisure": "sports_centre",
         "name": "Rob Gym",
-        "ref": "533"
+        "ref": "533",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -7041,7 +7141,8 @@ var campus = {
         "building:levels": "2",
         "name": "Intercollegiate Athletics",
         "ref": "243",
-        "website": "http://ucsb.prestosports.com/information/dare_to_be_great/capital_projects/ica"
+        "website": "http://ucsb.prestosports.com/information/dare_to_be_great/capital_projects/ica",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -7267,7 +7368,9 @@ var campus = {
         "building": "university",
         "leisure": "sports_centre",
         "name": "Recreation Center",
-        "ref": "516"
+        "ref": "516",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -8657,7 +8760,9 @@ var campus = {
         "building": "university",
         "leisure": "sports_centre",
         "name": "Recreation Center",
-        "ref": "516"
+        "ref": "516",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -8799,7 +8904,9 @@ var campus = {
         "building": "university",
         "leisure": "sports_centre",
         "name": "MAC",
-        "ref": "511"
+        "ref": "511",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -8948,7 +9055,9 @@ var campus = {
         "@id": "way/221240423",
         "building": "university",
         "leisure": "sports_centre",
-        "ref": "511"
+        "ref": "511",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -8985,7 +9094,9 @@ var campus = {
         "@id": "way/221240542",
         "building": "university",
         "name": "EH&S",
-        "ref": "565"
+        "ref": "565",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -9138,7 +9249,9 @@ var campus = {
         "@id": "way/221240658",
         "building": "university",
         "name": "Mosher Alumni House",
-        "ref": "517"
+        "ref": "517",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -9172,7 +9285,9 @@ var campus = {
         "building": "university",
         "building:levels": "3",
         "name": "Mosher Alumni House",
-        "ref": "517"
+        "ref": "517",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -9541,7 +9656,9 @@ var campus = {
         "@id": "way/221241233",
         "building": "university",
         "name": "Campbell Hall",
-        "ref": "538"
+        "ref": "538",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -9862,7 +9979,9 @@ var campus = {
         "@id": "way/221241518",
         "building": "university",
         "name": "Ellison Hall",
-        "ref": "563"
+        "ref": "563",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -10091,7 +10210,9 @@ var campus = {
         "@id": "way/221241519",
         "building": "university",
         "name": "Chemistry",
-        "ref": "557"
+        "ref": "557",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -10204,7 +10325,9 @@ var campus = {
         "@id": "way/221241521",
         "building": "university",
         "name": "Physical Sciences North",
-        "ref": "657"
+        "ref": "657",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -10405,7 +10528,9 @@ var campus = {
         "@id": "way/221242056",
         "building": "university",
         "name": "Kohn Hall",
-        "ref": "567"
+        "ref": "567",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11070,7 +11195,8 @@ var campus = {
         "name": "Webb Hall",
         "ref": "526",
         "website": "http://www.geol.ucsb.edu/",
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11163,7 +11289,9 @@ var campus = {
         "@id": "way/221242397",
         "building": "university",
         "name": "Noble Hall",
-        "ref": "544"
+        "ref": "544",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11280,7 +11408,9 @@ var campus = {
         "@id": "way/221242398",
         "building": "university",
         "name": "Materials Research Laboratory",
-        "ref": "615"
+        "ref": "615",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11373,7 +11503,9 @@ var campus = {
         "@id": "way/221258374",
         "building": "university",
         "name": "Buchanan Hall",
-        "ref": "573"
+        "ref": "573",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11487,15 +11619,12 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221258375",
         "building": "university",
         "ref": 937,
-        "name": "Broida Hall"
+        "name": "Broida Hall",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11529,15 +11658,12 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221258376",
         "building": "university",
         "name": "Biological Sciences Instructional Facility",
-        "ref": 504
+        "ref": "504",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11590,7 +11716,9 @@ var campus = {
         "@id": "way/221258377",
         "building": "university",
         "name": "Broida Hall",
-        "ref": "572"
+        "ref": "572",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11756,15 +11884,12 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221258378",
         "building": "university",
         "ref": 937,
-        "name": "Physics Trailer 2"
+        "name": "Physics Trailer 2",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11798,15 +11923,12 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221258379",
         "building": "university",
         "ref": 937,
-        "name": "Physics Trailer 1"
+        "name": "Physics Trailer 1",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11843,7 +11965,9 @@ var campus = {
         "@id": "way/221258399",
         "building": "university",
         "name": "Engineering Science",
-        "ref": "225"
+        "ref": "225",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11888,7 +12012,9 @@ var campus = {
         "@id": "way/221258400",
         "building": "university",
         "name": "Engineering Science",
-        "ref": "225"
+        "ref": "225",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -12101,7 +12227,9 @@ var campus = {
         "@id": "way/221258744",
         "building": "university",
         "name": "Elings Hall (CNSI)",
-        "ref": "266"
+        "ref": "266",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -12183,7 +12311,9 @@ var campus = {
         "amenity": "cafe",
         "building": "university",
         "name": "Coral Tree Cafe",
-        "ref": "532"
+        "ref": "532",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -12276,7 +12406,9 @@ var campus = {
         "@id": "way/221259488",
         "building": "university",
         "name": "Student Affairs Administrative Services Building (SAASB)",
-        "ref": "568"
+        "ref": "568",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -12769,7 +12901,9 @@ var campus = {
         "@id": "way/221259489",
         "building": "university",
         "name": "Cheadle Hall",
-        "ref": "552"
+        "ref": "552",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -12883,15 +13017,12 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221260105",
         "building": "university",
         "ref": 388,
-        "name": "Parking Services"
+        "name": "Parking Services",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -12936,7 +13067,9 @@ var campus = {
         "@id": "way/221260106",
         "building": "university",
         "name": "Parking Services",
-        "ref": "381"
+        "ref": "381",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -12990,14 +13123,11 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221260919",
         "building": "university",
-        "name": "Harder Stadium"
+        "name": "Harder Stadium",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13031,16 +13161,13 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221260920",
         "building": "yes",
         "ele": 10,
         "ref": 578,
-        "name": "Harder Stadium"
+        "name": "Harder Stadium",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13090,16 +13217,13 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221260921",
         "building": "yes",
         "ele": 10,
         "ref": 580,
-        "name": "Harder Stadium"
+        "name": "Harder Stadium",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13247,7 +13371,9 @@ var campus = {
       "properties": {
         "@id": "way/221261022",
         "addr:housenumber": "376",
-        "building": "university"
+        "building": "university",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13284,7 +13410,9 @@ var campus = {
         "@id": "way/221261024",
         "addr:housenumber": "802",
         "building": "university",
-        "name": "Bunker"
+        "name": "Bunker",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13321,7 +13449,9 @@ var campus = {
         "@id": "way/221261027",
         "addr:housenumber": "574",
         "building": "university",
-        "name": "Public Safety"
+        "name": "Public Safety",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13445,7 +13575,9 @@ var campus = {
       "properties": {
         "@id": "way/221261028",
         "addr:housenumber": "317",
-        "building": "university"
+        "building": "university",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13483,7 +13615,9 @@ var campus = {
         "building": "university",
         "name": "Loma Pelona Center",
         "ref": "876",
-        "type": "multipolygon"
+        "type": "multipolygon",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13553,7 +13687,9 @@ var campus = {
         "building": "university",
         "name": "Loma Pelona Center",
         "ref": "876",
-        "type": "multipolygon"
+        "type": "multipolygon",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13599,7 +13735,9 @@ var campus = {
         "building": "university",
         "name": "Loma Pelona Center",
         "ref": "876",
-        "type": "multipolygon"
+        "type": "multipolygon",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13660,7 +13798,9 @@ var campus = {
         "@id": "way/221403272",
         "building": "university",
         "name": "Theater and Dance East",
-        "ref": "554"
+        "ref": "554",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -13737,7 +13877,9 @@ var campus = {
         "@id": "way/221403275",
         "building": "university",
         "name": "Theater and Dance West",
-        "ref": "223"
+        "ref": "223",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -14066,7 +14208,9 @@ var campus = {
         "@id": "way/221403281",
         "building": "university",
         "name": "Theater and Dance West 1701",
-        "ref": "223"
+        "ref": "223",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -14160,7 +14304,9 @@ var campus = {
         "building": "university",
         "name": "Arbor",
         "ref": "501",
-        "shop": "convenience"
+        "shop": "convenience",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -14574,7 +14720,8 @@ var campus = {
         "ref": "534",
         "tourism": "museum",
         "website": "http://www.museum.ucsb.edu/",
-        "wikipedia": "en:Art, Design & Architecture Museum"
+        "wikipedia": "en:Art, Design & Architecture Museum",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -14659,7 +14806,9 @@ var campus = {
         "@id": "way/221404598",
         "building": "university",
         "name": "South Hall",
-        "ref": "528"
+        "ref": "528",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -14696,7 +14845,9 @@ var campus = {
         "@id": "way/221404599",
         "building": "university",
         "name": "Girvetz Hall",
-        "ref": "564"
+        "ref": "564",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -14829,7 +14980,9 @@ var campus = {
         "@id": "way/221404600",
         "building": "university",
         "name": "South Hall",
-        "ref": "528"
+        "ref": "528",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15214,7 +15367,9 @@ var campus = {
         "@id": "way/221404651",
         "building": "university",
         "name": "Kerr Hall",
-        "ref": "591"
+        "ref": "591",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15295,7 +15450,9 @@ var campus = {
         "@id": "way/221404652",
         "building": "university",
         "name": "North Hall",
-        "ref": "535"
+        "ref": "535",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15385,14 +15542,11 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/221404879",
         "building": "university",
-        "ref": 477
+        "ref": 477,
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15460,7 +15614,9 @@ var campus = {
       "properties": {
         "@id": "way/221404880",
         "building": "university",
-        "ref": "320"
+        "ref": "320",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15497,7 +15653,9 @@ var campus = {
         "@id": "way/221404881",
         "building": "university",
         "name": "Old Gym",
-        "ref": "479"
+        "ref": "479",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15581,7 +15739,9 @@ var campus = {
       "properties": {
         "@id": "way/221404882",
         "building": "university",
-        "ref": "300"
+        "ref": "300",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15617,7 +15777,9 @@ var campus = {
       "properties": {
         "@id": "way/221404883",
         "building": "university",
-        "ref": "327"
+        "ref": "327",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15653,7 +15815,9 @@ var campus = {
       "properties": {
         "@id": "way/221404983",
         "building": "university",
-        "ref": "382"
+        "ref": "382",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15689,7 +15853,9 @@ var campus = {
       "properties": {
         "@id": "way/221404984",
         "building": "university",
-        "ref": "990"
+        "ref": "990",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15741,7 +15907,9 @@ var campus = {
       "properties": {
         "@id": "way/221408418",
         "building": "university",
-        "ref": "698"
+        "ref": "698",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15777,7 +15945,9 @@ var campus = {
       "properties": {
         "@id": "way/221408421",
         "building": "university",
-        "ref": "384"
+        "ref": "384",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15813,7 +15983,9 @@ var campus = {
       "properties": {
         "@id": "way/221408422",
         "building": "university",
-        "ref": "380"
+        "ref": "380",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15849,7 +16021,9 @@ var campus = {
       "properties": {
         "@id": "way/221408423",
         "building": "university",
-        "ref": "699"
+        "ref": "699",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15885,7 +16059,9 @@ var campus = {
       "properties": {
         "@id": "way/221408424",
         "building": "university",
-        "ref": "697"
+        "ref": "697",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15922,7 +16098,9 @@ var campus = {
         "@id": "way/221408474",
         "building": "university",
         "name": "Cloud Lab",
-        "ref": "575"
+        "ref": "575",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -15959,7 +16137,9 @@ var campus = {
         "@id": "way/221409150",
         "building": "university",
         "name": "BioScience Annex",
-        "ref": "539"
+        "ref": "539",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16003,7 +16183,9 @@ var campus = {
       "properties": {
         "@id": "way/221409152",
         "building": "university",
-        "ref": "539"
+        "ref": "539",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16039,7 +16221,9 @@ var campus = {
       "properties": {
         "@id": "way/221409551",
         "building": "university",
-        "ref": "334"
+        "ref": "334",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16075,7 +16259,9 @@ var campus = {
       "properties": {
         "@id": "way/221409552",
         "building": "university",
-        "ref": "338"
+        "ref": "338",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16111,7 +16297,9 @@ var campus = {
       "properties": {
         "@id": "way/221409553",
         "building": "university",
-        "ref": "342"
+        "ref": "342",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16148,7 +16336,9 @@ var campus = {
         "@id": "way/221409555",
         "building": "university",
         "name": "University House",
-        "ref": "543"
+        "ref": "543",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16224,7 +16414,9 @@ var campus = {
       "properties": {
         "@id": "way/221409556",
         "building": "university",
-        "ref": "321"
+        "ref": "321",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16260,7 +16452,9 @@ var campus = {
       "properties": {
         "@id": "way/221409557",
         "building": "university",
-        "ref": "319"
+        "ref": "319",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16297,7 +16491,9 @@ var campus = {
         "@id": "way/221409659",
         "building": "university",
         "name": "Military Science",
-        "ref": "451"
+        "ref": "451",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16333,7 +16529,9 @@ var campus = {
       "properties": {
         "@id": "way/221409849",
         "building": "university",
-        "ref": "570"
+        "ref": "570",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16369,7 +16567,9 @@ var campus = {
       "properties": {
         "@id": "way/221409850",
         "building": "university",
-        "ref": "316"
+        "ref": "316",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16405,7 +16605,9 @@ var campus = {
       "properties": {
         "@id": "way/221409851",
         "building": "university",
-        "ref": "313"
+        "ref": "313",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16441,7 +16643,9 @@ var campus = {
       "properties": {
         "@id": "way/221409852",
         "building": "university",
-        "ref": "489"
+        "ref": "489",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16477,7 +16681,9 @@ var campus = {
       "properties": {
         "@id": "way/221409853",
         "building": "university",
-        "ref": "232"
+        "ref": "232",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16513,7 +16719,9 @@ var campus = {
       "properties": {
         "@id": "way/221409855",
         "building": "university",
-        "ref": "935"
+        "ref": "935",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16549,7 +16757,9 @@ var campus = {
       "properties": {
         "@id": "way/221409856",
         "building": "university",
-        "ref": "936"
+        "ref": "936",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16585,7 +16795,9 @@ var campus = {
       "properties": {
         "@id": "way/221409858",
         "building": "university",
-        "ref": "402"
+        "ref": "402",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16622,7 +16834,9 @@ var campus = {
         "@id": "way/221409862",
         "building": "university",
         "name": "Physical Sciences South",
-        "ref": "672"
+        "ref": "672",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16711,7 +16925,9 @@ var campus = {
         "@id": "way/221410023",
         "building": "university",
         "name": "Love Lab",
-        "ref": "346"
+        "ref": "346",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16755,7 +16971,9 @@ var campus = {
       "properties": {
         "@id": "way/221410025",
         "building": "university",
-        "ref": "408"
+        "ref": "408",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16839,7 +17057,9 @@ var campus = {
       "properties": {
         "@id": "way/221410119",
         "building": "university",
-        "ref": "387"
+        "ref": "387",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16875,7 +17095,9 @@ var campus = {
       "properties": {
         "@id": "way/221411226",
         "building": "university",
-        "ref": "439"
+        "ref": "439",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16959,7 +17181,9 @@ var campus = {
       "properties": {
         "@id": "way/221411227",
         "building": "university",
-        "ref": "371"
+        "ref": "371",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -16995,7 +17219,9 @@ var campus = {
       "properties": {
         "@id": "way/221411228",
         "building": "university",
-        "ref": "370"
+        "ref": "370",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17031,7 +17257,9 @@ var campus = {
       "properties": {
         "@id": "way/221411230",
         "building": "university",
-        "ref": "972"
+        "ref": "972",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17067,7 +17295,9 @@ var campus = {
       "properties": {
         "@id": "way/221411231",
         "building": "university",
-        "ref": "348"
+        "ref": "348",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17103,7 +17333,9 @@ var campus = {
       "properties": {
         "@id": "way/221411232",
         "building": "university",
-        "ref": "595"
+        "ref": "595",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17139,7 +17371,9 @@ var campus = {
       "properties": {
         "@id": "way/221411233",
         "building": "university",
-        "ref": "336"
+        "ref": "336",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17174,7 +17408,9 @@ var campus = {
       "type": "Feature",
       "properties": {
         "@id": "way/221411234",
-        "building": "university"
+        "building": "university",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17210,7 +17446,9 @@ var campus = {
       "properties": {
         "@id": "way/221411236",
         "building": "university",
-        "ref": "536"
+        "ref": "536",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17246,7 +17484,9 @@ var campus = {
       "properties": {
         "@id": "way/221411237",
         "building": "university",
-        "ref": "594"
+        "ref": "594",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17282,7 +17522,9 @@ var campus = {
       "properties": {
         "@id": "way/221411238",
         "addr:housenumber": "593",
-        "building": "university"
+        "building": "university",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17319,7 +17561,9 @@ var campus = {
         "@id": "way/221411239",
         "building": "university",
         "name": "Centennial House",
-        "ref": "530"
+        "ref": "530",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17355,7 +17599,9 @@ var campus = {
       "properties": {
         "@id": "way/221411240",
         "building": "university",
-        "ref": "510"
+        "ref": "510",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17391,7 +17637,9 @@ var campus = {
       "properties": {
         "@id": "way/221411241",
         "building": "university",
-        "ref": "437"
+        "ref": "437",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17495,7 +17743,9 @@ var campus = {
       "properties": {
         "@id": "way/221411242",
         "building": "university",
-        "ref": "375"
+        "ref": "375",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17531,7 +17781,9 @@ var campus = {
       "properties": {
         "@id": "way/221411243",
         "building": "university",
-        "ref": "584"
+        "ref": "584",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17588,7 +17840,8 @@ var campus = {
         "name": "UCSB Library",
         "operator": "University of California, Santa Barbara",
         "ref": "525",
-        "website": "http://www.library.ucsb.edu/"
+        "website": "http://www.library.ucsb.edu/",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17837,7 +18090,9 @@ var campus = {
         "@id": "way/410105410",
         "building": "university",
         "name": "BioEngineering",
-        "ref": "512"
+        "ref": "512",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -17994,7 +18249,9 @@ var campus = {
         "@id": "way/555804497",
         "building": "university",
         "building:levels": "1",
-        "ref": "220"
+        "ref": "220",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -18034,7 +18291,9 @@ var campus = {
       "properties": {
         "@id": "way/555804498",
         "building": "university",
-        "name": "Energy Services"
+        "name": "Energy Services",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -18084,7 +18343,9 @@ var campus = {
               "type": "multipolygon"
             }
           }
-        ]
+        ],
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -18118,14 +18379,11 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/453275826",
         "building": "yes",
-        "name": "Baseball Facility"
+        "name": "Baseball Facility",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -18199,14 +18457,11 @@ var campus = {
     {
       "type": "Feature",
       "properties": {
-        "stroke": "#555555",
-        "stroke-width": 2,
-        "stroke-opacity": 1,
-        "fill": "#555555",
-        "fill-opacity": 0.5,
         "@id": "way/466475853",
         "building": "yes",
-        "name": "Baseball Facility"
+        "name": "Baseball Facility",
+        "website": "",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -18271,4 +18526,3 @@ var campus = {
     }
   ]
 }
-export default campus;
