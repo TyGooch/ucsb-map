@@ -6215,8 +6215,8 @@
         "building": "yes",
         "name": "Pollock Theater",
         "ref": "277",
-        "website": "",
-        "image": ""
+        "website": "https://www.carseywolf.ucsb.edu/pollock/",
+        "image": "http://www.carseywolf.ucsb.edu/wp-content/uploads/2018/01/Pollock-Theater.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -6570,8 +6570,8 @@
         "building": "university",
         "name": "Social Sciences and Media Studies",
         "ref": "276",
-        "website": "",
-        "image": ""
+        "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
+        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_vertical/public/images/2015/imagetn.aspx__336.jpg?itok=o4vkzIVE"
       },
       "geometry": {
         "type": "Polygon",
@@ -6825,8 +6825,8 @@
         "building": "university",
         "name": "Social Sciences and Media Studies",
         "ref": "276",
-        "website": "",
-        "image": ""
+        "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
+        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_vertical/public/images/2015/imagetn.aspx__336.jpg?itok=o4vkzIVE"
       },
       "geometry": {
         "type": "Polygon",
@@ -6973,8 +6973,8 @@
         "leisure": "sports_centre",
         "name": "Rob Gym",
         "ref": "533",
-        "website": "",
-        "image": ""
+        "website": "recreation.sa.ucsb.edu/facilities",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-VOhWtU6F3DoYGIt0-NE9olApGVLVjhHMcuNKfjVuzPqcatFsg"
       },
       "geometry": {
         "type": "Polygon",
@@ -7142,7 +7142,7 @@
         "name": "Intercollegiate Athletics",
         "ref": "243",
         "website": "http://ucsb.prestosports.com/information/dare_to_be_great/capital_projects/ica",
-        "image": ""
+        "image": "http://www.ucsbgauchos.com/information/dare_to_be_great/photos/icabldg.jpg?max_height=201&max_width=300"
       },
       "geometry": {
         "type": "Polygon",
@@ -7369,8 +7369,8 @@
         "leisure": "sports_centre",
         "name": "Recreation Center",
         "ref": "516",
-        "website": "",
-        "image": ""
+        "website": "recreation.sa.ucsb.edu/",
+        "image": "http://www.conferences.ucsb.edu/files/images/basic_pages/reccen1.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -8761,8 +8761,8 @@
         "leisure": "sports_centre",
         "name": "Recreation Center",
         "ref": "516",
-        "website": "",
-        "image": ""
+        "website": "recreation.sa.ucsb.edu/",
+        "image": "http://www.conferences.ucsb.edu/files/images/basic_pages/reccen1.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -8905,8 +8905,8 @@
         "leisure": "sports_centre",
         "name": "MAC",
         "ref": "511",
-        "website": "",
-        "image": ""
+        "website": "recreation.sa.ucsb.edu/facilities",
+        "image": "http://www.ia.ucsb.edu/93106_archived/2005/June15/Images/5_MAC.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9056,8 +9056,8 @@
         "building": "university",
         "leisure": "sports_centre",
         "ref": "511",
-        "website": "",
-        "image": ""
+        "website": "recreation.sa.ucsb.edu/facilities",
+        "image": "http://www.ia.ucsb.edu/93106_archived/2005/June15/Images/5_MAC.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9095,7 +9095,7 @@
         "building": "university",
         "name": "EH&S",
         "ref": "565",
-        "website": "",
+        "website": "www.ehs.ucsb.edu/",
         "image": ""
       },
       "geometry": {
@@ -9250,8 +9250,8 @@
         "building": "university",
         "name": "Mosher Alumni House",
         "ref": "517",
-        "website": "",
-        "image": ""
+        "website": "www.ucsbalum.com/programs/mosher/",
+        "image": "http://www.ucsbalum.com/programs/mosher/eventspaces/images/header.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9286,8 +9286,8 @@
         "building:levels": "3",
         "name": "Mosher Alumni House",
         "ref": "517",
-        "website": "",
-        "image": ""
+        "website": "www.ucsbalum.com/programs/mosher/",
+        "image": "http://www.ucsbalum.com/programs/mosher/eventspaces/images/header.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9657,8 +9657,8 @@
         "building": "university",
         "name": "Campbell Hall",
         "ref": "538",
-        "website": "",
-        "image": ""
+        "website": "https://artsandlectures.ucsb.edu/Tickets/Venues.aspx?VenueID=34",
+        "image": "https://artsandlectures.ucsb.edu/img/venues/CampbellHallExterior.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9980,8 +9980,8 @@
         "building": "university",
         "name": "Ellison Hall",
         "ref": "563",
-        "website": "",
-        "image": ""
+        "website": "https://geog.ucsb.edu/the-geography-of-ellison-hall/",
+        "image": "http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsb/photos/UCSB_15_rf.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -10211,8 +10211,8 @@
         "building": "university",
         "name": "Chemistry",
         "ref": "557",
-        "website": "",
-        "image": ""
+        "website": "https://campusguide.files.wordpress.com/2014/10/ucsb_physcience21.jpg",
+        "image": "www.chem.ucsb.edu/"
       },
       "geometry": {
         "type": "Polygon",
@@ -10327,7 +10327,7 @@
         "name": "Physical Sciences North",
         "ref": "657",
         "website": "",
-        "image": ""
+        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/2015/Physical%20Sciences%20North.jpg?itok=9lGcaQhJ"
       },
       "geometry": {
         "type": "Polygon",
@@ -10530,7 +10530,7 @@
         "name": "Kohn Hall",
         "ref": "567",
         "website": "",
-        "image": ""
+        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/archive/2527-1.jpg?itok=2LDQNjNa"
       },
       "geometry": {
         "type": "Polygon",
@@ -11196,7 +11196,7 @@
         "ref": "526",
         "website": "http://www.geol.ucsb.edu/",
         "wheelchair": "yes",
-        "image": ""
+        "image": "http://ucsbalum.com/Coastlines/2017/spring/images/buildings/webb.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11291,7 +11291,7 @@
         "name": "Noble Hall",
         "ref": "544",
         "website": "",
-        "image": ""
+        "image": "http://ucsbfm.info/entrances/enter-bldg/Noble/IMG_6888.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11409,8 +11409,8 @@
         "building": "university",
         "name": "Materials Research Laboratory",
         "ref": "615",
-        "website": "",
-        "image": ""
+        "website": "https://www.mrl.ucsb.edu/",
+        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/mrl.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11504,8 +11504,8 @@
         "building": "university",
         "name": "Buchanan Hall",
         "ref": "573",
-        "website": "",
-        "image": ""
+        "website": "buchanan.classroom.id.ucsb.edu/",
+        "image": "http://buchanan.classroom.id.ucsb.edu/sites/all/themes/id2010/id-assets/images/department_splash_images/buchanan.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11621,10 +11621,10 @@
       "properties": {
         "@id": "way/221258375",
         "building": "university",
-        "ref": 937,
+        "ref": "937",
         "name": "Broida Hall",
-        "website": "",
-        "image": ""
+        "website": "www.physics.ucsb.edu/",
+        "image": "http://web.physics.ucsb.edu/~Women/images/broida.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11718,7 +11718,7 @@
         "name": "Broida Hall",
         "ref": "572",
         "website": "",
-        "image": ""
+        "image": "http://web.physics.ucsb.edu/~Women/images/broida.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11886,7 +11886,7 @@
       "properties": {
         "@id": "way/221258378",
         "building": "university",
-        "ref": 937,
+        "ref": "937",
         "name": "Physics Trailer 2",
         "website": "",
         "image": ""
@@ -11925,7 +11925,7 @@
       "properties": {
         "@id": "way/221258379",
         "building": "university",
-        "ref": 937,
+        "ref": "937",
         "name": "Physics Trailer 1",
         "website": "",
         "image": ""
@@ -11966,8 +11966,8 @@
         "building": "university",
         "name": "Engineering Science",
         "ref": "225",
-        "website": "",
-        "image": ""
+        "website": "https://engineering.ucsb.edu/undergraduate/majors-programs/engineering-sciences",
+        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/esb2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -12013,8 +12013,8 @@
         "building": "university",
         "name": "Engineering Science",
         "ref": "225",
-        "website": "",
-        "image": ""
+        "website": "https://engineering.ucsb.edu/undergraduate/majors-programs/engineering-sciences",
+        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/esb2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -12228,8 +12228,8 @@
         "building": "university",
         "name": "Elings Hall (CNSI)",
         "ref": "266",
-        "website": "",
-        "image": ""
+        "website": "https://www.cnsi.ucsb.edu/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Elings_Hall.jpg/1200px-Elings_Hall.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -12312,8 +12312,8 @@
         "building": "university",
         "name": "Coral Tree Cafe",
         "ref": "532",
-        "website": "",
-        "image": ""
+        "website": "www.ucen.ucsb.edu/dining/dining-around-campus",
+        "image": "http://mw2.google.com/mw-panoramio/photos/medium/49914512.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -12407,8 +12407,8 @@
         "building": "university",
         "name": "Student Affairs Administrative Services Building (SAASB)",
         "ref": "568",
-        "website": "",
-        "image": ""
+        "website": "www.sa.ucsb.edu/",
+        "image": "http://greenbuildings.berkeley.edu/bestpractices/2017/img/ucsb-saasb-lighting-05.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -12903,7 +12903,7 @@
         "name": "Cheadle Hall",
         "ref": "552",
         "website": "",
-        "image": ""
+        "image": "http://duels.ucsb.edu/sites/secure.lsit.ucsb.edu.ltsc.d7_uged/files/styles/slide_view_advising/public/slideshow/slide/K8vdLImage-CheadleHall-2.jpg?itok=vo3sSaVW"
       },
       "geometry": {
         "type": "Polygon",
@@ -13019,7 +13019,7 @@
       "properties": {
         "@id": "way/221260105",
         "building": "university",
-        "ref": 388,
+        "ref": "388",
         "name": "Parking Services",
         "website": "",
         "image": ""
@@ -13126,8 +13126,8 @@
         "@id": "way/221260919",
         "building": "university",
         "name": "Harder Stadium",
-        "website": "",
-        "image": ""
+        "website": "https://events.ucsb.edu/venue/harder-stadium/",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Harder_Stadium_Santa_Barbara_CA.JPG/1200px-Harder_Stadium_Santa_Barbara_CA.JPG"
       },
       "geometry": {
         "type": "Polygon",
@@ -13166,7 +13166,7 @@
         "ele": 10,
         "ref": 578,
         "name": "Harder Stadium",
-        "website": "",
+        "website": "https://events.ucsb.edu/venue/harder-stadium/",
         "image": ""
       },
       "geometry": {
@@ -13222,7 +13222,7 @@
         "ele": 10,
         "ref": 580,
         "name": "Harder Stadium",
-        "website": "",
+        "website": "https://events.ucsb.edu/venue/harder-stadium/",
         "image": ""
       },
       "geometry": {
@@ -13616,8 +13616,8 @@
         "name": "Loma Pelona Center",
         "ref": "876",
         "type": "multipolygon",
-        "website": "",
-        "image": ""
+        "website": "www.conferences.ucsb.edu/loma-pelona-center",
+        "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/basic/lomapelona-slider1.jpg?itok=PSrY2ZKS"
       },
       "geometry": {
         "type": "Polygon",
@@ -13688,8 +13688,8 @@
         "name": "Loma Pelona Center",
         "ref": "876",
         "type": "multipolygon",
-        "website": "",
-        "image": ""
+        "website": "https://events.ucsb.edu/venue/loma-pelona-center/",
+        "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/basic/lomapelona-slider1.jpg?itok=PSrY2ZKS"
       },
       "geometry": {
         "type": "Polygon",
@@ -13736,8 +13736,8 @@
         "name": "Loma Pelona Center",
         "ref": "876",
         "type": "multipolygon",
-        "website": "",
-        "image": ""
+        "website": "https://events.ucsb.edu/venue/loma-pelona-center/",
+        "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/basic/lomapelona-slider1.jpg?itok=PSrY2ZKS"
       },
       "geometry": {
         "type": "Polygon",
@@ -13799,8 +13799,8 @@
         "building": "university",
         "name": "Theater and Dance East",
         "ref": "554",
-        "website": "",
-        "image": ""
+        "website": "www.theaterdance.ucsb.edu/",
+        "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -13878,8 +13878,8 @@
         "building": "university",
         "name": "Theater and Dance West",
         "ref": "223",
-        "website": "",
-        "image": ""
+        "website": "www.theaterdance.ucsb.edu/",
+        "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -14209,8 +14209,8 @@
         "building": "university",
         "name": "Theater and Dance West 1701",
         "ref": "223",
-        "website": "",
-        "image": ""
+        "website": "www.theaterdance.ucsb.edu/",
+        "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -14306,7 +14306,7 @@
         "ref": "501",
         "shop": "convenience",
         "website": "",
-        "image": ""
+        "image": "https://www.santabarbara.com/dining/photos/the-arbor-1.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -14721,7 +14721,7 @@
         "tourism": "museum",
         "website": "http://www.museum.ucsb.edu/",
         "wikipedia": "en:Art, Design & Architecture Museum",
-        "image": ""
+        "image": "http://www.pacificstandardtime.org/past/artinla/images/content/institutions/artwork/65_ucsb-site.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -14808,7 +14808,7 @@
         "name": "South Hall",
         "ref": "528",
         "website": "",
-        "image": ""
+        "image": "https://oep.ucsb.edu/about/directions/carousel.images/south_hall.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -14847,7 +14847,7 @@
         "name": "Girvetz Hall",
         "ref": "564",
         "website": "",
-        "image": ""
+        "image": "https://c1.staticflickr.com/5/4124/4993574762_459f7cbb7f_b.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -14982,7 +14982,7 @@
         "name": "South Hall",
         "ref": "528",
         "website": "",
-        "image": ""
+        "image": "https://oep.ucsb.edu/about/directions/carousel.images/south_hall.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -15369,7 +15369,7 @@
         "name": "Kerr Hall",
         "ref": "591",
         "website": "",
-        "image": ""
+        "image": "https://farm1.staticflickr.com/30/60577588_2c44f42577_z.jpg?zz=1"
       },
       "geometry": {
         "type": "Polygon",
@@ -15452,7 +15452,7 @@
         "name": "North Hall",
         "ref": "535",
         "website": "",
-        "image": ""
+        "image": "https://www.cs.ucsb.edu/~pconrad/topics/howtofind/NH1006/3.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -16836,7 +16836,7 @@
         "name": "Physical Sciences South",
         "ref": "672",
         "website": "",
-        "image": ""
+        "image": "http://www.physics.ucsb.edu/sites/secure.lsit.ucsb.edu.phys.d7/files/sitefiles/resources/machineshops/MShop-frontside_300.png"
       },
       "geometry": {
         "type": "Polygon",
@@ -17841,7 +17841,7 @@
         "operator": "University of California, Santa Barbara",
         "ref": "525",
         "website": "http://www.library.ucsb.edu/",
-        "image": ""
+        "image": "https://www.library.ucsb.edu/sites/default/files/imagecache/large_align_center/images/exhibitions/uc-santa-barbara-library-future/Davidson%20Exterior03f%20PS.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -18091,8 +18091,8 @@
         "building": "university",
         "name": "BioEngineering",
         "ref": "512",
-        "website": "",
-        "image": ""
+        "website": "bioengineering.ucsb.edu/facilities",
+        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/new_bioengr_building.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -18345,7 +18345,7 @@
           }
         ],
         "website": "",
-        "image": ""
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/48/Ucsb-storke-tower01.jpg"
       },
       "geometry": {
         "type": "Polygon",
