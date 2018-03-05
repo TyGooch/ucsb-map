@@ -7,6 +7,12 @@ import './infoPane.css'
 class InfoPane extends Component {
   constructor() {
     super()
+    
+    this.state = {
+      isVisible: null
+    }
+    
+    let selectedLocation = null
     let isMobile = null
     let isVisible = false
     let hasImage = false
@@ -15,19 +21,28 @@ class InfoPane extends Component {
   }
   
   componentDidMount() {
-    this.isVisible = this.props.selectedLocation ? true : false
+    this.selectedLocation = this.props.selectedLocation
     this.isMobile = window.innerWidth < 800
+    this.isVisible = this.props.selectedLocation && !this.isMobile ? true : false
 
-    if(this.isVisible)
+    if(this.selectedLocation)
       this.hasImage = this.props.selectedLocation.image ? true : false
   }
   
   componentWillReceiveProps(nextProps) {
+    this.selectedLocation = nextProps.selectedLocation
+    
     this.isMobile = window.innerWidth < 800
-    this.isVisible = nextProps.selectedLocation ? true : false
-
-    if(this.isVisible)
+    this.isVisible = nextProps.selectedLocation && !this.isMobile ? true : false
+    
+    if(this.selectedLocation)
       this.hasImage = nextProps.selectedLocation.image ? true : false
+
+    if(!this.selectedLocation && this.state.isVisible)
+      this.setState({isVisible: false})
+
+    if(this.selectedLocation && !this.isMobile)
+      this.setState({isVisible: true})
   }
   
   getImage() {
@@ -47,7 +62,7 @@ class InfoPane extends Component {
       
     return(
       <div className="popup-header-image-container" style={style}>
-        <img className="popup-header-image" src={this.props.selectedLocation ? this.props.selectedLocation.image : null} alt='location-image'/>
+        <img className="popup-header-image" src={this.selectedLocation ? this.selectedLocation.image : null} alt='location-image'/>
         <div className="popup-header-image-name">
           {this.getName()}
         </div>
@@ -56,18 +71,18 @@ class InfoPane extends Component {
   }
   
   getName() {
-    if(!this.isVisible)
+    if(!this.selectedLocation)
       return
       
     return(
-      <div className="popup-header-name" style={{paddingTop: this.isMobile && !this.hasImage ? '25px' : '5px'}}>
-        {this.props.selectedLocation ? this.props.selectedLocation.name : ""}
+      <div className="popup-header-name" style={{paddingTop: this.isMobile && !this.hasImage ? '5px' : '5px'}}>
+        {this.selectedLocation.name}
       </div>
     )
   }
   
   getCategory() {
-    if(this.isVisible) {
+    if(this.selectedLocation) {
       return(
         <span className='popup-header-category'>
           {this.props.selectedLocation.category[0].toUpperCase() + this.props.selectedLocation.category.substr(1,this.props.selectedLocation.category.length)}
@@ -91,13 +106,17 @@ class InfoPane extends Component {
   }
   
   swipedUp(e, deltaY, isFlick) {
-    this.el.scrollIntoView()
+    // this.el.scrollIntoView()
+    this.setState({isVisible: true})
   }
   
   swipedDown(e, deltaY, isFlick) {
-    this.top.scrollIntoView()
+    // this.el.scrollIntoView()
+    if(!this.isMobile)
+      return
+    this.setState({isVisible: false})
   }
-
+  
   render() {
     let margin = `${window.innerHeight - 250}px`
     // if((this.isMobile) && !(window.iOS && window.isSafari))
@@ -106,38 +125,40 @@ class InfoPane extends Component {
     //   margin = 'calc((100vmax - 250px))'
       
     let style = {
-      display: this.isVisible ? 'block' : 'none',
+      height: this.state && this.state.isVisible ? window.innerHeight : '0px',
       width: this.isMobile ? '100%' : '375px',
-      // height: this.isMobile ? '100vmax' : '100vmax',
-      height: window.innerHeight,
-      top: this.isMobile ? null : 0,
-      // bottom: this.isMobile ? 0 : null,
-      marginTop: margin,
-      zIndex: this.isMobile ? 1003 : 1001
+      zIndex: this.isMobile ? 1006 : 1001
       // paddingTop: (this.isMobile && !this.hasImage) ? '65px' : null,
     }
-    console.log(this.isVisible);
-    
+    console.log(this.state.isVisible);
+    if(!this.state)
+      return
     return (
-      <div className="infopane-container" style={
-        {
-          display: this.isVisible ? 'block' : 'none',
-          width: this.isMobile ? '100%' : '375px',
-          // paddingTop: (this.isMobile && !this.hasImage) ? '35px' : null,
-        }
-      }>
-      <div className='top' style={{position: 'absolute', top:'0px', height:'auto'}} ref={el => { this.top = el; }}>top</div>
-        <Swipeable className="menu" style={style} onWheel={e => this.handleScroll(e)} onSwipedUp={this.swipedUp.bind(this)} onSwipedDown={this.swipedDown.bind(this)} >
-          <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
-            {this.getImage()}
-            <div className = 'popup-header-text' style={{marginTop: (this.hasImage || this.isMobile) ? '0px' : '65px'}}>
-              {!this.hasImage ? this.getName() : null}
-              {this.getCategory()}
+        <div className='infopane-container' style={{zIndex: this.isMobile ? 1006 : 1001}}>
+          <Swipeable
+            className="infopane"
+            style={style}
+            onSwipedDown={this.swipedDown.bind(this)}
+            onClick={this.swipedDown.bind(this)}
+          >
+            <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
+              {this.getImage()}
+              <div className = 'popup-header-text' style={{marginTop: (this.hasImage || this.isMobile) ? '0px' : '65px'}}>
+                {!this.hasImage ? this.getName() : null}
+                {this.getCategory()}
+              </div>
             </div>
-          </div>
-          <div className='bottom' style={{position: 'absolute', bottom:'0px', height:'auto'}} ref={el => { this.el = el; }}></div>
-        </Swipeable>
-      </div>
+          </Swipeable>
+          <Swipeable 
+            className='mobile-info'
+            style={{display: (this.isMobile && this.selectedLocation && !this.state.isVisible) ? 'block' : 'none'}}
+            onSwipedUp={this.swipedUp.bind(this)}
+            onClick={this.swipedUp.bind(this)}
+          >
+            {this.getName()}
+            {this.getCategory()}
+          </Swipeable>
+        </div>
     )
   }
 }

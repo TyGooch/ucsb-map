@@ -227,7 +227,7 @@ class CampusMap extends Component {
       let offset = {}
       if(this.props.selectedLocation){
         if(window.innerWidth < 800){
-          offset={bottom: '225px'}
+          // offset={bottom: '225px'}
         }
       }
       return (
@@ -264,7 +264,7 @@ class CampusMap extends Component {
       let newBound
       let bounds
       if(this.state.map.getSize().x < 800){
-        newBound = L.point(size.x, size.y - 250)
+        newBound = L.point(size.x, size.y - 100)
         bounds = L.latLngBounds(this.state.map.containerPointToLatLng([0,75]), this.state.map.containerPointToLatLng(newBound))  
       } else {
         newBound = L.point(size.x, size.y - 50)
