@@ -12,15 +12,15 @@ function populateDb() {
 
   var locationData = {"apartments": apartments, "campus": campus, "dining": dining, "dorms": dorms, "parking": parking}
   let locationObjs = {}
-  
+
   Object.keys(locationData).forEach(locations => {
-    locationData[locations].features.forEach(building => {      
+    locationData[locations].features.forEach(building => {
       // if(!building.properties.name)
       //   return
-      
+
       if(["Lotte Lehmann Concert Hall", "Hatlen Theater", "Old Little Theatre"].includes(building.properties.name))
       return
-      
+
       if( building.geometry.type.toLowerCase() === "polygon" && !building.properties.type){
         building.geometry.coordinates.forEach(coordinates => {
           coordinates.forEach((coord, idx, coordinates) => {
@@ -42,8 +42,8 @@ function populateDb() {
           })
         })
       }
-      
-      
+
+
       if(!Object.keys(locationObjs).includes(building.properties.name)){
         let location = {}
         let name
@@ -62,12 +62,14 @@ function populateDb() {
         location.category = locations
         location.polygons = [building.geometry.coordinates]
         location.color = locations === "parking" ? '#555555' : '#6DAAD0'
+        location.website = website
+        location.image = image
 
         locationObjs[location.name] = location
       } else {
         locationObjs[building.properties.name].polygons.push(building.geometry.coordinates)
       }
-      
+
     })
   })
   Object.keys(locationObjs).forEach(obj => {
