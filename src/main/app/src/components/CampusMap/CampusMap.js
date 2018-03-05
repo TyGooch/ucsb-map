@@ -8,7 +8,7 @@ import turf from 'turf'
 import Spinner from 'react-spinkit'
 
 import bikePath from '../../util/locationData/bikePath/bikePath.js'
-// import grass from '../../util/locationData/grass/grass.js'
+import grass from '../../util/locationData/grass/grass.js'
 import './campusMap.css'
 
 
@@ -29,15 +29,14 @@ class CampusMap extends Component {
     this.mapControls = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
-    // this.pantoSelection = this.pantoSelection.bind(this)
   }
 
   componentDidMount(){
     if(!this.state.map)
       this.initializeMap(this._mapNode)
       
-    if(this.state.map)
-      this.addBikePath(bikePath)
+    // if(this.state.map)
+      // this.addBikePath(bikePath)
       
   }
 
@@ -49,11 +48,17 @@ class CampusMap extends Component {
     map.on('click', this.handleMapClick)
 
     map.on('zoomend', () => {
-      this.removeLabels()
-      this.addLabels()
+      // this.removeLabels()
+      // this.addLabels()
     })
 
     L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
+    
+    map.createPane('labels');
+    map.getPane('labels').style.zIndex = 650;
+    map.getPane('labels').style.pointerEvents = 'none';
+    L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjedwhm9p0syb2tmu2wphl5um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', opacity:1}).addTo(map)
+
 
     this.addBikePath(map, bikePath)
     // this.addGrass(map, grass)
@@ -78,7 +83,8 @@ class CampusMap extends Component {
 
   handleMapClick(e){
     if(e.originalEvent.target instanceof HTMLElement){
-      this.props.updateSelectedLocation(null)
+      if(this.props.selectedLocation)
+        this.props.updateSelectedLocation(null)
     }
   }
   
@@ -89,12 +95,13 @@ class CampusMap extends Component {
     })
   }
   
-  // addGrass(map, grass){
-  //   grass.features.forEach(grassPatch => {
-  //     L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
-  //     .addTo(map);
-  //   })
-  // }
+  addGrass(map, grass){
+    grass.features.forEach(grassPatch => {
+      // L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
+      L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
+      .addTo(map);
+    })
+  }
 
   addPolygons(){
     let polygons = []
@@ -275,7 +282,7 @@ class CampusMap extends Component {
     this.removePolygons()
     this.removeLabels()
     this.addPolygons()
-    this.addLabels()
+    // this.addLabels()
     this.getUserLocation()
     
     let offset = {}

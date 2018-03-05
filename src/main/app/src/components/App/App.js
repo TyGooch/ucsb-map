@@ -13,16 +13,21 @@ class App extends React.Component {
     this.props.fetchLocations()
     // populateDb()
   }
+  
+  closeSideBar(){
+    if(this.props.sideBarOpened)
+      return this.props.toggleSideBar()
+  }
 
   render() {
     return(
       <div className='app-container'>
-        <div className='search-container'>
+        <div className='search-container' onClick={this.closeSideBar.bind(this)}>
           <SearchContainer />
         </div>
         <SideBarContainer />
-        <InfoPaneContainer />
-        <CampusMapContainer />
+        <InfoPaneContainer onClick={this.closeSideBar.bind(this)}/>
+        <CampusMapContainer onClick={this.closeSideBar.bind(this)}/>
       </div>
     )
   }
