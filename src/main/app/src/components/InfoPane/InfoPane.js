@@ -144,7 +144,7 @@ class InfoPane extends Component {
             onSwipedDown={this.swipedDown.bind(this)}
           >
             <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
-              <div className="infopane-close-button" onClick={this.swipedDown.bind(this)}>
+              <div className="infopane-close-button" onClick={this.swipedDown.bind(this)} style={{display: this.isMobile ? 'block' : 'none'}}>
                 <img className="infopane-close-button-image" src='https://www.materialui.co/materialIcons/navigation/arrow_back_white_192x192.png' alt='close-infopane' />
               </div>
               {this.getImage()}
