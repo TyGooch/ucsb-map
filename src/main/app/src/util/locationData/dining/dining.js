@@ -10,7 +10,9 @@ var diningHalls = {
         "ele": 14,
         "name": "Ortega Dining Commons",
         "ref": 542,
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "website": "www.housing.ucsb.edu/dining/ortega-dining-commons",
+        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/eateries/gallery/ortega-gallery1_0.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -75,7 +77,9 @@ var diningHalls = {
         "name": "De La Guerra Dining Commons",
         "outdoor_seating": "yes",
         "ref": 549,
-        "wheelchair": "yes"
+        "wheelchair": "yes",
+        "website": "www.housing.ucsb.edu/dining/de-la-guerra-dining-commons",
+        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/eateries/gallery/dlg-gallery2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -264,7 +268,9 @@ var diningHalls = {
         "@id": "way/221401192",
         "building": "university",
         "name": "Carrillo Dining Commons",
-        "ref": 562
+        "ref": 562,
+        "website": "www.housing.ucsb.edu/dining/carrillo-dining-commons",
+        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/eateries/carrillo-slider1.jpg?itok=gF5-UXYN"
       },
       "geometry": {
         "type": "Polygon",
@@ -412,7 +418,9 @@ var diningHalls = {
       "properties": {
         "@id": "way/539936496",
         "building": "university",
-        "name": "Portola Dining Commons"
+        "name": "Portola Dining Commons",
+        "website": "www.housing.ucsb.edu/dining/portola-dining-commons",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrC4Om6A62ZIcwRtoiLp6WUQYok2AKCaQ-YB41oHCVyzh-o6Pn"
       },
       "geometry": {
         "type": "Polygon",
