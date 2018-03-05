@@ -258,14 +258,14 @@ class CampusMap extends Component {
       let newBound
       let bounds
       if(this.state.map.getSize().x < 800){
-        newBound = L.point(size.x, size.y - 150)
+        newBound = L.point(size.x, size.y - 250)
         bounds = L.latLngBounds(this.state.map.containerPointToLatLng([0,75]), this.state.map.containerPointToLatLng(newBound))  
       } else {
         newBound = L.point(size.x, size.y - 50)
         bounds = L.latLngBounds(this.state.map.containerPointToLatLng([400,65]), this.state.map.containerPointToLatLng(newBound))
       }
         
-      // L.rectangle(bounds, {color: 'red', fillColor: 'red', weight: 1}).addTo(this.state.map)
+      L.rectangle(bounds, {color: 'red', fillColor: 'red', weight: 1}).addTo(this.state.map)
       if(!bounds.contains(selectedPolygon.getBounds()))
         this.state.map.panInsideBounds(selectedPolygon.getBounds())
     }
