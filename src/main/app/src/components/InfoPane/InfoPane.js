@@ -46,8 +46,11 @@ class InfoPane extends Component {
   }
   
   getImage() {
-    if(!this.hasImage)
+    if(!this.hasImage){
+      if(this.isMobile)
+        return(<div className='infopane-buffer-mobile'></div>)
       return
+    }
       
     let style = {}
     if(this.isMobile){
@@ -156,8 +159,17 @@ class InfoPane extends Component {
             style={{display: (this.isMobile && this.selectedLocation && !this.state.isVisible) ? 'block' : 'none'}}
             onSwipedUp={this.swipedUp.bind(this)}
           >
-            {this.getName()}
-            {this.getCategory()}
+            <div className='mobile-info-open-button' onClick={this.swipedUp.bind(this)}>
+              <img className='mobile-info-open-button-icon' src='https://png.icons8.com/metro/48/ffffff/chevron-up.png' alt='open-infopane' />
+            </div>
+            <div className='mobile-info-text'>
+              <div className="mobile-info-name" style={{paddingTop: this.isMobile && !this.hasImage ? '5px' : '5px'}}>
+                {this.selectedLocation ? this.selectedLocation.name : ''}
+              </div>
+              <span className='mobile-info-category'>
+                {this.selectedLocation ? this.selectedLocation.category[0].toUpperCase() + this.props.selectedLocation.category.substr(1,this.props.selectedLocation.category.length) : ''}
+              </span>
+            </div>
           </Swipeable>
         </div>
     )
