@@ -166,8 +166,11 @@ class CampusMap extends Component {
       return
 
     let map = this.state.map
+    map.createPane('userLocation');
+    map.getPane('userLocation').style.zIndex = 850;
+    map.getPane('userLocation').style.pointerEvents = 'none';
 
-    map.locate().on('locationfound', e => {
+    map.locate({watch: true}).on('locationfound', e => {
       if(this.userLocation){
         this.userLocation.markers.forEach(marker => marker.remove())
       }
@@ -186,16 +189,17 @@ class CampusMap extends Component {
           weight: 2,
           color: 'white',
           fillColor: 'white',
-          fillOpacity:1
+          fillOpacity:1,
+          pane:'userLocation'
       })
 
       var pulsingCircleIcon = L.divIcon({
         className: 'pulse-icon-circle',
         html: '<div class="pulsing-circle"></div>',
-        iconSize: [12, 12]
+        iconSize: [12, 12],
+        pane:'userLocation'
       })
-
-      var innerUserLocationCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon})
+      var innerUserLocationCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon, pane:'userLocation'})
 
       map.addLayer(uncertaintyCircle)
       map.addLayer(outerUserLocationCircle)
