@@ -139,9 +139,11 @@ class InfoPane extends Component {
             className="infopane"
             style={style}
             onSwipedDown={this.swipedDown.bind(this)}
-            onClick={this.swipedDown.bind(this)}
           >
             <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
+              <div className="infopane-close-button" onClick={this.swipedDown.bind(this)}>
+                <img className="infopane-close-button-image" src='https://www.materialui.co/materialIcons/navigation/arrow_back_white_192x192.png' alt='close-infopane' />
+              </div>
               {this.getImage()}
               <div className = 'popup-header-text' style={{marginTop: (this.hasImage || this.isMobile) ? '0px' : '65px'}}>
                 {!this.hasImage ? this.getName() : null}
@@ -153,7 +155,6 @@ class InfoPane extends Component {
             className='mobile-info'
             style={{display: (this.isMobile && this.selectedLocation && !this.state.isVisible) ? 'block' : 'none'}}
             onSwipedUp={this.swipedUp.bind(this)}
-            onClick={this.swipedUp.bind(this)}
           >
             {this.getName()}
             {this.getCategory()}

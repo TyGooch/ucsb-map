@@ -32,6 +32,24 @@
   -webkit-transform: translate3d(0,0,0);
 }
 
+.infopane-close-button {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  z-index: 1010;
+  /* background-color: rgba(0,0,0,0.25); */
+}
+
+.infopane-close-button :hover {
+  cursor: pointer;
+}
+
+.infopane-close-button-image {
+  height: 35px;
+  width: 35px;
+  opacity: 2;
+}
+
 .popup-header {
   /* background: red; */
   /* display: inline-block; */
@@ -70,6 +88,7 @@
   /* display: none; */
   width: inherit;
   min-height: 100%;
+  opacity: 0.85;
   /* object-fit: contain; */
   /* background: rgba(0,0,0,0.25); */
   /* max-width: 300px;
@@ -83,9 +102,9 @@
   /* height: inherit; */
   text-align: left;
   bottom: 0px;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.3);
   /* height:30px; */
-  width: 100%;
+  /* width: 100%; */
   /* z-index: 100000; */
 }
 
