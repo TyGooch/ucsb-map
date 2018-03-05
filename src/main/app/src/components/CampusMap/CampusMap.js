@@ -57,7 +57,7 @@ class CampusMap extends Component {
     map.createPane('labels');
     map.getPane('labels').style.zIndex = 650;
     map.getPane('labels').style.pointerEvents = 'none';
-    L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjedwhm9p0syb2tmu2wphl5um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', opacity:1}).addTo(map)
+    L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjedwhm9p0syb2tmu2wphl5um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', maxZoom:20}).addTo(map)
 
 
     this.addBikePath(map, bikePath)
