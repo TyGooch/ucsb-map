@@ -265,7 +265,7 @@ class CampusMap extends Component {
         bounds = L.latLngBounds(this.state.map.containerPointToLatLng([400,65]), this.state.map.containerPointToLatLng(newBound))
       }
         
-      L.rectangle(bounds, {color: 'red', fillColor: 'red', weight: 1}).addTo(this.state.map)
+      // L.rectangle(bounds, {color: 'red', fillColor: 'red', weight: 1}).addTo(this.state.map)
       if(!bounds.contains(selectedPolygon.getBounds()))
         this.state.map.panInsideBounds(selectedPolygon.getBounds())
     }
