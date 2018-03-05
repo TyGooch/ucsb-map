@@ -49,13 +49,17 @@ class CampusMap extends Component {
 
     L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
     
-    map.createPane('labels');
-    map.getPane('labels').style.zIndex = 650;
-    map.getPane('labels').style.pointerEvents = 'none';
+    map.createPane('labels')
+    map.getPane('labels').style.zIndex = 750
+    map.getPane('labels').style.pointerEvents = 'none'
     L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjedwhm9p0syb2tmu2wphl5um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', maxZoom:20}).addTo(map)
+    
+    map.getPane('tooltipPane').style.zIndex = 751
+
 
     this.addBikePath(map, bikePath)
     // this.addGrass(map, grass)
+    this.getUserLocation()
     this.setState({ map })
   }
 
@@ -181,7 +185,8 @@ class CampusMap extends Component {
           color: '#5384ec',
           opacity: 0.4,
           fillColor: '#5384ec',
-          fillOpacity: 0.15
+          fillOpacity: 0.15,
+          interactive: false
       })
 
       var outerUserLocationCircle = L.circleMarker([e.latitude, e.longitude], {
@@ -190,16 +195,17 @@ class CampusMap extends Component {
           color: 'white',
           fillColor: 'white',
           fillOpacity:1,
-          pane:'userLocation'
+          pane:'userLocation',
+          interactive: false
       })
 
       var pulsingCircleIcon = L.divIcon({
         className: 'pulse-icon-circle',
         html: '<div class="pulsing-circle"></div>',
         iconSize: [12, 12],
-        pane:'userLocation'
+        interactive: false
       })
-      var innerUserLocationCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon, pane:'userLocation'})
+      var innerUserLocationCircle = L.marker([e.latitude, e.longitude], {icon: pulsingCircleIcon, pane:'userLocation', interactive: false})
 
       map.addLayer(uncertaintyCircle)
       map.addLayer(outerUserLocationCircle)
@@ -281,7 +287,7 @@ class CampusMap extends Component {
     this.removeLabels()
     this.addPolygons()
     // this.addLabels()
-    this.getUserLocation()
+    // this.getUserLocation()
     
     let offset = {}
     if(this.props.selectedLocation){
