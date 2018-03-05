@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import ReactDOM from 'react-dom'
+import Swipeable from 'react-swipeable'
 
 import './infoPane.css'
 
@@ -73,27 +75,68 @@ class InfoPane extends Component {
       )
     }
   }
+  
+  handleScroll(e) {
+    // e.preventDefault()
+    // alert('hello')
+    // this.el.scrollIntoView()
+    if (e.nativeEvent.wheelDelta > 0) {
+     console.log('scroll up');
+     // alert('up')
+     this.el.scrollIntoView()
+    } else {
+      this.top.scrollIntoView()
+     console.log('scroll down');
+    }
+  }
+  
+  swipedUp(e, deltaY, isFlick) {
+    this.el.scrollIntoView()
+  }
+  
+  swipedDown(e, deltaY, isFlick) {
+    this.top.scrollIntoView()
+  }
 
   render() {
+    let margin = `${window.innerHeight - 250}px`
+    // if((this.isMobile) && !(window.iOS && window.isSafari))
+    //   margin = 'calc((100vmax - 250px))'
+    // if((window.iOS && window.isSafari))
+    //   margin = 'calc((100vmax - 250px))'
+      
     let style = {
       display: this.isVisible ? 'block' : 'none',
       width: this.isMobile ? '100%' : '375px',
-      height: this.isMobile ? '250px' : '100vmax',
+      // height: this.isMobile ? '100vmax' : '100vmax',
+      height: window.innerHeight,
       top: this.isMobile ? null : 0,
-      bottom: this.isMobile ? 0 : null,
-      // paddingTop: (this.hasImage && this.isMobile) ? '0px' : '65px',
+      // bottom: this.isMobile ? 0 : null,
+      marginTop: margin,
+      zIndex: this.isMobile ? 1003 : 1001
+      // paddingTop: (this.isMobile && !this.hasImage) ? '65px' : null,
     }
     console.log(this.isVisible);
     
     return (
-      <div className="menu" style={style}>
-        <div className = 'popup-header' style={{top: (this.isMobile || !this.hasImage) ? '0px' : null }}>
-          {this.getImage()}
-          <div className = 'popup-header-text' style={{marginTop: (this.hasImage || this.isMobile) ? '0px' : '65px'}}>
-            {!this.hasImage ? this.getName() : null}
-            {this.getCategory()}
+      <div className="infopane-container" style={
+        {
+          display: this.isVisible ? 'block' : 'none',
+          width: this.isMobile ? '100%' : '375px',
+          // paddingTop: (this.isMobile && !this.hasImage) ? '35px' : null,
+        }
+      }>
+      <div className='top' style={{position: 'absolute', top:'0px', height:'auto'}} ref={el => { this.top = el; }}>top</div>
+        <Swipeable className="menu" style={style} onWheel={e => this.handleScroll(e)} onSwipedUp={this.swipedUp.bind(this)} onSwipedDown={this.swipedDown.bind(this)} >
+          <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
+            {this.getImage()}
+            <div className = 'popup-header-text' style={{marginTop: (this.hasImage || this.isMobile) ? '0px' : '65px'}}>
+              {!this.hasImage ? this.getName() : null}
+              {this.getCategory()}
+            </div>
           </div>
-        </div>
+          <div className='bottom' style={{position: 'absolute', bottom:'0px', height:'auto'}} ref={el => { this.el = el; }}></div>
+        </Swipeable>
       </div>
     )
   }

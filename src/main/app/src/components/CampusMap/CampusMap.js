@@ -34,10 +34,6 @@ class CampusMap extends Component {
   componentDidMount(){
     if(!this.state.map)
       this.initializeMap(this._mapNode)
-      
-    // if(this.state.map)
-      // this.addBikePath(bikePath)
-      
   }
 
   initializeMap(id) {
@@ -54,13 +50,13 @@ class CampusMap extends Component {
     map.getPane('labels').style.pointerEvents = 'none'
     L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjedwhm9p0syb2tmu2wphl5um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', maxZoom:20}).addTo(map)
     
-    map.getPane('tooltipPane').style.zIndex = 751
+    map.getPane('tooltipPane').style.zIndex = 851
 
 
     this.addBikePath(map, bikePath)
     // this.addGrass(map, grass)
-    this.getUserLocation()
     this.setState({ map })
+    // this.getUserLocation()
   }
 
   handlePolygonClick(location, polygon){
@@ -114,14 +110,14 @@ class CampusMap extends Component {
       polygon.bindTooltip(`<p>${location.name}</p>`, {closeButton: false, sticky: true, direction: 'top', className:'hover-label'})
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
-        polygon.setStyle({color: '#ebbd31'})
+        polygon.setStyle({weight: 3, color: '#ebbd31'})
       }
       polygons.push({polygon: polygon, location: location})
     })
 
     this.polygons = polygons
     this.labels = labels
-    this.getUserLocation()
+    // this.getUserLocation()
   }
 
   removePolygons(){
@@ -170,9 +166,9 @@ class CampusMap extends Component {
       return
 
     let map = this.state.map
-    map.createPane('userLocation');
-    map.getPane('userLocation').style.zIndex = 850;
-    map.getPane('userLocation').style.pointerEvents = 'none';
+    map.createPane('userLocation')
+    map.getPane('userLocation').style.zIndex = 850
+    map.getPane('userLocation').style.pointerEvents = 'none'
 
     map.locate({watch: true}).on('locationfound', e => {
       if(this.userLocation){
@@ -256,7 +252,7 @@ class CampusMap extends Component {
   
   pantoSelection(){
     if(this.props.selectedLocation){
-      // debugger;
+      // debugger
       let selectedLocation = this.props.selectedLocation
       let selectedPolygon
       for (let {polygon, location} of this.polygons) {
@@ -287,7 +283,7 @@ class CampusMap extends Component {
     this.removeLabels()
     this.addPolygons()
     // this.addLabels()
-    // this.getUserLocation()
+    this.getUserLocation()
     
     let offset = {}
     if(this.props.selectedLocation){

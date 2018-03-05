@@ -22,12 +22,17 @@ class App extends React.Component {
   render() {
     return(
       <div className='app-container'>
-        <div className='search-container' onClick={this.closeSideBar.bind(this)}>
+        <div className='search-container'>
           <SearchContainer />
         </div>
+        
+        <InfoPaneContainer />
+        <CampusMapContainer />
+        
+        <div className="sidebar-overlay" style={{display: this.props.sideBarOpened ? 'block' : 'none'}} onClick={this.closeSideBar.bind(this)}>
+        </div>
+        
         <SideBarContainer />
-        <InfoPaneContainer onClick={this.closeSideBar.bind(this)}/>
-        <CampusMapContainer onClick={this.closeSideBar.bind(this)}/>
       </div>
     )
   }
