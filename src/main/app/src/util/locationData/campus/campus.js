@@ -1,4 +1,4 @@
-{
+var campus = {
   "type": "FeatureCollection",
   "features": [
     {
@@ -18526,3 +18526,5 @@
     }
   ]
 }
+
+export default campus

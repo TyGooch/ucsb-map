@@ -47,18 +47,12 @@ class CampusMap extends Component {
     let map = L.map(id, config.mapOptions)
     map.on('click', this.handleMapClick)
 
-    map.on('zoomend', () => {
-      // this.removeLabels()
-      // this.addLabels()
-    })
-
     L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
     
     map.createPane('labels');
     map.getPane('labels').style.zIndex = 650;
     map.getPane('labels').style.pointerEvents = 'none';
     L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjedwhm9p0syb2tmu2wphl5um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', maxZoom:20}).addTo(map)
-
 
     this.addBikePath(map, bikePath)
     // this.addGrass(map, grass)

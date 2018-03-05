@@ -24,6 +24,8 @@ const locationsReducer = (state = defaultState, action) => {
           newLocation.category = location.category
           newLocation.polygons = JSON.parse(location.polygons)
           newLocation.color = location.color
+          newLocation.website = location.website ? location.website : null
+          newLocation.image = location.image ? location.image : null
 
           newLocations.push(newLocation)
         })
