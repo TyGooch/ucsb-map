@@ -11,7 +11,7 @@ var campus = {
         "ref": 520,
         "type": "multipolygon",
         "website": "http://msi.ucsb.edu/facilities-services/marine-science-research-building",
-        "image": "http://msi.ucsb.edu/sites/msi.ucsb.edu/files/styles/main_image/public/images/MS-building-at-night.jpg?itok=l2YkL4OI"
+        "image": "https://msi.ucsb.edu/sites/msi.ucsb.edu/files/styles/main_image/public/images/marine_science_building.jpg?itok=5154F3df"
       },
       "geometry": {
         "type": "Polygon",
@@ -293,7 +293,7 @@ var campus = {
         "ref": 521,
         "type": "multipolygon",
         "website": "https://www.bren.ucsb.edu/about/bren_hall.html",
-        "image": "http://www.bren.ucsb.edu/facilities/images/BrenHall-fromNorth-780-Web_000.jpg"
+        "image": "https://ehc.english.ucsb.edu/wp-content/uploads/2014/10/Bren_Hall_016-4-710x270.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -1107,7 +1107,7 @@ var campus = {
         "ref": 503,
         "type": "multipolygon",
         "website": "https://engineering.ucsb.edu/",
-        "image": "http://www.ucsbgauchos.com/sports/m-swimonly/2014-15/Engineering_Sciences__ad_hoc.jpg"
+        "image": "https://engineering.ucsb.edu/sites/engineering.ucsb.edu/files/styles/top_banner_image/public/images/top/E2-walkway.jpg?itok=s05zxyMz&c=99be0d153682b0140ef13aac7600d139"
       },
       "geometry": {
         "type": "MultiPolygon",
@@ -1259,7 +1259,7 @@ var campus = {
         "ref": 556,
         "type": "multipolygon",
         "website": "",
-        "image": "http://www.u-see.org/UCSB/elements/graphics/HaroldFrankHall_T.Khoury_750w.jpg"
+        "image": "https://i0.wp.com/dailynexus.com/wp-content/uploads/2016/08/Jenny-Luo-ONLINE-1.jpg?resize=650%2C433"
       },
       "geometry": {
         "type": "Polygon",
@@ -1711,7 +1711,7 @@ var campus = {
         "ref": 534,
         "type": "multipolygon",
         "website": "",
-        "image": "http://www.arthistory.ucsb.edu/HAAnewsletter/Fall2013/arts3.jpg"
+        "image": "https://static1.squarespace.com/static/56e06c7162cd9489f564c54d/56e06ee47da24f3acea5c344/56e076bf8a65e26059134f4d/1457642826944/Breezeway_Sept_16_2015_001.jpg?format=750w"
       },
       "geometry": {
         "type": "Polygon",
@@ -1851,7 +1851,7 @@ var campus = {
         "ref": 531,
         "type": "multipolygon",
         "website": "www.music.ucsb.edu",
-        "image": "http://www.music.ucsb.edu/sites/secure.lsit.ucsb.edu.musi.d7-2/files/sitefiles/about/MusicBldgPhoto.jpg"
+        "image": "https://www.library.ucsb.edu/sites/default/files/imagecache/large_align_right/images/arts-library/Picture%20242resized.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2178,7 +2178,7 @@ var campus = {
         "leisure": "sports_centre",
         "name": "UCSB Pavillion Gym",
         "website": "recreation.sa.ucsb.edu/facilities",
-        "image": "http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsb/photos/UCSB_27_rf.jpg"
+        "image": "https://s3-media1.fl.yelpcdn.com/bphoto/Rsh9KPSQ1Z78wxIb8jhmvw/o.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2360,7 +2360,7 @@ var campus = {
         "building": "yes",
         "name": "Embarcadero Hall",
         "website": "embarcadero.classroom.id.ucsb.edu/",
-        "image": "http://mw2.google.com/mw-panoramio/photos/medium/50536309.jpg"
+        "image": "https://odysseyonline-img.rbl.ms/simage/https%3A%2F%2Faz616578.vo.msecnd.net%2Ffiles%2F2016%2F06%2F30%2F636029090863031877-1670277130_49910683.jpg/2000%2C2000/Jw0BNQwKiyeDeSuH/img.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2422,7 +2422,7 @@ var campus = {
         "name": "Isla Vista Theater",
         "source": "USGS Geonames",
         "website": "ivtheaters.classroom.id.ucsb.edu/",
-        "image": "http://photos.cinematreasures.org/production/photos/89499/1386431292/large.jpg?1386431292"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Isla_Vista_Theater.jpg/800px-Isla_Vista_Theater.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2677,7 +2677,7 @@ var campus = {
         "strbl_id": 508,
         "util_fundi": "recharge",
         "website": "https://www.usgbc.org/projects/ucsb-ocean-science-education-building",
-        "image": "http://www.ehdd.com/sites/ehdd2/images/7911/UCSB%20OSEB%20main%20building%20940x490.jpg"
+        "image": "https://megwestdesign.weebly.com/uploads/2/5/8/8/25882617/8220025_orig.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3160,7 +3160,7 @@ var campus = {
         "building": "university",
         "name": "Life Sciences",
         "ref": "235",
-        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/archive/2284-1.jpg?itok=MpBsGXXR",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Life_Sciences_Building%2C_UCSB.jpg",
         "website": ""
       },
       "geometry": {
@@ -3220,7 +3220,7 @@ var campus = {
         "name": "Life Sciences",
         "ref": 235,
         "website": "",
-        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/archive/2284-1.jpg?itok=MpBsGXXR"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Life_Sciences_Building%2C_UCSB.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3953,7 +3953,7 @@ var campus = {
         "name": "Marine Biotechnology Lab",
         "ref": 555,
         "website": "http://msi.ucsb.edu/marine-biotechnology-center",
-        "image": "http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsb/photos/UCSB_31_rf.jpg"
+        "image": "https://image.ibb.co/hrh0xn/UCSB_32_rf.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -4323,7 +4323,7 @@ var campus = {
         "name": "Student Resource Building",
         "ref": "221",
         "website": "www.sa.ucsb.edu/student-resource-building/home",
-        "image": "http://food.ucsb.edu/images/default-source/default-album/srb-building8867cff45cd0.jpg?sfvrsn=7a564969_0"
+        "image": "https://food.ucsb.edu/images/default-source/default-album/srb-building8867cff45cd0.jpg?sfvrsn=7a564969_0"
       },
       "geometry": {
         "type": "Polygon",
@@ -4829,7 +4829,7 @@ var campus = {
         "name": "Humanities and Social Sciences",
         "ref": "515",
         "website": "",
-        "image": "http://www.history.ucsb.edu/wp-content/uploads/Humanities_and_Social_Sciences-UCSB.jpg"
+        "image": "https://ssl.c.photoshelter.com/img-get/I0000NwFi6McKUto/s/750/750/01-01-03-TJM.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -5933,7 +5933,7 @@ var campus = {
         "name": "Social Sciences and Media Studies",
         "ref": "276",
         "website": "http://www.socialsciences.ucsb.edu/giving/ssms-building",
-        "image": "http://www.socialsciences.ucsb.edu/sites/secure.lsit.ucsb.edu.ltsc.d7_ss/files/sitefiles/giving/photo_ssms_tower.JPG"
+        "image": "https://preview.ibb.co/fKkLxn/SSMS.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -6104,7 +6104,7 @@ var campus = {
         "name": "Koegel Autism Center",
         "ref": "275",
         "website": "https://education.ucsb.edu/autism",
-        "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
+        "image": "https://preview.ibb.co/kD9kV7/Screen_Shot_2018_03_05_at_5_04_43_PM.png"
       },
       "geometry": {
         "type": "Polygon",
@@ -6216,7 +6216,7 @@ var campus = {
         "name": "Pollock Theater",
         "ref": "277",
         "website": "https://www.carseywolf.ucsb.edu/pollock/",
-        "image": "http://www.carseywolf.ucsb.edu/wp-content/uploads/2018/01/Pollock-Theater.jpg"
+        "image": "https://www.carseywolf.ucsb.edu/wp-content/uploads/2017/11/pollock-with-two-WEB.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -6571,7 +6571,7 @@ var campus = {
         "name": "Social Sciences and Media Studies",
         "ref": "276",
         "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
-        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_vertical/public/images/2015/imagetn.aspx__336.jpg?itok=o4vkzIVE"
+        "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -6826,7 +6826,7 @@ var campus = {
         "name": "Social Sciences and Media Studies",
         "ref": "276",
         "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
-        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_vertical/public/images/2015/imagetn.aspx__336.jpg?itok=o4vkzIVE"
+        "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -7142,7 +7142,7 @@ var campus = {
         "name": "Intercollegiate Athletics",
         "ref": "243",
         "website": "http://ucsb.prestosports.com/information/dare_to_be_great/capital_projects/ica",
-        "image": "http://www.ucsbgauchos.com/information/dare_to_be_great/photos/icabldg.jpg?max_height=201&max_width=300"
+        "image": "https://preview.ibb.co/gFVyiS/ICA_Building_ad_hoc.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -7370,7 +7370,7 @@ var campus = {
         "name": "Recreation Center",
         "ref": "516",
         "website": "recreation.sa.ucsb.edu/",
-        "image": "http://www.conferences.ucsb.edu/files/images/basic_pages/reccen1.jpg"
+        "image": "https://fthmb.tqn.com/TToFe7BEGBkaMzYB7zQsd8BjfGI=/1000x667/filters:no_upscale()/Recreation-Center-UCSB-56a186423df78cf7726bb96e.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -8762,7 +8762,7 @@ var campus = {
         "name": "Recreation Center",
         "ref": "516",
         "website": "recreation.sa.ucsb.edu/",
-        "image": "http://www.conferences.ucsb.edu/files/images/basic_pages/reccen1.jpg"
+        "image": "https://fthmb.tqn.com/TToFe7BEGBkaMzYB7zQsd8BjfGI=/1000x667/filters:no_upscale()/Recreation-Center-UCSB-56a186423df78cf7726bb96e.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -8906,7 +8906,7 @@ var campus = {
         "name": "MAC",
         "ref": "511",
         "website": "recreation.sa.ucsb.edu/facilities",
-        "image": "http://www.ia.ucsb.edu/93106_archived/2005/June15/Images/5_MAC.jpg"
+        "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2017/12/IMG_7869-696x464.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9057,7 +9057,7 @@ var campus = {
         "leisure": "sports_centre",
         "ref": "511",
         "website": "recreation.sa.ucsb.edu/facilities",
-        "image": "http://www.ia.ucsb.edu/93106_archived/2005/June15/Images/5_MAC.jpg"
+        "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2017/12/IMG_7869-696x464.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9251,7 +9251,7 @@ var campus = {
         "name": "Mosher Alumni House",
         "ref": "517",
         "website": "www.ucsbalum.com/programs/mosher/",
-        "image": "http://www.ucsbalum.com/programs/mosher/eventspaces/images/header.jpg"
+        "image": "https://ucsb.imodules.com/s/1016/images/editor/mosher__cropped.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9287,7 +9287,7 @@ var campus = {
         "name": "Mosher Alumni House",
         "ref": "517",
         "website": "www.ucsbalum.com/programs/mosher/",
-        "image": "http://www.ucsbalum.com/programs/mosher/eventspaces/images/header.jpg"
+        "image": "https://ucsb.imodules.com/s/1016/images/editor/mosher__cropped.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -9981,7 +9981,7 @@ var campus = {
         "name": "Ellison Hall",
         "ref": "563",
         "website": "https://geog.ucsb.edu/the-geography-of-ellison-hall/",
-        "image": "http://www.lib.berkeley.edu/uchistory/archives_exhibits/campus_planning/atkinson_archive/ucsb/photos/UCSB_15_rf.jpg"
+        "image": "https://preview.ibb.co/gFVyiS/ICA_Building_ad_hoc.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -10327,7 +10327,7 @@ var campus = {
         "name": "Physical Sciences North",
         "ref": "657",
         "website": "",
-        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/2015/Physical%20Sciences%20North.jpg?itok=9lGcaQhJ"
+        "image": "https://image.ibb.co/cOCaxn/Physical_Sciences_North.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -10530,7 +10530,7 @@ var campus = {
         "name": "Kohn Hall",
         "ref": "567",
         "website": "",
-        "image": "http://www.news.ucsb.edu/sites/www.news.ucsb.edu/files/styles/article_horizontal/public/images/archive/2527-1.jpg?itok=2LDQNjNa"
+        "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2014/11/01__-696x464.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11196,7 +11196,6 @@ var campus = {
         "ref": "526",
         "website": "http://www.geol.ucsb.edu/",
         "wheelchair": "yes",
-        "image": "http://ucsbalum.com/Coastlines/2017/spring/images/buildings/webb.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11291,7 +11290,7 @@ var campus = {
         "name": "Noble Hall",
         "ref": "544",
         "website": "",
-        "image": "http://ucsbfm.info/entrances/enter-bldg/Noble/IMG_6888.jpg"
+        "image": "https://image.ibb.co/dj3yHn/IMG_6888.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11410,7 +11409,7 @@ var campus = {
         "name": "Materials Research Laboratory",
         "ref": "615",
         "website": "https://www.mrl.ucsb.edu/",
-        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/mrl.jpg"
+        "image": "https://image.ibb.co/ktSKOS/MRLext.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11505,7 +11504,7 @@ var campus = {
         "name": "Buchanan Hall",
         "ref": "573",
         "website": "buchanan.classroom.id.ucsb.edu/",
-        "image": "http://buchanan.classroom.id.ucsb.edu/sites/all/themes/id2010/id-assets/images/department_splash_images/buchanan.jpg"
+        // "image": "http://buchanan.classroom.id.ucsb.edu/sites/all/themes/id2010/id-assets/images/department_splash_images/buchanan.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11624,7 +11623,7 @@ var campus = {
         "ref": "937",
         "name": "Broida Hall",
         "website": "www.physics.ucsb.edu/",
-        "image": "http://web.physics.ucsb.edu/~Women/images/broida.jpg"
+        "image": "https://web.physics.ucsb.edu/~Women/images/broida.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11718,7 +11717,7 @@ var campus = {
         "name": "Broida Hall",
         "ref": "572",
         "website": "",
-        "image": "http://web.physics.ucsb.edu/~Women/images/broida.jpg"
+        "image": "https://web.physics.ucsb.edu/~Women/images/broida.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -11967,7 +11966,7 @@ var campus = {
         "name": "Engineering Science",
         "ref": "225",
         "website": "https://engineering.ucsb.edu/undergraduate/majors-programs/engineering-sciences",
-        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/esb2.jpg"
+        "image": "https://industry.ucsb.edu/sites/industry.ucsb.edu/files/styles/side-by-side/public/images/faciltiies_0.jpg?itok=hXyELeqw"
       },
       "geometry": {
         "type": "Polygon",
@@ -12014,7 +12013,7 @@ var campus = {
         "name": "Engineering Science",
         "ref": "225",
         "website": "https://engineering.ucsb.edu/undergraduate/majors-programs/engineering-sciences",
-        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/esb2.jpg"
+        "image": "https://industry.ucsb.edu/sites/industry.ucsb.edu/files/styles/side-by-side/public/images/faciltiies_0.jpg?itok=hXyELeqw"
       },
       "geometry": {
         "type": "Polygon",
@@ -12313,7 +12312,7 @@ var campus = {
         "name": "Coral Tree Cafe",
         "ref": "532",
         "website": "www.ucen.ucsb.edu/dining/dining-around-campus",
-        "image": "http://mw2.google.com/mw-panoramio/photos/medium/49914512.jpg"
+        "image": "https://c1.staticflickr.com/9/8149/7283839948_b871055564_b.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -12408,7 +12407,7 @@ var campus = {
         "name": "Student Affairs Administrative Services Building (SAASB)",
         "ref": "568",
         "website": "www.sa.ucsb.edu/",
-        "image": "http://greenbuildings.berkeley.edu/bestpractices/2017/img/ucsb-saasb-lighting-05.jpg"
+        "image": "https://www.bfs.ucsb.edu/sites/www.bfs.ucsb.edu/files/slideshow/saasb-exterior_0.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -12903,7 +12902,7 @@ var campus = {
         "name": "Cheadle Hall",
         "ref": "552",
         "website": "",
-        "image": "http://duels.ucsb.edu/sites/secure.lsit.ucsb.edu.ltsc.d7_uged/files/styles/slide_view_advising/public/slideshow/slide/K8vdLImage-CheadleHall-2.jpg?itok=vo3sSaVW"
+        "image": "https://independent.media.clients.ellingtoncms.com/img/croppedphotos/2015/12/17/ucsb_cheadle_hall_t958.jpg?fef15e12b784e9bbb22bf3f2924819218cda3d1a"
       },
       "geometry": {
         "type": "Polygon",
@@ -13617,7 +13616,7 @@ var campus = {
         "ref": "876",
         "type": "multipolygon",
         "website": "www.conferences.ucsb.edu/loma-pelona-center",
-        "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/basic/lomapelona-slider1.jpg?itok=PSrY2ZKS"
+        "image": "https://c1.staticflickr.com/2/1291/4669459307_5eaf2cf94a_b.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -13689,7 +13688,7 @@ var campus = {
         "ref": "876",
         "type": "multipolygon",
         "website": "https://events.ucsb.edu/venue/loma-pelona-center/",
-        "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/basic/lomapelona-slider1.jpg?itok=PSrY2ZKS"
+        "image": "https://c1.staticflickr.com/2/1291/4669459307_5eaf2cf94a_b.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -13737,7 +13736,7 @@ var campus = {
         "ref": "876",
         "type": "multipolygon",
         "website": "https://events.ucsb.edu/venue/loma-pelona-center/",
-        "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/basic/lomapelona-slider1.jpg?itok=PSrY2ZKS"
+        "image": "https://c1.staticflickr.com/2/1291/4669459307_5eaf2cf94a_b.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -14721,7 +14720,7 @@ var campus = {
         "tourism": "museum",
         "website": "http://www.museum.ucsb.edu/",
         "wikipedia": "en:Art, Design & Architecture Museum",
-        "image": "http://www.pacificstandardtime.org/past/artinla/images/content/institutions/artwork/65_ucsb-site.jpg"
+        "image": "https://preview.ibb.co/mq8JiS/Undergrad_Exhibit_2015_016.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -16836,7 +16835,7 @@ var campus = {
         "name": "Physical Sciences South",
         "ref": "672",
         "website": "",
-        "image": "http://www.physics.ucsb.edu/sites/secure.lsit.ucsb.edu.phys.d7/files/sitefiles/resources/machineshops/MShop-frontside_300.png"
+        "image": "https://image.ibb.co/iKvg3S/MShop_frontside_300.png"
       },
       "geometry": {
         "type": "Polygon",
@@ -18092,7 +18091,7 @@ var campus = {
         "name": "BioEngineering",
         "ref": "512",
         "website": "bioengineering.ucsb.edu/facilities",
-        "image": "http://bioengineering.ucsb.edu/sites/bioengineering.ucsb.edu/files/blocks/new_bioengr_building.jpg"
+        "image": "https://preview.ibb.co/nvRtHn/Bioengineering_001a.jpg"
       },
       "geometry": {
         "type": "Polygon",
