@@ -8,7 +8,6 @@ import turf from 'turf'
 import Spinner from 'react-spinkit'
 
 import bikePath from '../../util/locationData/bikePath/bikePath.js'
-import grass from '../../util/locationData/grass/grass.js'
 import './campusMap.css'
 
 
@@ -54,9 +53,7 @@ class CampusMap extends Component {
 
 
     this.addBikePath(map, bikePath)
-    // this.addGrass(map, grass)
     this.setState({ map })
-    // this.getUserLocation()
   }
 
   handlePolygonClick(location, polygon){
@@ -89,14 +86,6 @@ class CampusMap extends Component {
     })
   }
   
-  addGrass(map, grass){
-    grass.features.forEach(grassPatch => {
-      // L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
-      L.geoJSON(grassPatch, {style: {weight: 0, fillColor: '#C9EBB4', fillOpacity: 0.7}, interactive:false})
-      .addTo(map);
-    })
-  }
-
   addPolygons(){
     let polygons = []
     let labels = []

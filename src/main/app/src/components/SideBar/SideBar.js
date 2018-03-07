@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import './sideBar.css'
 
 class SideBar extends Component {
-  constructor() {
-    super()
-  }
+  // constructor() {
+  //   super()
+  // }
   
   render() {
     return (

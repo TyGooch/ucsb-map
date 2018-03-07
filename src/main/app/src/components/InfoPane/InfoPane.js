@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import Swipeable from 'react-swipeable'
 
 import './infoPane.css'
@@ -12,12 +11,10 @@ class InfoPane extends Component {
       isVisible: null
     }
     
-    let selectedLocation = null
-    let isMobile = null
-    let isVisible = false
-    let hasImage = false
-    
-    this.isVisible = isVisible    
+    this.selectedLocation = null
+    this.isMobile = null
+    this.isVisible = null
+    this.hasImage = null    
   }
   
   componentDidMount() {
@@ -65,7 +62,7 @@ class InfoPane extends Component {
       
     return(
       <div className="popup-header-image-container" style={style}>
-        <img className="popup-header-image" src={this.selectedLocation ? this.selectedLocation.image : null} alt='location-image'/>
+        <img className="popup-header-image" src={this.selectedLocation ? this.selectedLocation.image : null} alt='location'/>
         <div className="popup-header-image-name">
           {this.getName()}
         </div>
@@ -121,7 +118,7 @@ class InfoPane extends Component {
   }
   
   render() {
-    let margin = `${window.innerHeight - 250}px`
+    // let margin = `${window.innerHeight - 100}px`
     // if((this.isMobile) && !(window.iOS && window.isSafari))
     //   margin = 'calc((100vmax - 250px))'
     // if((window.iOS && window.isSafari))
