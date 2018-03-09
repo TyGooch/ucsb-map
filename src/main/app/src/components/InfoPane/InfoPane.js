@@ -138,7 +138,8 @@ class InfoPane extends Component {
           <Swipeable
             className="infopane"
             style={style}
-            onSwipedDown={this.swipedDown.bind(this)}
+            // onSwipedDown={this.swipedDown.bind(this)}
+            onSwipedLeft={this.swipedDown.bind(this)}
           >
             <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
               <div className="infopane-close-button" onClick={this.swipedDown.bind(this)} style={{display: this.isMobile ? 'block' : 'none'}}>
@@ -156,8 +157,10 @@ class InfoPane extends Component {
             style={{display: (this.isMobile && this.selectedLocation && !this.state.isVisible) ? 'block' : 'none'}}
             onSwipedUp={this.swipedUp.bind(this)}
           >
-            <div className='mobile-info-open-button' onClick={this.swipedUp.bind(this)}>
-              <img className='mobile-info-open-button-icon' src='https://png.icons8.com/metro/48/ffffff/chevron-up.png' alt='open-infopane' />
+            <div className='mobile-info-open-button-container'>
+              <div className='mobile-info-open-button' onClick={this.swipedUp.bind(this)}>
+                <img className='mobile-info-open-button-icon' src='https://png.icons8.com/metro/48/ffffff/chevron-up.png' alt='open-infopane' />
+              </div>
             </div>
             <div className='mobile-info-text'>
               <div className="mobile-info-name" style={{paddingTop: this.isMobile && !this.hasImage ? '5px' : '5px'}}>
