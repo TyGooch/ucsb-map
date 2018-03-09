@@ -80,7 +80,7 @@ var diningHalls = {
         "amenity": "food_court",
         "building": "yes",
         "name": "De La Guerra Dining Commons",
-        "shortName": "",
+        "shortName": "DLG",
         "outdoor_seating": "yes",
         "ref": 549,
         "wheelchair": "yes",

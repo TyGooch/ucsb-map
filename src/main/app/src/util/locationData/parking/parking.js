@@ -12,7 +12,7 @@ var parking = {
         "capacity": "69",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "24 Parking",,
+        "name": "24 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -80,7 +80,7 @@ var parking = {
         "capacity": "205",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "27 Parking",,
+        "name": "27 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -149,7 +149,7 @@ var parking = {
         "capacity": "907",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "Mesa/ 18 Parking",,
+        "name": "Mesa/ 18 Parking",
         "shortName": "",
         "parking": "multi-storey"
       },
@@ -217,7 +217,7 @@ var parking = {
         "capacity": "139",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "14 Parking",,
+        "name": "14 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -261,7 +261,7 @@ var parking = {
         "capacity": "525",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "16 Parking",,
+        "name": "16 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -341,7 +341,7 @@ var parking = {
         "capacity": "139",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "29 Parking",,
+        "name": "29 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -421,7 +421,7 @@ var parking = {
         "capacity": "78",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "9 Parking",,
+        "name": "9 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -469,7 +469,7 @@ var parking = {
         "capacity": "102",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "2 Parking",,
+        "name": "2 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -529,7 +529,7 @@ var parking = {
         "capacity": "153",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "3 Parking",,
+        "name": "3 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -645,7 +645,7 @@ var parking = {
         "capacity": "19",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "8 Parking",,
+        "name": "8 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -689,7 +689,7 @@ var parking = {
         "capacity": "21",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "4 Parking",,
+        "name": "4 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -733,7 +733,7 @@ var parking = {
         "capacity": "82",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "5 Parking",,
+        "name": "5 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -893,7 +893,7 @@ var parking = {
         "capacity": "128",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "6 Parking",,
+        "name": "6 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -1061,7 +1061,7 @@ var parking = {
         "capacity": "95",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "1 Parking",,
+        "name": "1 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -1238,7 +1238,7 @@ var parking = {
         "capacity": "606",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "10 Parking",,
+        "name": "10 Parking",
         "shortName": "",
         "parking": "multi-storey"
       },
@@ -1298,7 +1298,7 @@ var parking = {
         "capacity": "93",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "11 Parking",,
+        "name": "11 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -1382,7 +1382,7 @@ var parking = {
         "capacity": "202",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "12 Parking",,
+        "name": "12 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -1778,7 +1778,7 @@ var parking = {
         "capacity": "49",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "15 Parking",,
+        "name": "15 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -1829,7 +1829,7 @@ var parking = {
         "amenity": "parking",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "30 Parking",,
+        "name": "30 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -1932,7 +1932,7 @@ var parking = {
         "amenity": "parking",
         "capacity": "77",
         "fee": "yes",
-        "name": "25 Parking",,
+        "name": "25 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -1990,7 +1990,7 @@ var parking = {
         "capacity": 1128,
         "disabled_spaces": "yes",
         "fee": "yes",
-        "name": "Lot 22",,
+        "name": "Lot 22",
         "shortName": "",
         "parking": "multi-storey"
       },
@@ -2062,7 +2062,7 @@ var parking = {
         "amenity": "parking",
         "disabled_spaces": "yes",
         "fee": "yes",
-        "name": "Lot 22",,
+        "name": "Lot 22",
         "shortName": "",
         "parking": "surface"
       },
@@ -2171,7 +2171,7 @@ var parking = {
         "lotColor": "yellow",
         "@id": "way/466470273",
         "amenity": "parking",
-        "name": "23 Parking",,
+        "name": "23 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -2223,7 +2223,7 @@ var parking = {
         "capacity": "490",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "38 Parking",,
+        "name": "38 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -2300,7 +2300,7 @@ var parking = {
         "building": "yes",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "Lot 50",,
+        "name": "Lot 50",
         "shortName": "",
         "operator": "UCSB",
         "park_ride": "no",
@@ -2349,7 +2349,7 @@ var parking = {
         "@id": "way/49427646",
         "amenity": "parking",
         "capacity": "35",
-        "name": "37 Parking",,
+        "name": "37 Parking",
         "shortName": "",
         "parking": "surface"
       },
@@ -2452,7 +2452,7 @@ var parking = {
         "access": "yes",
         "amenity": "parking",
         "maxstay": "20 min free;pay-to-park",
-        "name": "Lot 51",,
+        "name": "Lot 51",
         "shortName": "",
         "operator": "UCSB",
         "parking": "surface",
@@ -2497,7 +2497,7 @@ var parking = {
         "access": "permissive",
         "amenity": "parking",
         "maxstay": "20 min free;pay-to-park",
-        "name": "Lot 52",,
+        "name": "Lot 52",
         "shortName": "",
         "operator": "UCSB",
         "parking": "surface",
@@ -2598,7 +2598,7 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "relation/7967725",
         "amenity": "parking",
-        "name": "Lot 65",,
+        "name": "Lot 65",
         "shortName": "",
         "type": "multipolygon"
       },
@@ -3394,7 +3394,7 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/373834443",
         "amenity": "parking",
-        "name": "Lot 63",,
+        "name": "Lot 63",
         "shortName": "",
         "parking": "surface"
       },
@@ -3464,7 +3464,7 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/373834444",
         "amenity": "parking",
-        "name": "Lot 62",,
+        "name": "Lot 62",
         "shortName": "",
         "parking": "surface"
       },
@@ -3510,7 +3510,7 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/373834445",
         "amenity": "parking",
-        "name": "Lot 64",,
+        "name": "Lot 64",
         "shortName": "",
         "parking": "surface"
       },
@@ -4854,7 +4854,7 @@ var parking = {
         "amenity": "parking",
         "capacity": 50,
         "fee": "yes",
-        "name": "Lot 31",,
+        "name": "Lot 31",
         "shortName": "",
         "parking": "surface"
       },
@@ -5218,7 +5218,7 @@ var parking = {
         "category": "Parking",
         "details": "Santa Ynez Parking",
         "lotColor": "orange",
-        "name": "Lot 57",,
+        "name": "Lot 57",
         "shortName": "",
         "type": "multipolygon",
       },
@@ -5603,7 +5603,7 @@ var parking = {
         "@id": "way/525405500",
         "amenity": "parking",
         "parking": "surface",
-        "name": "Lot 43",,
+        "name": "Lot 43",
         "shortName": "",
         "details": "Westgate Apartments Parking",
         "lotColor": "Orange",

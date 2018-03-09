@@ -3218,7 +3218,7 @@ var dorms = {
         "building": "dormitory",
         "loc_name": "Francisco Torres",
         "name": "Santa Catalina Hall",
-        "shortName": "",
+        "shortName": "SAN CAT",
         "old_name": "Francisco Torres",
         "website": "www.housing.ucsb.edu/residences/santa-catalina",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/scat-gallery5.jpg"

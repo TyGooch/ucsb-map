@@ -9,8 +9,17 @@ import './search.css'
 
 
 class Search extends Component {
-  getSuggestionValue(suggestion){
+  getSuggestionValue(suggestion) {
     return suggestion.name
+  }
+  
+  getSuggestionShortName(suggestion) {
+    if(!suggestion.shortName)
+      return
+    if(suggestion.category === 'Residence Hall' || suggestion.shortName === 'LIB' || suggestion.name.includes("Health") || suggestion.shortName.length > 5)
+      return
+    if(!suggestion.name.includes('(') && suggestion.name.toLowerCase().slice(0, 4).replace(' ','') !== suggestion.shortName.toLowerCase().slice(0,4).replace(' ', ''))
+      return(` (${suggestion.shortName})`)
   }
 
   renderSuggestion(suggestion) {
@@ -18,6 +27,7 @@ class Search extends Component {
       <div className="suggestion-item">
         <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" alt="Magnifying Glass" />
         {suggestion.name}
+        {this.getSuggestionShortName(suggestion)}
       </div>
     )
   }
@@ -25,13 +35,43 @@ class Search extends Component {
   getSuggestions(value) {
     let inputValue = value.trim().toLowerCase()
     let inputLength = inputValue.length
-
+    
+    let shortNameSuggestions = inputLength === 0 ? [] : this.props.locations.filter(location => {
+      if(!location.shortName)
+        return false
+      return location.shortName.replace('-','').toLowerCase().slice(0, inputLength) === inputValue.replace(' ','')
+    })
+    
+    shortNameSuggestions = shortNameSuggestions.sort( (a, b) => {
+      a = a.shortName
+      b = b.shortName
+      
+      if (a < b) 
+        return -1
+      else if (a > b) 
+        return 1
+      return 0
+    })
+    
+    // shortNameSuggestions.forEach((suggestion, idx, arr) => {
+    //   if(suggestion.category === 'Residence Hall' || suggestion.shortName === 'LIB' || suggestion.name.includes("Health") || suggestion.shortName.length > 5)
+    //     return
+    //   if(!suggestion.name.includes('(') && suggestion.name.toLowerCase().slice(0, 4).replace(' ','') !== suggestion.shortName.toLowerCase().slice(0,4).replace(' ', '')){
+    //     arr[idx] = Object.assign({}, suggestion)
+    //     arr[idx].name = arr[idx].name + ` (${arr[idx].shortName})`
+    //   }
+    // })
+    
+    console.log(shortNameSuggestions);
+    
     let primarySuggestions = inputLength === 0 ? [] : this.props.locations.filter(location => {
       if(location.name.toLowerCase().replace('(','').replace(')','').split(' ')[0] === 'the')
         return location.name.toLowerCase().split(' ')[1].slice(0, inputLength) === inputValue
 
       return location.name.toLowerCase().slice(0, inputLength) === inputValue
     })
+    
+    // primarySuggestions = shortNameSuggestions.concat(primarySuggestions)
 
     let secondarySuggestions = inputLength === 0 ? [] : this.props.locations.filter(location =>
       location.name.toLowerCase().replace('(','').replace(')','').split(' ').slice(1).some(name => name.slice(0, inputLength) === inputValue)
@@ -43,9 +83,20 @@ class Search extends Component {
       })
     }
 
-    let noDuplicates = new Set(primarySuggestions.concat(secondarySuggestions))
+    let noDuplicates = new Set(shortNameSuggestions.concat(primarySuggestions.concat(secondarySuggestions)))
+    let suggestionsArray = Array.from(noDuplicates).slice(0,5)
 
-    return Array.from(noDuplicates).slice(0,5)
+    return suggestionsArray
+    // return suggestionsArray.sort( (a, b) => {
+    //   a = a.name.slice(inputLength, a.length)
+    //   b = b.name.slice(inputLength, b.length)
+    // 
+    //   if (a < b) 
+    //     return -1
+    //   else if (a > b) 
+    //     return 1
+    //   return 0
+    // })
   }
 
   constructor() {
@@ -154,7 +205,7 @@ class Search extends Component {
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
         onSuggestionSelected={this.onSuggestionSelected}
         getSuggestionValue={this.getSuggestionValue}
-        renderSuggestion={this.renderSuggestion}
+        renderSuggestion={this.renderSuggestion.bind(this)}
         renderInputComponent={this.renderInputComponent}
         inputProps={inputProps}
       />

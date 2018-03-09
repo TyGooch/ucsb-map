@@ -2257,7 +2257,7 @@ var campus =
         "details": "Student Resources",
         "@id": "way/38097306",
         "building": "yes",
-        "name": "El Centro"
+        "name": "El Centro",
         "shortName": "",
       },
       "geometry": {
@@ -6052,7 +6052,7 @@ var campus =
         "@id": "way/221239594",
         "building": "university",
         "name": "Social Sciences and Media Studies",
-        "shortName": "",
+        "shortName": "SSMS",
         "ref": "276",
         "website": "http://www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://preview.ibb.co/fKkLxn/SSMS.jpg"
@@ -6699,7 +6699,7 @@ var campus =
         "@id": "way/221239599",
         "building": "university",
         "name": "Social Sciences and Media Studies",
-        "shortName": "",
+        "shortName": "SSMS",
         "ref": "276",
         "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
@@ -6957,7 +6957,7 @@ var campus =
         "@id": "way/221239600",
         "building": "university",
         "name": "Social Sciences and Media Studies",
-        "shortName": "",
+        "shortName": "SSMS",
         "ref": "276",
         "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
@@ -11592,7 +11592,7 @@ var campus =
         "@id": "way/221242398",
         "building": "university",
         "name": "Materials Research Laboratory",
-        "shortName": "",
+        "shortName": "MRL",
         "ref": "615",
         "website": "https://www.mrl.ucsb.edu/",
         "image": "https://image.ibb.co/ktSKOS/MRLext.jpg"
