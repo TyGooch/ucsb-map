@@ -62,6 +62,7 @@ body {
   border: none;
   /* border-top: 1px solid #c0c0c0; */
   box-shadow: 0px 1px 5px #c0c0c0;
+  overflow: hidden;
 }
 
 .react-autosuggest__suggestions-list {
@@ -69,12 +70,15 @@ body {
   padding: 0;
   /* padding-top: 5px; */
   list-style-type: none;
+  margin-top: -1px;
+  overflow: hidden;
 }
 
 .react-autosuggest__suggestion {
   display: flex;
   flex-direction: row;
   cursor: pointer;
+  overflow: hidden;
   /* padding: 10px 20px; */
   /* border-bottom: 1px solid #eee; */
 }
@@ -87,26 +91,30 @@ body {
   display: flex;
   flex-direction: row;
   width: 100%;
+  height: inherit;
   /* padding-top: 5px; */
   /* padding-bottom: 5px; */
 }
 
 .suggestion-icon-container {
-  /* background-color: green; */
+  background-color: green;
   display: flex;
   flex-direction: row;
   justify-content: center;
   /* padding: 5px; */
   /* max-width: 80px; */
-  height: 100%;
+  height: inherit;
   opacity: 0.35;
 }
 
 .suggestion-icon {
+  background: red;
   /* position: relative; */
   display: flex;
   flex-direction: column;
   align-self: center;
+  align-items: center;
+  justify-content: center;
   /* top: 3px; */
   /* left: -10px; */
   width: 20px;
@@ -128,7 +136,7 @@ body {
   padding-top: 10px;
   /* margin-bottom: 10px; */
   /* margin-top: 10px; */
-  border-bottom: 1px solid #eee;
+  border-top: 1px solid #eee;
   /* background: red; */
   /* font-size: 18px; */
 }
