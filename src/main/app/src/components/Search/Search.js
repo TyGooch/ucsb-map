@@ -25,9 +25,13 @@ class Search extends Component {
   renderSuggestion(suggestion) {
     return (
       <div className="suggestion-item">
-        <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" alt="Magnifying Glass" />
-        {suggestion.name}
-        {this.getSuggestionShortName(suggestion)}
+        <div className="suggestion-icon-container">
+          <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" alt="Magnifying Glass" />
+        </div>
+        <div className="suggestion-item-text">
+          {suggestion.name}
+          {this.getSuggestionShortName(suggestion)}
+        </div>
       </div>
     )
   }

@@ -48,8 +48,8 @@ body {
 .react-autosuggest__suggestions-container--open {
   display: block;
   position: absolute;
-  top: 51px;
-  width: 292px;
+  top: 50px;
+  width: 352px;
   border: 1px solid #aaa;
   background-color: #fff;
   font-family: Roboto, sans-serif;
@@ -71,12 +71,60 @@ body {
 }
 
 .react-autosuggest__suggestion {
+  display: flex;
+  flex-direction: row;
   cursor: pointer;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
+  /* border-bottom: 1px solid #eee; */
 }
 
 .react-autosuggest__suggestion--highlighted {
   background-color: #ddd;
+}
+
+.suggestion-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.suggestion-icon-container {
+  /* background-color: green; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding: 5px; */
+  max-width: 80px;
+  height: 100%;
+  opacity: 0.35;
+}
+
+.suggestion-icon {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /* top: 3px; */
+  /* left: -10px; */
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  padding-left: 13px;
+  padding-right: 5px;
+}
+
+.suggestion-item-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  /* background: red; */
+  /* font-size: 18px; */
 }
 
 .inputContainer {
@@ -119,12 +167,4 @@ body {
 
 .clear-input-button :hover {
   cursor: pointer;
-}
-
-.suggestion-icon {
-  position: relative;
-  top: 3px;
-  left: -10px;
-  width: 20px;
-  height: 20px;
 }
