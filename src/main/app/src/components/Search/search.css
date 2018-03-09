@@ -97,7 +97,6 @@ body {
 }
 
 .suggestion-icon-container {
-  background-color: green;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -108,7 +107,6 @@ body {
 }
 
 .suggestion-icon {
-  background: red;
   /* position: relative; */
   display: flex;
   flex-direction: column;
