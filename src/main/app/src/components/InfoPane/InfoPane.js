@@ -85,7 +85,7 @@ class InfoPane extends Component {
     if(this.selectedLocation) {
       return(
         <span className='popup-header-category'>
-          {this.props.selectedLocation.category[0].toUpperCase() + this.props.selectedLocation.category.substr(1,this.props.selectedLocation.category.length)}
+          {this.selectedLocation.details}
         </span>
       )
     }
@@ -164,7 +164,7 @@ class InfoPane extends Component {
                 {this.selectedLocation ? this.selectedLocation.name : ''}
               </div>
               <span className='mobile-info-category'>
-                {this.selectedLocation ? this.selectedLocation.category[0].toUpperCase() + this.props.selectedLocation.category.substr(1,this.props.selectedLocation.category.length) : ''}
+                {this.selectedLocation ? this.selectedLocation.details : ''}
               </span>
             </div>
           </Swipeable>

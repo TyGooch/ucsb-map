@@ -6,7 +6,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "lavender",
+        "lotColor": "lavender",
         "@id": "way/38137846",
         "amenity": "parking",
         "capacity": "69",
@@ -73,7 +73,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/38140508",
         "amenity": "parking",
         "capacity": "205",
@@ -140,7 +140,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/38140509",
         "amenity": "parking",
         "building": "yes",
@@ -208,7 +208,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38140510",
         "amenity": "parking",
         "capacity": "139",
@@ -251,7 +251,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38140511",
         "amenity": "parking",
         "capacity": "525",
@@ -330,7 +330,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38140512",
         "amenity": "parking",
         "capacity": "139",
@@ -409,7 +409,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38140926",
         "amenity": "parking",
         "capacity": "78",
@@ -456,7 +456,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Residence Hall Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "@id": "way/38140927",
         "amenity": "parking",
         "capacity": "102",
@@ -515,7 +515,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38165940",
         "amenity": "parking",
         "capacity": "153",
@@ -630,7 +630,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38165941",
         "amenity": "parking",
         "capacity": "19",
@@ -673,7 +673,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38165942",
         "amenity": "parking",
         "capacity": "21",
@@ -716,7 +716,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38165945",
         "amenity": "parking",
         "capacity": "82",
@@ -875,7 +875,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38165946",
         "amenity": "parking",
         "capacity": "128",
@@ -1042,7 +1042,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "lavender",
+        "lotColor": "lavender",
         "@id": "way/38165947",
         "amenity": "parking",
         "capacity": "95",
@@ -1217,7 +1217,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38165950",
         "amenity": "parking",
         "building": "yes",
@@ -1277,7 +1277,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "lavender",
+        "lotColor": "lavender",
         "@id": "way/38165951",
         "amenity": "parking",
         "capacity": "93",
@@ -1360,7 +1360,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38165954",
         "amenity": "parking",
         "capacity": "202",
@@ -1755,7 +1755,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/38173207",
         "amenity": "parking",
         "capacity": "49",
@@ -1806,7 +1806,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/43939828",
         "amenity": "parking",
         "capacity:disabled": "yes",
@@ -1908,7 +1908,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/49425158",
         "amenity": "parking",
         "capacity": "77",
@@ -1958,7 +1958,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2031,7 +2031,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2146,7 +2146,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/466470273",
         "amenity": "parking",
         "name": "23 Parking",
@@ -2194,7 +2194,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/38267934",
         "amenity": "parking",
         "capacity": "490",
@@ -2269,7 +2269,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "San Clemente Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "@id": "way/38269349",
         "access": "permissive",
         "amenity": "parking",
@@ -2320,7 +2320,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/49427646",
         "amenity": "parking",
         "capacity": "35",
@@ -2421,7 +2421,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "San Clemente Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "@id": "way/552109592",
         "access": "yes",
         "amenity": "parking",
@@ -2465,7 +2465,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "San Clemente Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "@id": "way/552490743",
         "access": "permissive",
         "amenity": "parking",
@@ -2510,7 +2510,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "San Clemente Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2561,7 +2561,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Sierra Madre Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3356,7 +3356,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "West Campus Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3425,7 +3425,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "West Campus Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3470,7 +3470,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "West Campus Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3571,7 +3571,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Sierra Madre Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3855,7 +3855,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Sierra Madre Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3931,7 +3931,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Sierra Madre Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4051,7 +4051,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "West Campus Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4095,7 +4095,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "West Campus Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4147,7 +4147,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "@id": "way/556264675",
         "amenity": "parking",
         "name": "60 Parking"
@@ -4330,7 +4330,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "@id": "way/560571177",
         "amenity": "parking",
         "name": "Lot 59"
@@ -4369,7 +4369,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Sierra Madre Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4489,7 +4489,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4549,7 +4549,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4593,7 +4593,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4637,7 +4637,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4681,7 +4681,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Faculty & Staff Parking",
-        "lot-color": "green",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4798,7 +4798,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4849,7 +4849,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4890,7 +4890,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Storke Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4939,7 +4939,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Storke Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -5000,7 +5000,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Storke Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -5049,7 +5049,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -5095,7 +5095,7 @@ var parking = {
       "properties": {
         "category": "Parking",
         "details": "Visitor & Student Parking",
-        "lot-color": "yellow",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -5164,7 +5164,7 @@ var parking = {
         "fill-opacity": 0.5,
         "category": "Parking",
         "details": "Santa Ynez Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "name": "Lot 57",
         "type": "multipolygon",
       },
@@ -5551,7 +5551,7 @@ var parking = {
         "parking": "surface",
         "name": "Lot 43",
         "details": "Westgate Apartments Parking",
-        "lot-color": "Orange",
+        "lotColor": "Orange",
         "category": "Parking"
       },
       "geometry": {
@@ -5607,7 +5607,7 @@ var parking = {
         "amenity": "parking",
         "category": "Parking",
         "details": "Westwinds and El Dorado Apartments Parking",
-        "lot-color": "orange",
+        "lotColor": "orange",
         "name": "Lot 44"
       },
       "geometry": {

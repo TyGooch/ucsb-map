@@ -1446,11 +1446,16 @@ var campus =
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "category": "Main Campus",
         "details": "Faculty Resources",
         "@id": "relation/2927468",
         "building": "university",
-        "name": "Faculty Club",
+        "name": "The Club & Guest House",
         "ref": 581,
         "type": "multipolygon",
         "website": "www.theclub.ucsb.edu/"
@@ -2441,7 +2446,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "category": "Main Campus",
-        "details": "Classroom, Theater",
+        "details": "Lecture Hall, Theater",
         "@id": "way/38171690",
         "addr:state": "CA",
         "amenity": "university",
@@ -2787,6 +2792,11 @@ var campus =
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "category": "Main Campus",
         "details": "Research Facility",
         "@id": "way/220504812",
@@ -2836,11 +2846,16 @@ var campus =
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "category": "Main Campus",
         "details": "Research Facility",
         "@id": "way/220504813",
         "building": "university",
-        "name": "Greenhouse",
+        "name": "Wooden Teaching/Research Greenhouse",
         "ref": 540,
         "website": "https://www.eemb.ucsb.edu/services/greenhouse",
         "image": "https://greenhouse.eemb.ucsb.edu/sites/greenhouse.eemb.ucsb.edu/files/styles/full/public/inst/wooden-gh.jpg?itok=QsuXSRAQ"
@@ -2893,12 +2908,17 @@ var campus =
     {
       "type": "Feature",
       "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
         "category": "Main Campus",
         "details": "Research Facility",
         "@id": "way/220506929",
         "building": "university",
-        "name": "Head House",
-        "ref": "540",
+        "name": "EEMB Greenhouse",
+        "ref": 540,
         "website": "",
         "image": ""
       },
@@ -2946,47 +2966,6 @@ var campus =
         ]
       },
       "id": "way/220506929"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Main Campus",
-        "details": "Research Facility",
-        "@id": "way/220506931",
-        "building": "university",
-        "name": "Lath House",
-        "ref": "540",
-        "website": "",
-        "image": ""
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8434836,
-              34.413164
-            ],
-            [
-              -119.8434832,
-              34.4130816
-            ],
-            [
-              -119.843288,
-              34.4130825
-            ],
-            [
-              -119.843288,
-              34.4131634
-            ],
-            [
-              -119.8434836,
-              34.413164
-            ]
-          ]
-        ]
-      },
-      "id": "way/220506931"
     },
     {
       "type": "Feature",
@@ -12464,7 +12443,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "category": "Main Campus",
-        "details": "Dining",
+        "details": "Cafe featuring California-style Cuisine",
         "@id": "way/221259487",
         "amenity": "cafe",
         "building": "university",
@@ -14495,7 +14474,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "category": "Main Campus",
-        "details": "Dining, Convenience Store",
+        "details": "Convenience Store, Dining",
         "@id": "way/221404491",
         "building": "university",
         "name": "Arbor",
@@ -16370,94 +16349,6 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "details": "Offices",
-        "@id": "way/221409150",
-        "building": "university",
-        "ref": "539",
-        "website": "",
-        "image": ""
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.843025,
-              34.4131656
-            ],
-            [
-              -119.8432274,
-              34.4131656
-            ],
-            [
-              -119.8432274,
-              34.4130842
-            ],
-            [
-              -119.8431396,
-              34.4130842
-            ],
-            [
-              -119.8431397,
-              34.4130379
-            ],
-            [
-              -119.843025,
-              34.4130379
-            ],
-            [
-              -119.843025,
-              34.4131656
-            ]
-          ]
-        ]
-      },
-      "id": "way/221409150"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Main Campus",
-        "details": "Offices",
-        "@id": "way/221409152",
-        "building": "university",
-        "ref": "539",
-        "website": "",
-        "image": ""
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8430314,
-              34.413034
-            ],
-            [
-              -119.8431254,
-              34.4130341
-            ],
-            [
-              -119.8431258,
-              34.4128235
-            ],
-            [
-              -119.8430319,
-              34.4128233
-            ],
-            [
-              -119.8430314,
-              34.413034
-            ]
-          ]
-        ]
-      },
-      "id": "way/221409152"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "category": "Main Campus",
-        "details": "Offices",
         "@id": "way/221409551",
         "building": "university",
         "ref": "334",
@@ -16578,7 +16469,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "category": "Main Campus",
-        "details": "Chancellor Housing",
+        "details": "Chancellor's Residence",
         "@id": "way/221409555",
         "building": "university",
         "name": "University House",
@@ -17872,10 +17763,11 @@ var campus =
     {
       "type": "Feature",
       "properties": {
-        "details": "Chancellor Housing",
+        "details": "Chancellor's Residence",
         "@id": "way/221411239",
         "building": "university",
         "name": "Centennial House",
+        "category": "Main Campus",
         "ref": "530",
         "website": "",
         "image": ""
@@ -18682,9 +18574,7 @@ var campus =
               "type": "multipolygon"
             }
           }
-        ],
-        "website": "",
-        "image": "https://upload.wikimedia.org/wikipedia/en/4/48/Ucsb-storke-tower01.jpg"
+        ]
       },
       "geometry": {
         "type": "Polygon",
@@ -18872,6 +18762,7 @@ var campus =
       "properties": {
         "@id": "way/38268884",
         "building": "yes",
+        "category": "Main Campus",
         "name": "Distribution & Logistical Services (Central Stores)",
         "details": "UCSB Mail Services, Surplus Sales, and Furniture Services",
         "website": "https://www.dls.ucsb.edu/",
@@ -18950,6 +18841,7 @@ var campus =
         "amenity": "police",
         "building": "yes",
         "name": "Isla Vista Foot Patrol",
+        "category": "Isla Vista",
         "details": "Police Station",
         "image": "https://www.noozhawk.com/images/uploads/630-062515-isla-vista-foot-patrol-7-lc.jpg",
         "website": "https://www.sbsheriff.org/command-and-divisions/law-enforcement-operations/south-county-operations-division/isla-vista-foot-patrol/"
@@ -19142,6 +19034,207 @@ var campus =
         ]
       },
       "id": "way/221406716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/220506931",
+        "building": "university",
+        "name": "Schuyler Research Greenhouse",
+        "ref": 541,
+        "category": "Main Campus",
+        "details": "Research Facility",
+        "image": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8434836,
+              34.413164
+            ],
+            [
+              -119.8434832,
+              34.4130816
+            ],
+            [
+              -119.843288,
+              34.4130825
+            ],
+            [
+              -119.843288,
+              34.4131634
+            ],
+            [
+              -119.8434836,
+              34.413164
+            ]
+          ]
+        ]
+      },
+      "id": "way/220506931"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/221409150",
+        "building": "university",
+        "name": "NSF Research Greenhouse",
+        "ref": 443,
+        "category": "Main Campus",
+        "details": "Research Facility",
+        "image": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.84302528202534,
+              34.413174819878044
+            ],
+            [
+              -119.8432472348213,
+              34.41317703265637
+            ],
+            [
+              -119.84324790537359,
+              34.41306584047295
+            ],
+            [
+              -119.84302528202534,
+              34.413064734082326
+            ],
+            [
+              -119.84302528202534,
+              34.413174819878044
+            ]
+          ]
+        ]
+      },
+      "id": "way/221409150"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "category": "Main Campus",
+        "name": "Alpine Research Greenhouse",
+        "ref": 442,
+        "details": "Research Facility",
+        "image": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.84359726309775,
+              34.41308852147758
+            ],
+            [
+              -119.8435228317976,
+              34.41308852147758
+            ],
+            [
+              -119.8435228317976,
+              34.413169841126575
+            ],
+            [
+              -119.84359726309775,
+              34.413169841126575
+            ],
+            [
+              -119.84359726309775,
+              34.41308852147758
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "category": "Main Campus",
+        "name": "The Club & Guest House",
+        "details": "Faculty Resources",
+        "image": "",
+        "website": ""
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.85157817602158,
+              34.41206344456433
+            ],
+            [
+              -119.85184371471405,
+              34.41206344456433
+            ],
+            [
+              -119.8518517613411,
+              34.41199706030518
+            ],
+            [
+              -119.85191345214842,
+              34.411981570637124
+            ],
+            [
+              -119.85195100307463,
+              34.411696117669514
+            ],
+            [
+              -119.85183835029603,
+              34.411689479216854
+            ],
+            [
+              -119.85181421041489,
+              34.4119461656708
+            ],
+            [
+              -119.85182762145995,
+              34.41195944253493
+            ],
+            [
+              -119.85182762145995,
+              34.41199263468604
+            ],
+            [
+              -119.85157549381256,
+              34.41199042187636
+            ],
+            [
+              -119.85157817602158,
+              34.41206344456433
+            ]
+          ]
+        ]
+      }
     }
   ]
 }

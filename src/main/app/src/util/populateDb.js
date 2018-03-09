@@ -58,12 +58,15 @@ function populateDb() {
         } else {
           name = building.properties.name
         }
+        
+        
         location.name = name
-        location.category = locations
+        location.category = building.properties.category
         location.polygons = [building.geometry.coordinates]
-        location.color = locations === "parking" ? '#555555' : '#6DAAD0'
+        location.color = locations === "parking" ? building.properties.lotColor : '#6DAAD0'
         location.website = building.properties.website
         location.image = building.properties.image
+        location.details = building.properties.details
 
         locationObjs[location.name] = location
       } else {

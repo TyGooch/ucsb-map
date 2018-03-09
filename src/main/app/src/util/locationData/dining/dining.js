@@ -4,7 +4,8 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "Buffet Style Dining Commons",
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/221234879",
         "amenity": "food_court",
         "building": "yes",
@@ -71,7 +72,8 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "Buffet Style Dining Commons",
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/221235091",
         "alt_name": "DLG",
         "amenity": "food_court",
@@ -267,7 +269,8 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "Buffet Style Dining Commons",
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/221401192",
         "building": "university",
         "name": "Carrillo Dining Commons",
@@ -419,7 +422,8 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "Buffet Style Dining Commons",
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/539936496",
         "building": "university",
         "name": "Portola Dining Commons",

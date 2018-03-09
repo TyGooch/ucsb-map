@@ -62,13 +62,17 @@ class CampusMap extends Component {
 
   handlePolygonMouseOver(e, location, polygon) {
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
-      polygon.setStyle({color: '#ebbd31'})
+      polygon.setStyle({ fillOpacity: 0.5})
     }
   }
 
-  handlePolygonMouseOut(location, polygon) {
+  handlePolygonMouseOut(location, polygon) {    
+    let color = '#6DAAD0'
+    if(location.category === 'Parking')
+      color = '#55555'
+
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
-      polygon.setStyle({color: location.color})
+      polygon.setStyle({color: color, fillColor: color, fillOpacity: 0.25})
     }
   }
 
@@ -81,7 +85,7 @@ class CampusMap extends Component {
   
   addBikePath(map, bikePath){
     bikePath.features.forEach(pathSegment => {
-      L.geoJSON(pathSegment, {style: {weight:2, color: 'silver', opacity: 1}, interactive:false})
+      L.geoJSON(pathSegment, {style: {weight:1, color: 'silver', opacity: 1, smoothFactor: 0.1}, interactive:false})
       .addTo(map);
     })
   }
@@ -90,7 +94,12 @@ class CampusMap extends Component {
     let polygons = []
     let labels = []
     this.props.locations.forEach(location => {
-      let polygon = L.polygon(location.polygons, {weight: 1.5, color: location.color, fillColor: location.color})
+      let color = '#6DAAD0'
+      if(location.category === 'Parking')
+        color = '#555555'
+            
+      
+      let polygon = L.polygon(location.polygons, {weight: location.category === 'Parking' ? 0 : 1, color: color, fillColor: color, fillOpacity: 0.25})
       polygon.on('click', () => {this.handlePolygonClick(location, polygon)})
       polygon.on('mouseover', (e) => {this.handlePolygonMouseOver(e, location, polygon)})
       polygon.on('mouseout', () => { this.handlePolygonMouseOut(location, polygon)})
@@ -99,7 +108,7 @@ class CampusMap extends Component {
       polygon.bindTooltip(`<p>${location.name}</p>`, {closeButton: false, sticky: true, direction: 'top', className:'hover-label'})
 
       if(this.props.selectedLocation && this.props.selectedLocation.name === location.name){
-        polygon.setStyle({weight: 3, color: '#ebbd31'})
+        polygon.setStyle({weight: 1, color: '#ebbd31', fillColor: '#ebbd31', fillOpacity: 0.5})
       }
       polygons.push({polygon: polygon, location: location})
     })
@@ -113,42 +122,42 @@ class CampusMap extends Component {
     if(this.polygons)
       this.polygons.forEach(polygon => polygon.polygon.remove())
   }
-
-  addLabels(){
-    if(!this.polygons)
-      return
-
-    let labels = []
-    this.props.locations.forEach(location => {
-      if(location.name === 'Engineering 2' || location.name.split(' ')[0] === 'Building')
-        return
-      if(turf.area(turf.multiPolygon(location.polygons)) < 300 && this.state.map.getZoom() < 19)
-        return
-
-      var fontSize = this.state.map.getZoom() <= 17 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 15
-      if(fontSize <= 4)
-        fontSize = 0
-      if(location.name.length <= 5)
-        fontSize *= 2
-
-      var divIcon = L.divIcon({
-        className: 'label-container',
-        html: `<div class="label"><div class="label-text ${location.name}" style="font-size:${fontSize}px !important;">${location.name}</div></div>`,
-      })
-        let centroid = centerOfMass(turf.multiPolygon(location.polygons))
-        let coords = getCoords(centroid)
-        var label = L.marker({lat: coords[0], lng: coords[1]}, {icon: divIcon, interactive: false})
-
-        label.addTo(this.state.map)
-        labels.push(label)
-    })
-    this.labels = labels
-  }
-
-  removeLabels(){
-    if(this.labels)
-      this.labels.forEach(label => label.remove())
-  }
+  // 
+  // addLabels(){
+  //   if(!this.polygons)
+  //     return
+  // 
+  //   let labels = []
+  //   this.props.locations.forEach(location => {
+  //     if(location.name === 'Engineering 2' || location.name.split(' ')[0] === 'Building')
+  //       return
+  //     if(turf.area(turf.multiPolygon(location.polygons)) < 300 && this.state.map.getZoom() < 19)
+  //       return
+  // 
+  //     var fontSize = this.state.map.getZoom() <= 17 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 15
+  //     if(fontSize <= 4)
+  //       fontSize = 0
+  //     if(location.name.length <= 5)
+  //       fontSize *= 2
+  // 
+  //     var divIcon = L.divIcon({
+  //       className: 'label-container',
+  //       html: `<div class="label"><div class="label-text ${location.name}" style="font-size:${fontSize}px !important;">${location.name}</div></div>`,
+  //     })
+  //       let centroid = centerOfMass(turf.multiPolygon(location.polygons))
+  //       let coords = getCoords(centroid)
+  //       var label = L.marker({lat: coords[0], lng: coords[1]}, {icon: divIcon, interactive: false})
+  // 
+  //       label.addTo(this.state.map)
+  //       labels.push(label)
+  //   })
+  //   this.labels = labels
+  // }
+  // 
+  // removeLabels(){
+  //   if(this.labels)
+  //     this.labels.forEach(label => label.remove())
+  // }
 
   getUserLocation(){
     if(!this.state.map)
@@ -269,7 +278,7 @@ class CampusMap extends Component {
   render() {
     this.pantoSelection()
     this.removePolygons()
-    this.removeLabels()
+    // this.removeLabels()
     this.addPolygons()
     // this.addLabels()
     this.getUserLocation()

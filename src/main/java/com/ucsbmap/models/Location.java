@@ -32,6 +32,8 @@ public class Location {
     //should be able to be blank
     private String image;
 
+    private String details;
+
     public Location() {
         super();
     }
@@ -95,11 +97,19 @@ public class Location {
     public void setImage(String image) {
         this.image = image;
     }
+    
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
 
     @Override
     public String toString() {
         return String.format(
-                "Location[id=%s, name='%s', category='%s', polygons='%s', color='%s', website='%s', image='%s']",
-                id, name, category, polygons, color, website, image);
+                "Location[id=%s, name='%s', category='%s', polygons='%s', color='%s', website='%s', image='%s', details='%s']",
+                id, name, category, polygons, color, website, image, details);
     }
 }

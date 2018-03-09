@@ -3150,6 +3150,7 @@ var dorms = {
         "@id": "way/221411229",
         "building": "university",
         "name": "Office of Residential Life",
+        "details": "Housing Resources",
         "ref": 322
       },
       "geometry": {
@@ -3311,6 +3312,58 @@ var dorms = {
         ]
       },
       "id": "way/38267045"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/221401263",
+        "building": "university",
+        "name": "De Anza Resource Center",
+        "ref": 875,
+        "category": "Residence Hall",
+        "details": "Study Rooms, Pool Tables, Housing Resources"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8526452,
+              34.4096698
+            ],
+            [
+              -119.8529882,
+              34.4096693
+            ],
+            [
+              -119.8529871,
+              34.4095263
+            ],
+            [
+              -119.8527385,
+              34.4095263
+            ],
+            [
+              -119.852738,
+              34.4095189
+            ],
+            [
+              -119.8526465,
+              34.4095194
+            ],
+            [
+              -119.8526452,
+              34.4096698
+            ]
+          ]
+        ]
+      },
+      "id": "way/221401263"
     }
   ]
 }

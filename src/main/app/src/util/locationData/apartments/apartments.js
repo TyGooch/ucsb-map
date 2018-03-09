@@ -107,7 +107,7 @@ var apartments = {
         "category": "University Apartments",
         "website": "https://www.kitp.ucsb.edu/kitp-residence",
         "image": "",
-        "details": "Visiting Scholar's Apartments",
+        "details": "Visiting Scholar Apartments",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
