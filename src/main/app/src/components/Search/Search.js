@@ -184,6 +184,7 @@ class Search extends Component {
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
         onSuggestionSelected={this.onSuggestionSelected}
+        highlightFirstSuggestion={true}
         getSuggestionValue={this.getSuggestionValue}
         renderSuggestion={this.renderSuggestion.bind(this)}
         renderInputComponent={this.renderInputComponent}
