@@ -4294,7 +4294,7 @@ var campus =
         "@id": "way/221235914",
         "building": "university",
         "name": "Multicultural Center",
-        "shortName": "",
+        "shortName": "MCC",
         "ref": "558",
         "website": "mcc.sa.ucsb.edu/",
         "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2017/11/Multicultural-Center-UCSB.jpg"
