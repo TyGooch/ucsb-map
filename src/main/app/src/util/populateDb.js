@@ -67,6 +67,7 @@ function populateDb() {
         location.website = building.properties.website
         location.image = building.properties.image
         location.details = building.properties.details
+        location.shortName = building.properties.shortName
 
         locationObjs[location.name] = location
       } else {

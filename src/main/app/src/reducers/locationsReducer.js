@@ -27,6 +27,7 @@ const locationsReducer = (state = defaultState, action) => {
           newLocation.website = location.website ? location.website : null
           newLocation.image = location.image ? location.image : null
           newLocation.details = location.details ? location.details : null
+          newLocation.shortName = location.shortName ? location.shortName : null
 
           newLocations.push(newLocation)
         })
