@@ -9,6 +9,7 @@ var dorms = {
         "@id": "relation/2927469",
         "building": "university",
         "name": "San Rafael Tower",
+        "shortName": "SAN RAFEL",
         "ref": 586,
         "type": "multipolygon",
         "website": "www.housing.ucsb.edu/residences/san-rafael",
@@ -345,6 +346,7 @@ var dorms = {
         "@id": "way/221234880",
         "building": "university",
         "name": "San Nicolas Hall",
+        "shortName": "SAN NIC",
         "ref": 561,
         "website": "www.housing.ucsb.edu/residences/san-nicolas",
         "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/residences/sannic-slider1.jpg?itok=Ih1zns31"
@@ -530,6 +532,7 @@ var dorms = {
         "@id": "way/221234883",
         "building": "university",
         "name": "San Miguel Hall",
+        "shortName": "SAN MIGEL",
         "ref": 553,
         "website": "www.housing.ucsb.edu/residences/san-miguel",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanmig-slider1.jpg?itok=wa7NmUZz"
@@ -763,6 +766,7 @@ var dorms = {
         "@id": "way/221235379",
         "building": "university",
         "name": "Santa Cruz Hall",
+        "shortName": "SANTA CRUZ",
         "ref": 548,
         "website": "www.housing.ucsb.edu/residences/santa-cruz",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/scruz-gallery8.jpg"
@@ -915,6 +919,7 @@ var dorms = {
         "alt-name": "Camuesa House",
         "ref": 889,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -994,6 +999,7 @@ var dorms = {
         "alt-name": "Zaca House",
         "ref": 888,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -1065,6 +1071,7 @@ var dorms = {
         "alt-name": "Pendola House",
         "ref": 890,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -1136,6 +1143,7 @@ var dorms = {
         "alt-name": "Madulce House",
         "ref": 892,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -1219,6 +1227,7 @@ var dorms = {
         "alt-name": "Figueroa House",
         "ref": 893,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -1291,6 +1300,7 @@ var dorms = {
         "alt-name": "Cuyama House",
         "ref": 891,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -1352,6 +1362,7 @@ var dorms = {
         "@id": "way/221401396",
         "building": "university",
         "name": "San Rafael Mountain Cluster",
+        "shortName": "SAN RAFEL",
         "ref": 587,
         "website": "www.housing.ucsb.edu/residences/san-rafael",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanraf-slider3.jpg?itok=tQt3JfIX"
@@ -1686,6 +1697,7 @@ var dorms = {
         "@id": "way/221403276",
         "building": "university",
         "name": "San Rafael Ocean Cluster",
+        "shortName": "SAN RAFEL",
         "ref": 587,
         "website": "www.housing.ucsb.edu/residences/san-rafael",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanraf-slider3.jpg?itok=tQt3JfIX"
@@ -2046,6 +2058,7 @@ var dorms = {
         "alt-name": "Cienaga House",
         "ref": 878,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2133,6 +2146,7 @@ var dorms = {
         "alt-name": "Tecolote House",
         "ref": 877,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2205,6 +2219,7 @@ var dorms = {
         "alt-name": "Miranda House",
         "ref": 881,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2284,6 +2299,7 @@ var dorms = {
         "alt-name": "Gaviota House",
         "ref": 882,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2355,6 +2371,7 @@ var dorms = {
         "alt-name": "Condor House",
         "ref": 883,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2438,6 +2455,7 @@ var dorms = {
         "alt-name": "Jalama House",
         "ref": 879,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2505,6 +2523,7 @@ var dorms = {
         "alt-name": "Arguello",
         "ref": 880,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2577,6 +2596,7 @@ var dorms = {
         "alt-name": "Tepusquet House",
         "ref": 886,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2668,6 +2688,7 @@ var dorms = {
         "alt-name": "Montecito House",
         "ref": 885,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2739,6 +2760,7 @@ var dorms = {
         "alt-name": "La Cumbre House",
         "ref": 884,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2818,6 +2840,7 @@ var dorms = {
         "alt-name": "Rincon House",
         "ref": 887,
         "name": "Manzanita Village",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
       },
@@ -2883,6 +2906,7 @@ var dorms = {
         "addr:housename": 527,
         "building": "university",
         "name": "Santa Rosa Hall",
+        "shortName": "SANTA ROSA",
         "website": "www.housing.ucsb.edu/residences/santa-rosa",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/srosa-gallery11.jpg"
       },
@@ -3000,6 +3024,7 @@ var dorms = {
         "@id": "way/221409403",
         "building": "university",
         "name": "Anacapa Hall",
+        "shortName": "ANCAP HALL",
         "ref": 547,
         "website": "www.housing.ucsb.edu/residences/anacapa",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/anac-slider4.jpg?itok=Obgj6YYH"
@@ -3150,6 +3175,7 @@ var dorms = {
         "@id": "way/221411229",
         "building": "university",
         "name": "Office of Residential Life",
+        "shortName": "",
         "details": "Housing Resources",
         "ref": 322
       },
@@ -3192,6 +3218,7 @@ var dorms = {
         "building": "dormitory",
         "loc_name": "Francisco Torres",
         "name": "Santa Catalina Hall",
+        "shortName": "",
         "old_name": "Francisco Torres",
         "website": "www.housing.ucsb.edu/residences/santa-catalina",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/scat-gallery5.jpg"
@@ -3323,7 +3350,8 @@ var dorms = {
         "fill-opacity": 0.5,
         "@id": "way/221401263",
         "building": "university",
-        "name": "De Anza Resource Center",
+        "name": "Manzanita Village De Anza Center",
+        "shortName": "MANZ",
         "ref": 875,
         "category": "Residence Hall",
         "details": "Study Rooms, Pool Tables, Housing Resources"

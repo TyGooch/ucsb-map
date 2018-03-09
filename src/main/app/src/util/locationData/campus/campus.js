@@ -10,6 +10,7 @@ var campus =
         "@id": "relation/2925039",
         "building": "university",
         "name": "Marine Science Research Building",
+        "shortName": "",
         "name:en1": "MSRB",
         "ref": 520,
         "type": "multipolygon",
@@ -295,6 +296,7 @@ var campus =
         "@id": "relation/2925045",
         "building": "university",
         "name": "Bren Hall",
+        "shortName": "BREN",
         "ref": 521,
         "type": "multipolygon",
         "website": "https://www.bren.ucsb.edu/about/bren_hall.html",
@@ -571,6 +573,7 @@ var campus =
         "@id": "relation/2925105",
         "building": "university",
         "name": "Student Communications Building",
+        "shortName": "",
         "ref": 589,
         "type": "multipolygon",
         "website": "http://www.comm.ucsb.edu/",
@@ -662,6 +665,7 @@ var campus =
         "amenity": "hospital",
         "building": "university",
         "name": "UCSB Student Health Center",
+        "shortName": "STU HLTH",
         "ref": 588,
         "type": "multipolygon",
         "website": "http://studenthealth.sa.ucsb.edu/",
@@ -964,6 +968,7 @@ var campus =
         "@id": "relation/2925122",
         "building": "university",
         "name": "Phelps Hall",
+        "shortName": "PHELP",
         "ref": 560,
         "type": "multipolygon",
         "website": "",
@@ -1117,6 +1122,7 @@ var campus =
         "bldg_no": 503,
         "building": "university",
         "name": "Engineering 2",
+        "shortName": "ENGR2",
         "ref": 503,
         "type": "multipolygon",
         "website": "https://engineering.ucsb.edu/",
@@ -1271,6 +1277,7 @@ var campus =
         "@id": "relation/2925147",
         "building": "university",
         "name": "Harold Frank Hall",
+        "shortName": "HFH",
         "ref": 556,
         "type": "multipolygon",
         "website": "",
@@ -1456,6 +1463,7 @@ var campus =
         "@id": "relation/2927468",
         "building": "university",
         "name": "The Club & Guest House",
+        "shortName": "",
         "ref": 581,
         "type": "multipolygon",
         "website": "www.theclub.ucsb.edu/"
@@ -1731,6 +1739,7 @@ var campus =
         "@id": "relation/2927470",
         "building": "university",
         "name": "Arts",
+        "shortName": "ARTS",
         "ref": 534,
         "type": "multipolygon",
         "website": "",
@@ -1873,6 +1882,7 @@ var campus =
         "@id": "relation/2927474",
         "building": "university",
         "name": "Music",
+        "shortName": "MUSIC",
         "ref": 531,
         "type": "multipolygon",
         "website": "www.music.ucsb.edu",
@@ -2133,6 +2143,7 @@ var campus =
         "@id": "relation/2927539",
         "building": "university",
         "name": "Woodhouse Laboratory",
+        "shortName": "",
         "ref": "546",
         "type": "multipolygon",
         "website": "",
@@ -2206,6 +2217,7 @@ var campus =
         "building": "yes",
         "leisure": "sports_centre",
         "name": "UCSB Pavillion Gym",
+        "shortName": "RECEN PAVLN",
         "website": "recreation.sa.ucsb.edu/facilities",
         "image": "https://s3-media1.fl.yelpcdn.com/bphoto/Rsh9KPSQ1Z78wxIb8jhmvw/o.jpg"
       },
@@ -2246,6 +2258,7 @@ var campus =
         "@id": "way/38097306",
         "building": "yes",
         "name": "El Centro"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2292,6 +2305,7 @@ var campus =
         "@id": "way/38099471",
         "building": "university",
         "name": "College of Creative Studies",
+        "shortName": "",
         "ref": 494,
         "website": "https://www.ccs.ucsb.edu/",
         "image": "https://i0.wp.com/dailynexus.com/wp-content/uploads/2016/05/CCS-5-17-1-1024x682.jpg?resize=750%2C500"
@@ -2394,6 +2408,7 @@ var campus =
         "amenity": "university",
         "building": "yes",
         "name": "Embarcadero Hall",
+        "shortName": "EMBAR HALL",
         "website": "embarcadero.classroom.id.ucsb.edu/",
         "image": "https://odysseyonline-img.rbl.ms/simage/https%3A%2F%2Faz616578.vo.msecnd.net%2Ffiles%2F2016%2F06%2F30%2F636029090863031877-1670277130_49910683.jpg/2000%2C2000/Jw0BNQwKiyeDeSuH/img.jpg"
       },
@@ -2457,6 +2472,7 @@ var campus =
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "Isla Vista Theater",
+        "shortName": "IV THEA",
         "source": "USGS Geonames",
         "website": "ivtheaters.classroom.id.ucsb.edu/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Isla_Vista_Theater.jpg/800px-Isla_Vista_Theater.jpg"
@@ -2550,6 +2566,7 @@ var campus =
         "@id": "way/42754953",
         "building": "yes",
         "name": "Pardall Center",
+        "shortName": "",
         "office": "coworking",
         "website": "https://pardallcenter.as.ucsb.edu/",
         "image": "https://independent.media.clients.ellingtoncms.com/img/photos/2016/03/07/Pardall_center.jpg"
@@ -2613,6 +2630,7 @@ var campus =
         "gnis:import_uuid": "57871b70-0100-4405-bb30-88b2e001a944",
         "gnis:reviewed": "no",
         "name": "AS Bike Shop",
+        "shortName": "",
         "operator": "Associated Students",
         "shop": "bicycle",
         "source": "USGS Geonames",
@@ -2656,6 +2674,7 @@ var campus =
         "@id": "way/59153736",
         "building": "university",
         "name": "Associated Students Recycling",
+        "shortName": "",
         "ref": "314",
         "website": "",
         "image": ""
@@ -2710,6 +2729,7 @@ var campus =
         "len_1": "0.00000000",
         "meth_of_co": 4,
         "name": "Ocean Science Education Building",
+        "shortName": "",
         "name_1": "OSEB",
         "name_2": "Ocean Science Education Building",
         "objectid": 901,
@@ -2802,6 +2822,7 @@ var campus =
         "@id": "way/220504812",
         "building": "university",
         "name": "Biology Shop & Biology Storeroom",
+        "shortName": "",
         "ref": 569,
         "website": "https://undergrad.biology.ucsb.edu/majors/pharmacology",
         "image": ""
@@ -2856,6 +2877,7 @@ var campus =
         "@id": "way/220504813",
         "building": "university",
         "name": "Wooden Teaching/Research Greenhouse",
+        "shortName": "",
         "ref": 540,
         "website": "https://www.eemb.ucsb.edu/services/greenhouse",
         "image": "https://greenhouse.eemb.ucsb.edu/sites/greenhouse.eemb.ucsb.edu/files/styles/full/public/inst/wooden-gh.jpg?itok=QsuXSRAQ"
@@ -2918,6 +2940,7 @@ var campus =
         "@id": "way/220506929",
         "building": "university",
         "name": "EEMB Greenhouse",
+        "shortName": "",
         "ref": 540,
         "website": "",
         "image": ""
@@ -2976,6 +2999,7 @@ var campus =
         "building": "university",
         "building:levels": 1,
         "name": "Sea Water Pump House",
+        "shortName": "",
         "ref": 502,
         "website": "http://marineops.eemb.ucsb.edu/services/seawater-system",
         "image": ""
@@ -3029,6 +3053,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Lagoon Pump House",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Campus Facility",
         "@id": "way/220634937",
@@ -3074,7 +3099,8 @@ var campus =
         "details": "Classrooms, Offices",
         "@id": "way/221233453",
         "building": "university",
-        "name": "Biology II",
+        "name": "Biological Science 2",
+        "shortName": "BIOL2",
         "ref": 571,
         "website": "https://biology.ucsb.edu/",
         "image": "https://labs.mcdb.ucsb.edu/ruoslahti/erkki/visitor/bio-2.jpg"
@@ -3139,7 +3165,8 @@ var campus =
         "details": "Classrooms, Offices",
         "@id": "way/221233454",
         "building": "university",
-        "name": "Biology II",
+        "name": "Biological Science 2",
+        "shortName": "BIOL2",
         "ref": 571,
         "website": "https://biology.ucsb.edu/",
         "image": "https://labs.mcdb.ucsb.edu/ruoslahti/erkki/visitor/bio-2.jpg"
@@ -3197,6 +3224,7 @@ var campus =
         "@id": "way/221234034",
         "building": "university",
         "name": "Life Sciences",
+        "shortName": "LSB",
         "ref": "235",
         "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Life_Sciences_Building%2C_UCSB.jpg",
         "website": ""
@@ -3258,6 +3286,7 @@ var campus =
         "@id": "way/221234035",
         "building": "university",
         "name": "Life Sciences",
+        "shortName": "LSB",
         "ref": 235,
         "website": "",
         "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Life_Sciences_Building%2C_UCSB.jpg"
@@ -3431,6 +3460,7 @@ var campus =
         "@id": "way/221234145",
         "building": "university",
         "name": "Psychology",
+        "shortName": "PSYCH",
         "ref": 551,
         "website": "https://www.psych.ucsb.edu",
         "image": "https://www.psych.ucsb.edu/sites/www.psych.ucsb.edu/files/images/grad/PnBS.jpg"
@@ -3472,6 +3502,7 @@ var campus =
         "@id": "way/221234146",
         "building": "university",
         "name": "Psychology East",
+        "shortName": "",
         "ref": "251",
         "website": "",
         "image": ""
@@ -3585,6 +3616,7 @@ var campus =
         "@id": "way/221234147",
         "building": "university",
         "name": "Psychology",
+        "shortName": "PSYCH",
         "ref": "551",
         "website": "https://www.psych.ucsb.edu",
         "image": "https://www.psych.ucsb.edu/sites/www.psych.ucsb.edu/files/images/grad/PnBS.jpg"
@@ -3626,6 +3658,7 @@ var campus =
         "@id": "way/221234881",
         "building": "university",
         "name": "University Center (UCEN)",
+        "shortName": "",
         "ref": "558",
         "website": "www.ucen.ucsb.edu/",
         "image": "https://artsandlectures.ucsb.edu/img/venues/ucen-entrance.jpg"
@@ -3747,6 +3780,7 @@ var campus =
         "@id": "way/221234882",
         "building": "commercial",
         "name": "University Center (UCEN)",
+        "shortName": "",
         "ref": 558,
         "website": "www.ucen.ucsb.edu/",
         "image": "https://artsandlectures.ucsb.edu/img/venues/ucen-entrance.jpg"
@@ -3948,6 +3982,7 @@ var campus =
         "@id": "way/221235842",
         "building": "university",
         "name": "Filter Building",
+        "shortName": "",
         "ref": "205",
         "website": "",
         "image": ""
@@ -4005,6 +4040,7 @@ var campus =
         "@id": "way/221235843",
         "building": "university",
         "name": "Marine Biotechnology Lab",
+        "shortName": "MLAB",
         "ref": 555,
         "website": "http://msi.ucsb.edu/marine-biotechnology-center",
         "image": "https://image.ibb.co/hrh0xn/UCSB_32_rf.jpg"
@@ -4122,6 +4158,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "The REEF",
+        "shortName": "",
         "category": "Main Campus",
         "details": " Research Experience & Education Facility",
         "@id": "way/221235844",
@@ -4179,6 +4216,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Aquarium Facility",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Research Facility",
         "@id": "way/221235845",
@@ -4256,6 +4294,7 @@ var campus =
         "@id": "way/221235914",
         "building": "university",
         "name": "Multicultural Center",
+        "shortName": "",
         "ref": "558",
         "website": "mcc.sa.ucsb.edu/",
         "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2017/11/Multicultural-Center-UCSB.jpg"
@@ -4385,6 +4424,7 @@ var campus =
         "@id": "way/221236506",
         "building": "university",
         "name": "Student Resource Building",
+        "shortName": "SRB",
         "ref": "221",
         "website": "www.sa.ucsb.edu/student-resource-building/home",
         "image": "https://food.ucsb.edu/images/default-source/default-album/srb-building8867cff45cd0.jpg?sfvrsn=7a564969_0"
@@ -4662,6 +4702,7 @@ var campus =
         "@id": "way/221236752",
         "building": "university",
         "name": "Events Center (Thunderdome)",
+        "shortName": "EVENT CENTR",
         "ref": "505",
         "website": "http://eventscenter.ucsb.edu/index.php",
         "image": "https://fthmb.tqn.com/WD84tV_en1nFyGQCXnfLJJntrqk=/1000x667/filters:no_upscale()/Events-Center-Thunderdome-UCSB-56a186873df78cf7726bbc43.jpg"
@@ -4895,6 +4936,7 @@ var campus =
         "@id": "way/221237576",
         "building": "university",
         "name": "Humanities and Social Sciences",
+        "shortName": "HSSB",
         "ref": "515",
         "website": "",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000NwFi6McKUto/s/750/750/01-01-03-TJM.jpg"
@@ -5288,6 +5330,7 @@ var campus =
         "@id": "way/221238562",
         "building": "university",
         "name": "Women's Center",
+        "shortName": "WMNS CENTR",
         "ref": "434",
         "website": "wgse.sa.ucsb.edu/",
         "image": ""
@@ -5449,6 +5492,7 @@ var campus =
         "@id": "way/221238566",
         "building": "university",
         "name": "Counseling & Career Services",
+        "shortName": "",
         "ref": "599",
         "website": "career.sa.ucsb.edu/students/career-counseling",
         "image": ""
@@ -5662,6 +5706,7 @@ var campus =
         "@id": "way/221239593",
         "building": "university",
         "name": "Education",
+        "shortName": "",
         "ref": "275",
         "website": "https://education.ucsb.edu/",
         "image": "https://education.ucsb.edu/sites/default/files/styles/full_width/public/homepage_slideshow/temp2.jpg?itok=ji9cwI0o"
@@ -6007,6 +6052,7 @@ var campus =
         "@id": "way/221239594",
         "building": "university",
         "name": "Social Sciences and Media Studies",
+        "shortName": "",
         "ref": "276",
         "website": "http://www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://preview.ibb.co/fKkLxn/SSMS.jpg"
@@ -6180,6 +6226,7 @@ var campus =
         "@id": "way/221239595",
         "building": "university",
         "name": "Koegel Autism Center",
+        "shortName": "",
         "ref": "275",
         "website": "https://education.ucsb.edu/autism",
         "image": "https://preview.ibb.co/kD9kV7/Screen_Shot_2018_03_05_at_5_04_43_PM.png"
@@ -6294,6 +6341,7 @@ var campus =
         "amenity": "theatre",
         "building": "yes",
         "name": "Pollock Theater",
+        "shortName": "",
         "ref": "277",
         "website": "https://www.carseywolf.ucsb.edu/pollock/",
         "image": "https://www.carseywolf.ucsb.edu/wp-content/uploads/2017/11/pollock-with-two-WEB.jpg"
@@ -6651,6 +6699,7 @@ var campus =
         "@id": "way/221239599",
         "building": "university",
         "name": "Social Sciences and Media Studies",
+        "shortName": "",
         "ref": "276",
         "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
@@ -6908,6 +6957,7 @@ var campus =
         "@id": "way/221239600",
         "building": "university",
         "name": "Social Sciences and Media Studies",
+        "shortName": "",
         "ref": "276",
         "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
@@ -7057,7 +7107,8 @@ var campus =
         "@id": "way/221239778",
         "building": "university",
         "leisure": "sports_centre",
-        "name": "Rob Gym",
+        "name": "Robertson Gym",
+        "shortName": "RGYM",
         "ref": "533",
         "website": "recreation.sa.ucsb.edu/facilities",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs-VOhWtU6F3DoYGIt0-NE9olApGVLVjhHMcuNKfjVuzPqcatFsg"
@@ -7228,6 +7279,7 @@ var campus =
         "building": "university",
         "building:levels": "2",
         "name": "Intercollegiate Athletics",
+        "shortName": "",
         "ref": "243",
         "website": "http://ucsb.prestosports.com/information/dare_to_be_great/capital_projects/ica",
         "image": "https://preview.ibb.co/gFVyiS/ICA_Building_ad_hoc.jpg"
@@ -7458,6 +7510,7 @@ var campus =
         "building": "university",
         "leisure": "sports_centre",
         "name": "Recreation Center",
+        "shortName": "RECEN",
         "ref": "516",
         "website": "recreation.sa.ucsb.edu/",
         "image": "https://fthmb.tqn.com/TToFe7BEGBkaMzYB7zQsd8BjfGI=/1000x667/filters:no_upscale()/Recreation-Center-UCSB-56a186423df78cf7726bb96e.jpg"
@@ -8852,6 +8905,7 @@ var campus =
         "building": "university",
         "leisure": "sports_centre",
         "name": "Recreation Center",
+        "shortName": "",
         "ref": "516",
         "website": "recreation.sa.ucsb.edu/",
         "image": "https://fthmb.tqn.com/TToFe7BEGBkaMzYB7zQsd8BjfGI=/1000x667/filters:no_upscale()/Recreation-Center-UCSB-56a186423df78cf7726bb96e.jpg"
@@ -8998,6 +9052,7 @@ var campus =
         "building": "university",
         "leisure": "sports_centre",
         "name": "MAC",
+        "shortName": "",
         "ref": "511",
         "website": "recreation.sa.ucsb.edu/facilities",
         "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2017/12/IMG_7869-696x464.jpg"
@@ -9148,6 +9203,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "MAC",
+        "shortName": "",
         "details": "Athletics Facility",
         "@id": "way/221240423",
         "building": "university",
@@ -9193,6 +9249,7 @@ var campus =
         "@id": "way/221240542",
         "building": "university",
         "name": "Environmental Health & Safety",
+        "shortName": "",
         "ref": "565",
         "website": "www.ehs.ucsb.edu/",
         "image": ""
@@ -9350,6 +9407,7 @@ var campus =
         "@id": "way/221240658",
         "building": "university",
         "name": "Mosher Alumni House",
+        "shortName": "",
         "ref": "517",
         "website": "www.ucsbalum.com/programs/mosher/",
         "image": "https://ucsb.imodules.com/s/1016/images/editor/mosher__cropped.jpg"
@@ -9388,6 +9446,7 @@ var campus =
         "building": "university",
         "building:levels": "3",
         "name": "Mosher Alumni House",
+        "shortName": "",
         "ref": "517",
         "website": "www.ucsbalum.com/programs/mosher/",
         "image": "https://ucsb.imodules.com/s/1016/images/editor/mosher__cropped.jpg"
@@ -9761,6 +9820,7 @@ var campus =
         "@id": "way/221241233",
         "building": "university",
         "name": "Campbell Hall",
+        "shortName": "CAMPB HALL",
         "ref": "538",
         "website": "https://artsandlectures.ucsb.edu/Tickets/Venues.aspx?VenueID=34",
         "image": "https://artsandlectures.ucsb.edu/img/venues/CampbellHallExterior.jpg"
@@ -10086,6 +10146,7 @@ var campus =
         "@id": "way/221241518",
         "building": "university",
         "name": "Ellison Hall",
+        "shortName": "ELLSN",
         "ref": "563",
         "website": "https://geog.ucsb.edu/the-geography-of-ellison-hall/",
         "image": "https://preview.ibb.co/gFVyiS/ICA_Building_ad_hoc.jpg"
@@ -10319,6 +10380,7 @@ var campus =
         "@id": "way/221241519",
         "building": "university",
         "name": "Chemistry",
+        "shortName": "CHEM",
         "ref": "557",
         "website": "https://campusguide.files.wordpress.com/2014/10/ucsb_physcience21.jpg",
         "image": "www.chem.ucsb.edu/"
@@ -10436,6 +10498,7 @@ var campus =
         "@id": "way/221241521",
         "building": "university",
         "name": "Physical Sciences North",
+        "shortName": "PSB-N",
         "ref": "657",
         "website": "",
         "image": "https://image.ibb.co/cOCaxn/Physical_Sciences_North.jpg"
@@ -10641,6 +10704,7 @@ var campus =
         "@id": "way/221242056",
         "building": "university",
         "name": "Kohn Hall",
+        "shortName": "KOHN",
         "ref": "567",
         "website": "",
         "image": "https://thebottomline.as.ucsb.edu/wp-content/uploads/2014/11/01__-696x464.jpg"
@@ -11308,6 +11372,7 @@ var campus =
         "building:levels": "2",
         "description": "UCSB Department of Earth Sciences",
         "name": "Webb Hall",
+        "shortName": "WEBB",
         "ref": "526",
         "website": "http://www.geol.ucsb.edu/",
         "wheelchair": "yes"
@@ -11405,6 +11470,7 @@ var campus =
         "@id": "way/221242397",
         "building": "university",
         "name": "Noble Hall",
+        "shortName": "NOBLE",
         "ref": "544",
         "website": "",
         "image": "https://image.ibb.co/dj3yHn/IMG_6888.jpg"
@@ -11526,6 +11592,7 @@ var campus =
         "@id": "way/221242398",
         "building": "university",
         "name": "Materials Research Laboratory",
+        "shortName": "",
         "ref": "615",
         "website": "https://www.mrl.ucsb.edu/",
         "image": "https://image.ibb.co/ktSKOS/MRLext.jpg"
@@ -11623,8 +11690,10 @@ var campus =
         "@id": "way/221258374",
         "building": "university",
         "name": "Buchanan Hall",
+        "shortName": "BUCHN",
         "ref": "573",
-        "website": "buchanan.classroom.id.ucsb.edu/"
+        "website": "buchanan.classroom.id.ucsb.edu/",
+        "image": ""
       },
       "geometry": {
         "type": "Polygon",
@@ -11744,6 +11813,7 @@ var campus =
         "building": "university",
         "ref": "937",
         "name": "Broida Hall",
+        "shortName": "BRDA",
         "website": "www.physics.ucsb.edu/",
         "image": "https://web.physics.ucsb.edu/~Women/images/broida.jpg"
       },
@@ -11784,6 +11854,7 @@ var campus =
         "@id": "way/221258376",
         "building": "university",
         "name": "Biological Sciences Instructional Facility",
+        "shortName": "BSIF",
         "ref": "504",
         "website": "",
         "image": ""
@@ -11841,6 +11912,7 @@ var campus =
         "@id": "way/221258377",
         "building": "university",
         "name": "Broida Hall",
+        "shortName": "BRDA",
         "ref": "572",
         "website": "",
         "image": "https://web.physics.ucsb.edu/~Women/images/broida.jpg"
@@ -12015,6 +12087,7 @@ var campus =
         "building": "university",
         "ref": "937",
         "name": "Physics Trailer 2",
+        "shortName": "",
         "website": "",
         "image": ""
       },
@@ -12056,6 +12129,7 @@ var campus =
         "building": "university",
         "ref": "937",
         "name": "Physics Trailer 1",
+        "shortName": "",
         "website": "",
         "image": ""
       },
@@ -12096,6 +12170,7 @@ var campus =
         "@id": "way/221258399",
         "building": "university",
         "name": "Engineering Science",
+        "shortName": "ESB",
         "ref": "225",
         "website": "https://engineering.ucsb.edu/undergraduate/majors-programs/engineering-sciences",
         "image": "https://industry.ucsb.edu/sites/industry.ucsb.edu/files/styles/side-by-side/public/images/faciltiies_0.jpg?itok=hXyELeqw"
@@ -12145,6 +12220,7 @@ var campus =
         "@id": "way/221258400",
         "building": "university",
         "name": "Engineering Science",
+        "shortName": "ESB",
         "ref": "225",
         "website": "https://engineering.ucsb.edu/undergraduate/majors-programs/engineering-sciences",
         "image": "https://industry.ucsb.edu/sites/industry.ucsb.edu/files/styles/side-by-side/public/images/faciltiies_0.jpg?itok=hXyELeqw"
@@ -12362,6 +12438,7 @@ var campus =
         "@id": "way/221258744",
         "building": "university",
         "name": "Elings Hall (CNSI)",
+        "shortName": "",
         "ref": "266",
         "website": "https://www.cnsi.ucsb.edu/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Elings_Hall.jpg/1200px-Elings_Hall.jpg"
@@ -12448,6 +12525,7 @@ var campus =
         "amenity": "cafe",
         "building": "university",
         "name": "Coral Tree Cafe",
+        "shortName": "",
         "ref": "532",
         "website": "www.ucen.ucsb.edu/dining/dining-around-campus",
         "image": "https://c1.staticflickr.com/9/8149/7283839948_b871055564_b.jpg"
@@ -12544,7 +12622,8 @@ var campus =
         "details": "Administrative, Student Resources",
         "@id": "way/221259488",
         "building": "university",
-        "name": "Student Affairs Administrative Services Building (SAASB)",
+        "name": "Student Affairs Administrative Services Building",
+        "shortName": "SAASB",
         "ref": "568",
         "website": "www.sa.ucsb.edu/",
         "image": "https://www.bfs.ucsb.edu/sites/www.bfs.ucsb.edu/files/slideshow/saasb-exterior_0.jpg"
@@ -13042,6 +13121,7 @@ var campus =
         "@id": "way/221259489",
         "building": "university",
         "name": "Cheadle Hall",
+        "shortName": "",
         "ref": "552",
         "website": "",
         "image": "https://independent.media.clients.ellingtoncms.com/img/croppedphotos/2015/12/17/ucsb_cheadle_hall_t958.jpg?fef15e12b784e9bbb22bf3f2924819218cda3d1a"
@@ -13164,6 +13244,7 @@ var campus =
         "building": "university",
         "ref": "388",
         "name": "Parking Services",
+        "shortName": "",
         "website": "",
         "image": ""
       },
@@ -13212,6 +13293,7 @@ var campus =
         "@id": "way/221260106",
         "building": "university",
         "name": "Parking Services",
+        "shortName": "",
         "ref": "381",
         "website": "",
         "image": ""
@@ -13273,6 +13355,7 @@ var campus =
         "@id": "way/221260919",
         "building": "university",
         "name": "Harder Stadium",
+        "shortName": "",
         "website": "https://events.ucsb.edu/venue/harder-stadium/",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Harder_Stadium_Santa_Barbara_CA.JPG/1200px-Harder_Stadium_Santa_Barbara_CA.JPG"
       },
@@ -13315,6 +13398,7 @@ var campus =
         "ele": 10,
         "ref": 578,
         "name": "Harder Stadium",
+        "shortName": "",
         "website": "https://events.ucsb.edu/venue/harder-stadium/",
         "image": ""
       },
@@ -13373,6 +13457,7 @@ var campus =
         "ele": 10,
         "ref": 580,
         "name": "Harder Stadium",
+        "shortName": "",
         "website": "https://events.ucsb.edu/venue/harder-stadium/",
         "image": ""
       },
@@ -13521,6 +13606,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Public Safety",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Fire and Police Station ",
         "@id": "way/221261022",
@@ -13567,6 +13653,7 @@ var campus =
         "addr:housenumber": "802",
         "building": "university",
         "name": "Communications Services",
+        "shortName": "",
         "website": "",
         "image": ""
       },
@@ -13608,6 +13695,7 @@ var campus =
         "addr:housenumber": "574",
         "building": "university",
         "name": "Public Safety",
+        "shortName": "",
         "website": "",
         "image": ""
       },
@@ -13732,6 +13820,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Public Safety",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Fire and Police Station",
         "@id": "way/221261028",
@@ -13777,6 +13866,7 @@ var campus =
         "@id": "way/221400828",
         "building": "university",
         "name": "Loma Pelona Center",
+        "shortName": "",
         "ref": "876",
         "type": "multipolygon",
         "website": "www.conferences.ucsb.edu/loma-pelona-center",
@@ -13851,6 +13941,7 @@ var campus =
         "@id": "way/221400829",
         "building": "university",
         "name": "Loma Pelona Center",
+        "shortName": "",
         "ref": "876",
         "type": "multipolygon",
         "website": "https://events.ucsb.edu/venue/loma-pelona-center/",
@@ -13901,6 +13992,7 @@ var campus =
         "@id": "way/221400830",
         "building": "university",
         "name": "Loma Pelona Center",
+        "shortName": "",
         "ref": "876",
         "type": "multipolygon",
         "website": "https://events.ucsb.edu/venue/loma-pelona-center/",
@@ -13967,6 +14059,7 @@ var campus =
         "@id": "way/221403272",
         "building": "university",
         "name": "Theater and Dance East",
+        "shortName": "TD-E",
         "ref": "554",
         "website": "www.theaterdance.ucsb.edu/",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
@@ -14048,6 +14141,7 @@ var campus =
         "@id": "way/221403275",
         "building": "university",
         "name": "Theater and Dance West",
+        "shortName": "TD-W",
         "ref": "223",
         "website": "www.theaterdance.ucsb.edu/",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
@@ -14381,6 +14475,7 @@ var campus =
         "@id": "way/221403281",
         "building": "university",
         "name": "Theater and Dance Auditorium",
+        "shortName": "",
         "ref": "223",
         "website": "www.theaterdance.ucsb.edu/",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
@@ -14478,6 +14573,7 @@ var campus =
         "@id": "way/221404491",
         "building": "university",
         "name": "Arbor",
+        "shortName": "",
         "ref": "501",
         "shop": "convenience",
         "website": "",
@@ -14892,6 +14988,7 @@ var campus =
         "@id": "way/221404492",
         "building": "university",
         "name": "Art, Design & Architecture Museum",
+        "shortName": "",
         "operator": "University of California, Santa Barbara",
         "phone": "+1 (805) 893-2951",
         "ref": "534",
@@ -14985,6 +15082,7 @@ var campus =
         "@id": "way/221404598",
         "building": "university",
         "name": "South Hall",
+        "shortName": "SH",
         "ref": "528",
         "website": "",
         "image": "https://oep.ucsb.edu/about/directions/carousel.images/south_hall.jpg"
@@ -15026,6 +15124,7 @@ var campus =
         "@id": "way/221404599",
         "building": "university",
         "name": "Girvetz Hall",
+        "shortName": "GIRV",
         "ref": "564",
         "website": "",
         "image": "https://c1.staticflickr.com/5/4124/4993574762_459f7cbb7f_b.jpg"
@@ -15163,6 +15262,7 @@ var campus =
         "@id": "way/221404600",
         "building": "university",
         "name": "South Hall",
+        "shortName": "",
         "ref": "528",
         "website": "",
         "image": "https://oep.ucsb.edu/about/directions/carousel.images/south_hall.jpg"
@@ -15552,6 +15652,7 @@ var campus =
         "@id": "way/221404651",
         "building": "university",
         "name": "Kerr Hall",
+        "shortName": "KERR",
         "ref": "591",
         "website": "",
         "image": "https://farm1.staticflickr.com/30/60577588_2c44f42577_z.jpg?zz=1"
@@ -15637,6 +15738,7 @@ var campus =
         "@id": "way/221404652",
         "building": "university",
         "name": "North Hall",
+        "shortName": "NH",
         "ref": "535",
         "website": "",
         "image": "https://www.cs.ucsb.edu/~pconrad/topics/howtofind/NH1006/3.jpg"
@@ -15846,6 +15948,7 @@ var campus =
         "@id": "way/221404881",
         "building": "university",
         "name": "Red Barn (Old Gym)",
+        "shortName": "",
         "ref": "479",
         "website": "",
         "image": ""
@@ -16311,6 +16414,7 @@ var campus =
         "@id": "way/221408474",
         "building": "university",
         "name": "Cloud Lab",
+        "shortName": "",
         "ref": "575",
         "website": "",
         "image": ""
@@ -16428,6 +16532,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Office of Technology and Industry Alliances",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Offices",
         "@id": "way/221409553",
@@ -16473,6 +16578,7 @@ var campus =
         "@id": "way/221409555",
         "building": "university",
         "name": "University House",
+        "shortName": "",
         "ref": "543",
         "website": "",
         "image": ""
@@ -16634,6 +16740,7 @@ var campus =
         "@id": "way/221409659",
         "building": "university",
         "name": "Military Science",
+        "shortName": "",
         "ref": "451",
         "website": "",
         "image": ""
@@ -16671,6 +16778,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Physical Science",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Offices",
         "@id": "way/221409849",
@@ -16792,6 +16900,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Sycamore Hall",
+        "shortName": "",
         "category": "Main Campus",
         "details": "",
         "@id": "way/221409852",
@@ -16913,6 +17022,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Physics Trailer 3",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Offices",
         "@id": "way/221409856",
@@ -16954,6 +17064,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Arts & Lectures Ticket Office",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Ticket Booth, Offices",
         "@id": "way/221409858",
@@ -16999,6 +17110,7 @@ var campus =
         "@id": "way/221409862",
         "building": "university",
         "name": "Physical Sciences South",
+        "shortName": "PSB-S",
         "ref": "672",
         "website": "",
         "image": "https://image.ibb.co/iKvg3S/MShop_frontside_300.png"
@@ -17092,6 +17204,7 @@ var campus =
         "@id": "way/221410023",
         "building": "university",
         "name": "Love Lab",
+        "shortName": "",
         "ref": "346",
         "website": "",
         "image": ""
@@ -17137,6 +17250,7 @@ var campus =
       "type": "Feature",
       "properties": {
         "name": "Ergo Lab",
+        "shortName": "",
         "category": "Main Campus",
         "details": "Research Facility",
         "@id": "way/221410025",
@@ -17267,6 +17381,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411226",
@@ -17356,6 +17471,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411227",
@@ -17397,6 +17513,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411228",
@@ -17438,6 +17555,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411230",
@@ -17479,6 +17597,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411231",
@@ -17520,6 +17639,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411232",
@@ -17561,6 +17681,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411233",
@@ -17602,6 +17723,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411234",
@@ -17642,6 +17764,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411236",
@@ -17683,6 +17806,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411237",
@@ -17724,6 +17848,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411238",
@@ -17767,6 +17892,7 @@ var campus =
         "@id": "way/221411239",
         "building": "university",
         "name": "Centennial House",
+        "shortName": "",
         "category": "Main Campus",
         "ref": "530",
         "website": "",
@@ -17806,6 +17932,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411240",
@@ -17847,6 +17974,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411241",
@@ -17956,6 +18084,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411242",
@@ -17997,6 +18126,7 @@ var campus =
       "properties": {
         "category": "Main Campus",
         "name": "Facilities Management",
+        "shortName": "",
         "details": "Maintenance Services",
         "website": "https://www.facilities.ucsb.edu/departments/facilities-management",
         "@id": "way/221411243",
@@ -18059,6 +18189,7 @@ var campus =
         "amenity": "library",
         "building": "university",
         "name": "UCSB Library",
+        "shortName": "LIB",
         "operator": "University of California, Santa Barbara",
         "ref": "525",
         "website": "http://www.library.ucsb.edu/",
@@ -18313,6 +18444,7 @@ var campus =
         "@id": "way/410105410",
         "building": "university",
         "name": "BioEngineering",
+        "shortName": "BIOEN",
         "ref": "512",
         "website": "bioengineering.ucsb.edu/facilities",
         "image": "https://preview.ibb.co/nvRtHn/Bioengineering_001a.jpg"
@@ -18519,6 +18651,7 @@ var campus =
         "@id": "way/555804498",
         "building": "university",
         "name": "Energy Services",
+        "shortName": "",
         "website": "",
         "image": ""
       },
@@ -18560,6 +18693,7 @@ var campus =
         "building": "university",
         "height": "53",
         "name": "Storke Tower",
+        "shortName": "",
         "ref": "589",
         "website": "https://en.wikipedia.org/wiki/Storke_Tower",
         "image": "https://t00.deviantart.net/tv626dUCzFBLN7Aq-gAU5xqXLCw=/fit-in/700x350/filters:fixed_height(100,100):origin()/pre00/34a4/th/pre/i/2006/158/7/d/storke_tower__by_nsted03.jpg",
@@ -18570,6 +18704,7 @@ var campus =
             "reltags": {
               "building": "university",
               "name": "Student Communications Building",
+              "shortName": "",
               "ref": "589",
               "type": "multipolygon"
             }
@@ -18613,6 +18748,7 @@ var campus =
         "@id": "way/453275826",
         "building": "yes",
         "name": "Baseball Facility",
+        "shortName": "",
         "website": "http://www.ucsbgauchos.com/sports/m-basebl/index",
         "image": ""
       },
@@ -18693,6 +18829,7 @@ var campus =
         "@id": "way/466475853",
         "building": "yes",
         "name": "Baseball Facility",
+        "shortName": "",
         "website": "http://www.ucsbgauchos.com/sports/m-basebl/index",
         "image": ""
       },
@@ -18764,6 +18901,7 @@ var campus =
         "building": "yes",
         "category": "Main Campus",
         "name": "Distribution & Logistical Services (Central Stores)",
+        "shortName": "",
         "details": "UCSB Mail Services, Surplus Sales, and Furniture Services",
         "website": "https://www.dls.ucsb.edu/",
         "image": ""
@@ -18841,6 +18979,7 @@ var campus =
         "amenity": "police",
         "building": "yes",
         "name": "Isla Vista Foot Patrol",
+        "shortName": "",
         "category": "Isla Vista",
         "details": "Police Station",
         "image": "https://www.noozhawk.com/images/uploads/630-062515-isla-vista-foot-patrol-7-lc.jpg",
@@ -19046,6 +19185,7 @@ var campus =
         "@id": "way/220506931",
         "building": "university",
         "name": "Schuyler Research Greenhouse",
+        "shortName": "",
         "ref": 541,
         "category": "Main Campus",
         "details": "Research Facility",
@@ -19092,6 +19232,7 @@ var campus =
         "@id": "way/221409150",
         "building": "university",
         "name": "NSF Research Greenhouse",
+        "shortName": "",
         "ref": 443,
         "category": "Main Campus",
         "details": "Research Facility",
@@ -19137,6 +19278,7 @@ var campus =
         "fill-opacity": 0.5,
         "category": "Main Campus",
         "name": "Alpine Research Greenhouse",
+        "shortName": "",
         "ref": 442,
         "details": "Research Facility",
         "image": "",
@@ -19180,6 +19322,7 @@ var campus =
         "fill-opacity": 0.5,
         "category": "Main Campus",
         "name": "The Club & Guest House",
+        "shortName": "",
         "details": "Faculty Resources",
         "image": "",
         "website": ""

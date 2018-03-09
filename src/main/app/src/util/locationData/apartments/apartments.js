@@ -16,6 +16,7 @@ var apartments = {
         "addr:street": "El Colegio Road",
         "building": "yes",
         "name": "El Dorado Apartments",
+        "shortName": "",
         "type": "multipolygon"
       },
       "geometry": {
@@ -117,6 +118,7 @@ var apartments = {
         "addr:housenumber": 834,
         "building": "university",
         "name": "KITP Residence (Munger Physics Residence)"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -715,6 +717,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Arrowhead Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -813,6 +816,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Bradbury Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -875,6 +879,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Bradbury Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -921,6 +926,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Castaic Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -979,6 +985,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Castaic Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1025,6 +1032,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Castaic Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1071,6 +1079,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Castaic Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1117,6 +1126,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Donner Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1179,6 +1189,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Encino Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1249,6 +1260,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Encino Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1295,6 +1307,7 @@ var apartments = {
         "building": "yes",
         "alt-name": "Donner Village",
         "name": "San Clemente Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1342,6 +1355,7 @@ var apartments = {
         "addr:unit": "A",
         "building": "yes",
         "name": "Tenaya Market",
+        "shortName": "",
         "shop": "convenience"
       },
       "geometry": {
@@ -1396,6 +1410,7 @@ var apartments = {
         "@id": "way/558198066",
         "building": "dormitory",
         "name": "Tenaya South"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1675,6 +1690,7 @@ var apartments = {
         "addr:unit": "A",
         "building": "yes",
         "name": "Tenaya Pavillion"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1722,6 +1738,7 @@ var apartments = {
         "addr:unit": "B",
         "building": "yes",
         "name": "Tenaya Pavillion"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1773,6 +1790,7 @@ var apartments = {
         "addr:unit": "D",
         "building": "yes",
         "name": "Tenaya South"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1821,6 +1839,7 @@ var apartments = {
         "building": "yes",
         "shop": "laundry",
         "name": "Tenaya South"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1861,6 +1880,7 @@ var apartments = {
         "@id": "way/560571174",
         "building": "dormitory",
         "name": "Tenaya South"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -1949,6 +1969,7 @@ var apartments = {
         "@id": "way/560571173",
         "building": "dormitory",
         "name": "Tenaya North"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2039,6 +2060,7 @@ var apartments = {
         "addr:housenumber": 4124,
         "building": "yes",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2093,6 +2115,7 @@ var apartments = {
         "addr:housenumber": 2126,
         "building": "yes",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2159,6 +2182,7 @@ var apartments = {
         "addr:housenumber": 1102,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2213,6 +2237,7 @@ var apartments = {
         "addr:housenumber": 1103,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2275,6 +2300,7 @@ var apartments = {
         "addr:housenumber": 1101,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2329,6 +2355,7 @@ var apartments = {
         "addr:housenumber": 1109,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2387,6 +2414,7 @@ var apartments = {
         "addr:housenumber": 1108,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2441,6 +2469,7 @@ var apartments = {
         "addr:housenumber": 1107,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2495,6 +2524,7 @@ var apartments = {
         "addr:housenumber": 1111,
         "building": "yes",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2545,6 +2575,7 @@ var apartments = {
         "addr:housenumber": 1117,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2599,6 +2630,7 @@ var apartments = {
         "addr:housenumber": 1116,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2653,6 +2685,7 @@ var apartments = {
         "addr:housenumber": 1115,
         "building": "dormitory",
         "name": "Elsinore Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2707,6 +2740,7 @@ var apartments = {
         "addr:housenumber": 2103,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2761,6 +2795,7 @@ var apartments = {
         "addr:housenumber": 2102,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2819,6 +2854,7 @@ var apartments = {
         "addr:housenumber": 2101,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2873,6 +2909,7 @@ var apartments = {
         "addr:housenumber": 2105,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2927,6 +2964,7 @@ var apartments = {
         "addr:housenumber": 2106,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2985,6 +3023,7 @@ var apartments = {
         "addr:housenumber": 2107,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3040,6 +3079,7 @@ var apartments = {
         "building": "yes",
         "shop": "laundry",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3085,6 +3125,7 @@ var apartments = {
         "@id": "way/558181810",
         "building": "yes",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3130,6 +3171,7 @@ var apartments = {
         "@id": "way/558181811",
         "building": "yes",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3176,6 +3218,7 @@ var apartments = {
         "addr:housenumber": 2124,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3230,6 +3273,7 @@ var apartments = {
         "addr:housenumber": 2122,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3288,6 +3332,7 @@ var apartments = {
         "addr:housenumber": 2121,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3342,6 +3387,7 @@ var apartments = {
         "addr:housenumber": 2115,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3396,6 +3442,7 @@ var apartments = {
         "addr:housenumber": 2116,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3454,6 +3501,7 @@ var apartments = {
         "addr:housenumber": 2117,
         "building": "dormitory",
         "name": "Calaveras Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3508,6 +3556,7 @@ var apartments = {
         "addr:housenumber": 3104,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3562,6 +3611,7 @@ var apartments = {
         "addr:housenumber": 3103,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3616,6 +3666,7 @@ var apartments = {
         "addr:housenumber": 3101,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3670,6 +3721,7 @@ var apartments = {
         "addr:housenumber": 3107,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3724,6 +3776,7 @@ var apartments = {
         "addr:housenumber": 3108,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3778,6 +3831,7 @@ var apartments = {
         "addr:housenumber": 3109,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3839,6 +3893,7 @@ var apartments = {
         "@id": "way/558190369",
         "building": "yes",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3885,6 +3940,7 @@ var apartments = {
         "addr:housenumber": 3112,
         "building": "yes",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3931,6 +3987,7 @@ var apartments = {
         "addr:housenumber": 3113,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3977,6 +4034,7 @@ var apartments = {
         "addr:housenumber": 3114,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4031,6 +4089,7 @@ var apartments = {
         "addr:housenumber": 4101,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4085,6 +4144,7 @@ var apartments = {
         "addr:housenumber": 4103,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4139,6 +4199,7 @@ var apartments = {
         "addr:housenumber": 4102,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4197,6 +4258,7 @@ var apartments = {
         "addr:housenumber": 4108,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4251,6 +4313,7 @@ var apartments = {
         "addr:housenumber": 4107,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4309,6 +4372,7 @@ var apartments = {
         "addr:housenumber": 4106,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4363,6 +4427,7 @@ var apartments = {
         "addr:housenumber": 4119,
         "building": "yes",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4413,6 +4478,7 @@ var apartments = {
         "addr:housenumber": 4123,
         "building": "yes",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4458,6 +4524,7 @@ var apartments = {
         "@id": "way/558190381",
         "building": "yes",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4508,6 +4575,7 @@ var apartments = {
         "addr:housenumber": 4113,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4562,6 +4630,7 @@ var apartments = {
         "addr:housenumber": 4111,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4620,6 +4689,7 @@ var apartments = {
         "addr:housenumber": 4110,
         "building": "dormitory",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4673,6 +4743,7 @@ var apartments = {
         "@id": "way/558190385",
         "building": "yes",
         "name": "Romona Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4723,6 +4794,7 @@ var apartments = {
         "addr:housenumber": 3116,
         "building": "yes",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4769,6 +4841,7 @@ var apartments = {
         "addr:housenumber": 3117,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4827,6 +4900,7 @@ var apartments = {
         "addr:housenumber": 3118,
         "building": "dormitory",
         "name": "Malibu Court"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4887,6 +4961,7 @@ var apartments = {
         "@id": "way/38269171",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4931,6 +5006,7 @@ var apartments = {
         "@id": "way/38269172",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4991,6 +5067,7 @@ var apartments = {
         "@id": "way/38269173",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5035,6 +5112,7 @@ var apartments = {
         "@id": "way/38269174",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5115,6 +5193,7 @@ var apartments = {
         "@id": "way/38269175",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5191,6 +5270,7 @@ var apartments = {
         "@id": "way/38269176",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5267,6 +5347,7 @@ var apartments = {
         "@id": "way/38269177",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5339,6 +5420,7 @@ var apartments = {
         "@id": "way/38269178",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5415,6 +5497,7 @@ var apartments = {
         "@id": "way/38269179",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5491,6 +5574,7 @@ var apartments = {
         "@id": "way/38269180",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5563,6 +5647,7 @@ var apartments = {
         "@id": "way/38269181",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5643,6 +5728,7 @@ var apartments = {
         "@id": "way/38269182",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5719,6 +5805,7 @@ var apartments = {
         "@id": "way/38269183",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5795,6 +5882,7 @@ var apartments = {
         "@id": "way/38269184",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5875,6 +5963,7 @@ var apartments = {
         "@id": "way/38269185",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5955,6 +6044,7 @@ var apartments = {
         "@id": "way/38269188",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6139,6 +6229,7 @@ var apartments = {
         "@id": "way/38269189",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6215,6 +6306,7 @@ var apartments = {
         "@id": "way/38269190",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6295,6 +6387,7 @@ var apartments = {
         "@id": "way/38269191",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6375,6 +6468,7 @@ var apartments = {
         "@id": "way/38269192",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6451,6 +6545,7 @@ var apartments = {
         "@id": "way/38269193",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6527,6 +6622,7 @@ var apartments = {
         "@id": "way/38269194",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6603,6 +6699,7 @@ var apartments = {
         "@id": "way/38269195",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6683,6 +6780,7 @@ var apartments = {
         "@id": "way/38269196",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6759,6 +6857,7 @@ var apartments = {
         "@id": "way/38269197",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6839,6 +6938,7 @@ var apartments = {
         "@id": "way/38269198",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6919,6 +7019,7 @@ var apartments = {
         "@id": "way/38269199",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -6995,6 +7096,7 @@ var apartments = {
         "@id": "way/38269200",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7067,6 +7169,7 @@ var apartments = {
         "@id": "way/38269201",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7139,6 +7242,7 @@ var apartments = {
         "@id": "way/38269202",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7219,6 +7323,7 @@ var apartments = {
         "@id": "way/38269203",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7295,6 +7400,7 @@ var apartments = {
         "@id": "way/38269204",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7371,6 +7477,7 @@ var apartments = {
         "@id": "way/38269205",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7451,6 +7558,7 @@ var apartments = {
         "@id": "way/38269209",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7527,6 +7635,7 @@ var apartments = {
         "@id": "way/38269210",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7603,6 +7712,7 @@ var apartments = {
         "@id": "way/38269211",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7684,6 +7794,7 @@ var apartments = {
         "@id": "way/38269212",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7756,6 +7867,7 @@ var apartments = {
         "@id": "way/38269213",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7832,6 +7944,7 @@ var apartments = {
         "@id": "way/38269214",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7908,6 +8021,7 @@ var apartments = {
         "@id": "way/38269215",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -7980,6 +8094,7 @@ var apartments = {
         "@id": "way/38269216",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8060,6 +8175,7 @@ var apartments = {
         "@id": "way/38269217",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8140,6 +8256,7 @@ var apartments = {
         "@id": "way/38269218",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8212,6 +8329,7 @@ var apartments = {
         "@id": "way/38269219",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8284,6 +8402,7 @@ var apartments = {
         "@id": "way/38269220",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8360,6 +8479,7 @@ var apartments = {
         "@id": "way/38269221",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8445,6 +8565,7 @@ var apartments = {
         "@id": "way/38269222",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8485,6 +8606,7 @@ var apartments = {
         "@id": "way/38269223",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8525,6 +8647,7 @@ var apartments = {
         "@id": "way/38269225",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8569,6 +8692,7 @@ var apartments = {
         "@id": "way/38269226",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8609,6 +8733,7 @@ var apartments = {
         "@id": "way/38269227",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8681,6 +8806,7 @@ var apartments = {
         "@id": "way/38269228",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8721,6 +8847,7 @@ var apartments = {
         "@id": "way/38269229",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8770,6 +8897,7 @@ var apartments = {
         "@id": "way/38269230",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8831,6 +8959,7 @@ var apartments = {
         "@id": "way/38269231",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8871,6 +9000,7 @@ var apartments = {
         "@id": "way/38269232",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8915,6 +9045,7 @@ var apartments = {
         "@id": "way/38269233",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8959,6 +9090,7 @@ var apartments = {
         "@id": "way/38269235",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -8999,6 +9131,7 @@ var apartments = {
         "@id": "way/82456456",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9043,6 +9176,7 @@ var apartments = {
         "@id": "way/82456467",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9083,6 +9217,7 @@ var apartments = {
         "@id": "way/145625095",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9127,6 +9262,7 @@ var apartments = {
         "@id": "way/145625096",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9171,6 +9307,7 @@ var apartments = {
         "@id": "way/462469183",
         "building": "yes",
         "name": "Santa Ynez Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9347,6 +9484,7 @@ var apartments = {
         "addr:street": "Storke Road",
         "building": "residential",
         "name": "Sierra Madre Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9641,6 +9779,7 @@ var apartments = {
         "building": "yes",
         "shop": "convenience",
         "name": "Sierra Madre Rec Center"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9715,6 +9854,7 @@ var apartments = {
         "building:levels": 3,
         "alt-name": "Sierra Madre Villages",
         "name": "Miramar Center"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -9865,6 +10005,7 @@ var apartments = {
         "building:levels": 3,
         "alt-name": "Havasu Village",
         "name": "Sierra Madre Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -10115,6 +10256,7 @@ var apartments = {
         "building": "yes",
         "leisure": "fitness_centre",
         "name": "Sierra Madre Rec Center"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -10185,6 +10327,7 @@ var apartments = {
         "building:levels": 3,
         "alt-name": "Nacimiento Village",
         "name": "Sierra Madre Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -10443,6 +10586,7 @@ var apartments = {
         "building:levels": 3,
         "alt-name": "Toluca Village",
         "name": "Sierra Madre Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -10677,6 +10821,7 @@ var apartments = {
         "building:levels": 3,
         "alt-name": "Laguna Village",
         "name": "Sierra Madre Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -10859,6 +11004,7 @@ var apartments = {
         "building:levels": 3,
         "alt-name": "Berryessa Village",
         "name": "Sierra Madre Villages"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -11123,6 +11269,7 @@ var apartments = {
         "@id": "way/145630828",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -11228,6 +11375,7 @@ var apartments = {
         "@id": "way/145630829",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -11349,6 +11497,7 @@ var apartments = {
         "@id": "way/145630830",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -11470,6 +11619,7 @@ var apartments = {
         "@id": "way/145630831",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -11591,6 +11741,7 @@ var apartments = {
         "@id": "way/145630832",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -11776,6 +11927,7 @@ var apartments = {
         "@id": "way/145632641",
         "building": "yes",
         "name": "Storke Family Housing"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -11824,6 +11976,7 @@ var apartments = {
         "@id": "way/145634141",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -11897,6 +12050,7 @@ var apartments = {
         "@id": "way/145634142",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -11970,6 +12124,7 @@ var apartments = {
         "@id": "way/145634143",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12043,6 +12198,7 @@ var apartments = {
         "@id": "way/145634144",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12116,6 +12272,7 @@ var apartments = {
         "@id": "way/145634146",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12189,6 +12346,7 @@ var apartments = {
         "@id": "way/145634147",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12262,6 +12420,7 @@ var apartments = {
         "@id": "way/145634149",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12335,6 +12494,7 @@ var apartments = {
         "@id": "way/145634150",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12408,6 +12568,7 @@ var apartments = {
         "@id": "way/145634151",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12481,6 +12642,7 @@ var apartments = {
         "@id": "way/145634152",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12554,6 +12716,7 @@ var apartments = {
         "@id": "way/145634153",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12627,6 +12790,7 @@ var apartments = {
         "@id": "way/145634154",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12700,6 +12864,7 @@ var apartments = {
         "@id": "way/145634155",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12789,6 +12954,7 @@ var apartments = {
         "@id": "way/145634156",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12878,6 +13044,7 @@ var apartments = {
         "@id": "way/145634157",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -12967,6 +13134,7 @@ var apartments = {
         "@id": "way/145634158",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13056,6 +13224,7 @@ var apartments = {
         "@id": "way/145634159",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13145,6 +13314,7 @@ var apartments = {
         "@id": "way/145634160",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13234,6 +13404,7 @@ var apartments = {
         "@id": "way/145634161",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13323,6 +13494,7 @@ var apartments = {
         "@id": "way/145634162",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13412,6 +13584,7 @@ var apartments = {
         "@id": "way/145634163",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13501,6 +13674,7 @@ var apartments = {
         "@id": "way/145634164",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13606,6 +13780,7 @@ var apartments = {
         "@id": "way/145634165",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13711,6 +13886,7 @@ var apartments = {
         "@id": "way/145634166",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13816,6 +13992,7 @@ var apartments = {
         "@id": "way/145634167",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -13921,6 +14098,7 @@ var apartments = {
         "@id": "way/145634168",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14026,6 +14204,7 @@ var apartments = {
         "@id": "way/145634169",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14131,6 +14310,7 @@ var apartments = {
         "@id": "way/145634170",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14236,6 +14416,7 @@ var apartments = {
         "@id": "way/145634171",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14341,6 +14522,7 @@ var apartments = {
         "@id": "way/145634172",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14446,6 +14628,7 @@ var apartments = {
         "@id": "way/145634173",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14551,6 +14734,7 @@ var apartments = {
         "@id": "way/145634174",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14672,6 +14856,7 @@ var apartments = {
         "@id": "way/145634175",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14793,6 +14978,7 @@ var apartments = {
         "@id": "way/145634176",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -14914,6 +15100,7 @@ var apartments = {
         "@id": "way/145634177",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15035,6 +15222,7 @@ var apartments = {
         "@id": "way/145634178",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15076,6 +15264,7 @@ var apartments = {
         "@id": "way/145634179",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15133,6 +15322,7 @@ var apartments = {
         "@id": "way/145634180",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15190,6 +15380,7 @@ var apartments = {
         "@id": "way/145634181",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15247,6 +15438,7 @@ var apartments = {
         "@id": "way/145634182",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15304,6 +15496,7 @@ var apartments = {
         "@id": "way/145634183",
         "building": "yes",
         "name": "Storke Family Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15361,6 +15554,7 @@ var apartments = {
         "@id": "way/145634184",
         "building": "yes",
         "name": "Storke Family Housing"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -15401,6 +15595,7 @@ var apartments = {
         "@id": "way/49127000",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15442,6 +15637,7 @@ var apartments = {
         "@id": "way/49127002",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15483,6 +15679,7 @@ var apartments = {
         "@id": "way/49127005",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15529,6 +15726,7 @@ var apartments = {
         "addr:housenumber": "704",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15571,6 +15769,7 @@ var apartments = {
         "addr:housenumber": "713",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15617,6 +15816,7 @@ var apartments = {
         "addr:housenumber": "706",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15658,6 +15858,7 @@ var apartments = {
         "@id": "way/49127021",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15699,6 +15900,7 @@ var apartments = {
         "@id": "way/49436986",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15740,6 +15942,7 @@ var apartments = {
         "@id": "way/49648557",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15781,6 +15984,7 @@ var apartments = {
         "@id": "way/49648561",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15826,6 +16030,7 @@ var apartments = {
         "@id": "way/49648564",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15867,6 +16072,7 @@ var apartments = {
         "@id": "way/49648569",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15913,6 +16119,7 @@ var apartments = {
         "addr:street": "Kroeber Walk",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15954,6 +16161,7 @@ var apartments = {
         "@id": "way/49648578",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -15999,6 +16207,7 @@ var apartments = {
         "@id": "way/49648581",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16044,6 +16253,7 @@ var apartments = {
         "@id": "way/49648584",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16085,6 +16295,7 @@ var apartments = {
         "@id": "way/49648591",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16126,6 +16337,7 @@ var apartments = {
         "@id": "way/49648596",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16167,6 +16379,7 @@ var apartments = {
         "@id": "way/49648598",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16208,6 +16421,7 @@ var apartments = {
         "@id": "way/49648601",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16249,6 +16463,7 @@ var apartments = {
         "@id": "way/49648606",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16290,6 +16505,7 @@ var apartments = {
         "@id": "way/49648620",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16347,6 +16563,7 @@ var apartments = {
         "@id": "way/49648622",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16388,6 +16605,7 @@ var apartments = {
         "@id": "way/49648631",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16433,6 +16651,7 @@ var apartments = {
         "@id": "way/49648638",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16474,6 +16693,7 @@ var apartments = {
         "@id": "way/49648642",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16519,6 +16739,7 @@ var apartments = {
         "@id": "way/49648657",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16560,6 +16781,7 @@ var apartments = {
         "@id": "way/49648659",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16601,6 +16823,7 @@ var apartments = {
         "@id": "way/49648666",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16642,6 +16865,7 @@ var apartments = {
         "@id": "way/49648670",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16687,6 +16911,7 @@ var apartments = {
         "@id": "way/49648675",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16734,6 +16959,7 @@ var apartments = {
         "building": "apartments",
         "levels": 2,
         "name": "West Campus Family Student Housing"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -16774,6 +17000,7 @@ var apartments = {
         "@id": "way/49648693",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16815,6 +17042,7 @@ var apartments = {
         "@id": "way/49648698",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16862,6 +17090,7 @@ var apartments = {
         "building": "undefined",
         "landuse": "residential",
         "name": "West Campus Family Student Housing"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -16902,6 +17131,7 @@ var apartments = {
         "@id": "way/49648711",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16943,6 +17173,7 @@ var apartments = {
         "@id": "way/49648722",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -16984,6 +17215,7 @@ var apartments = {
         "@id": "way/49648728",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -17036,6 +17268,7 @@ var apartments = {
         "building": "apartments",
         "building:levels": 2,
         "name": "West Campus Family Student Housing"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -17115,6 +17348,7 @@ var apartments = {
         "@id": "way/556264684",
         "building": "yes",
         "name": "West Campus Family Student Housing",
+        "shortName": "",
         "landuse": "residential"
       },
       "geometry": {
@@ -17161,6 +17395,7 @@ var apartments = {
         "@id": "way/556409139",
         "building": "yes",
         "name": "West Campus Family Student Housing"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -17206,6 +17441,7 @@ var apartments = {
         "addr:street": "El Colegio Road",
         "building": "apartments",
         "name": "Westgate Apartments"
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -17259,6 +17495,7 @@ var apartments = {
         "addr:street": "El Colegio Road",
         "building": "yes",
         "name": "Westwinds Apartments",
+        "shortName": "",
         "type": "multipolygon"
       },
       "geometry": {
