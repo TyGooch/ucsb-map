@@ -138,7 +138,7 @@ class InfoPane extends Component {
           <Swipeable
             className="infopane"
             style={style}
-            onSwipedLeft={this.swipedDown.bind(this)}
+            onSwipedRight={this.swipedDown.bind(this)}
           >
             <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
               <div className="infopane-close-button" onClick={this.swipedDown.bind(this)} style={{display: this.isMobile ? 'block' : 'none'}}>
