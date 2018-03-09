@@ -225,7 +225,7 @@ class CampusMap extends Component {
       let offset = {}
       if(this.props.selectedLocation){
         if(window.innerWidth < 800){
-          offset={bottom: '105px'}
+          offset={bottom: '107.5px'}
         }
       }
       return (
