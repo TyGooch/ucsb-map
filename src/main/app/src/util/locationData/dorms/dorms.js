@@ -4,6 +4,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "@id": "relation/2927469",
         "building": "university",
         "name": "San Rafael Tower",
@@ -338,6 +340,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "@id": "way/221234880",
         "building": "university",
         "name": "San Nicolas Hall",
@@ -521,6 +525,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "@id": "way/221234883",
         "building": "university",
         "name": "San Miguel Hall",
@@ -752,6 +758,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "@id": "way/221235379",
         "building": "university",
         "name": "Santa Cruz Hall",
@@ -895,6 +903,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -972,6 +982,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -1041,6 +1053,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -1110,6 +1124,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -1191,6 +1207,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -1260,6 +1278,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -1322,6 +1342,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -1654,6 +1676,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2010,6 +2034,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2095,6 +2121,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2164,6 +2192,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2242,6 +2272,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2311,6 +2343,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2392,6 +2426,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2457,6 +2493,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2526,6 +2564,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2616,6 +2656,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2685,6 +2727,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2762,6 +2806,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2831,6 +2877,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "@id": "way/221409402",
         "addr:housename": 527,
         "building": "university",
@@ -2942,6 +2990,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3090,6 +3140,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3132,6 +3184,8 @@ var dorms = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Residence Hall",
+        "details": "Undergraduate Residence Hall",
         "@id": "way/38267045",
         "alt_name": "FT",
         "building": "dormitory",
