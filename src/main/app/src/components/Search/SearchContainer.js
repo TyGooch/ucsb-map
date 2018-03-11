@@ -14,6 +14,7 @@ const mapStateToProps = state => ({
 const mapDispatchToProps = dispatch => ({
   updateSelectedLocation: (location) => dispatch(updateSelectedLocation(location)),
   toggleSideBar: () => dispatch(toggleSideBar()),
+  selectLocation: (name) => dispatch(push(`/${name.replace(/ /g, "")}`)),
   deselectLocation: () => dispatch(push('/'))
 })
 

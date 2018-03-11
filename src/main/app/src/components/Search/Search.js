@@ -101,7 +101,6 @@ class Search extends Component {
 
   componentDidUpdate(prevProps, nextProps) {
     if(this.state.clickedClear){
-      // this.props.updateSelectedLocation(null)
       this.props.deselectLocation()
       this.refs.autosuggest.input.focus()
       this.setState({clickedClear: false})
@@ -133,7 +132,7 @@ class Search extends Component {
   }
 
   onSuggestionSelected = (event, { suggestion }) => {
-    this.props.updateSelectedLocation(suggestion)
+    this.props.selectLocation(suggestion.name)
     this.setState({selectedSuggestion: true})
   }
 
