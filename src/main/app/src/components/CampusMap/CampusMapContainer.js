@@ -1,5 +1,5 @@
 import { connect } from 'react-redux'
-import { push, replace } from 'react-router-redux'
+import { push } from 'react-router-redux'
 
 import CampusMap from './CampusMap'
 import { updateSelectedLocation } from '../../actions/locationActions'

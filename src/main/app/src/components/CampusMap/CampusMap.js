@@ -88,7 +88,6 @@ class CampusMap extends Component {
 
   addPolygons(){
     let polygons = []
-    let labels = []
     this.props.locations.forEach(location => {
       let color = '#6DAAD0'
       if(location.category === 'Parking')
@@ -243,9 +242,7 @@ class CampusMap extends Component {
   render() {
     this.pantoSelection()
     this.removePolygons()
-    // this.removeLabels()
     this.addPolygons()
-    // this.addLabels()
     this.getUserLocation()
     
     let offset = {}

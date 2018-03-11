@@ -2,7 +2,6 @@ import React from 'react'
 
 import CampusMapContainer from '../CampusMap/CampusMapContainer'
 import SearchContainer from '../Search/SearchContainer'
-import InfoPaneContainer from '../InfoPane/InfoPaneContainer'
 import SideBarContainer from '../SideBar/SideBarContainer'
 import './App.css'
 
