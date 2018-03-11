@@ -15,9 +15,11 @@ const target = document.getElementById('root')
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Provider store={store}>
-      <ConnectedRouter history={history}>
-        <Routes />
-      </ConnectedRouter>
+      <HttpsRedirect>
+        <ConnectedRouter history={history}>
+          <Routes />
+        </ConnectedRouter>
+      </HttpsRedirect>
     </Provider>,
     target
   )
