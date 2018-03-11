@@ -133,7 +133,7 @@ class InfoPane extends Component {
   render() {
     let hasImage = this.props.selectedLocation && !(this.props.selectedLocation.image === null)      
     let style = {
-      height: this.state && this.state.isVisible ? window.innerHeight : '0px',
+      height: this.props.selectedLocation && this.state && this.state.isVisible ? window.innerHeight : '0px',
       width: this.state.isMobile ? '100%' : '375px',
       zIndex: this.state.isMobile ? 1006 : 1001
     }
