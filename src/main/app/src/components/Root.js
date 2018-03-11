@@ -1,15 +1,11 @@
-import React from 'react'
-import { Provider } from 'react-redux'
-import HttpsRedirect from 'react-https-redirect'
+import React from 'react';
+import { Route, Link } from 'react-router-dom';
+import AppContainer from './App/AppContainer';
 
-import AppContainer from './App/AppContainer'
-
-const Root = ({ store }) => (
-  <Provider store={store}>
-    <HttpsRedirect>
-      <AppContainer />
-    </HttpsRedirect>
-  </Provider>
+const Root = () => (
+  <div>
+    <Route exact path="/" component={AppContainer} />
+  </div>
 )
 
 export default Root
