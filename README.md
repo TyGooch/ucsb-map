@@ -1,6 +1,6 @@
 <p align="center">
     <img src="https://preview.ibb.co/dSeKTH/ucsb_map_logo.png"
-        height="100%" width="100%">
+        height="50%" width="50%">
 </p>
 
 <p align="center">
