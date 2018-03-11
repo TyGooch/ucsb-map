@@ -79,7 +79,7 @@ class CampusMap extends Component {
   handlePolygonMouseOut(location, polygon) {    
     let color = '#6DAAD0'
     if(location.category === 'Parking')
-      color = '#55555'
+      color = '#555555'
 
     if(!(this.props.selectedLocation && location.name === this.props.selectedLocation.name)) {
       polygon.setStyle({color: color, fillColor: color, fillOpacity: 0.25})
