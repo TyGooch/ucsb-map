@@ -1,6 +1,6 @@
 <p align="center">
-    <img src="https://vectr.com/tygooch/cwliL01Vy.svg?width=1612.6211386287864&height=499.67313762929007&select=k1rqVfLtjJ,bg058HDeJ&source=selection"
-        height="50%" width="50%">
+    <img src="https://preview.ibb.co/dSeKTH/ucsb_map_logo.png"
+        height="100%" width="100%">
 </p>
 
 <p align="center">
