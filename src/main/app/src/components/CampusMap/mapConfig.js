@@ -6,11 +6,14 @@ config.mapOptions = {
   zoom: 16,
   maxZoom: 19,
   minZoom: 14,
+  // zoomSnap: 0,
+  zoomDelta: 1,
   // scrollwheel: false,
   legends: false,
   infoControl: false,
   attributionControl: true,
   bounceAtZoomLimits: false,
+  maxBounds: [[34.37575, -119.9235],[34.46765, -119.80677]]
 }
 
 config.tileLayer = {
@@ -20,9 +23,10 @@ config.tileLayer = {
   options: {
     minZoom: 11,
     maxZoom: 20,
-    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+    attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     id: '',
-    accessToken: ''
+    accessToken: '',
+    bounds: [[34.37575, -119.9235],[34.46765, -119.80677]]
   }
 }
 

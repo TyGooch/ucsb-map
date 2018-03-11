@@ -13,7 +13,6 @@ class InfoPane extends Component {
       hasImage: false
     }
     
-    console.log('MOUNT');
     let currentLocationName = props.router.location.pathname.replace('/', '')
     let currentLocation = props.locations.find(location => location.name.replace(/ /g, "") === currentLocationName )
     if(!currentLocation)
@@ -24,22 +23,13 @@ class InfoPane extends Component {
   }
   
   componentWillUnmount(){
-    console.log('UNMOUNT');
     this.props.updateSelectedLocation(null)
   }
     
   componentWillReceiveProps(nextProps) {
-    // debugger;
-    console.log('update1');
-    // console.log(hasImage);
-
-    // console.log(this.props);
-    // console.log(nextProps);
-    // console.log(this.props.locations.length === nextProps.locations.length);
     if(this.props.router.location === nextProps.router.location && this.props.locations.length === nextProps.locations.length ) {
       return
     }
-    console.log('update2');
       let currentLocationName = nextProps.router.location.pathname.replace('/', '')
       let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "") === currentLocationName )
       if(!currentLocation)
@@ -49,7 +39,6 @@ class InfoPane extends Component {
         this.setState({hasImage: currentLocation.image ? true : false})
       }
     // }
-    console.log('here');
     if(!nextProps.selectedLocation)
       return
 

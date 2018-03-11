@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import config from './mapConfig.js'
-// import centerOfMass from '@turf/center-of-mass'
-// import {getCoords} from '@turf/invariant'
-// import turf from 'turf'
 import Spinner from 'react-spinkit'
 
 import bikePath from '../../util/locationData/bikePath/bikePath.js'
@@ -46,7 +43,7 @@ class CampusMap extends Component {
     map.createPane('labels')
     map.getPane('labels').style.zIndex = 750
     map.getPane('labels').style.pointerEvents = 'none'
-    L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjedwhm9p0syb2tmu2wphl5um/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', maxZoom:20}).addTo(map)
+    L.tileLayer('https://api.mapbox.com/styles/v1/tygooch/cjen0ds322l9g2sqcpgwbywpl/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w', {pane: 'labels', maxZoom:20, bounds: [[34.428988, -119.885195],[34.39854, -119.82454]]}).addTo(map)
     
     map.getPane('tooltipPane').style.zIndex = 851
 
@@ -59,14 +56,12 @@ class CampusMap extends Component {
     if(e.originalEvent.target instanceof HTMLElement){
       if(this.props.selectedLocation){
         this.props.deselectLocation()
-        // this.props.updateSelectedLocation(null)
       }
     }
   }
   
 
   handlePolygonClick(location, polygon){
-    // this.props.updateSelectedLocation(location)
     this.props.selectLocation(location.shortName ? location.shortName : location.name)
   }
 
@@ -214,35 +209,58 @@ class CampusMap extends Component {
   
   pantoSelection(){
     if(this.props.selectedLocation){
-      // debugger
+      let map = this.state.map
+
       let selectedLocation = this.props.selectedLocation
       let selectedPolygon
       for (let {polygon, location} of this.polygons) {
         if(location.name === selectedLocation.name)
           selectedPolygon = polygon
       }
-      
-      let size = this.state.map.getSize()
+            
+      let size = map.getSize()
       let newBound
       let bounds
-      if(this.state.map.getSize().x < 800){
-        newBound = L.point(size.x, size.y - 100)
-        bounds = L.latLngBounds(this.state.map.containerPointToLatLng([0,75]), this.state.map.containerPointToLatLng(newBound))  
+      let padding
+      if(size.x < 800){
+        padding = [0,75]
+        newBound = L.point(size.x, size.y - 125)
+        bounds = L.latLngBounds(map.containerPointToLatLng(padding), map.containerPointToLatLng(newBound))  
       } else {
-        newBound = L.point(size.x, size.y - 50)
-        bounds = L.latLngBounds(this.state.map.containerPointToLatLng([400,65]), this.state.map.containerPointToLatLng(newBound))
+        padding = [385,20]
+        newBound = L.point(size.x - 50, size.y - 50)
+        bounds = L.latLngBounds(map.containerPointToLatLng(padding), map.containerPointToLatLng(newBound))
       }
         
-      // L.rectangle(bounds, {color: 'red', fillColor: 'red', weight: 1}).addTo(this.state.map)
-      if(!bounds.contains(selectedPolygon.getBounds()))
-        this.state.map.panInsideBounds(selectedPolygon.getBounds())
+      console.log(map.getZoom());
+      if(!bounds.contains(selectedPolygon.getBounds())){
+        map.fitBounds(selectedPolygon.getBounds(), 
+          {
+            paddingTopLeft: (size.x < 800 ? null : padding),
+            paddingBottomRight: (size.x < 800 ? padding : null),
+            maxZoom: (map.getZoom() > 17 ? map.getZoom() : 17),
+            duration: 0.5
+          }
+        )
+      } else {
+        if(map.getZoom() < 17)
+          map.fitBounds(selectedPolygon.getBounds(), {paddingTopLeft: padding, maxZoom: 17, })
+      }
+    }
+  }
+  
+  componentDidUpdate(prevProps, prevState){
+    if(prevProps.locations.length !== this.props.locations.length)
+      this.addPolygons()
+    if(prevProps.selectedLocation !== this.props.selectedLocation){
+      this.removePolygons()
+      this.addPolygons()
+      if(this.props.selectedLocation !== null)
+        this.pantoSelection()
     }
   }
 
   render() {
-    this.pantoSelection()
-    this.removePolygons()
-    this.addPolygons()
     this.getUserLocation()
     
     let offset = {}
