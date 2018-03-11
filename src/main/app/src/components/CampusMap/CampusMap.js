@@ -23,7 +23,6 @@ class CampusMap extends Component {
 
     this._mapNode = null
     this.polygons = null
-    this.labels = null
     this.userLocation = null
     this.mapControls = null
 
@@ -55,10 +54,20 @@ class CampusMap extends Component {
     this.addBikePath(map, bikePath)
     this.setState({ map })
   }
+  
+  handleMapClick(e){
+    if(e.originalEvent.target instanceof HTMLElement){
+      if(this.props.selectedLocation){
+        this.props.deselectLocation()
+        // this.props.updateSelectedLocation(null)
+      }
+    }
+  }
+  
 
   handlePolygonClick(location, polygon){
-    this.props.updateSelectedLocation(location)
-    this.props.selectLocation(location.name)
+    // this.props.updateSelectedLocation(location)
+    this.props.selectLocation(location.shortName ? location.shortName : location.name)
   }
 
   handlePolygonMouseOver(e, location, polygon) {
@@ -77,22 +86,6 @@ class CampusMap extends Component {
     }
   }
 
-  handleMapClick(e){
-    if(e.originalEvent.target instanceof HTMLElement){
-      if(this.props.selectedLocation){
-        this.props.deselectLocation()
-        this.props.updateSelectedLocation(null)
-      }
-    }
-  }
-  
-  addBikePath(map, bikePath){
-    bikePath.features.forEach(pathSegment => {
-      L.geoJSON(pathSegment, {style: {weight:1, color: 'silver', opacity: 1, smoothFactor: 0.1}, interactive:false})
-      .addTo(map);
-    })
-  }
-  
   addPolygons(){
     let polygons = []
     let labels = []
@@ -117,51 +110,20 @@ class CampusMap extends Component {
     })
 
     this.polygons = polygons
-    this.labels = labels
-    // this.getUserLocation()
   }
 
   removePolygons(){
     if(this.polygons)
       this.polygons.forEach(polygon => polygon.polygon.remove())
   }
-  // 
-  // addLabels(){
-  //   if(!this.polygons)
-  //     return
-  // 
-  //   let labels = []
-  //   this.props.locations.forEach(location => {
-  //     if(location.name === 'Engineering 2' || location.name.split(' ')[0] === 'Building')
-  //       return
-  //     if(turf.area(turf.multiPolygon(location.polygons)) < 300 && this.state.map.getZoom() < 19)
-  //       return
-  // 
-  //     var fontSize = this.state.map.getZoom() <= 17 ? Math.pow(2, (this.state.map.getZoom() - 14)) : 15
-  //     if(fontSize <= 4)
-  //       fontSize = 0
-  //     if(location.name.length <= 5)
-  //       fontSize *= 2
-  // 
-  //     var divIcon = L.divIcon({
-  //       className: 'label-container',
-  //       html: `<div class="label"><div class="label-text ${location.name}" style="font-size:${fontSize}px !important;">${location.name}</div></div>`,
-  //     })
-  //       let centroid = centerOfMass(turf.multiPolygon(location.polygons))
-  //       let coords = getCoords(centroid)
-  //       var label = L.marker({lat: coords[0], lng: coords[1]}, {icon: divIcon, interactive: false})
-  // 
-  //       label.addTo(this.state.map)
-  //       labels.push(label)
-  //   })
-  //   this.labels = labels
-  // }
-  // 
-  // removeLabels(){
-  //   if(this.labels)
-  //     this.labels.forEach(label => label.remove())
-  // }
-
+  
+  addBikePath(map, bikePath){
+    bikePath.features.forEach(pathSegment => {
+      L.geoJSON(pathSegment, {style: {weight:1, color: 'silver', opacity: 1, smoothFactor: 0.1}, interactive:false})
+      .addTo(map);
+    })
+  }
+  
   getUserLocation(){
     if(!this.state.map)
       return

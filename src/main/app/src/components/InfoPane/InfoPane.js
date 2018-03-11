@@ -9,76 +9,73 @@ class InfoPane extends Component {
     
     this.state = {
       isMobile: (window.innerWidth < 800),
-      isVisible: props.selectedLocation && !(window.innerWidth < 800),
-      hasImage: (props.selectedLocation && props.selectedLocation.image ? true : false),
+      isVisible: !(window.innerWidth < 800),
+      hasImage: false
+    }
+    
+    console.log('MOUNT');
+    let currentLocationName = props.router.location.pathname.replace('/', '')
+    let currentLocation = props.locations.find(location => location.name.replace(/ /g, "") === currentLocationName )
+    if(!currentLocation)
+      currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/ /g, "") === currentLocationName )
+    if(currentLocation){
+      props.updateSelectedLocation(currentLocation)  
     }
   }
   
   componentWillUnmount(){
     console.log('UNMOUNT');
+    this.props.updateSelectedLocation(null)
   }
-  
-  // componentWillMount() {
-  //   console.log('MOUNT');
-  //   if(!this.props.selectedLocation && this.props.locations){
-  //     // debugger;
-  //     let currentLocationName = this.props.router.location.pathname.replace('/location/', '')
-  //     let currentLocation = this.props.locations.find(location => location.name.replace(/ /g, "") === currentLocationName)
-  //     if(currentLocation){
-  //       this.props.updateSelectedLocation(currentLocation)  
-  //       this.setState({isVisible: true})
-  //     }
-  //   }
-  // }
-  
+    
   componentWillReceiveProps(nextProps) {
-    console.log('update');
+    // debugger;
+    console.log('update1');
+    // console.log(hasImage);
+
     // console.log(this.props);
     // console.log(nextProps);
-    if(nextProps.router.location.pathname !== this.props.router.location.pathname)
+    // console.log(this.props.locations.length === nextProps.locations.length);
+    if(this.props.router.location === nextProps.router.location && this.props.locations.length === nextProps.locations.length ) {
       return
-      
-    if(!this.props.selectedLocation){
-      // debugger;
-      let currentLocationName = this.props.router.location.pathname.replace('/location/', '')
-      let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "") === currentLocationName)
-      if(currentLocation && !this.state.isVisible){
-        this.props.updateSelectedLocation(currentLocation)  
-        // this.setState({isVisible: true})
-      }
-      // return
     }
-    // this.props.selectedLocation = nextProps.selectedLocation
-    // let currentLocationName = this.props.router.location.pathname.replace('/location/', '')
-    // let currentLocation = this.props.locations.find(location => location.name === currentLocationName)
-    // if(currentLocation)
-    //   this.props.updateSelectedLocation(currentLocation)
-    
-    // this.isVisible = nextProps.selectedLocation && !this.state.isMobile ? true : false
-    // debugger
-    
+    console.log('update2');
+      let currentLocationName = nextProps.router.location.pathname.replace('/', '')
+      let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "") === currentLocationName )
+      if(!currentLocation)
+        currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/ /g, "") === currentLocationName )
+      if(currentLocation){
+        this.props.updateSelectedLocation(currentLocation)
+        this.setState({hasImage: currentLocation.image ? true : false})
+      }
+    // }
+    console.log('here');
     if(!nextProps.selectedLocation)
       return
 
-    if(this.state.hasImage && !(nextProps.selectedLocation.image))
-      this.setState({hasImage: false})
+    // if(hasImage !== (nextProps.selectedLocation.image === null ? false : true))
+    //   this.setState({hasImage: nextProps.selectedLocation.image === null ? false : true})
     
-    if(!this.state.hasImage && nextProps.selectedLocation.image)
-      this.setState({hasImage: true})
-
-    if(!this.props.selectedLocation && this.state.isVisible)
-      this.setState({isVisible: false})
-
-    if(this.props.selectedLocation && !this.state.isMobile)
-      this.setState({isVisible: true})
+    // if(!hasImage && nextProps.selectedLocation.image)
+    //   this.setState({hasImage: true})
+    // 
+    // if(!this.props.selectedLocation && this.state.isVisible)
+    //   this.setState({isVisible: false})
+    // 
+    // if(this.props.selectedLocation && !this.state.isMobile)
+    //   this.setState({isVisible: true})
   }
   
-  componentDidUpdate(){
-    
-  }
+  // shouldComponentUpdate(nextProps){
+  //   console.log('SHOULD')
+  //   if(this.props.router.location.pathname !== nextProps.router.location.pathname)
+  //     return true
+  //   return false
+  // }
   
   getImage() {
-    if(!this.state.hasImage){
+    let hasImage = this.props.selectedLocation && !(this.props.selectedLocation.image === null)
+    if(!hasImage){
       if(this.state.isMobile)
         return(<div className='infopane-buffer-mobile'></div>)
       return
@@ -87,11 +84,7 @@ class InfoPane extends Component {
     let style = {}
     if(this.state.isMobile){
       style = {
-        // position: 'absolute',
-        // bottom: '1px',
-        // right: '1px',
-        height: '200px',
-        // width: 'inherit'
+        height: '200px'
       }
     }
       
@@ -108,9 +101,10 @@ class InfoPane extends Component {
   getName() {
     if(!this.props.selectedLocation)
       return
+    let hasImage = !(this.props.selectedLocation.image === null)
       
     return(
-      <div className="popup-header-name" style={{paddingTop: this.state.isMobile && !this.state.hasImage ? '5px' : '5px'}}>
+      <div className="popup-header-name" style={{paddingTop: this.state.isMobile && !hasImage ? '5px' : '5px'}}>
         {this.props.selectedLocation.name}
       </div>
     )
@@ -125,47 +119,23 @@ class InfoPane extends Component {
       )
     }
   }
-  
-  handleScroll(e) {
-    // e.preventDefault()
-    // alert('hello')
-    // this.el.scrollIntoView()
-    if (e.nativeEvent.wheelDelta > 0) {
-     console.log('scroll up');
-     // alert('up')
-     this.el.scrollIntoView()
-    } else {
-      this.top.scrollIntoView()
-     console.log('scroll down');
-    }
-  }
-  
+    
   swipedUp(e, deltaY, isFlick) {
-    // this.el.scrollIntoView()
     this.setState({isVisible: true})
   }
   
   swipedDown(e, deltaY, isFlick) {
-    // this.el.scrollIntoView()
     if(!this.state.isMobile)
       return
     this.setState({isVisible: false})
   }
   
   render() {
-    // let margin = `${window.innerHeight - 100}px`
-    // if((this.state.isMobile) && !(window.iOS && window.isSafari))
-    //   margin = 'calc((100vmax - 250px))'
-    // if((window.iOS && window.isSafari))
-    //   margin = 'calc((100vmax - 250px))'
-    // if(!this.state)
-    //   return
-      
+    let hasImage = this.props.selectedLocation && !(this.props.selectedLocation.image === null)      
     let style = {
       height: this.state && this.state.isVisible ? window.innerHeight : '0px',
       width: this.state.isMobile ? '100%' : '375px',
       zIndex: this.state.isMobile ? 1006 : 1001
-      // paddingTop: (this.state.isMobile && !this.state.hasImage) ? '65px' : null,
     }
     return (
         <div className='infopane-container' style={{zIndex: this.state.isMobile ? 1006 : 1001}}>
@@ -174,13 +144,13 @@ class InfoPane extends Component {
             style={style}
             onSwipedRight={this.swipedDown.bind(this)}
           >
-            <div className = 'popup-header' style={{top: (this.state.isMobile || this.state.hasImage) ? '0px' : null }}>
+            <div className = 'popup-header' style={{top: (this.state.isMobile || hasImage) ? '0px' : null }}>
               <div className="infopane-close-button" onClick={this.swipedDown.bind(this)} style={{display: this.state.isMobile ? 'block' : 'none'}}>
                 <img className="infopane-close-button-image" src='https://www.materialui.co/materialIcons/navigation/arrow_back_white_192x192.png' alt='close-infopane' />
               </div>
               {this.getImage()}
-              <div className = 'popup-header-text' style={{marginTop: (this.state.hasImage || this.state.isMobile) ? '0px' : '65px'}}>
-                {!this.state.hasImage ? this.getName() : null}
+              <div className = 'popup-header-text' style={{marginTop: (hasImage || this.state.isMobile) ? '0px' : '65px'}}>
+                {!hasImage ? this.getName() : null}
                 {this.getCategory()}
               </div>
             </div>
@@ -196,7 +166,7 @@ class InfoPane extends Component {
               </div>
             </div>
             <div className='mobile-info-text'>
-              <div className="mobile-info-name" style={{paddingTop: this.state.isMobile && !this.state.hasImage ? '5px' : '5px'}}>
+              <div className="mobile-info-name" style={{paddingTop: this.state.isMobile && !hasImage ? '5px' : '5px'}}>
                 {this.props.selectedLocation ? this.props.selectedLocation.name : ''}
               </div>
               <span className='mobile-info-category'>
