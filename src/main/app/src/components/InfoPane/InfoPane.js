@@ -4,53 +4,88 @@ import Swipeable from 'react-swipeable'
 import './infoPane.css'
 
 class InfoPane extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     
     this.state = {
-      isVisible: null
+      isMobile: (window.innerWidth < 800),
+      isVisible: props.selectedLocation && !(window.innerWidth < 800),
+      hasImage: (props.selectedLocation && props.selectedLocation.image ? true : false),
     }
-    
-    this.selectedLocation = null
-    this.isMobile = null
-    this.isVisible = null
-    this.hasImage = null    
   }
   
-  componentDidMount() {
-    this.selectedLocation = this.props.selectedLocation
-    this.isMobile = window.innerWidth < 800
-    this.isVisible = this.props.selectedLocation && !this.isMobile ? true : false
-
-    if(this.selectedLocation)
-      this.hasImage = this.props.selectedLocation.image ? true : false
+  componentWillUnmount(){
+    console.log('UNMOUNT');
   }
+  
+  // componentWillMount() {
+  //   console.log('MOUNT');
+  //   if(!this.props.selectedLocation && this.props.locations){
+  //     // debugger;
+  //     let currentLocationName = this.props.router.location.pathname.replace('/location/', '')
+  //     let currentLocation = this.props.locations.find(location => location.name.replace(/ /g, "") === currentLocationName)
+  //     if(currentLocation){
+  //       this.props.updateSelectedLocation(currentLocation)  
+  //       this.setState({isVisible: true})
+  //     }
+  //   }
+  // }
   
   componentWillReceiveProps(nextProps) {
-    this.selectedLocation = nextProps.selectedLocation
+    console.log('update');
+    // console.log(this.props);
+    // console.log(nextProps);
+    if(nextProps.router.location.pathname !== this.props.router.location.pathname)
+      return
+      
+    if(!this.props.selectedLocation){
+      // debugger;
+      let currentLocationName = this.props.router.location.pathname.replace('/location/', '')
+      let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "") === currentLocationName)
+      if(currentLocation && !this.state.isVisible){
+        this.props.updateSelectedLocation(currentLocation)  
+        // this.setState({isVisible: true})
+      }
+      // return
+    }
+    // this.props.selectedLocation = nextProps.selectedLocation
+    // let currentLocationName = this.props.router.location.pathname.replace('/location/', '')
+    // let currentLocation = this.props.locations.find(location => location.name === currentLocationName)
+    // if(currentLocation)
+    //   this.props.updateSelectedLocation(currentLocation)
     
-    this.isMobile = window.innerWidth < 800
-    this.isVisible = nextProps.selectedLocation && !this.isMobile ? true : false
+    // this.isVisible = nextProps.selectedLocation && !this.state.isMobile ? true : false
+    // debugger
     
-    if(this.selectedLocation)
-      this.hasImage = nextProps.selectedLocation.image ? true : false
+    if(!nextProps.selectedLocation)
+      return
 
-    if(!this.selectedLocation && this.state.isVisible)
+    if(this.state.hasImage && !(nextProps.selectedLocation.image))
+      this.setState({hasImage: false})
+    
+    if(!this.state.hasImage && nextProps.selectedLocation.image)
+      this.setState({hasImage: true})
+
+    if(!this.props.selectedLocation && this.state.isVisible)
       this.setState({isVisible: false})
 
-    if(this.selectedLocation && !this.isMobile)
+    if(this.props.selectedLocation && !this.state.isMobile)
       this.setState({isVisible: true})
   }
   
+  componentDidUpdate(){
+    
+  }
+  
   getImage() {
-    if(!this.hasImage){
-      if(this.isMobile)
+    if(!this.state.hasImage){
+      if(this.state.isMobile)
         return(<div className='infopane-buffer-mobile'></div>)
       return
     }
       
     let style = {}
-    if(this.isMobile){
+    if(this.state.isMobile){
       style = {
         // position: 'absolute',
         // bottom: '1px',
@@ -62,7 +97,7 @@ class InfoPane extends Component {
       
     return(
       <div className="popup-header-image-container" style={style}>
-        <img className="popup-header-image" src={this.selectedLocation ? this.selectedLocation.image : null} alt='location'/>
+        <img className="popup-header-image" src={this.props.selectedLocation ? this.props.selectedLocation.image : null} alt='location'/>
         <div className="popup-header-image-name">
           {this.getName()}
         </div>
@@ -71,21 +106,21 @@ class InfoPane extends Component {
   }
   
   getName() {
-    if(!this.selectedLocation)
+    if(!this.props.selectedLocation)
       return
       
     return(
-      <div className="popup-header-name" style={{paddingTop: this.isMobile && !this.hasImage ? '5px' : '5px'}}>
-        {this.selectedLocation.name}
+      <div className="popup-header-name" style={{paddingTop: this.state.isMobile && !this.state.hasImage ? '5px' : '5px'}}>
+        {this.props.selectedLocation.name}
       </div>
     )
   }
   
   getCategory() {
-    if(this.selectedLocation) {
+    if(this.props.selectedLocation) {
       return(
         <span className='popup-header-category'>
-          {this.selectedLocation.details}
+          {this.props.selectedLocation.details}
         </span>
       )
     }
@@ -112,48 +147,47 @@ class InfoPane extends Component {
   
   swipedDown(e, deltaY, isFlick) {
     // this.el.scrollIntoView()
-    if(!this.isMobile)
+    if(!this.state.isMobile)
       return
     this.setState({isVisible: false})
   }
   
   render() {
     // let margin = `${window.innerHeight - 100}px`
-    // if((this.isMobile) && !(window.iOS && window.isSafari))
+    // if((this.state.isMobile) && !(window.iOS && window.isSafari))
     //   margin = 'calc((100vmax - 250px))'
     // if((window.iOS && window.isSafari))
     //   margin = 'calc((100vmax - 250px))'
+    // if(!this.state)
+    //   return
       
     let style = {
       height: this.state && this.state.isVisible ? window.innerHeight : '0px',
-      width: this.isMobile ? '100%' : '375px',
-      zIndex: this.isMobile ? 1006 : 1001
-      // paddingTop: (this.isMobile && !this.hasImage) ? '65px' : null,
+      width: this.state.isMobile ? '100%' : '375px',
+      zIndex: this.state.isMobile ? 1006 : 1001
+      // paddingTop: (this.state.isMobile && !this.state.hasImage) ? '65px' : null,
     }
-    console.log(this.state.isVisible);
-    if(!this.state)
-      return
     return (
-        <div className='infopane-container' style={{zIndex: this.isMobile ? 1006 : 1001}}>
+        <div className='infopane-container' style={{zIndex: this.state.isMobile ? 1006 : 1001}}>
           <Swipeable
             className="infopane"
             style={style}
             onSwipedRight={this.swipedDown.bind(this)}
           >
-            <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
-              <div className="infopane-close-button" onClick={this.swipedDown.bind(this)} style={{display: this.isMobile ? 'block' : 'none'}}>
+            <div className = 'popup-header' style={{top: (this.state.isMobile || this.state.hasImage) ? '0px' : null }}>
+              <div className="infopane-close-button" onClick={this.swipedDown.bind(this)} style={{display: this.state.isMobile ? 'block' : 'none'}}>
                 <img className="infopane-close-button-image" src='https://www.materialui.co/materialIcons/navigation/arrow_back_white_192x192.png' alt='close-infopane' />
               </div>
               {this.getImage()}
-              <div className = 'popup-header-text' style={{marginTop: (this.hasImage || this.isMobile) ? '0px' : '65px'}}>
-                {!this.hasImage ? this.getName() : null}
+              <div className = 'popup-header-text' style={{marginTop: (this.state.hasImage || this.state.isMobile) ? '0px' : '65px'}}>
+                {!this.state.hasImage ? this.getName() : null}
                 {this.getCategory()}
               </div>
             </div>
           </Swipeable>
           <Swipeable 
             className='mobile-info'
-            style={{display: (this.isMobile && this.selectedLocation && !this.state.isVisible) ? 'block' : 'none'}}
+            style={{display: (this.state.isMobile && !this.state.isVisible) ? 'block' : 'none'}}
             onSwipedUp={this.swipedUp.bind(this)}
           >
             <div className='mobile-info-open-button-container'>
@@ -162,11 +196,11 @@ class InfoPane extends Component {
               </div>
             </div>
             <div className='mobile-info-text'>
-              <div className="mobile-info-name" style={{paddingTop: this.isMobile && !this.hasImage ? '5px' : '5px'}}>
-                {this.selectedLocation ? this.selectedLocation.name : ''}
+              <div className="mobile-info-name" style={{paddingTop: this.state.isMobile && !this.state.hasImage ? '5px' : '5px'}}>
+                {this.props.selectedLocation ? this.props.selectedLocation.name : ''}
               </div>
               <span className='mobile-info-category'>
-                {this.selectedLocation ? this.selectedLocation.details : ''}
+                {this.props.selectedLocation ? this.props.selectedLocation.details : ''}
               </span>
             </div>
           </Swipeable>

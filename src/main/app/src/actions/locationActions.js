@@ -20,6 +20,5 @@ export const fetchLocations = () => dispatch => (
 )
 
 export const updateSelectedLocation = (location) => (dispatch) => {
-  console.log(location)
   dispatch(changeSelectedLocation(location))
 }

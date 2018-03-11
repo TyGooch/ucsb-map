@@ -6,7 +6,7 @@ import { Route, Link } from 'react-router-dom'
 import { HttpsRedirect } from 'react-https-redirect'
 
 import store, { history } from './store'
-import Root from './components/Root'
+import Routes from './components/Routes'
 import AppContainer from './components/App/AppContainer'
 
 const target = document.getElementById('root')
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
     <Provider store={store}>
       <ConnectedRouter history={history}>
-        <Root />
+        <Routes />
       </ConnectedRouter>
     </Provider>,
     target

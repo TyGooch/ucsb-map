@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import { push, replace } from 'react-router-redux'
 
 import CampusMap from './CampusMap'
 import { updateSelectedLocation } from '../../actions/locationActions'
@@ -10,7 +11,9 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch => ({
-  updateSelectedLocation: (location) => dispatch(updateSelectedLocation(location))
+  updateSelectedLocation: (location) => dispatch(updateSelectedLocation(location)),
+  selectLocation: (name) => dispatch(push(`/location/${name.replace(/ /g, "")}`)),
+  deselectLocation: () => dispatch(replace('/'))
 })
 
 

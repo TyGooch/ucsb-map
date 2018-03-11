@@ -58,6 +58,7 @@ class CampusMap extends Component {
 
   handlePolygonClick(location, polygon){
     this.props.updateSelectedLocation(location)
+    this.props.selectLocation(location.name)
   }
 
   handlePolygonMouseOver(e, location, polygon) {
@@ -78,8 +79,10 @@ class CampusMap extends Component {
 
   handleMapClick(e){
     if(e.originalEvent.target instanceof HTMLElement){
-      if(this.props.selectedLocation)
+      if(this.props.selectedLocation){
+        this.props.deselectLocation()
         this.props.updateSelectedLocation(null)
+      }
     }
   }
   

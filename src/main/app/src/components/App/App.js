@@ -25,13 +25,9 @@ class App extends React.Component {
         <div className='search-container'>
           <SearchContainer />
         </div>
-        
-        <InfoPaneContainer />
-        <CampusMapContainer />
-        
+        <CampusMapContainer />        
         <div className="sidebar-overlay" style={{display: this.props.sideBarOpened ? 'block' : 'none'}} onClick={this.closeSideBar.bind(this)}>
         </div>
-        
         <SideBarContainer />
       </div>
     )
