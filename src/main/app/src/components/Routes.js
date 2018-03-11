@@ -5,7 +5,7 @@ import InfoPaneContainer from './InfoPane/InfoPaneContainer';
 
 const Routes = () => (
   <div>
-    <Route path="/" component={AppContainer} />
+    <Route path="*" component={AppContainer} />
     <Route path="/location/:name" component={InfoPaneContainer} />
   </div>
 )
