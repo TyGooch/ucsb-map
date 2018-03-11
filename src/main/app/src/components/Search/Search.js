@@ -9,15 +9,29 @@ import './search.css'
 
 
 class Search extends Component {
-  getSuggestionValue(suggestion){
+  getSuggestionValue(suggestion) {
     return suggestion.name
+  }
+  
+  getSuggestionShortName(suggestion) {
+    if(!suggestion.shortName)
+      return
+    if(suggestion.category === 'Residence Hall' || suggestion.shortName === 'LIB' || suggestion.name.includes("Health") || suggestion.shortName.includes('RECEN') )
+      return
+    if(!suggestion.name.includes('(') && suggestion.name.toLowerCase().slice(0, 5).replace(' ','') !== suggestion.shortName.toLowerCase().slice(0,5).replace(' ', ''))
+      return(` (${suggestion.shortName})`)
   }
 
   renderSuggestion(suggestion) {
     return (
       <div className="suggestion-item">
-        <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" alt="Magnifying Glass" />
-        {suggestion.name}
+        <div className="suggestion-icon-container">
+          <img className="suggestion-icon" src="https://d30y9cdsu7xlg0.cloudfront.net/png/14173-200.png" alt="Magnifying Glass" />
+        </div>
+        <div className="suggestion-item-text">
+          {suggestion.name}
+          {this.getSuggestionShortName(suggestion)}
+        </div>
       </div>
     )
   }
@@ -25,6 +39,23 @@ class Search extends Component {
   getSuggestions(value) {
     let inputValue = value.trim().toLowerCase()
     let inputLength = inputValue.length
+    
+    let shortNameSuggestions = inputLength === 0 ? [] : this.props.locations.filter(location => {
+      if(!location.shortName)
+        return false
+      return location.shortName.replace('-','').toLowerCase().slice(0, inputLength).replace(' ','') === inputValue.replace(' ','')
+    })
+    
+    shortNameSuggestions = shortNameSuggestions.sort( (a, b) => {
+      a = a.shortName
+      b = b.shortName
+      
+      if (a < b) 
+        return -1
+      else if (a > b) 
+        return 1
+      return 0
+    })
 
     let primarySuggestions = inputLength === 0 ? [] : this.props.locations.filter(location => {
       if(location.name.toLowerCase().replace('(','').replace(')','').split(' ')[0] === 'the')
@@ -32,6 +63,7 @@ class Search extends Component {
 
       return location.name.toLowerCase().slice(0, inputLength) === inputValue
     })
+    
 
     let secondarySuggestions = inputLength === 0 ? [] : this.props.locations.filter(location =>
       location.name.toLowerCase().replace('(','').replace(')','').split(' ').slice(1).some(name => name.slice(0, inputLength) === inputValue)
@@ -43,8 +75,7 @@ class Search extends Component {
       })
     }
 
-    let noDuplicates = new Set(primarySuggestions.concat(secondarySuggestions))
-
+    let noDuplicates = new Set(shortNameSuggestions.concat(primarySuggestions.concat(secondarySuggestions)))
     return Array.from(noDuplicates).slice(0,5)
   }
 
@@ -153,8 +184,9 @@ class Search extends Component {
         onSuggestionsFetchRequested={this.onSuggestionsFetchRequested}
         onSuggestionsClearRequested={this.onSuggestionsClearRequested}
         onSuggestionSelected={this.onSuggestionSelected}
+        highlightFirstSuggestion={true}
         getSuggestionValue={this.getSuggestionValue}
-        renderSuggestion={this.renderSuggestion}
+        renderSuggestion={this.renderSuggestion.bind(this)}
         renderInputComponent={this.renderInputComponent}
         inputProps={inputProps}
       />

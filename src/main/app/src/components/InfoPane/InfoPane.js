@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom'
 import Swipeable from 'react-swipeable'
 
 import './infoPane.css'
@@ -12,12 +11,10 @@ class InfoPane extends Component {
       isVisible: null
     }
     
-    let selectedLocation = null
-    let isMobile = null
-    let isVisible = false
-    let hasImage = false
-    
-    this.isVisible = isVisible    
+    this.selectedLocation = null
+    this.isMobile = null
+    this.isVisible = null
+    this.hasImage = null    
   }
   
   componentDidMount() {
@@ -65,7 +62,7 @@ class InfoPane extends Component {
       
     return(
       <div className="popup-header-image-container" style={style}>
-        <img className="popup-header-image" src={this.selectedLocation ? this.selectedLocation.image : null} alt='location-image'/>
+        <img className="popup-header-image" src={this.selectedLocation ? this.selectedLocation.image : null} alt='location'/>
         <div className="popup-header-image-name">
           {this.getName()}
         </div>
@@ -88,7 +85,7 @@ class InfoPane extends Component {
     if(this.selectedLocation) {
       return(
         <span className='popup-header-category'>
-          {this.props.selectedLocation.category[0].toUpperCase() + this.props.selectedLocation.category.substr(1,this.props.selectedLocation.category.length)}
+          {this.selectedLocation.details}
         </span>
       )
     }
@@ -121,7 +118,7 @@ class InfoPane extends Component {
   }
   
   render() {
-    let margin = `${window.innerHeight - 250}px`
+    // let margin = `${window.innerHeight - 100}px`
     // if((this.isMobile) && !(window.iOS && window.isSafari))
     //   margin = 'calc((100vmax - 250px))'
     // if((window.iOS && window.isSafari))
@@ -141,7 +138,7 @@ class InfoPane extends Component {
           <Swipeable
             className="infopane"
             style={style}
-            onSwipedDown={this.swipedDown.bind(this)}
+            onSwipedRight={this.swipedDown.bind(this)}
           >
             <div className = 'popup-header' style={{top: (this.isMobile || this.hasImage) ? '0px' : null }}>
               <div className="infopane-close-button" onClick={this.swipedDown.bind(this)} style={{display: this.isMobile ? 'block' : 'none'}}>
@@ -159,15 +156,17 @@ class InfoPane extends Component {
             style={{display: (this.isMobile && this.selectedLocation && !this.state.isVisible) ? 'block' : 'none'}}
             onSwipedUp={this.swipedUp.bind(this)}
           >
-            <div className='mobile-info-open-button' onClick={this.swipedUp.bind(this)}>
-              <img className='mobile-info-open-button-icon' src='https://png.icons8.com/metro/48/ffffff/chevron-up.png' alt='open-infopane' />
+            <div className='mobile-info-open-button-container'>
+              <div className='mobile-info-open-button' onClick={this.swipedUp.bind(this)}>
+                <img className='mobile-info-open-button-icon' src='https://png.icons8.com/metro/48/ffffff/chevron-up.png' alt='open-infopane' />
+              </div>
             </div>
             <div className='mobile-info-text'>
               <div className="mobile-info-name" style={{paddingTop: this.isMobile && !this.hasImage ? '5px' : '5px'}}>
                 {this.selectedLocation ? this.selectedLocation.name : ''}
               </div>
               <span className='mobile-info-category'>
-                {this.selectedLocation ? this.selectedLocation.category[0].toUpperCase() + this.props.selectedLocation.category.substr(1,this.props.selectedLocation.category.length) : ''}
+                {this.selectedLocation ? this.selectedLocation.details : ''}
               </span>
             </div>
           </Swipeable>

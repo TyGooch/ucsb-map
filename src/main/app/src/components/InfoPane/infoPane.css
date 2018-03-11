@@ -150,13 +150,28 @@
   box-shadow: 0px 0px 10px #c0c0c0;
 }
 
+.mobile-info-open-button-container {
+  position: relative;
+  top: -25px;
+  display: flex;
+  flex-direction: row;
+  /* background-color: red; */
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
 .mobile-info-open-button {
   /* width: 100%; */
-  position: absolute;
-  right: 5px;
+  align-content: center;
+  text-align: center;
+  /* position: relative; */
+  /* right: 5px; */
   height: 35px;
   width: 35px;
-  top:-20.5px;
+  /* top:-20.5px; */
   background: #1e3154;
   border: 3px solid white;
   border-radius: 50%;
@@ -190,7 +205,8 @@
 
 .mobile-info-text {
   position: relative;
-  padding-top: 8px;
+  top: -27.5px;
+  /* padding-top: 8px; */
   /* z-index: 5; */
 }
 

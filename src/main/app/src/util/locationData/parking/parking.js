@@ -4,12 +4,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "lavender",
         "@id": "way/38137846",
         "amenity": "parking",
         "capacity": "69",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "24 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -68,12 +72,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "@id": "way/38140508",
         "amenity": "parking",
         "capacity": "205",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "27 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -132,6 +140,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "@id": "way/38140509",
         "amenity": "parking",
         "building": "yes",
@@ -139,6 +150,7 @@ var parking = {
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "Mesa/ 18 Parking",
+        "shortName": "",
         "parking": "multi-storey"
       },
       "geometry": {
@@ -197,12 +209,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38140510",
         "amenity": "parking",
         "capacity": "139",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "14 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -237,12 +253,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38140511",
         "amenity": "parking",
         "capacity": "525",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "16 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -313,12 +333,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38140512",
         "amenity": "parking",
         "capacity": "139",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "29 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -389,12 +413,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38140926",
         "amenity": "parking",
         "capacity": "78",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "9 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -433,12 +461,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Residence Hall Parking",
+        "lotColor": "orange",
         "@id": "way/38140927",
         "amenity": "parking",
         "capacity": "102",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "2 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -489,52 +521,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/38140932",
-        "amenity": "parking",
-        "capacity": "57",
-        "capacity:disabled": "yes",
-        "fee": "yes",
-        "name": "7 Parking",
-        "parking": "surface"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              -119.8442075,
-              34.411702
-            ],
-            [
-              -119.8441794,
-              34.4135515
-            ],
-            [
-              -119.8443015,
-              34.4135527
-            ],
-            [
-              -119.8443296,
-              34.4117032
-            ],
-            [
-              -119.8442075,
-              34.411702
-            ]
-          ]
-        ]
-      },
-      "id": "way/38140932"
-    },
-    {
-      "type": "Feature",
-      "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38165940",
         "amenity": "parking",
         "capacity": "153",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "3 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -641,12 +637,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38165941",
         "amenity": "parking",
         "capacity": "19",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "8 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -681,12 +681,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38165942",
         "amenity": "parking",
         "capacity": "21",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "4 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -721,12 +725,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38165945",
         "amenity": "parking",
         "capacity": "82",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "5 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -877,12 +885,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38165946",
         "amenity": "parking",
         "capacity": "128",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "6 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -1041,12 +1053,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "lavender",
         "@id": "way/38165947",
         "amenity": "parking",
         "capacity": "95",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "1 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -1213,6 +1229,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38165950",
         "amenity": "parking",
         "building": "yes",
@@ -1220,6 +1239,7 @@ var parking = {
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "10 Parking",
+        "shortName": "",
         "parking": "multi-storey"
       },
       "geometry": {
@@ -1270,12 +1290,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "lavender",
         "@id": "way/38165951",
         "amenity": "parking",
         "capacity": "93",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "11 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -1350,12 +1374,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/38165954",
         "amenity": "parking",
         "capacity": "202",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "12 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -1742,12 +1770,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty Parking",
+        "lotColor": "green",
         "@id": "way/38173207",
         "amenity": "parking",
         "capacity": "49",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "15 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -1790,11 +1822,15 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "@id": "way/43939828",
         "amenity": "parking",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "30 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -1889,11 +1925,15 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "@id": "way/49425158",
         "amenity": "parking",
         "capacity": "77",
         "fee": "yes",
         "name": "25 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -1936,6 +1976,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -1948,6 +1991,7 @@ var parking = {
         "disabled_spaces": "yes",
         "fee": "yes",
         "name": "Lot 22",
+        "shortName": "",
         "parking": "multi-storey"
       },
       "geometry": {
@@ -2006,6 +2050,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2016,6 +2063,7 @@ var parking = {
         "disabled_spaces": "yes",
         "fee": "yes",
         "name": "Lot 22",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -2118,9 +2166,13 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "@id": "way/466470273",
         "amenity": "parking",
         "name": "23 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -2163,12 +2215,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "@id": "way/38267934",
         "amenity": "parking",
         "capacity": "490",
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "38 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -2235,6 +2291,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "San Clemente Parking",
+        "lotColor": "orange",
         "@id": "way/38269349",
         "access": "permissive",
         "amenity": "parking",
@@ -2242,6 +2301,7 @@ var parking = {
         "capacity:disabled": "yes",
         "fee": "yes",
         "name": "Lot 50",
+        "shortName": "",
         "operator": "UCSB",
         "park_ride": "no",
         "parking": "multi-storey",
@@ -2283,10 +2343,14 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "@id": "way/49427646",
         "amenity": "parking",
         "capacity": "35",
         "name": "37 Parking",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -2381,11 +2445,15 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "San Clemente Parking",
+        "lotColor": "orange",
         "@id": "way/552109592",
         "access": "yes",
         "amenity": "parking",
         "maxstay": "20 min free;pay-to-park",
         "name": "Lot 51",
+        "shortName": "",
         "operator": "UCSB",
         "parking": "surface",
         "surface": "asphalt"
@@ -2422,11 +2490,15 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "San Clemente Parking",
+        "lotColor": "orange",
         "@id": "way/552490743",
         "access": "permissive",
         "amenity": "parking",
         "maxstay": "20 min free;pay-to-park",
         "name": "Lot 52",
+        "shortName": "",
         "operator": "UCSB",
         "parking": "surface",
         "supervised": "yes",
@@ -2464,6 +2536,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "San Clemente Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2478,7 +2553,8 @@ var parking = {
         "parking": "surface",
         "supervised": "yes",
         "surface": "asphalt",
-        "name": "53 Parking"
+        "name": "53 Parking",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -2512,6 +2588,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Sierra Madre Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -2520,6 +2599,7 @@ var parking = {
         "@id": "relation/7967725",
         "amenity": "parking",
         "name": "Lot 65",
+        "shortName": "",
         "type": "multipolygon"
       },
       "geometry": {
@@ -3304,6 +3384,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "West Campus Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3312,6 +3395,7 @@ var parking = {
         "@id": "way/373834443",
         "amenity": "parking",
         "name": "Lot 63",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -3370,6 +3454,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "West Campus Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3378,6 +3465,7 @@ var parking = {
         "@id": "way/373834444",
         "amenity": "parking",
         "name": "Lot 62",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -3412,6 +3500,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "West Campus Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3420,6 +3511,7 @@ var parking = {
         "@id": "way/373834445",
         "amenity": "parking",
         "name": "Lot 64",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -3510,6 +3602,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Sierra Madre Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3517,7 +3612,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/481702998",
         "amenity": "parking",
-        "name": "Lot 65"
+        "name": "Lot 65",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3791,6 +3887,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Sierra Madre Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3798,7 +3897,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/545655298",
         "amenity": "parking",
-        "name": "71 Parking"
+        "name": "71 Parking",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3864,6 +3964,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Sierra Madre Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3871,7 +3974,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/545655301",
         "amenity": "parking",
-        "name": "Lot 67"
+        "name": "Lot 67",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -3981,6 +4085,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "West Campus Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -3988,7 +4095,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/556264664",
         "amenity": "parking",
-        "name": "Lot 61"
+        "name": "Lot 61",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4022,6 +4130,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "West Campus Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4029,7 +4140,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/556264673",
         "amenity": "parking",
-        "name": "Lot 61"
+        "name": "Lot 61",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4071,9 +4183,13 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "@id": "way/556264675",
         "amenity": "parking",
-        "name": "60 Parking"
+        "name": "60 Parking",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4251,9 +4367,13 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "yellow",
         "@id": "way/560571177",
         "amenity": "parking",
-        "name": "Lot 59"
+        "name": "Lot 59",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4287,6 +4407,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Sierra Madre Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4294,7 +4417,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/561897643",
         "amenity": "parking",
-        "name": "Lot 67"
+        "name": "Lot 67",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4404,6 +4528,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4411,7 +4538,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/220838200",
         "amenity": "parking",
-        "name": "Lot 32"
+        "name": "Lot 32",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4461,6 +4589,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4468,7 +4599,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/220838201",
         "amenity": "parking",
-        "name": "Lot 32"
+        "name": "Lot 32",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4502,6 +4634,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4509,7 +4644,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/220838202",
         "amenity": "parking",
-        "name": "Lot 32"
+        "name": "Lot 32",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4543,6 +4679,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4550,7 +4689,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/220838203",
         "amenity": "parking",
-        "name": "Lot 32"
+        "name": "Lot 32",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4584,6 +4724,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Faculty & Staff Parking",
+        "lotColor": "green",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4592,7 +4735,8 @@ var parking = {
         "@id": "way/220909310",
         "amenity": "parking",
         "parking": "surface",
-        "name": "Lot 17"
+        "name": "Lot 17",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4698,6 +4842,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4708,6 +4855,7 @@ var parking = {
         "capacity": 50,
         "fee": "yes",
         "name": "Lot 31",
+        "shortName": "",
         "parking": "surface"
       },
       "geometry": {
@@ -4746,12 +4894,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "name": "Lot 33"
+        "name": "Lot 33",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4784,12 +4936,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Storke Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "name": "Lot 34"
+        "name": "Lot 56",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4830,12 +4986,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Storke Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "name": "Lot 35"
+        "name": "Lot 56",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4888,12 +5048,16 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Storke Apartments Parking",
+        "lotColor": "orange",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "name": "Lot 36"
+        "name": "Lot 56",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4934,6 +5098,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4943,7 +5110,8 @@ var parking = {
         "amenity": "parking",
         "capacity:disabled": "yes",
         "fee": "yes",
-        "name": "Lot 40"
+        "name": "Lot 40",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -4977,6 +5145,9 @@ var parking = {
     {
       "type": "Feature",
       "properties": {
+        "category": "Parking",
+        "details": "Visitor & Student Parking",
+        "lotColor": "yellow",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
@@ -4984,7 +5155,8 @@ var parking = {
         "fill-opacity": 0.5,
         "@id": "way/553042857",
         "amenity": "parking",
-        "name": "Lot 39"
+        "name": "Lot 46",
+        "shortName": "",
       },
       "geometry": {
         "type": "Polygon",
@@ -5034,6 +5206,562 @@ var parking = {
         ]
       },
       "id": "way/553042857"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "category": "Parking",
+        "details": "Santa Ynez Parking",
+        "lotColor": "orange",
+        "name": "Lot 57",
+        "shortName": "",
+        "type": "multipolygon",
+      },
+      "geometry": {
+        "type": "MultiPolygon",
+        "coordinates": [
+          [
+            [
+              [
+                -119.86014783382416,
+                34.42022609403363
+              ],
+              [
+                -119.8603892326355,
+                34.419717196374364
+              ],
+              [
+                -119.86050993204117,
+                34.41956231386332
+              ],
+              [
+                -119.86064940690993,
+                34.41920165776148
+              ],
+              [
+                -119.86140847206116,
+                34.41946938421895
+              ],
+              [
+                -119.86155599355698,
+                34.41959550299696
+              ],
+              [
+                -119.8621729016304,
+                34.41984331477859
+              ],
+              [
+                -119.86258596181868,
+                34.41998492118121
+              ],
+              [
+                -119.86297488212585,
+                34.41998934637742
+              ],
+              [
+                -119.86329674720764,
+                34.41984110217665
+              ],
+              [
+                -119.86351937055586,
+                34.41954461298663
+              ],
+              [
+                -119.86365348100662,
+                34.41919059466625
+              ],
+              [
+                -119.86391365528105,
+                34.41908881412175
+              ],
+              [
+                -119.86408531665803,
+                34.41894720620157
+              ],
+              [
+                -119.86415237188338,
+                34.41882329907468
+              ],
+              [
+                -119.86417919397354,
+                34.418701604396354
+              ],
+              [
+                -119.86413359642029,
+                34.41844936395364
+              ],
+              [
+                -119.86406117677689,
+                34.41817057100013
+              ],
+              [
+                -119.86378625035286,
+                34.41817388996935
+              ],
+              [
+                -119.86378625035286,
+                34.418259076800354
+              ],
+              [
+                -119.8638331890106,
+                34.418329881373104
+              ],
+              [
+                -119.86391901969908,
+                34.41846927770046
+              ],
+              [
+                -119.86398071050644,
+                34.418593185351945
+              ],
+              [
+                -119.86398205161093,
+                34.4187060296605
+              ],
+              [
+                -119.86391365528105,
+                34.41886755164107
+              ],
+              [
+                -119.86376613378525,
+                34.41897597032977
+              ],
+              [
+                -119.86356496810913,
+                34.419024648062624
+              ],
+              [
+                -119.86340135335924,
+                34.419000309199745
+              ],
+              [
+                -119.86325651407242,
+                34.41895826932896
+              ],
+              [
+                -119.86280053853989,
+                34.41872373071469
+              ],
+              [
+                -119.86267983913422,
+                34.41863301277233
+              ],
+              [
+                -119.86273884773254,
+                34.41844936395364
+              ],
+              [
+                -119.86279785633089,
+                34.41827899059251
+              ],
+              [
+                -119.86290514469145,
+                34.41821039862184
+              ],
+              [
+                -119.86296683549881,
+                34.418239163003484
+              ],
+              [
+                -119.8631988465786,
+                34.418017898274584
+              ],
+              [
+                -119.86325785517691,
+                34.417909478343695
+              ],
+              [
+                -119.86325651407242,
+                34.417776719053194
+              ],
+              [
+                -119.8631988465786,
+                34.41770038236574
+              ],
+              [
+                -119.86303120851515,
+                34.41768489375398
+              ],
+              [
+                -119.86238211393355,
+                34.417679362106206
+              ],
+              [
+                -119.86228823661804,
+                34.4176528101919
+              ],
+              [
+                -119.86164450645447,
+                34.417650597531996
+              ],
+              [
+                -119.8614540696144,
+                34.41767051146906
+              ],
+              [
+                -119.8613253235817,
+                34.41774352919764
+              ],
+              [
+                -119.86126363277434,
+                34.417827610139476
+              ],
+              [
+                -119.86121535301207,
+                34.41795151874174
+              ],
+              [
+                -119.86115634441376,
+                34.41819712275004
+              ],
+              [
+                -119.86113220453261,
+                34.41854893264034
+              ],
+              [
+                -119.86095786094666,
+                34.41855335791255
+              ],
+              [
+                -119.86081570386885,
+                34.418630800138374
+              ],
+              [
+                -119.86074596643448,
+                34.41879010963453
+              ],
+              [
+                -119.86052602529524,
+                34.41911979082233
+              ],
+              [
+                -119.86004054546356,
+                34.420186267372
+              ],
+              [
+                -119.86014783382416,
+                34.42022609403363
+              ]
+            ],
+            [
+              [
+                -119.86075669527054,
+                34.419106515094924
+              ],
+              [
+                -119.86098200082778,
+                34.4187060296605
+              ],
+              [
+                -119.8621380329132,
+                34.418701604396354
+              ],
+              [
+                -119.86258596181868,
+                34.41869939176421
+              ],
+              [
+                -119.86271202564238,
+                34.41878789700472
+              ],
+              [
+                -119.86303925514223,
+                34.418994777639014
+              ],
+              [
+                -119.8632726073265,
+                34.41915298013164
+              ],
+              [
+                -119.86312508583069,
+                34.41948044727729
+              ],
+              [
+                -119.86304596066473,
+                34.41958886517127
+              ],
+              [
+                -119.86290782690047,
+                34.41966077492141
+              ],
+              [
+                -119.86278176307677,
+                34.41967958207662
+              ],
+              [
+                -119.8625873029232,
+                34.419650818190455
+              ],
+              [
+                -119.8622466623783,
+                34.4195390814619
+              ],
+              [
+                -119.86216619610785,
+                34.41967958207662
+              ],
+              [
+                -119.8616176843643,
+                34.41947712835995
+              ],
+              [
+                -119.86146211624144,
+                34.4193476904809
+              ],
+              [
+                -119.86075669527054,
+                34.419106515094924
+              ]
+            ],
+            [
+              [
+                -119.86253768205643,
+                34.41855114527648
+              ],
+              [
+                -119.86126095056532,
+                34.41856442109207
+              ],
+              [
+                -119.8612931370735,
+                34.41834979514837
+              ],
+              [
+                -119.86142054200172,
+                34.41783314177743
+              ],
+              [
+                -119.86148223280905,
+                34.41775348615569
+              ],
+              [
+                -119.86154392361641,
+                34.417734678567264
+              ],
+              [
+                -119.8617061972618,
+                34.417725827935975
+              ],
+              [
+                -119.8619931936264,
+                34.417723615278
+              ],
+              [
+                -119.8622292280197,
+                34.417721402619975
+              ],
+              [
+                -119.8624062538147,
+                34.41774795451247
+              ],
+              [
+                -119.86292123794556,
+                34.4177457418551
+              ],
+              [
+                -119.86301511526108,
+                34.417776719053194
+              ],
+              [
+                -119.86306071281433,
+                34.41786965057869
+              ],
+              [
+                -119.86300706863403,
+                34.41795594404557
+              ],
+              [
+                -119.86284345388412,
+                34.418104191588505
+              ],
+              [
+                -119.8626583814621,
+                34.41835422043112
+              ],
+              [
+                -119.86253768205643,
+                34.41855114527648
+              ]
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/525405500",
+        "amenity": "parking",
+        "parking": "surface",
+        "name": "Lot 43",
+        "shortName": "",
+        "details": "Westgate Apartments Parking",
+        "lotColor": "Orange",
+        "category": "Parking"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.8559459,
+              34.4168788
+            ],
+            [
+              -119.8559446,
+              34.4167389
+            ],
+            [
+              -119.8559453,
+              34.4164896
+            ],
+            [
+              -119.8555294,
+              34.4164882
+            ],
+            [
+              -119.8555293,
+              34.4166231
+            ],
+            [
+              -119.8557313,
+              34.4166222
+            ],
+            [
+              -119.8557277,
+              34.4168794
+            ],
+            [
+              -119.8559459,
+              34.4168788
+            ]
+          ]
+        ]
+      },
+      "id": "way/525405500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "stroke": "#555555",
+        "stroke-width": 2,
+        "stroke-opacity": 1,
+        "fill": "#555555",
+        "fill-opacity": 0.5,
+        "@id": "way/558145429",
+        "amenity": "parking",
+        "category": "Parking",
+        "details": "Westwinds and El Dorado Apartments Parking",
+        "lotColor": "orange",
+        "name": "Lot 44",
+        "shortName": "",
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              -119.86048847436903,
+              34.4162621418962
+            ],
+            [
+              -119.8604881,
+              34.4163791
+            ],
+            [
+              -119.8605004,
+              34.4163785
+            ],
+            [
+              -119.8608685,
+              34.4163808
+            ],
+            [
+              -119.8608673,
+              34.4165978
+            ],
+            [
+              -119.8608347,
+              34.4165976
+            ],
+            [
+              -119.8608338,
+              34.4167556
+            ],
+            [
+              -119.8608656,
+              34.4167557
+            ],
+            [
+              -119.8608639,
+              34.4170481
+            ],
+            [
+              -119.8609116,
+              34.4170483
+            ],
+            [
+              -119.861026,
+              34.4170514
+            ],
+            [
+              -119.8610753,
+              34.4170515
+            ],
+            [
+              -119.8610768,
+              34.4167591
+            ],
+            [
+              -119.8611113,
+              34.4167592
+            ],
+            [
+              -119.8611121,
+              34.4165999
+            ],
+            [
+              -119.861083,
+              34.4165998
+            ],
+            [
+              -119.8610841,
+              34.4163757
+            ],
+            [
+              -119.8614506,
+              34.416377
+            ],
+            [
+              -119.8614504,
+              34.4162928
+            ],
+            [
+              -119.8614016,
+              34.4162668
+            ],
+            [
+              -119.8606434,
+              34.4162634
+            ],
+            [
+              -119.86048847436903,
+              34.4162621418962
+            ]
+          ]
+        ]
+      },
+      "id": "way/558145429"
     }
   ]
 }

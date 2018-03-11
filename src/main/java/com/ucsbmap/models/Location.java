@@ -26,11 +26,13 @@ public class Location {
     @NotBlank
     private String color;
 
-    //should be able to be blank
     private String website;
 
-    //should be able to be blank
     private String image;
+
+    private String details;
+    
+    private String shortName;
 
     public Location() {
         super();
@@ -95,11 +97,27 @@ public class Location {
     public void setImage(String image) {
         this.image = image;
     }
+    
+    public String getDetails() {
+        return details;
+    }
+
+    public void setDetails(String details) {
+        this.details = details;
+    }
+    
+    public String getShortName() {
+        return shortName;
+    }
+
+    public void setShortName(String shortName) {
+        this.shortName = shortName;
+    }
 
     @Override
     public String toString() {
         return String.format(
-                "Location[id=%s, name='%s', category='%s', polygons='%s', color='%s', website='%s', image='%s']",
-                id, name, category, polygons, color, website, image);
+                "Location[id=%s, name='%s', category='%s', polygons='%s', color='%s', website='%s', image='%s', details='%s', shortName='%s']",
+                id, name, category, polygons, color, website, image, details, shortName);
     }
 }

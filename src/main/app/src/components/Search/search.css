@@ -11,13 +11,14 @@ body {
 }
 
 .react-autosuggest__input {
-  width: 292px;
+  width: 272px;
   height: 30px;
-  padding: 10px 20px 10px 40px;
+  padding: 10px 40px 10px 40px;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 16px;
   border: none;
+  text-overflow: ellipsis;
   /* border: 1px solid #aaa; */
   /* border-radius: 4px; */
 }
@@ -47,8 +48,8 @@ body {
 .react-autosuggest__suggestions-container--open {
   display: block;
   position: absolute;
-  top: 51px;
-  width: 292px;
+  top: 50px;
+  width: 352px;
   border: 1px solid #aaa;
   background-color: #fff;
   font-family: Roboto, sans-serif;
@@ -61,21 +62,81 @@ body {
   border: none;
   /* border-top: 1px solid #c0c0c0; */
   box-shadow: 0px 1px 5px #c0c0c0;
+  overflow: hidden;
 }
 
 .react-autosuggest__suggestions-list {
   margin: 0;
   padding: 0;
+  /* padding-top: 5px; */
   list-style-type: none;
+  margin-top: -1px;
+  overflow: hidden;
 }
 
 .react-autosuggest__suggestion {
+  display: flex;
+  flex-direction: row;
   cursor: pointer;
-  padding: 10px 20px;
+  overflow: hidden;
+  /* padding: 10px 20px; */
+  /* border-bottom: 1px solid #eee; */
 }
 
 .react-autosuggest__suggestion--highlighted {
   background-color: #ddd;
+}
+
+.suggestion-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: inherit;
+  /* padding-top: 5px; */
+  /* padding-bottom: 5px; */
+}
+
+.suggestion-icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding: 5px; */
+  /* max-width: 80px; */
+  height: inherit;
+  opacity: 0.35;
+}
+
+.suggestion-icon {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  /* top: 3px; */
+  /* left: -10px; */
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.suggestion-item-text {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* height: inherit; */
+  width: 100%;
+  /* margin-left: 10px; */
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  /* margin-bottom: 10px; */
+  /* margin-top: 10px; */
+  border-top: 1px solid #eee;
+  /* background: red; */
+  /* font-size: 18px; */
 }
 
 .inputContainer {
@@ -110,7 +171,7 @@ body {
 .clear-input-icon {
   position: absolute;
   top: 13px;
-  right: 20px;
+  right: 15px;
   width: 24px;
   height: 24px;
   opacity: 0.8;
@@ -118,12 +179,4 @@ body {
 
 .clear-input-button :hover {
   cursor: pointer;
-}
-
-.suggestion-icon {
-  position: relative;
-  top: 3px;
-  left: -10px;
-  width: 20px;
-  height: 20px;
 }

@@ -4,11 +4,14 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/221234879",
         "amenity": "food_court",
         "building": "yes",
         "ele": 14,
         "name": "Ortega Dining Commons",
+        "shortName": "",
         "ref": 542,
         "wheelchair": "yes",
         "website": "www.housing.ucsb.edu/dining/ortega-dining-commons",
@@ -70,11 +73,14 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/221235091",
         "alt_name": "DLG",
         "amenity": "food_court",
         "building": "yes",
         "name": "De La Guerra Dining Commons",
+        "shortName": "DLG",
         "outdoor_seating": "yes",
         "ref": 549,
         "wheelchair": "yes",
@@ -265,9 +271,12 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/221401192",
         "building": "university",
         "name": "Carrillo Dining Commons",
+        "shortName": "",
         "ref": 562,
         "website": "www.housing.ucsb.edu/dining/carrillo-dining-commons",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/eateries/carrillo-slider1.jpg?itok=gF5-UXYN"
@@ -416,9 +425,12 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
+        "details": "All You Can Eat Dining Commons",
+        "category": "Dining",
         "@id": "way/539936496",
         "building": "university",
         "name": "Portola Dining Commons",
+        "shortName": "",
         "website": "www.housing.ucsb.edu/dining/portola-dining-commons",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrC4Om6A62ZIcwRtoiLp6WUQYok2AKCaQ-YB41oHCVyzh-o6Pn"
       },
