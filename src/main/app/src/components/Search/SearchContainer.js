@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import { push } from 'react-router-redux'
 
 import Search from './Search'
 import { updateSelectedLocation } from '../../actions/locationActions'
@@ -12,7 +13,8 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   updateSelectedLocation: (location) => dispatch(updateSelectedLocation(location)),
-  toggleSideBar: () => dispatch(toggleSideBar())
+  toggleSideBar: () => dispatch(toggleSideBar()),
+  deselectLocation: () => dispatch(push('/'))
 })
 
 
