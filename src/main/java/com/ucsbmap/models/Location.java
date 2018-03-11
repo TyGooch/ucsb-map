@@ -1,4 +1,4 @@
-package com.ucsbmap.util;
+package com.ucsbmap.models;
 
 import java.util.Date;
 import javax.validation.constraints.Size;
