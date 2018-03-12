@@ -249,6 +249,12 @@ class CampusMap extends Component {
     }
   }
   
+  componentWillReceiveProps(nextProps){
+    if(nextProps.satelliteBasemapActive !== this.props.satelliteBasemapActive){
+      nextProps.satelliteBasemapActive ? this.basemap.setUrl(config.satelliteLayer.uri) : this.basemap.setUrl(config.tileLayer.uri)
+    }
+  }
+  
   componentDidUpdate(prevProps, prevState){
     if(prevProps.locations.length !== this.props.locations.length)
       this.addPolygons()

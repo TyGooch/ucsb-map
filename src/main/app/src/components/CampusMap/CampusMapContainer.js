@@ -7,7 +7,8 @@ import { updateSelectedLocation } from '../../actions/locationActions'
 
 const mapStateToProps = state => ({
   locations: Object.keys(state.locations.allLocations).map(key => state.locations.allLocations[key]),
-  selectedLocation: state.locations.selectedLocation
+  selectedLocation: state.locations.selectedLocation,
+  satelliteBasemapActive: state.sideBar.satelliteBasemapActive 
 })
 
 const mapDispatchToProps = dispatch => ({

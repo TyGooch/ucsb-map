@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Toggle from 'react-toggle'
 
 import './sideBar.css'
 
@@ -13,7 +14,12 @@ class SideBar extends Component {
           </div>
         </div>
         <div className="sidebar-content">
-          CONTROLS GO HERE
+          <label>
+            <span>Satellite Imagery</span>
+            <Toggle
+              defaultChecked={this.props.satelliteBasemapActive}
+              onChange={this.props.toggleSatellite} />
+          </label>
         </div>
       </div>
     )

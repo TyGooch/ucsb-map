@@ -1,15 +1,17 @@
 import { connect } from 'react-redux'
 
 import SideBar from './SideBar'
-import { toggleSideBar } from '../../actions/sideBarActions'
+import { toggleSideBar, toggleSatellite } from '../../actions/sideBarActions'
 
 
 const mapStateToProps = state => ({
-  sideBarOpened: state.sideBar.sideBarOpened
+  sideBarOpened: state.sideBar.sideBarOpened,
+  satelliteBasemapActive: state.sideBar.satelliteBasemapActive
 })
 
 const mapDispatchToProps = dispatch => ({
-  toggleSideBar: () => dispatch(toggleSideBar())
+  toggleSideBar: () => dispatch(toggleSideBar()),
+  toggleSatellite: () => dispatch(toggleSatellite())
 })
 
 

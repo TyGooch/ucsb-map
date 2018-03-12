@@ -1,9 +1,10 @@
 import merge from 'lodash/merge'
 
-import { TOGGLE_SIDEBAR } from '../actions/sideBarActions'
+import { TOGGLE_SIDEBAR, TOGGLE_SATELLITE } from '../actions/sideBarActions'
 
 const defaultSideBar = Object.freeze({
-  sideBarOpened: false
+  sideBarOpened: false,
+  satelliteBasemapActive: false
 })
 
 const sideBarReducer = (state = defaultSideBar, action) => {
@@ -12,6 +13,8 @@ const sideBarReducer = (state = defaultSideBar, action) => {
   switch(action.type) {
     case TOGGLE_SIDEBAR:
       return merge({}, state, {sideBarOpened: !state.sideBarOpened})
+    case TOGGLE_SATELLITE:
+      return merge({}, state, {satelliteBasemapActive: !state.satelliteBasemapActive})
     default:
       return state
   }
