@@ -12,7 +12,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   updateSelectedLocation: (location) => dispatch(updateSelectedLocation(location)),
-  selectLocation: (name) => dispatch(push(`/${name.replace(/ /g, "")}`)),
+  selectLocation: (name) => dispatch(push(`/${name.replace(/ /g, "").toLowerCase()}`)),
   deselectLocation: () => dispatch(push('/'))
 })
 

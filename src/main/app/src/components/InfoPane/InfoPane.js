@@ -14,9 +14,9 @@ class InfoPane extends Component {
     }
     
     let currentLocationName = props.router.location.pathname.replace('/', '')
-    let currentLocation = props.locations.find(location => location.name.replace(/ /g, "") === currentLocationName )
+    let currentLocation = props.locations.find(location => location.name.replace(/ /g, "").toLowerCase() === currentLocationName )
     if(!currentLocation)
-      currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/ /g, "") === currentLocationName )
+      currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/ /g, "").toLowerCase() === currentLocationName )
     if(currentLocation){
       props.updateSelectedLocation(currentLocation)  
     }
@@ -31,37 +31,18 @@ class InfoPane extends Component {
       return
     }
       let currentLocationName = nextProps.router.location.pathname.replace('/', '')
-      let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "") === currentLocationName )
+      let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "").toLowerCase() === currentLocationName )
       if(!currentLocation)
-        currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/ /g, "") === currentLocationName )
+        currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/ /g, "").toLowerCase() === currentLocationName )
       if(currentLocation){
         this.props.updateSelectedLocation(currentLocation)
         this.setState({hasImage: currentLocation.image ? true : false})
       }
-    // }
+
     if(!nextProps.selectedLocation)
       return
-
-    // if(hasImage !== (nextProps.selectedLocation.image === null ? false : true))
-    //   this.setState({hasImage: nextProps.selectedLocation.image === null ? false : true})
-    
-    // if(!hasImage && nextProps.selectedLocation.image)
-    //   this.setState({hasImage: true})
-    // 
-    // if(!this.props.selectedLocation && this.state.isVisible)
-    //   this.setState({isVisible: false})
-    // 
-    // if(this.props.selectedLocation && !this.state.isMobile)
-    //   this.setState({isVisible: true})
   }
-  
-  // shouldComponentUpdate(nextProps){
-  //   console.log('SHOULD')
-  //   if(this.props.router.location.pathname !== nextProps.router.location.pathname)
-  //     return true
-  //   return false
-  // }
-  
+    
   getImage() {
     let hasImage = this.props.selectedLocation && !(this.props.selectedLocation.image === null)
     if(!hasImage){
