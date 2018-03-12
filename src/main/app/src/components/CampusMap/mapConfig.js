@@ -30,4 +30,16 @@ config.tileLayer = {
   }
 }
 
+config.satelliteLayer = {
+  uri: 'https://api.mapbox.com/styles/v1/tygooch/cjen8qxf6ciao2smk8ar69b68/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoidHlnb29jaCIsImEiOiJjamRkbDc2NmIwM2I1Mndxbzk0OTlxbHh5In0.pYzzyz9vm74G3pjt1FcX6w',
+  options: {
+    minZoom: 11,
+    maxZoom: 20,
+    attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    id: '',
+    accessToken: '',
+    bounds: [[34.37575, -119.9235],[34.46765, -119.80677]]
+  }
+}
+
 export default config

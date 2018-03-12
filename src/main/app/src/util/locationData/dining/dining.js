@@ -4,7 +4,7 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "All You Can Eat Dining Commons",
+        "details": "Buffet-Style Dining",
         "category": "Dining",
         "@id": "way/221234879",
         "amenity": "food_court",
@@ -15,7 +15,7 @@ var diningHalls = {
         "ref": 542,
         "wheelchair": "yes",
         "website": "www.housing.ucsb.edu/dining/ortega-dining-commons",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/eateries/gallery/ortega-gallery1_0.jpg"
+        "image": "https://preview.ibb.co/m6rEF7/ortega_gallery1_0.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -73,7 +73,7 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "All You Can Eat Dining Commons",
+        "details": "Buffet-Style Dining",
         "category": "Dining",
         "@id": "way/221235091",
         "alt_name": "DLG",
@@ -85,7 +85,7 @@ var diningHalls = {
         "ref": 549,
         "wheelchair": "yes",
         "website": "www.housing.ucsb.edu/dining/de-la-guerra-dining-commons",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/eateries/gallery/dlg-gallery2.jpg"
+        "image": "https://preview.ibb.co/mnQkNn/dlg_gallery2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -271,7 +271,7 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "All You Can Eat Dining Commons",
+        "details": "Buffet-Style Dining",
         "category": "Dining",
         "@id": "way/221401192",
         "building": "university",
@@ -279,7 +279,7 @@ var diningHalls = {
         "shortName": "",
         "ref": 562,
         "website": "www.housing.ucsb.edu/dining/carrillo-dining-commons",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/eateries/carrillo-slider1.jpg?itok=gF5-UXYN"
+        "image": "https://preview.ibb.co/kepWTS/carrillo_slider1.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -425,7 +425,7 @@ var diningHalls = {
     {
       "type": "Feature",
       "properties": {
-        "details": "All You Can Eat Dining Commons",
+        "details": "Buffet-Style Dining",
         "category": "Dining",
         "@id": "way/539936496",
         "building": "university",

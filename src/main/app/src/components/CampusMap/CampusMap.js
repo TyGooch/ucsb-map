@@ -22,6 +22,7 @@ class CampusMap extends Component {
     this.polygons = null
     this.userLocation = null
     this.mapControls = null
+    this.basemap = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
   }
@@ -38,7 +39,7 @@ class CampusMap extends Component {
     let map = L.map(id, config.mapOptions)
     map.on('click', this.handleMapClick)
 
-    L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
+    this.basemap = L.tileLayer(config.tileLayer.uri, config.tileLayer.options).addTo(map)
     
     map.createPane('labels')
     map.getPane('labels').style.zIndex = 750
@@ -253,6 +254,7 @@ class CampusMap extends Component {
     if(prevProps.locations.length !== this.props.locations.length)
       this.addPolygons()
     if(prevProps.selectedLocation !== this.props.selectedLocation){
+      // this.basemap.setUrl(config.satelliteLayer.uri)
       this.removePolygons()
       this.addPolygons()
       if(this.props.selectedLocation !== null)

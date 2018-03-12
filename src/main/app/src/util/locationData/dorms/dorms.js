@@ -9,11 +9,11 @@ var dorms = {
         "@id": "relation/2927469",
         "building": "university",
         "name": "San Rafael Tower",
-        "shortName": "SAN RAFEL",
+        "shortName": "",
         "ref": 586,
         "type": "multipolygon",
         "website": "www.housing.ucsb.edu/residences/san-rafael",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/sanraf-gallery5.jpg"
+        "image": "https://image.ibb.co/kJb9hn/popuppix_sf.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -349,7 +349,7 @@ var dorms = {
         "shortName": "SAN NIC",
         "ref": 561,
         "website": "www.housing.ucsb.edu/residences/san-nicolas",
-        "image": "http://www.conferences.ucsb.edu/sites/www.conferences.ucsb.edu/files/styles/basic_slideshows/public/images/slideshows/residences/sannic-slider1.jpg?itok=Ih1zns31"
+        "image": "https://tse2.mm.bing.net/th?id=OIP.prjg9cAGMR7QhcV0z8gTKgFIC-&pid=Api"
       },
       "geometry": {
         "type": "Polygon",
@@ -535,7 +535,7 @@ var dorms = {
         "shortName": "SAN MIGEL",
         "ref": 553,
         "website": "www.housing.ucsb.edu/residences/san-miguel",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanmig-slider1.jpg?itok=wa7NmUZz"
+        "image": "https://preview.ibb.co/dT9WTS/Screen_Shot_2018_03_11_at_4_13_46_PM.png"
       },
       "geometry": {
         "type": "Polygon",
@@ -769,7 +769,7 @@ var dorms = {
         "shortName": "SANTA CRUZ",
         "ref": 548,
         "website": "www.housing.ucsb.edu/residences/santa-cruz",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/scruz-gallery8.jpg"
+        "image": "https://webpages.scu.edu/ftp/BMacDonald/santacruzdorm.JPG"
       },
       "geometry": {
         "type": "Polygon",
@@ -921,7 +921,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -1001,7 +1001,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -1073,7 +1073,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -1145,7 +1145,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -1229,7 +1229,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -1302,7 +1302,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -1362,10 +1362,10 @@ var dorms = {
         "@id": "way/221401396",
         "building": "university",
         "name": "San Rafael Mountain Cluster",
-        "shortName": "SAN RAFEL",
+        "shortName": "",
         "ref": 587,
         "website": "www.housing.ucsb.edu/residences/san-rafael",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanraf-slider3.jpg?itok=tQt3JfIX"
+        "image": "https://s-media-cache-ak0.pinimg.com/736x/39/ee/62/39ee622e9433e93ba2bc22e668344f4b.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -1697,10 +1697,10 @@ var dorms = {
         "@id": "way/221403276",
         "building": "university",
         "name": "San Rafael Ocean Cluster",
-        "shortName": "SAN RAFEL",
+        "shortName": "",
         "ref": 587,
         "website": "www.housing.ucsb.edu/residences/san-rafael",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanraf-slider3.jpg?itok=tQt3JfIX"
+        "image": "https://s-media-cache-ak0.pinimg.com/736x/39/ee/62/39ee622e9433e93ba2bc22e668344f4b.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -2060,7 +2060,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2148,7 +2148,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2221,7 +2221,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2301,7 +2301,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2373,7 +2373,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2457,7 +2457,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2525,7 +2525,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2598,7 +2598,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2690,7 +2690,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2762,7 +2762,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2842,7 +2842,7 @@ var dorms = {
         "name": "Manzanita Village",
         "shortName": "",
         "website": "www.housing.ucsb.edu/residences/manzanita-village",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/manz-gallery3.jpg"
+        "image": "https://eeid2017.eemb.ucsb.edu/sites/eeid2017.eemb.ucsb.edu/files/styles/full/public/images/balcony_at_manzanita_village_0.jpg?itok=Aor19XlC"
       },
       "geometry": {
         "type": "Polygon",
@@ -2908,7 +2908,7 @@ var dorms = {
         "name": "Santa Rosa Hall",
         "shortName": "SANTA ROSA",
         "website": "www.housing.ucsb.edu/residences/santa-rosa",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/srosa-gallery11.jpg"
+        "image": "https://preview.ibb.co/jODBv7/srosa_gallery10.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3027,7 +3027,7 @@ var dorms = {
         "shortName": "ANCAP HALL",
         "ref": 547,
         "website": "www.housing.ucsb.edu/residences/anacapa",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/anac-slider4.jpg?itok=Obgj6YYH"
+        "image": "https://preview.ibb.co/nzV5oS/Screen_Shot_2018_03_11_at_4_24_46_PM.png"
       },
       "geometry": {
         "type": "Polygon",
@@ -3221,7 +3221,7 @@ var dorms = {
         "shortName": "SAN CAT",
         "old_name": "Francisco Torres",
         "website": "www.housing.ucsb.edu/residences/santa-catalina",
-        "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/images/residences/gallery/scat-gallery5.jpg"
+        "image": "https://preview.ibb.co/iUMpF7/scat_gallery2.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -3351,10 +3351,12 @@ var dorms = {
         "@id": "way/221401263",
         "building": "university",
         "name": "Manzanita Village De Anza Center",
-        "shortName": "MANZ",
+        "shortName": "",
         "ref": 875,
         "category": "Residence Hall",
-        "details": "Study Rooms, Pool Tables, Housing Resources"
+        "details": "Study Rooms, Pool Tables, Housing Resources",
+        "image": "",
+        "website": ""
       },
       "geometry": {
         "type": "Polygon",

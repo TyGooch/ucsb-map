@@ -10149,7 +10149,7 @@ var campus =
         "shortName": "ELLSN",
         "ref": "563",
         "website": "https://geog.ucsb.edu/the-geography-of-ellison-hall/",
-        "image": "https://preview.ibb.co/gFVyiS/ICA_Building_ad_hoc.jpg"
+        "image": "https://image.ibb.co/cJSFNn/ellisonhall.jpg"
       },
       "geometry": {
         "type": "Polygon",
@@ -10382,8 +10382,8 @@ var campus =
         "name": "Chemistry",
         "shortName": "CHEM",
         "ref": "557",
-        "website": "https://campusguide.files.wordpress.com/2014/10/ucsb_physcience21.jpg",
-        "image": "www.chem.ucsb.edu/"
+        "image": "https://campusguide.files.wordpress.com/2014/10/ucsb_physcience21.jpg",
+        "website": "www.chem.ucsb.edu/"
       },
       "geometry": {
         "type": "Polygon",
