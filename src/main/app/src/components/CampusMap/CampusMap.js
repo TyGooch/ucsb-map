@@ -228,7 +228,7 @@ class CampusMap extends Component {
         newBound = L.point(size.x, size.y - 125)
         bounds = L.latLngBounds(map.containerPointToLatLng(padding), map.containerPointToLatLng(newBound))  
       } else {
-        padding = [385,20]
+        padding = [385,50]
         newBound = L.point(size.x - 50, size.y - 50)
         bounds = L.latLngBounds(map.containerPointToLatLng(padding), map.containerPointToLatLng(newBound))
       }

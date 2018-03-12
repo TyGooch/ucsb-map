@@ -13,7 +13,7 @@ class InfoPane extends Component {
       hasImage: false
     }
     
-    let currentLocationName = props.router.location.pathname.replace('/', '')
+    let currentLocationName = props.router.location.pathname.replace('/', '').toLowerCase()
     let currentLocation = props.locations.find(location => location.name.replace(/ /g, "").toLowerCase() === currentLocationName )
     if(!currentLocation)
       currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/ /g, "").toLowerCase() === currentLocationName )
@@ -30,7 +30,7 @@ class InfoPane extends Component {
     if(this.props.router.location === nextProps.router.location && this.props.locations.length === nextProps.locations.length ) {
       return
     }
-      let currentLocationName = nextProps.router.location.pathname.replace('/', '')
+      let currentLocationName = nextProps.router.location.pathname.replace('/', '').toLowerCase()
       let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "").toLowerCase() === currentLocationName )
       if(!currentLocation)
         currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/ /g, "").toLowerCase() === currentLocationName )

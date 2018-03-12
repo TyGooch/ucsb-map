@@ -11692,7 +11692,7 @@ var campus =
         "name": "Buchanan Hall",
         "shortName": "BUCHN",
         "ref": "573",
-        "website": "buchanan.classroom.id.ucsb.edu/",
+        "website": "http://buchanan.classroom.id.ucsb.edu/",
         "image": ""
       },
       "geometry": {
