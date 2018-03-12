@@ -3166,7 +3166,6 @@ var dorms = {
       "type": "Feature",
       "properties": {
         "category": "Residence Hall",
-        "details": "Undergraduate Residence Hall",
         "stroke": "#555555",
         "stroke-width": 2,
         "stroke-opacity": 1,
