@@ -99,12 +99,27 @@ class InfoPane extends Component {
     )
   }
   
-  getCategory() {
+  getDescription() {
     if(this.props.selectedLocation) {
       return(
-        <span className='popup-header-category'>
+        <div className='popup-header-category'>
           {this.props.selectedLocation.details}
-        </span>
+        </div>
+      )
+    }
+  }
+  
+  getWebsite() {
+    if(this.props.selectedLocation && this.props.selectedLocation.website) {
+      return(
+        <a className='infopane-website-container' href={this.props.selectedLocation.website}>
+          <span className='infopane-website-image-container'>
+            <img src='https://www.sfcg.org/wp-content/uploads/2016/12/link-icon-white.png' alt='website' className='infopane-website-image'/>
+          </span>
+          <span className='infopane-website-text'>
+            {this.props.selectedLocation.website.replace('http://','').replace('https://','').split('/')[0]}
+          </span>
+        </a>
       )
     }
   }
@@ -138,10 +153,13 @@ class InfoPane extends Component {
                 <img className="infopane-close-button-image" src='https://www.materialui.co/materialIcons/navigation/arrow_back_white_192x192.png' alt='close-infopane' />
               </div>
               {this.getImage()}
-              <div className = 'popup-header-text' style={{marginTop: (hasImage || this.state.isMobile) ? '0px' : '65px'}}>
+              <div className="popup-header-text" style={{marginTop: (hasImage || this.state.isMobile) ? '0px' : '65px'}}>
                 {!hasImage ? this.getName() : null}
-                {this.getCategory()}
+                {this.getDescription()}
               </div>
+            </div>
+            <div className='infopane-body'>
+                {this.getWebsite()}
             </div>
           </Swipeable>
           <Swipeable 

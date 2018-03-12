@@ -774,7 +774,7 @@
         "building": "university",
         "name": "Santa Cruz Hall",
         "ref": 548,
-        "website": "www.housing.ucsb.edu/residences/santa-cruz",
+        "website": "http://www.housing.ucsb.edu/residences/santa-cruz",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/large/public/images/blogs/housing/scruz%20%28eh%2908.jpg?itok=r51sFmv7"
       },
       "geometry": {
@@ -1673,7 +1673,7 @@
         "building": "university",
         "name": "Mountain Cluster",
         "ref": 587,
-        "website": "www.housing.ucsb.edu/residences/san-rafael",
+        "website": "http://www.housing.ucsb.edu/residences/san-rafael",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanraf-slider5.jpg?itok=-aJip7RW"
       },
       "geometry": {
@@ -2005,7 +2005,7 @@
         "building": "university",
         "name": "Ocean Cluster",
         "ref": 587,
-        "website": "www.housing.ucsb.edu/residences/san-rafael",
+        "website": "http://www.housing.ucsb.edu/residences/san-rafael",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/sanraf-slider5.jpg?itok=-aJip7RW"
       },
       "geometry": {
@@ -3210,7 +3210,7 @@
         "building": "university",
         "name": "Anacapa Hall",
         "ref": 547,
-        "website": "www.housing.ucsb.edu/residences/anacapa",
+        "website": "http://www.housing.ucsb.edu/residences/anacapa",
         "image": "http://www.housing.ucsb.edu/sites/www.housing.ucsb.edu/files/styles/feature_image/public/images/page_slideshows/residences/anac-slider4.jpg?itok=Obgj6YYH"
       },
       "geometry": {

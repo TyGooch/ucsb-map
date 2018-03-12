@@ -1466,7 +1466,7 @@ var campus =
         "shortName": "",
         "ref": 581,
         "type": "multipolygon",
-        "website": "www.theclub.ucsb.edu/"
+        "website": "http://www.theclub.ucsb.edu/"
       },
       "geometry": {
         "type": "Polygon",
@@ -1885,7 +1885,7 @@ var campus =
         "shortName": "MUSIC",
         "ref": 531,
         "type": "multipolygon",
-        "website": "www.music.ucsb.edu",
+        "website": "http://www.music.ucsb.edu",
         "image": "https://www.library.ucsb.edu/sites/default/files/imagecache/large_align_right/images/arts-library/Picture%20242resized.jpg"
       },
       "geometry": {
@@ -3660,7 +3660,7 @@ var campus =
         "name": "University Center (UCEN)",
         "shortName": "",
         "ref": "558",
-        "website": "www.ucen.ucsb.edu/",
+        "website": "http://www.ucen.ucsb.edu/",
         "image": "https://artsandlectures.ucsb.edu/img/venues/ucen-entrance.jpg"
       },
       "geometry": {
@@ -3782,7 +3782,7 @@ var campus =
         "name": "University Center (UCEN)",
         "shortName": "",
         "ref": 558,
-        "website": "www.ucen.ucsb.edu/",
+        "website": "http://www.ucen.ucsb.edu/",
         "image": "https://artsandlectures.ucsb.edu/img/venues/ucen-entrance.jpg"
       },
       "geometry": {
@@ -4426,7 +4426,7 @@ var campus =
         "name": "Student Resource Building",
         "shortName": "SRB",
         "ref": "221",
-        "website": "www.sa.ucsb.edu/student-resource-building/home",
+        "website": "http://www.sa.ucsb.edu/student-resource-building/home",
         "image": "https://food.ucsb.edu/images/default-source/default-album/srb-building8867cff45cd0.jpg?sfvrsn=7a564969_0"
       },
       "geometry": {
@@ -6701,7 +6701,7 @@ var campus =
         "name": "Social Sciences and Media Studies",
         "shortName": "SSMS",
         "ref": "276",
-        "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
+        "website": "http://www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
       },
       "geometry": {
@@ -6959,7 +6959,7 @@ var campus =
         "name": "Social Sciences and Media Studies",
         "shortName": "SSMS",
         "ref": "276",
-        "website": "www.socialsciences.ucsb.edu/giving/ssms-building",
+        "website": "http://www.socialsciences.ucsb.edu/giving/ssms-building",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000efhxEsxrvjY/t/200/I0000efhxEsxrvjY.jpg"
       },
       "geometry": {
@@ -9251,7 +9251,7 @@ var campus =
         "name": "Environmental Health & Safety",
         "shortName": "",
         "ref": "565",
-        "website": "www.ehs.ucsb.edu/",
+        "website": "http://www.ehs.ucsb.edu/",
         "image": ""
       },
       "geometry": {
@@ -9409,7 +9409,7 @@ var campus =
         "name": "Mosher Alumni House",
         "shortName": "",
         "ref": "517",
-        "website": "www.ucsbalum.com/programs/mosher/",
+        "website": "http://www.ucsbalum.com/programs/mosher/",
         "image": "https://ucsb.imodules.com/s/1016/images/editor/mosher__cropped.jpg"
       },
       "geometry": {
@@ -9448,7 +9448,7 @@ var campus =
         "name": "Mosher Alumni House",
         "shortName": "",
         "ref": "517",
-        "website": "www.ucsbalum.com/programs/mosher/",
+        "website": "http://www.ucsbalum.com/programs/mosher/",
         "image": "https://ucsb.imodules.com/s/1016/images/editor/mosher__cropped.jpg"
       },
       "geometry": {
@@ -10383,7 +10383,7 @@ var campus =
         "shortName": "CHEM",
         "ref": "557",
         "image": "https://campusguide.files.wordpress.com/2014/10/ucsb_physcience21.jpg",
-        "website": "www.chem.ucsb.edu/"
+        "website": "http://www.chem.ucsb.edu/"
       },
       "geometry": {
         "type": "Polygon",
@@ -11814,7 +11814,7 @@ var campus =
         "ref": "937",
         "name": "Broida Hall",
         "shortName": "BRDA",
-        "website": "www.physics.ucsb.edu/",
+        "website": "http://www.physics.ucsb.edu/",
         "image": "https://web.physics.ucsb.edu/~Women/images/broida.jpg"
       },
       "geometry": {
@@ -12527,7 +12527,7 @@ var campus =
         "name": "Coral Tree Cafe",
         "shortName": "",
         "ref": "532",
-        "website": "www.ucen.ucsb.edu/dining/dining-around-campus",
+        "website": "http://www.ucen.ucsb.edu/dining/dining-around-campus",
         "image": "https://c1.staticflickr.com/9/8149/7283839948_b871055564_b.jpg"
       },
       "geometry": {
@@ -12625,7 +12625,7 @@ var campus =
         "name": "Student Affairs Administrative Services Building",
         "shortName": "SAASB",
         "ref": "568",
-        "website": "www.sa.ucsb.edu/",
+        "website": "http://www.sa.ucsb.edu/",
         "image": "https://www.bfs.ucsb.edu/sites/www.bfs.ucsb.edu/files/slideshow/saasb-exterior_0.jpg"
       },
       "geometry": {
@@ -13869,7 +13869,7 @@ var campus =
         "shortName": "",
         "ref": "876",
         "type": "multipolygon",
-        "website": "www.conferences.ucsb.edu/loma-pelona-center",
+        "website": "http://www.conferences.ucsb.edu/loma-pelona-center",
         "image": "https://c1.staticflickr.com/2/1291/4669459307_5eaf2cf94a_b.jpg"
       },
       "geometry": {
@@ -14061,7 +14061,7 @@ var campus =
         "name": "Theater and Dance East",
         "shortName": "TD-E",
         "ref": "554",
-        "website": "www.theaterdance.ucsb.edu/",
+        "website": "http://www.theaterdance.ucsb.edu/",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
       },
       "geometry": {
@@ -14143,7 +14143,7 @@ var campus =
         "name": "Theater and Dance West",
         "shortName": "TD-W",
         "ref": "223",
-        "website": "www.theaterdance.ucsb.edu/",
+        "website": "http://www.theaterdance.ucsb.edu/",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
       },
       "geometry": {
@@ -14477,7 +14477,7 @@ var campus =
         "name": "Theater and Dance Auditorium",
         "shortName": "",
         "ref": "223",
-        "website": "www.theaterdance.ucsb.edu/",
+        "website": "http://www.theaterdance.ucsb.edu/",
         "image": "https://ssl.c.photoshelter.com/img-get/I0000AL19LcPW8LY/s/750/750/Theater-Dance-002.jpg"
       },
       "geometry": {
