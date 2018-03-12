@@ -1,13 +1,3 @@
-.infopane-container {
-  /* width: 375px; */
-  /* position: absolute;
-  top:0;
-  left:0; */
-  /* height: 100vmax; */
-  /* background-color: #1e3154; */
-  /* -webkit-overflow-scrolling: touch; */
-}
-
 .infopane-buffer {
   position: absolute;
   height: 40px;
@@ -21,15 +11,10 @@
   left:0;
   top: 0;
   background-color: #1e3154;
-  /* background-color: white; */
-  /* height: inherit; */
   opacity: 1;
   text-align: left;
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
   overflow: hidden;
   padding-top: 0px;
-  /* z-index: 1001; */
   -webkit-transform: translate3d(0,0,0);
 }
 
@@ -38,7 +23,6 @@
   top: 10px;
   left: 20px;
   z-index: 1010;
-  /* background-color: rgba(0,0,0,0.25); */
 }
 
 .infopane-close-button :hover {
@@ -52,24 +36,16 @@
 }
 
 .popup-header {
-  /* background: red; */
-  /* display: inline-block; */
   position: relative;
   left: -10px;
   top: 0px;
-  /* top: 135px; */
   font-size: 26px;
   font-weight: bold;
   color: #e4bf4f;
-  /* margin-right: 10px; */
   padding-right: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
-  
-  /* display: flex;
-  flex-direction: column; */
   width: inherit;
-  /* border-bottom: 30px solid #EF5645;  */
   -webkit-transform: translate3d(0,0,0);
 }
 
@@ -86,43 +62,24 @@
   left: 0;
   width: inherit;
   height: 200px;
-  /* background: rgba(255,255,255,1); */
-  /* padding-left: -10px; */
   overflow: hidden;
   top: 0px;
   padding: 0px;
   text-align: center;
-  /* opacity: 0.5; */
-  /* z-index: 500; */
 }
 
 .popup-header-image {
-  /* display: none; */
   width: inherit;
   min-height: 100%;
   opacity: 0.85;
-  /* object-fit: contain; */
-  /* background: rgba(0,0,0,0.25); */
-  /* max-width: 300px;
-  max-height: 300px;
-  overflow: hidden; */
 }
 
 .popup-header-image-name {
   position: absolute;
   width: inherit;
-  /* height: inherit; */
   text-align: left;
   bottom: 0px;
   background-color: rgba(0,0,0,0.4);
-  /* height:30px; */
-  /* width: 100%; */
-  /* z-index: 100000; */
-}
-
-.popup-header-text {
-  /* margin-left: 10px; */
-  /* z-index: 501; */
 }
 
 .popup-header-name {
@@ -130,7 +87,6 @@
   font-weight: bold;
   color: #e4bf4f;
   padding-left: 10px;
-  /* background-color: rgba(0,0,0,0.5); */
 }
 
 .popup-header-category {
@@ -139,11 +95,8 @@
   padding-left: 10px;
   font-size: 18px;
   font-weight: lighter;
-  /* color: rgba(255,255,255,0.8); */
   color: white;
   width: inherit;
-  
-  /* opacity: 0.8; */
 }
 
 .infopane-body {
@@ -152,7 +105,6 @@
   font-size: 16px;
   height: 100%;
   color: white;
-  /* background: red; */
 }
 
 .infopane-website-container {
@@ -171,7 +123,6 @@
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
-  /* float: left; */
 }
 
 .infopane-website-image { 
@@ -193,7 +144,6 @@
   height: 100px;
   width: 100%;
   bottom: 0;
-  /* z-index: 1001; */
   padding-top: 0px;
   border-top: 1.5px solid white;
   box-shadow: 0px 0px 10px #c0c0c0;
@@ -205,7 +155,6 @@
   top: -25px;
   display: flex;
   flex-direction: row;
-  /* background-color: red; */
   width: 100%;
   text-align: center;
   justify-content: center;
@@ -214,18 +163,13 @@
 }
 
 .mobile-info-open-button {
-  /* width: 100%; */
   align-content: center;
   text-align: center;
-  /* position: relative; */
-  /* right: 5px; */
   height: 35px;
   width: 35px;
-  /* top:-20.5px; */
   background: #1e3154;
   border: 3px solid white;
   border-radius: 50%;
-  /* left: 50%; */
   text-align: right;
   overflow: hidden;
   display: flex;
@@ -239,14 +183,9 @@
   display: flex;
   flex-direction: column;
   align-self: center;
-  /* position: relative; */
-  /* z-index: 1; */
-  /* background-color: #1e3154; */
   height: 30px;
   width: 30px;
-  /* border-radius: 50%; */
   border: none;
-  /* bottom: 10px; */
 }
 
 .mobile-info-open-button :hover {
@@ -256,8 +195,6 @@
 .mobile-info-text {
   position: relative;
   top: -27.5px;
-  /* padding-top: 8px; */
-  /* z-index: 5; */
 }
 
 .mobile-info-name {
@@ -272,5 +209,4 @@
   font-size: 16px;
   font-weight: normal;
   color: white;
-  /* opacity: 0.8; */
 }

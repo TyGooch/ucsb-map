@@ -9,31 +9,18 @@ body {
   width: 100%;
 }
 
-/* #map { width: inherit; height: inherit;} */
-
 .map-container {
-  /* display: flex; */
   width: auto;
   height: auto;
 }
-
-/* .menu-container {
-  display: flex;
-  background-color: green;
-  height: 100vmax;
-} */
 
 .search-container {
   position: fixed;
   top:10px;
   left:10px;
   z-index: 1002;
-  /* width: 100vw; */
   align-content: center;
-  /* align-items: center; */
   align-self: center;
-  /* text-align: center; */
-  /* background: red; */
 }
 
 .logo {
@@ -43,7 +30,6 @@ body {
   width: 100px;
   z-index: 1000;
   opacity: 0.8;
-  /* background-color: rgba(255,255,255,0.9); */
 }
 
 .sidebar-overlay {
@@ -54,8 +40,4 @@ body {
   left: 300px;
   top: 0;
   z-index: 9999999;
-}
-
-/* .leaflet-map-pane{
-    z-index: 100;
-} */
+}z

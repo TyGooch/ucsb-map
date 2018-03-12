@@ -3,10 +3,6 @@ import React, { Component } from 'react'
 import './sideBar.css'
 
 class SideBar extends Component {
-  // constructor() {
-  //   super()
-  // }
-  
   render() {
     return (
       <div className="sidebar-container" style={this.props.sideBarOpened ? {display: 'block'} : {display: 'none'}} >

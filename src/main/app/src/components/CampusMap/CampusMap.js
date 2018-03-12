@@ -48,7 +48,6 @@ class CampusMap extends Component {
     
     map.getPane('tooltipPane').style.zIndex = 851
 
-
     this.addBikePath(map, bikePath)
     this.setState({ map })
   }

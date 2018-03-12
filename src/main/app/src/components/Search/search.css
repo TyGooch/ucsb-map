@@ -7,7 +7,6 @@ body {
   -webkit-transform: translate(0);
   box-shadow: 0px 1px 5px #c0c0c0;
   border: none;
-
 }
 
 .react-autosuggest__input {
@@ -19,16 +18,12 @@ body {
   font-size: 16px;
   border: none;
   text-overflow: ellipsis;
-  /* border: 1px solid #aaa; */
-  /* border-radius: 4px; */
 }
 
 ::-webkit-input-placeholder {
-  /* font-family: Roboto, sans-serif; */
   font-weight: normal !important;
   font-size: 16px !important;
   color: #c0c0c0;
-  /* text-shadow: 0px 0px 0.5px #c0c0c0; */
 }
 
 .react-autosuggest__input--focused {
@@ -58,9 +53,7 @@ body {
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   z-index: 2;
-
   border: none;
-  /* border-top: 1px solid #c0c0c0; */
   box-shadow: 0px 1px 5px #c0c0c0;
   overflow: hidden;
 }
@@ -68,7 +61,6 @@ body {
 .react-autosuggest__suggestions-list {
   margin: 0;
   padding: 0;
-  /* padding-top: 5px; */
   list-style-type: none;
   margin-top: -1px;
   overflow: hidden;
@@ -79,8 +71,6 @@ body {
   flex-direction: row;
   cursor: pointer;
   overflow: hidden;
-  /* padding: 10px 20px; */
-  /* border-bottom: 1px solid #eee; */
 }
 
 .react-autosuggest__suggestion--highlighted {
@@ -92,29 +82,22 @@ body {
   flex-direction: row;
   width: 100%;
   height: inherit;
-  /* padding-top: 5px; */
-  /* padding-bottom: 5px; */
 }
 
 .suggestion-icon-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  /* padding: 5px; */
-  /* max-width: 80px; */
   height: inherit;
   opacity: 0.35;
 }
 
 .suggestion-icon {
-  /* position: relative; */
   display: flex;
   flex-direction: column;
   align-self: center;
   align-items: center;
   justify-content: center;
-  /* top: 3px; */
-  /* left: -10px; */
   width: 20px;
   height: 20px;
   padding: 5px;
@@ -126,17 +109,11 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
-  /* height: inherit; */
   width: 100%;
-  /* margin-left: 10px; */
   padding-right: 10px;
   padding-bottom: 10px;
   padding-top: 10px;
-  /* margin-bottom: 10px; */
-  /* margin-top: 10px; */
   border-top: 1px solid #eee;
-  /* background: red; */
-  /* font-size: 18px; */
 }
 
 .inputContainer {

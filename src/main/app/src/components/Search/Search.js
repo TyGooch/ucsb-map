@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
-
 import Autosuggest from 'react-autosuggest'
 import levenshtein from 'fast-levenshtein'
 
-// import theme from './searchTheme.js'
 import './search.css'
 
 
