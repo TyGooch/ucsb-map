@@ -2305,7 +2305,7 @@ var campus =
         "@id": "way/38099471",
         "building": "university",
         "name": "College of Creative Studies",
-        "shortName": "",
+        "shortName": "CCS",
         "ref": 494,
         "website": "https://www.ccs.ucsb.edu/",
         "image": "https://i0.wp.com/dailynexus.com/wp-content/uploads/2016/05/CCS-5-17-1-1024x682.jpg?resize=750%2C500"
@@ -15947,8 +15947,7 @@ var campus =
         "details": "Events Center",
         "@id": "way/221404881",
         "building": "university",
-        "name": "Red Barn",
-        "shortName": "Old Gym",
+        "name": "Red Barn (Old Gym)",
         "ref": "479",
         "website": "",
         "image": ""

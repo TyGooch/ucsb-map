@@ -13,10 +13,10 @@ class InfoPane extends Component {
       hasImage: false
     }
     
-    let currentLocationName = props.router.location.pathname.replace('/', '').toLowerCase()
-    let currentLocation = props.locations.find(location => location.name.replace(/ /g, "").toLowerCase() === currentLocationName )
+    let currentLocationName = props.router.location.pathname.replace(/[^a-z0-9+]+/gi, '').toLowerCase()
+    let currentLocation = props.locations.find(location => location.name.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
     if(!currentLocation)
-      currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/ /g, "").toLowerCase() === currentLocationName )
+      currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
     if(currentLocation){
       props.updateSelectedLocation(currentLocation)  
     }
@@ -30,10 +30,10 @@ class InfoPane extends Component {
     if(this.props.router.location === nextProps.router.location && this.props.locations.length === nextProps.locations.length ) {
       return
     }
-      let currentLocationName = nextProps.router.location.pathname.replace('/', '').toLowerCase()
-      let currentLocation = nextProps.locations.find(location => location.name.replace(/ /g, "").toLowerCase() === currentLocationName )
+      let currentLocationName = nextProps.router.location.pathname.replace(/[^a-z0-9+]+/gi, '').toLowerCase()
+      let currentLocation = nextProps.locations.find(location => location.name.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
       if(!currentLocation)
-        currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/ /g, "").toLowerCase() === currentLocationName )
+        currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
       if(currentLocation){
         this.props.updateSelectedLocation(currentLocation)
         this.setState({hasImage: currentLocation.image ? true : false})
