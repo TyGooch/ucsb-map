@@ -304,6 +304,11 @@ class CampusMap extends Component {
       this.removeInteriors()
       this.addInteriors()
     }
+    if(prevProps.selectedRoom !== this.props.selectedRoom){
+      this.removeInteriors()
+      if(this.state.map.getZoom() === 20)
+        this.addInteriors()
+    }
   }
 
   addInteriors() {
@@ -316,7 +321,7 @@ class CampusMap extends Component {
     this.props.interiors[this.state.floor].forEach(interior => {
       let color = 'grey'
       if(this.props.selectedRoom && this.props.selectedRoom.name === interior.name){
-        color = 'red'
+        color = '#EF5645'
       }
       let polygon = L.polygon(interior.polygons, {weight: 1, color: color, fillColor: color, fillOpacity: 0.25, interactive: false})
       interiors.push(polygon)
