@@ -37,14 +37,12 @@ class Search extends Component {
     let inputLength = inputValue.length
 
     let rooms = []
-    console.log(this.props.interiors);
     if(this.props.interiors)
       this.props.interiors.forEach(floor => floor.forEach(room => rooms.push(room)))
 
     let roomSuggestions = inputLength === 0 ? [] : rooms.filter(room => {
       if(!room.name)
         return false
-      // console.log(inputValue.split(' '));
       if(inputValue.length > room.building.length && inputValue.replace('-','').toLowerCase().replace(/ /g,'').includes(room.building.replace('-','').toLowerCase().replace(/ /g,''))){
         let roomNum = inputValue.replace(/ /g, '').replace('-','').slice(room.building.replace(/ /g, '').replace('-','').length, inputValue.replace(/ /g, '').replace('-','').length)
         return room.name.split(' ')[room.name.split(' ').length - 1].slice(0, roomNum.length).toLowerCase() === roomNum.toLowerCase()

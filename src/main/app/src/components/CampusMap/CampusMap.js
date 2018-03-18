@@ -325,7 +325,6 @@ class CampusMap extends Component {
       let polygon = L.polygon(interior.polygons, {weight: 1, color: color, fillColor: color, fillOpacity: 0.25, interactive: false})
       polygon.addTo(this.state.map)
       if(this.props.selectedRoom && this.props.selectedRoom.name === interior.name){
-        console.log('here');
         let padding
         if(this.state.map.getSize().x < 800){
           padding = [0,75]

@@ -12,11 +12,6 @@ class InfoPane extends Component {
       isVisible: !(window.innerWidth < 800),
       hasImage: false
     }
-
-
-    // if(!roomStr && this.props.selectedRoom){
-    //   this.props.updateSelectedRoom(null)
-    // }
   }
 
   componentDidMount() {
@@ -33,7 +28,6 @@ class InfoPane extends Component {
         this.props.updateSelectedLocation(currentLocation)
       }
     }
-    console.log(roomStr);
     if(roomStr && this.props.interiors && !this.props.selectedRoom){
       let rooms = []
       this.props.interiors.forEach(floor => {
@@ -84,21 +78,15 @@ class InfoPane extends Component {
       })
       let selectedRoom = this.props.selectedRoom ? this.props.selectedRoom : null
       rooms.forEach(room => {
-        // console.log(room.name.replace(/ /g, '').toLowerCase());
-        // console.log(`${currentLocation.shortName}${roomStr}`.replace(/ /g, '').toLowerCase());
         if(room.name.replace(/ /g, '').toLowerCase() === `${currentLocation.shortName}${roomStr}`.replace(/ /g, '').toLowerCase())
           selectedRoom = room
       })
-      console.log(selectedRoom);
       if(selectedRoom)
         this.props.updateSelectedRoom(selectedRoom)
     }
     if(!roomStr && this.props.selectedRoom){
       this.props.updateSelectedRoom(null)
     }
-
-    // if(!nextProps.selectedLocation)
-    //   return
   }
 
   getImage() {

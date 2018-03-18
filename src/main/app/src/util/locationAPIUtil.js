@@ -1,6 +1,6 @@
 export const fetchLocations = () => (
-  // fetch('http://localhost:8080/api/locations')
-  fetch('/api/locations')
+  fetch('http://localhost:8080/api/locations')
+  // fetch('/api/locations')
     .then(response => {
       if (!response.ok) {
         throw new Error(`status ${response.status}`)
@@ -10,8 +10,8 @@ export const fetchLocations = () => (
 )
 
 export const fetchInteriors = (building) => (
-  // fetch('http://localhost:8080/api/interiors/')
-  fetch('/api/locations')
+  fetch('http://localhost:8080/api/interiors/')
+  // fetch('/api/locations')
     .then(response => {
       if (!response.ok) {
         throw new Error(`status ${response.status}`)
