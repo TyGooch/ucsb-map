@@ -62,7 +62,7 @@ class CampusMap extends Component {
     this.addBikePath(map, bikePath)
 
     map.on('zoomend', this.handleMapZoom)
-    map.on('moveend', this.handleMapZoom)
+    map.on('moveend', this.handleMapMove.bind(this))
     this.setState({ map })
   }
 
@@ -76,8 +76,6 @@ class CampusMap extends Component {
 
   handleMapZoom(e){
     if ( this.state.map.getZoom() >= 20 ){
-      if(this.interiors)
-        this.removeInteriors()
       this.addInteriors()
       if(!this.state.floorControlVisible)
         this.setState({floorControlVisible: true})
@@ -87,6 +85,15 @@ class CampusMap extends Component {
       if(this.state.floorControlVisible)
         this.setState({floorControlVisible: false})
     }
+  }
+
+  handleMapMove(e){
+    // if(this.interiors){
+      if(this.state.map.getZoom() === 20){
+        this.removeInteriors()
+        this.addInteriors()
+      }
+    // }
   }
 
   handlePolygonClick(location, polygon){
@@ -277,7 +284,6 @@ class CampusMap extends Component {
         if(map.getZoom() < 17)
           map.fitBounds(selectedPolygon.getBounds(), {paddingTopLeft: padding, maxZoom: map.getZoom() < 17 ? 17 : map.getZoom() })
       }
-      // this.setState({floor: this.props.selectedRoom.level})
     }
   }
 
@@ -306,18 +312,21 @@ class CampusMap extends Component {
       this.removeInteriors()
       this.addInteriors()
     }
-    if(prevProps.selectedRoom !== this.props.selectedRoom){
-      this.pantoSelection()
+    if((this.props.selectedRoom !== null) && (prevProps.selectedRoom !== this.props.selectedRoom)){
+      let padding = this.state.map.getSize().x < 800 ? [0,75] : [385,50]
+      let selectedBounds = L.polygon(this.props.selectedRoom.polygons)
+      this.state.map.fitBounds(selectedBounds.getBounds(), {padding: padding, maxZoom: 20})
+      this.state.map.fitBounds(selectedBounds.getBounds(), {padding: padding, maxZoom: 20})
+    }
+    if(this.props.selectedRoom === null){
       this.removeInteriors()
-      if(this.props.selectedRoom || this.state.map.getZoom() === 20)
+      if(this.state.map.getZoom() === 20)
         this.addInteriors()
     }
   }
 
   addInteriors() {
     if(!this.props.interiors)
-      return
-    if(this.interiors.length > 0)
       return
 
     let interiors = []
@@ -327,18 +336,10 @@ class CampusMap extends Component {
         color = '#EF5645'
       }
       let polygon = L.polygon(interior.polygons, {weight: 1, color: color, fillColor: color, fillOpacity: 0.25, interactive: false})
-      if(this.state.map.getBounds().intersects(polygon.getBounds()))
+      if(this.state.map.getBounds().intersects(polygon.getBounds())){
         polygon.addTo(this.state.map)
-      if(this.props.selectedRoom && this.props.selectedRoom.name === interior.name){
-        let padding
-        if(this.state.map.getSize().x < 800){
-          padding = [0,75]
-        } else {
-          padding = [385,50]
-        }
-        this.state.map.fitBounds(polygon.getBounds(), {padding: padding, maxZoom: 20})
+        interiors.push(polygon)
       }
-      interiors.push(polygon)
     })
 
     this.interiors = interiors
@@ -350,7 +351,7 @@ class CampusMap extends Component {
     this.interiors.forEach(interior => {
       interior.remove()
     })
-    this.interiors = []
+    this.interiors = null
   }
 
   addFloorsButton(){
