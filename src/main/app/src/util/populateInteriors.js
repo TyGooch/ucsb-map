@@ -25,7 +25,7 @@ function populateInteriors() {
           })
         })
 
-      if(feature.properties.id && feature.properties.bld){
+      if(feature.properties.id && feature.properties.bld && feature.properties.level){
         let interior = {}
         let name = feature.properties.bld + ' ' + feature.properties.id
 
@@ -53,22 +53,26 @@ function populateInteriors() {
 
     console.log(Object.keys(interiorObjs).length);
 
-  // Object.keys(interiorObjs).forEach(obj => {
-  //     // console.log(JSON.stringify(interiorObjs[obj]));
-  //     interiorObjs[obj].polygons = JSON.stringify(interiorObjs[obj].polygons)
-  //     // console.log(JSON.stringify(interiorObjs[obj]))
-  //
-  //     setTimeout(() => {
-  //       fetch('http://localhost:8080/api/interiors', {
-  //         method: 'POST',
-  //         headers: {
-  //           'Accept': 'application/json',
-  //           'Content-Type': 'application/json',
-  //         },
-  //         body: JSON.stringify(interiorObjs[obj])
-  //       })
-  //     }, 200)
-  // })
+  Object.keys(interiorObjs).slice(6428, Object.keys(interiorObjs).length).forEach(obj => {
+      // console.log(JSON.stringify(interiorObjs[obj]));
+      interiorObjs[obj].polygons = JSON.stringify(interiorObjs[obj].polygons)
+      // console.log(JSON.stringify(interiorObjs[obj]))
+
+      setTimeout(() => {
+        fetch('http://localhost:8080/api/interiors', {
+          method: 'POST',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(interiorObjs[obj])
+        }).then((response) => {
+          console.log('ok');
+        }).then(error => {
+          console.log(error);
+        })
+      }, 350)
+  })
 
 }
 
