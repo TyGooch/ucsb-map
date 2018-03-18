@@ -43,7 +43,7 @@ class Search extends Component {
     let roomSuggestions = inputLength === 0 ? [] : rooms.filter(room => {
       if(!room.name)
         return false
-      if(inputValue.length > room.building.length && inputValue.replace('-','').toLowerCase().replace(/ /g,'').includes(room.building.replace('-','').toLowerCase().replace(/ /g,''))){
+      if(inputLength > room.building.length && inputValue.replace('-','').toLowerCase().replace(/ /g,'').includes(room.building.replace('-','').toLowerCase().replace(/ /g,''))){
         let roomNum = inputValue.replace(/ /g, '').replace('-','').slice(room.building.replace(/ /g, '').replace('-','').length, inputValue.replace(/ /g, '').replace('-','').length)
         return room.name.split(' ')[room.name.split(' ').length - 1].slice(0, roomNum.length).toLowerCase() === roomNum.toLowerCase()
       }
