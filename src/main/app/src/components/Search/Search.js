@@ -46,12 +46,8 @@ class Search extends Component {
         return false
       // console.log(inputValue.split(' '));
       if(inputValue.length > room.building.length && inputValue.replace('-','').toLowerCase().replace(/ /g,'').includes(room.building.replace('-','').toLowerCase().replace(/ /g,''))){
-        // let roomNum = inputValue.split(' ')[inputValue.split(' ').length - 1]
         let roomNum = inputValue.replace(/ /g, '').replace('-','').slice(room.building.replace(/ /g, '').replace('-','').length, inputValue.replace(/ /g, '').replace('-','').length)
-        // console.log(roomNum);
-        // let roomName = inputValue.replace(/ /g, '')
-        // console.log(roomName);
-        return room.name.includes(roomNum)
+        return room.name.split(' ')[room.name.split(' ').length - 1].slice(0, roomNum.length).toLowerCase() === roomNum.toLowerCase()
       }
       return false
     })
