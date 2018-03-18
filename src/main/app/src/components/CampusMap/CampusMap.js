@@ -22,7 +22,7 @@ class CampusMap extends Component {
 
     this._mapNode = null
     this.polygons = null
-    this.interiors = []
+    this.interiors = null
     this.userLocation = null
     this.mapControls = null
     this.basemap = null
@@ -346,7 +346,7 @@ class CampusMap extends Component {
   }
 
   removeInteriors() {
-    if(this.interiors.length === 0 || !this.props.interiors)
+    if(!this.interiors || !this.props.interiors)
       return
     this.interiors.forEach(interior => {
       interior.remove()
