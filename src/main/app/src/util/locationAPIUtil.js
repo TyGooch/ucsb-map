@@ -11,7 +11,7 @@ export const fetchLocations = () => (
 
 export const fetchInteriors = (building) => (
   // fetch('http://localhost:8080/api/interiors/')
-  fetch('/api/locations')
+  fetch('/api/interiors')
     .then(response => {
       if (!response.ok) {
         throw new Error(`status ${response.status}`)
