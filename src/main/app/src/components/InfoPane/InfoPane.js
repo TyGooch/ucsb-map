@@ -13,52 +13,89 @@ class InfoPane extends Component {
       hasImage: false
     }
 
-    let currentLocationName = props.router.location.pathname.replace(/[^a-z0-9+]+/gi, '').toLowerCase()
-    let currentLocation = props.locations.find(location => location.name.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
+
+    // if(!roomStr && this.props.selectedRoom){
+    //   this.props.updateSelectedRoom(null)
+    // }
+  }
+
+  componentDidMount() {
+    let pathArr = this.props.router.location.pathname.replace('/', '').split('/')
+    let locationStr = pathArr[0]
+    let roomStr = pathArr[1]
+    let currentLocationName = locationStr.replace(/[^a-z0-9+]+/gi, '').toLowerCase()
+    let currentLocation = this.props.locations.find(location => location.name.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
     if(!currentLocation)
-      currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
+      currentLocation = this.props.locations.find(location => location.shortName && location.shortName.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
     if(currentLocation){
-      props.updateSelectedLocation(currentLocation)
+      if(!(this.props.selectedLocation && this.props.selectedLocation.name === currentLocation.name)){
+        this.setState({hasImage: currentLocation.image ? true : false})
+        this.props.updateSelectedLocation(currentLocation)
+      }
+    }
+    if(roomStr && this.props.interiors && !this.props.selectedRoom){
+      let rooms = []
+      this.props.interiors.forEach(floor => {
+        if(floor)
+          floor.forEach(room => rooms.push(room))
+      })
+      let selectedRoom = null
+      rooms.forEach(room => {
+        if(room.name === `${currentLocation.shortName} ${roomStr}`)
+          selectedRoom = room
+      })
+      if(selectedRoom)
+        this.props.updateSelectedRoom(selectedRoom)
     }
   }
 
   componentWillUnmount(){
-    this.props.updateSelectedLocation(null)
+    if(this.props.selectedLocation)
+      this.props.updateSelectedLocation(null)
+    if(this.props.selectedRoom)
+      this.props.updateSelectedRoom(null)
   }
 
   componentWillReceiveProps(nextProps) {
     if(this.props.router.location === nextProps.router.location && this.props.locations.length === nextProps.locations.length && this.props.interiors.length === nextProps.interiors.length) {
       return
     }
-      let pathArr = nextProps.router.location.pathname.replace('/', '').split('/')
-      let locationStr = pathArr[0]
-      let roomStr = pathArr[1]
-      let currentLocationName = locationStr.replace(/[^a-z0-9+]+/gi, '').toLowerCase()
-      let currentLocation = nextProps.locations.find(location => location.name.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
-      if(!currentLocation)
-        currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
-      if(currentLocation && !this.props.selectedLocation){
-        this.props.updateSelectedLocation(currentLocation)
-        this.setState({hasImage: currentLocation.image ? true : false})
-      }
-      if(roomStr && nextProps.interiors && !nextProps.selectedRoom){
-        let rooms = []
-        nextProps.interiors.forEach(floor => {
-          if(floor)
-            floor.forEach(room => rooms.push(room))
-        })
-        console.log(nextProps.interiors);
-        let selectedRoom = null
-        rooms.forEach(room => {
-          if(room.name === `${currentLocation.shortName} ${roomStr}`)
-            selectedRoom = room
-        })
-        if(selectedRoom !== null)
-          this.props.updateSelectedRoom(selectedRoom)
-      }
-
-    if(!nextProps.selectedLocation)
+    if(this.props.router.location.pathname === '/' || nextProps.router.location.pathname === '/')
       return
+
+    let pathArr = nextProps.router.location.pathname.replace('/', '').split('/')
+    let locationStr = pathArr[0]
+    let roomStr = pathArr[1]
+    let currentLocationName = locationStr.replace(/[^a-z0-9+]+/gi, '').toLowerCase()
+    let currentLocation = nextProps.locations.find(location => location.name.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
+    if(!currentLocation)
+      currentLocation = nextProps.locations.find(location => location.shortName && location.shortName.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
+    if(currentLocation){
+      if(!(nextProps.selectedLocation && nextProps.selectedLocation.name === currentLocation.name)){
+        this.setState({hasImage: currentLocation.image ? true : false})
+        this.props.updateSelectedLocation(currentLocation)
+      }
+    }
+    if(roomStr && nextProps.interiors && !nextProps.selectedRoom && !this.props.selectedRoom){
+      let rooms = []
+      nextProps.interiors.forEach(floor => {
+        if(floor)
+          floor.forEach(room => rooms.push(room))
+      })
+      let selectedRoom = null
+      rooms.forEach(room => {
+        if(room.name === `${currentLocation.shortName} ${roomStr}`)
+          selectedRoom = room
+      })
+      if(selectedRoom)
+        this.props.updateSelectedRoom(selectedRoom)
+    }
+    if(!roomStr && this.props.selectedRoom){
+      this.props.updateSelectedRoom(null)
+    }
+
+    // if(!nextProps.selectedLocation)
+    //   return
   }
 
   getImage() {

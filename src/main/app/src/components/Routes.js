@@ -7,7 +7,6 @@ const Routes = () => (
   <div>
     <Route path="/" component={AppContainer} />
     <Route path="/:name" component={InfoPaneContainer} />
-    <Route path="/:name/:room" component={InfoPaneContainer} />
   </div>
 )
 

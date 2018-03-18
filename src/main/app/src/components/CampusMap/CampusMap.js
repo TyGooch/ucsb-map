@@ -237,7 +237,7 @@ class CampusMap extends Component {
 
   pantoSelection(){
     if(this.props.selectedRoom){
-      this.state.map.setView(L.polygon(this.props.selectedRoom.polygons).getBounds().getCenter(), 20)
+      this.state.map.fitBounds(L.polygon(this.props.selectedRoom.polygons).getBounds(), 20)
       // this.setState({floor: this.props.selectedRoom.level})
     } else if(this.props.selectedLocation){
       let map = this.state.map
@@ -284,7 +284,7 @@ class CampusMap extends Component {
       nextProps.satelliteBasemapActive ? this.basemap.setUrl(config.satelliteLayer.uri) : this.basemap.setUrl(config.tileLayer.uri)
     }
     if(!this.props.selectedRoom && nextProps.selectedRoom){
-      this.setState({floor: parseInt(nextProps.selectedRoom.level)})
+      this.setState({floor: parseInt(nextProps.selectedRoom.level, 10)})
       this.interiorLabels.setUrl(config[`floor${nextProps.selectedRoom.level}`])
     }
   }
@@ -375,7 +375,6 @@ class CampusMap extends Component {
     }
 
     let mapStyle = { height: (window.isSafari && window.iOS ? window.innerHeight + 'px' : '100vh')}
-    console.log(this.state.floor);
     return (
       <div className="campus-map-container">
         <div ref={(node) => this._mapNode = node} id="map" style={ mapStyle} />
