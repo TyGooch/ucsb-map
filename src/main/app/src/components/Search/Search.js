@@ -4,13 +4,11 @@ import levenshtein from 'fast-levenshtein'
 
 import './search.css'
 
-
-
 class Search extends Component {
   getSuggestionValue(suggestion) {
     return suggestion.name
   }
-  
+
   getSuggestionShortName(suggestion) {
     if(!suggestion.shortName)
       return
@@ -37,20 +35,54 @@ class Search extends Component {
   getSuggestions(value) {
     let inputValue = value.trim().toLowerCase()
     let inputLength = inputValue.length
-    
+
+    let rooms = []
+    console.log(this.props.interiors);
+    if(this.props.interiors)
+      this.props.interiors.forEach(floor => floor.forEach(room => rooms.push(room)))
+
+    let roomSuggestions = inputLength === 0 ? [] : rooms.filter(room => {
+      if(!room.name)
+        return false
+      // console.log(inputValue.split(' '));
+      if(inputValue.length > room.building.length && inputValue.replace('-','').toLowerCase().replace(/ /g,'').includes(room.building.replace('-','').toLowerCase().replace(/ /g,''))){
+        // let roomNum = inputValue.split(' ')[inputValue.split(' ').length - 1]
+        let roomNum = inputValue.replace(/ /g, '').replace('-','').slice(room.building.replace(/ /g, '').replace('-','').length, inputValue.replace(/ /g, '').replace('-','').length)
+        // console.log(roomNum);
+        // let roomName = inputValue.replace(/ /g, '')
+        // console.log(roomName);
+        return room.name.includes(roomNum)
+      }
+      return false
+    })
+
+    roomSuggestions = roomSuggestions.sort( (a, b) => {
+      a = parseInt(a.name.split(' ')[a.name.split(' ').length - 1], 10)
+      b = parseInt(b.name.split(' ')[b.name.split(' ').length - 1], 10)
+
+      if (a < b)
+        return -1
+      else if (a > b)
+        return 1
+      return 0
+    })
+
+    if(roomSuggestions.length > 0)
+      return roomSuggestions.slice(0,5)
+
     let shortNameSuggestions = inputLength === 0 ? [] : this.props.locations.filter(location => {
       if(!location.shortName)
         return false
       return location.shortName.replace('-','').toLowerCase().slice(0, inputLength).replace(' ','') === inputValue.replace(' ','')
     })
-    
+
     shortNameSuggestions = shortNameSuggestions.sort( (a, b) => {
       a = a.shortName
       b = b.shortName
-      
-      if (a < b) 
+
+      if (a < b)
         return -1
-      else if (a > b) 
+      else if (a > b)
         return 1
       return 0
     })
@@ -61,7 +93,7 @@ class Search extends Component {
 
       return location.name.toLowerCase().slice(0, inputLength) === inputValue
     })
-    
+
 
     let secondarySuggestions = inputLength === 0 ? [] : this.props.locations.filter(location =>
       location.name.toLowerCase().replace('(','').replace(')','').split(' ').slice(1).some(name => name.slice(0, inputLength) === inputValue)
@@ -130,7 +162,12 @@ class Search extends Component {
   }
 
   onSuggestionSelected = (event, { suggestion }) => {
-    this.props.selectLocation(suggestion.name)
+    console.log(suggestion);
+    let location = suggestion.name
+    if(suggestion.building)
+      location = suggestion.name.slice(0, suggestion.building.length) + '/' + suggestion.name.slice(suggestion.building.length + 1, suggestion.name.length)
+    console.log(suggestion.name);
+    this.props.selectLocation(location)
     this.setState({selectedSuggestion: true})
   }
 

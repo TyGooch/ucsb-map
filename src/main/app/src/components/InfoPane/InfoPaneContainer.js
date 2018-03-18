@@ -6,7 +6,7 @@ import { updateSelectedLocation, updateSelectedRoom } from '../../actions/locati
 
 const mapStateToProps = state => ({
   locations: Object.keys(state.locations.allLocations).map(key => state.locations.allLocations[key]),
-  interiors: state.locations.interiors,
+  interiors: state.locations.interiors ? Object.keys(state.locations.interiors).map(key => state.locations.interiors[key]) : null,
   selectedLocation: state.locations.selectedLocation,
   selectedRoom: state.locations.selectedRoom,
   router: state.router

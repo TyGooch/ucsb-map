@@ -11,7 +11,7 @@ const defaultState = Object.freeze({
   allLocations: [],
   selectedLocation: null,
   selectedRoom: null,
-  interiors: []
+  interiors: null
 })
 
 const locationsReducer = (state = defaultState, action) => {
@@ -42,14 +42,16 @@ const locationsReducer = (state = defaultState, action) => {
     case RECEIVE_INTERIORS:
       let newInteriors = {}
       action.interiors.forEach(interior => {
-        newInteriors[interior.level] = newInteriors[interior.level] ? newInteriors[interior.level] : []
-        let newInterior = {}
-        newInterior.name = interior.name
-        newInterior.building = interior.building
-        newInterior.polygons = JSON.parse(interior.polygons)
-        newInterior.level = interior.level
+        if(interior.level !== '0'){
+          newInteriors[interior.level] = newInteriors[interior.level] ? newInteriors[interior.level] : []
+          let newInterior = {}
+          newInterior.name = interior.name
+          newInterior.building = interior.building
+          newInterior.polygons = JSON.parse(interior.polygons)
+          newInterior.level = interior.level
 
-        newInteriors[interior.level].push(newInterior)
+          newInteriors[interior.level].push(newInterior)
+        }
       })
 
       return merge({}, state, {interiors: newInteriors})

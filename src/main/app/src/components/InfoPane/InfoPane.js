@@ -33,6 +33,7 @@ class InfoPane extends Component {
         this.props.updateSelectedLocation(currentLocation)
       }
     }
+    console.log(roomStr);
     if(roomStr && this.props.interiors && !this.props.selectedRoom){
       let rooms = []
       this.props.interiors.forEach(floor => {
@@ -41,7 +42,7 @@ class InfoPane extends Component {
       })
       let selectedRoom = null
       rooms.forEach(room => {
-        if(room.name === `${currentLocation.shortName} ${roomStr}`)
+        if(room.name.toLowerCase() === `${currentLocation.shortName.toLowerCase()} ${roomStr.toLowerCase()}`)
           selectedRoom = room
       })
       if(selectedRoom)
@@ -57,7 +58,7 @@ class InfoPane extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if(this.props.router.location === nextProps.router.location && this.props.locations.length === nextProps.locations.length && this.props.interiors.length === nextProps.interiors.length) {
+    if(this.props.router.location.pathname === nextProps.router.location.pathname && nextProps.selectedLocation && nextProps.selectedRoom) {
       return
     }
     if(this.props.router.location.pathname === '/' || nextProps.router.location.pathname === '/')
@@ -76,17 +77,19 @@ class InfoPane extends Component {
         this.props.updateSelectedLocation(currentLocation)
       }
     }
-    if(roomStr && nextProps.interiors && !nextProps.selectedRoom && !this.props.selectedRoom){
+    if(roomStr && nextProps.interiors){
       let rooms = []
       nextProps.interiors.forEach(floor => {
-        if(floor)
           floor.forEach(room => rooms.push(room))
       })
-      let selectedRoom = null
+      let selectedRoom = this.props.selectedRoom ? this.props.selectedRoom : null
       rooms.forEach(room => {
-        if(room.name === `${currentLocation.shortName} ${roomStr}`)
+        // console.log(room.name.replace(/ /g, '').toLowerCase());
+        // console.log(`${currentLocation.shortName}${roomStr}`.replace(/ /g, '').toLowerCase());
+        if(room.name.replace(/ /g, '').toLowerCase() === `${currentLocation.shortName}${roomStr}`.replace(/ /g, '').toLowerCase())
           selectedRoom = room
       })
+      console.log(selectedRoom);
       if(selectedRoom)
         this.props.updateSelectedRoom(selectedRoom)
     }

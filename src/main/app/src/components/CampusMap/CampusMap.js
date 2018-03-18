@@ -236,10 +236,7 @@ class CampusMap extends Component {
   }
 
   pantoSelection(){
-    if(this.props.selectedRoom){
-      this.state.map.fitBounds(L.polygon(this.props.selectedRoom.polygons).getBounds(), 20)
-      // this.setState({floor: this.props.selectedRoom.level})
-    } else if(this.props.selectedLocation){
+    if(this.props.selectedLocation){
       let map = this.state.map
 
       let selectedLocation = this.props.selectedLocation
@@ -276,6 +273,7 @@ class CampusMap extends Component {
         if(map.getZoom() < 17)
           map.fitBounds(selectedPolygon.getBounds(), {paddingTopLeft: padding, maxZoom: map.getZoom() < 17 ? 17 : map.getZoom() })
       }
+      // this.setState({floor: this.props.selectedRoom.level})
     }
   }
 
@@ -283,7 +281,7 @@ class CampusMap extends Component {
     if(nextProps.satelliteBasemapActive !== this.props.satelliteBasemapActive){
       nextProps.satelliteBasemapActive ? this.basemap.setUrl(config.satelliteLayer.uri) : this.basemap.setUrl(config.tileLayer.uri)
     }
-    if(!this.props.selectedRoom && nextProps.selectedRoom){
+    if((!this.props.selectedRoom && nextProps.selectedRoom) || (nextProps.selectedRoom && this.props.selectedRoom.level !== nextProps.selectedRoom.level)){
       this.setState({floor: parseInt(nextProps.selectedRoom.level, 10)})
       this.interiorLabels.setUrl(config[`floor${nextProps.selectedRoom.level}`])
     }
@@ -305,8 +303,9 @@ class CampusMap extends Component {
       this.addInteriors()
     }
     if(prevProps.selectedRoom !== this.props.selectedRoom){
+      this.pantoSelection()
       this.removeInteriors()
-      if(this.state.map.getZoom() === 20)
+      if(this.props.selectedRoom || this.state.map.getZoom() === 20)
         this.addInteriors()
     }
   }
@@ -324,8 +323,12 @@ class CampusMap extends Component {
         color = '#EF5645'
       }
       let polygon = L.polygon(interior.polygons, {weight: 1, color: color, fillColor: color, fillOpacity: 0.25, interactive: false})
-      interiors.push(polygon)
       polygon.addTo(this.state.map)
+      if(this.props.selectedRoom && this.props.selectedRoom.name === interior.name){
+        console.log('here');
+        this.state.map.fitBounds(polygon.getBounds(), {maxZoom: 20})
+      }
+      interiors.push(polygon)
     })
 
     this.interiors = interiors
