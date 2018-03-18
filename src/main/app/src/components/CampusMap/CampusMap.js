@@ -236,7 +236,7 @@ class CampusMap extends Component {
   }
 
   pantoSelection(){
-    if(this.props.selectedLocation){
+    if(this.props.selectedLocation && !this.props.selectedRoom){
       let map = this.state.map
 
       let selectedLocation = this.props.selectedLocation
@@ -326,7 +326,13 @@ class CampusMap extends Component {
       polygon.addTo(this.state.map)
       if(this.props.selectedRoom && this.props.selectedRoom.name === interior.name){
         console.log('here');
-        this.state.map.fitBounds(polygon.getBounds(), {maxZoom: 20})
+        let padding
+        if(this.state.map.getSize().x < 800){
+          padding = [0,75]
+        } else {
+          padding = [385,50]
+        }
+        this.state.map.fitBounds(polygon.getBounds(), {padding: padding, maxZoom: 20})
       }
       interiors.push(polygon)
     })
