@@ -15,7 +15,7 @@ config.mapOptions = {
   minZoom: 14,
   // zoomSnap: 0,
   zoomDelta: 1,
-  renderer: L.svg(),
+  // renderer: L.canvas(),
   // scrollwheel: false,
   legends: false,
   infoControl: false,
@@ -35,7 +35,7 @@ config.tileLayer = {
     id: '',
     accessToken: '',
     bounds: [[34.37575, -119.9235],[34.46765, -119.80677]],
-    renderer: L.svg(),
+    renderer: L.canvas(),
   }
 }
 
@@ -48,7 +48,7 @@ config.satelliteLayer = {
     id: '',
     accessToken: '',
     bounds: [[34.37575, -119.9235],[34.46765, -119.80677]],
-    renderer: L.svg(),
+    renderer: L.canvas(),
   }
 }
 
