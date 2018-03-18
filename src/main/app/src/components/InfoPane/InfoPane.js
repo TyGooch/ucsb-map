@@ -6,26 +6,26 @@ import './infoPane.css'
 class InfoPane extends Component {
   constructor(props) {
     super(props)
-    
+
     this.state = {
       isMobile: (window.innerWidth < 800),
       isVisible: !(window.innerWidth < 800),
       hasImage: false
     }
-    
+
     let currentLocationName = props.router.location.pathname.replace(/[^a-z0-9+]+/gi, '').toLowerCase()
     let currentLocation = props.locations.find(location => location.name.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
     if(!currentLocation)
       currentLocation = props.locations.find(location => location.shortName && location.shortName.replace(/[^a-z0-9+]+/gi, '').toLowerCase() === currentLocationName )
     if(currentLocation){
-      props.updateSelectedLocation(currentLocation)  
+      props.updateSelectedLocation(currentLocation)
     }
   }
-  
+
   componentWillUnmount(){
     this.props.updateSelectedLocation(null)
   }
-    
+
   componentWillReceiveProps(nextProps) {
     if(this.props.router.location === nextProps.router.location && this.props.locations.length === nextProps.locations.length ) {
       return
@@ -42,7 +42,7 @@ class InfoPane extends Component {
     if(!nextProps.selectedLocation)
       return
   }
-    
+
   getImage() {
     let hasImage = this.props.selectedLocation && !(this.props.selectedLocation.image === null)
     if(!hasImage){
@@ -50,14 +50,14 @@ class InfoPane extends Component {
         return(<div className='infopane-buffer-mobile'></div>)
       return
     }
-      
+
     let style = {}
     if(this.state.isMobile){
       style = {
         height: '200px'
       }
     }
-      
+
     return(
       <div className="popup-header-image-container" style={style}>
         <img className="popup-header-image" src={this.props.selectedLocation ? this.props.selectedLocation.image : null} alt='location'/>
@@ -67,19 +67,19 @@ class InfoPane extends Component {
       </div>
     )
   }
-  
+
   getName() {
     if(!this.props.selectedLocation)
       return
     let hasImage = !(this.props.selectedLocation.image === null)
-      
+
     return(
       <div className="popup-header-name" style={{paddingTop: this.state.isMobile && !hasImage ? '5px' : '5px'}}>
         {this.props.selectedLocation.name}
       </div>
     )
   }
-  
+
   getDescription() {
     if(this.props.selectedLocation) {
       return(
@@ -89,7 +89,7 @@ class InfoPane extends Component {
       )
     }
   }
-  
+
   getWebsite() {
     if(this.props.selectedLocation && this.props.selectedLocation.website) {
       return(
@@ -104,19 +104,19 @@ class InfoPane extends Component {
       )
     }
   }
-    
+
   swipedUp(e, deltaY, isFlick) {
     this.setState({isVisible: true})
   }
-  
+
   swipedDown(e, deltaY, isFlick) {
     if(!this.state.isMobile)
       return
     this.setState({isVisible: false})
   }
-  
+
   render() {
-    let hasImage = this.props.selectedLocation && !(this.props.selectedLocation.image === null)      
+    let hasImage = this.props.selectedLocation && !(this.props.selectedLocation.image === null)
     let style = {
       height: this.props.selectedLocation && this.state && this.state.isVisible ? window.innerHeight : '0px',
       width: this.state.isMobile ? '100%' : '375px',
@@ -143,7 +143,7 @@ class InfoPane extends Component {
                 {this.getWebsite()}
             </div>
           </Swipeable>
-          <Swipeable 
+          <Swipeable
             className='mobile-info'
             style={{display: (this.state.isMobile && !this.state.isVisible) ? 'block' : 'none'}}
             onSwipedUp={this.swipedUp.bind(this)}

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import { fetchLocations } from '../../actions/locationActions'
+import { fetchLocations, fetchInteriors } from '../../actions/locationActions'
 import { toggleSideBar } from '../../actions/sideBarActions'
 import App from './App'
 
@@ -11,6 +11,7 @@ const mapStateToProps = state => ({
 
 const mapDispatchToProps = dispatch => ({
   fetchLocations: () => dispatch(fetchLocations()),
+  fetchInteriors: () => dispatch(fetchInteriors()),
   toggleSideBar: () => dispatch(toggleSideBar())
 })
 

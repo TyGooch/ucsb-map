@@ -28,4 +28,6 @@ public class LocationController {
         return locationRepository.save(location);
     }
 
+    
+
 }
