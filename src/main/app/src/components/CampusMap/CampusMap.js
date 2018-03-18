@@ -15,7 +15,9 @@ class CampusMap extends Component {
 
     this.state = {
       map: null,
-      allowsLocation: null
+      allowsLocation: null,
+      floor: 1,
+      floorControlVisible: false
     }
 
     this._mapNode = null
@@ -24,6 +26,8 @@ class CampusMap extends Component {
     this.userLocation = null
     this.mapControls = null
     this.basemap = null
+    this.interiorLabels = null
+    this.interiorsControl = null
 
     this.handleMapClick = this.handleMapClick.bind(this)
     this.handleMapZoom = this.handleMapZoom.bind(this)
@@ -52,12 +56,10 @@ class CampusMap extends Component {
     map.createPane('interior-labels')
     map.getPane('interior-labels').style.zIndex = 751
     map.getPane('interior-labels').style.pointerEvents = 'none'
-    L.tileLayer(config.floor1, {pane: 'interior-labels', minZoom:20, maxZoom:22,  bounds: [[34.428988, -119.885195],[34.39854, -119.82454]]}).addTo(map)
-
+    this.interiorLabels = L.tileLayer(config[`floor${this.state.floor}`], {pane: 'interior-labels', minZoom:20, maxZoom:22,  bounds: [[34.428988, -119.885195],[34.39854, -119.82454]]}).addTo(map)
     map.getPane('tooltipPane').style.zIndex = 851
 
     this.addBikePath(map, bikePath)
-    // this.addInteriors(map, interiors)
 
     map.on('zoomend ', this.handleMapZoom)
     this.setState({ map })
@@ -72,8 +74,15 @@ class CampusMap extends Component {
   }
 
   handleMapZoom(e){
-    if ( this.state.map.getZoom() >= 19 ){ this.addInteriors()}
-    else if ( this.state.map.getZoom() < 19 ){ this.removeInteriors()}
+    if ( this.state.map.getZoom() >= 20 ){
+      this.addInteriors()
+      this.setState({floorControlVisible: true})
+    }
+    else if ( this.state.map.getZoom() < 20 ){
+      this.removeInteriors()
+      if(this.state.floorControlVisible)
+        this.setState({floorControlVisible: false})
+    }
   }
 
   handlePolygonClick(location, polygon){
@@ -199,7 +208,11 @@ class CampusMap extends Component {
       let offset = {}
       if(this.props.selectedLocation){
         if(window.innerWidth < 800){
-          offset={bottom: '107.5px'}
+          if(this.state.floorControlVisible){
+            offset={bottom: '107.5px', right: '50px'}
+          } else{
+            offset={bottom: '107.5px'}
+          }
         }
       }
       return (
@@ -259,7 +272,7 @@ class CampusMap extends Component {
         )
       } else {
         if(map.getZoom() < 17)
-          map.fitBounds(selectedPolygon.getBounds(), {paddingTopLeft: padding, maxZoom: 17, })
+          map.fitBounds(selectedPolygon.getBounds(), {paddingTopLeft: padding, maxZoom: map.getZoom() < 17 ? 17 : map.getZoom() })
       }
     }
   }
@@ -273,46 +286,31 @@ class CampusMap extends Component {
   componentDidUpdate(prevProps, prevState){
     if(prevProps.locations.length !== this.props.locations.length){
       this.addPolygons()
-      // this.addInteriors()
     }
     if(prevProps.selectedLocation !== this.props.selectedLocation){
-      // this.addInteriors()
       this.removePolygons()
       this.addPolygons()
       if(this.props.selectedLocation !== null)
         this.pantoSelection()
+    }
+    if(prevState.floor !== this.state.floor && this.state.map.getZoom() === 20){
+      this.interiorLabels.setUrl(config[`floor${this.state.floor}`])
+      this.removeInteriors()
+      this.addInteriors()
     }
   }
 
   addInteriors() {
     if(!this.props.interiors)
       return
-
     if(this.interiors.length > 0)
       return
 
     let interiors = []
-    // Object.keys(this.props.interiors).forEach(level => {
-    //   // map.createPane(`floor${level}Pane`)
-    //   // map.getPane(`floor${level}Pane`).
-    //   this.props.interiors[level].forEach(interior => {
-    //     let polygon = L.polygon(interior.polygons, {weight: 1, color: "red", fillColor: "red", fillOpacity: 0.25})
-    //     interiors.push(polygon)
-    //     polygon.addTo(this.state.map)
-    //   })
-    // })
-    this.props.interiors[1].forEach(interior => {
+    this.props.interiors[this.state.floor].forEach(interior => {
       let polygon = L.polygon(interior.polygons, {weight: 1, color: "grey", fillColor: "grey", fillOpacity: 0.25, interactive: false})
-      // let label = new L.Marker(polygon.getBounds().getCenter(), {
-      //   icon: new L.DivIcon({
-      //       className: 'interior-label',
-      //       html: `<span class="interior-label-text">${interior.name.split(' ').pop()}</span>`
-      //   })
-      // }).addTo(this.state.map)
-      let label = null
-      interiors.push({polygon: polygon, label: label})
+      interiors.push(polygon)
       polygon.addTo(this.state.map)
-      // polygon.bindTooltip(interior.name.split(' ').pop()).openTooltip()
     })
 
     this.interiors = interiors
@@ -322,10 +320,37 @@ class CampusMap extends Component {
     if(this.interiors.length === 0 || !this.props.interiors)
       return
     this.interiors.forEach(interior => {
-      interior.polygon.remove()
-      // interior.label.remove()
+      interior.remove()
     })
     this.interiors = []
+  }
+
+  addFloorsButton(){
+    if(this.state.floorControlVisible){
+      let offset = {bottom: '30px'}
+      if(this.userLocation)
+        offset = {bottom: '80px'}
+      if(this.props.selectedLocation){
+        if(window.innerWidth < 800){
+          offset={bottom: '107.5px', right: '10px'}
+        }
+      }
+      console.log('HERE');
+      return (
+        <div className="floors-button-container" style={offset}>
+          <div className={`floors-up-button${this.state.floor === 7 ? '-disabled' : ''}`} onClick={e => this.state.floor === 7 ? null : this.setState({floor: this.state.floor + 1})}>
+            <img src="https://png.icons8.com/metro/50/000000/plus-math.png" alt="locate" className="floors-button-image"/>
+          </div>
+          <div className='floors-button-text'>
+            {this.state.floor}
+          </div>
+          <div className={`floors-down-button${this.state.floor === 1 ? '-disabled' : ''}`} onClick={e => this.state.floor === 1 ? null : this.setState({floor: this.state.floor - 1})}>
+            <img src="https://png.icons8.com/metro/50/000000/minus-math.png" alt="locate" className="floors-button-image"/>
+          </div>
+
+        </div>
+      )
+    }
   }
 
   render() {
@@ -347,6 +372,7 @@ class CampusMap extends Component {
         <div ref={(node) => this._mapNode = node} id="map" style={ mapStyle} />
         {this.loadSpinner()}
         {this.addUserLocationButton()}
+        {this.addFloorsButton()}
         <img className='logo' src='https://preview.ibb.co/dSeKTH/ucsb_map_logo.png' alt='logo' style={offset} />
       </div>
     )

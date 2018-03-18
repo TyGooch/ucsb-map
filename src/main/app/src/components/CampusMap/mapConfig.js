@@ -1,13 +1,21 @@
+import L from 'leaflet'
+
 let config = {}
 
 config.mapOptions = {
   center: [34.4127, -119.8492],
   zoomControl: false,
+  wheelPxPerZoomLevel: 50,
+  // wheelDebounceTime: 10,
+  zoomAnimationThreshold: 10,
+  // zoomSnap: 0,
+  // zoomDelta: 0.5,
   zoom: 16,
   maxZoom: 20,
   minZoom: 14,
   // zoomSnap: 0,
   zoomDelta: 1,
+  renderer: L.svg(),
   // scrollwheel: false,
   legends: false,
   infoControl: false,
@@ -26,7 +34,8 @@ config.tileLayer = {
     attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     id: '',
     accessToken: '',
-    bounds: [[34.37575, -119.9235],[34.46765, -119.80677]]
+    bounds: [[34.37575, -119.9235],[34.46765, -119.80677]],
+    renderer: L.svg(),
   }
 }
 
@@ -38,7 +47,8 @@ config.satelliteLayer = {
     attribution: '© <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     id: '',
     accessToken: '',
-    bounds: [[34.37575, -119.9235],[34.46765, -119.80677]]
+    bounds: [[34.37575, -119.9235],[34.46765, -119.80677]],
+    renderer: L.svg(),
   }
 }
 

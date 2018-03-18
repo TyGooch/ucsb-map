@@ -33,8 +33,12 @@
   width: 20px;
   align-self: center;
   justify-content: center;
-  opacity: 0.5;
+  opacity: 0.75;
   z-index: 9998;
+}
+
+.location-button-image :hover {
+  cursor: pointer;
 }
 
 .location-button-container {
@@ -49,7 +53,7 @@
   border-radius: 50%;
   border: 0px solid #aaa;
   box-shadow: 0px 0.5px 1px grey;
-  z-index: 1000;
+  z-index: 1008;
   background: white;
 }
 
@@ -61,10 +65,94 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  z-index: 1008;
+  height: 50px;
 }
 
 .location-button :hover {
   cursor: pointer;
+}
+
+.floors-button-image {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  width: 20px;
+  align-self: center;
+  justify-content: center;
+  opacity: 0.75;
+  z-index: 9998;
+}
+
+.floors-button-image :hover {
+  cursor: pointer;
+}
+
+.floors-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  /* width: 50px; */
+  /* height: 75px; */
+  /* border-radius: 50%; */
+  border: 0px solid #aaa;
+  box-shadow: 0px 0.5px 1px grey;
+  z-index: 1008;
+  background: white;
+}
+
+.floors-up-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+}
+
+.floors-up-button :hover {
+  cursor: pointer;
+}
+
+.floors-up-button-disabled {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  border-bottom: 1px solid #aaa;
+  background-color: rgba(0,0,0,0.3);
+  opacity: 0.5;
+}
+
+.floors-button-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 3px;
+}
+
+.floors-down-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+  border-top: 1px solid #aaa;
+}
+
+.floors-down-button :hover {
+  cursor: pointer;
+}
+
+.floors-down-button-disabled {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: 1px solid #aaa;
+  padding: 5px;
+  background-color: rgba(0,0,0,0.3);
+  opacity: 0.5;
 }
 
 .pulse-icon-circle {
@@ -132,7 +220,7 @@
   margin: 0px;
   padding: 0px;
 }
-  
+
 .hover-label {
   display: block;
   background-color: white;
@@ -146,4 +234,25 @@
 
 .tooltip-label {
   background-color: black;
+}
+
+.easy-button-button{
+  transition-duration: .3s;
+  position: relative;
+  border-radius: 4px;
+  border: solid 0px transparent;
+  padding: 0px;
+  margin: 0px;
+}
+
+.easy-button-container{
+  background-color: white;}
+
+.zoom-btn{
+  position: absolute;
+  top: 0;
+  left: 0;}
+
+.easy-button-button.disabled {
+  display: none;
 }

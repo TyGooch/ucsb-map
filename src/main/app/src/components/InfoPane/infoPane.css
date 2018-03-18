@@ -15,6 +15,7 @@
   text-align: left;
   overflow: hidden;
   padding-top: 0px;
+  z-index: 1010;
   -webkit-transform: translate3d(0,0,0);
 }
 
@@ -117,7 +118,7 @@
   text-decoration: none;
 }
 
-.infopane-website-image-container { 
+.infopane-website-image-container {
   height: inherit;
   display: flex;
   flex-direction: column;
@@ -125,11 +126,11 @@
   margin-left: 10px;
 }
 
-.infopane-website-image { 
+.infopane-website-image {
   height: 15px;
 }
 
-.infopane-website-text { 
+.infopane-website-text {
   height: inherit;
   display: flex;
   flex-direction: column;

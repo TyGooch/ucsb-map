@@ -120,7 +120,7 @@ class InfoPane extends Component {
     let style = {
       height: this.props.selectedLocation && this.state && this.state.isVisible ? window.innerHeight : '0px',
       width: this.state.isMobile ? '100%' : '375px',
-      zIndex: this.state.isMobile ? 1006 : 1001
+      zIndex: this.state.isMobile ? 1010 : 1001
     }
     return (
         <div className='infopane-container' style={{zIndex: this.state.isMobile ? 1006 : 1001}}>
