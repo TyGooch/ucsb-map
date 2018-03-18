@@ -61,7 +61,8 @@ class CampusMap extends Component {
 
     this.addBikePath(map, bikePath)
 
-    map.on('zoomend ', this.handleMapZoom)
+    map.on('zoomend', this.handleMapZoom)
+    map.on('moveend', this.handleMapZoom)
     this.setState({ map })
   }
 
@@ -75,8 +76,11 @@ class CampusMap extends Component {
 
   handleMapZoom(e){
     if ( this.state.map.getZoom() >= 20 ){
+      if(this.interiors)
+        this.removeInteriors()
       this.addInteriors()
-      this.setState({floorControlVisible: true})
+      if(!this.state.floorControlVisible)
+        this.setState({floorControlVisible: true})
     }
     else if ( this.state.map.getZoom() < 20 ){
       this.removeInteriors()
@@ -323,7 +327,8 @@ class CampusMap extends Component {
         color = '#EF5645'
       }
       let polygon = L.polygon(interior.polygons, {weight: 1, color: color, fillColor: color, fillOpacity: 0.25, interactive: false})
-      polygon.addTo(this.state.map)
+      if(this.state.map.getBounds().contains(polygon.getBounds()))
+        polygon.addTo(this.state.map)
       if(this.props.selectedRoom && this.props.selectedRoom.name === interior.name){
         let padding
         if(this.state.map.getSize().x < 800){
