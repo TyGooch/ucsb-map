@@ -236,7 +236,10 @@ class CampusMap extends Component {
   }
 
   pantoSelection(){
-    if(this.props.selectedLocation){
+    if(this.props.selectedRoom){
+      this.state.map.setView(L.polygon(this.props.selectedRoom.polygons).getBounds().getCenter(), 20)
+      // this.setState({floor: this.props.selectedRoom.level})
+    } else if(this.props.selectedLocation){
       let map = this.state.map
 
       let selectedLocation = this.props.selectedLocation
@@ -260,7 +263,6 @@ class CampusMap extends Component {
         bounds = L.latLngBounds(map.containerPointToLatLng(padding), map.containerPointToLatLng(newBound))
       }
 
-      console.log(map.getZoom());
       if(!bounds.contains(selectedPolygon.getBounds())){
         map.fitBounds(selectedPolygon.getBounds(),
           {
@@ -280,6 +282,10 @@ class CampusMap extends Component {
   componentWillReceiveProps(nextProps){
     if(nextProps.satelliteBasemapActive !== this.props.satelliteBasemapActive){
       nextProps.satelliteBasemapActive ? this.basemap.setUrl(config.satelliteLayer.uri) : this.basemap.setUrl(config.tileLayer.uri)
+    }
+    if(!this.props.selectedRoom && nextProps.selectedRoom){
+      this.setState({floor: parseInt(nextProps.selectedRoom.level)})
+      this.interiorLabels.setUrl(config[`floor${nextProps.selectedRoom.level}`])
     }
   }
 
@@ -308,7 +314,11 @@ class CampusMap extends Component {
 
     let interiors = []
     this.props.interiors[this.state.floor].forEach(interior => {
-      let polygon = L.polygon(interior.polygons, {weight: 1, color: "grey", fillColor: "grey", fillOpacity: 0.25, interactive: false})
+      let color = 'grey'
+      if(this.props.selectedRoom && this.props.selectedRoom.name === interior.name){
+        color = 'red'
+      }
+      let polygon = L.polygon(interior.polygons, {weight: 1, color: color, fillColor: color, fillOpacity: 0.25, interactive: false})
       interiors.push(polygon)
       polygon.addTo(this.state.map)
     })
@@ -335,7 +345,6 @@ class CampusMap extends Component {
           offset={bottom: '107.5px', right: '10px'}
         }
       }
-      console.log('HERE');
       return (
         <div className="floors-button-container" style={offset}>
           <div className={`floors-up-button${this.state.floor === 7 ? '-disabled' : ''}`} onClick={e => this.state.floor === 7 ? null : this.setState({floor: this.state.floor + 1})}>
@@ -366,7 +375,7 @@ class CampusMap extends Component {
     }
 
     let mapStyle = { height: (window.isSafari && window.iOS ? window.innerHeight + 'px' : '100vh')}
-
+    console.log(this.state.floor);
     return (
       <div className="campus-map-container">
         <div ref={(node) => this._mapNode = node} id="map" style={ mapStyle} />

@@ -3,6 +3,7 @@ import * as APIUtil from '../util/locationAPIUtil'
 export const RECEIVE_LOCATIONS = 'RECEIVE_LOCATIONS'
 export const RECEIVE_INTERIORS = 'RECEIVE_INTERIORS'
 export const UPDATE_SELECTED_LOCATION = 'UPDATE_SELECTED_LOCATION'
+export const UPDATE_SELECTED_ROOM = 'UPDATE_SELECTED_ROOM'
 
 export const receiveLocations = locations => ({
   type: RECEIVE_LOCATIONS,
@@ -19,6 +20,11 @@ export const changeSelectedLocation = location => ({
   location
 })
 
+export const changeSelectedRoom = room => ({
+  type: UPDATE_SELECTED_ROOM,
+  room
+})
+
 export const fetchLocations = () => dispatch => (
   APIUtil.fetchLocations().then(locations => (
     dispatch(receiveLocations(locations))
@@ -33,4 +39,8 @@ export const fetchInteriors = () => dispatch => (
 
 export const updateSelectedLocation = (location) => (dispatch) => {
   dispatch(changeSelectedLocation(location))
+}
+
+export const updateSelectedRoom = (room) => (dispatch) => {
+  dispatch(changeSelectedRoom(room))
 }

@@ -3,12 +3,14 @@ import merge from 'lodash/merge'
 import {
   RECEIVE_LOCATIONS,
   RECEIVE_INTERIORS,
-  UPDATE_SELECTED_LOCATION
+  UPDATE_SELECTED_LOCATION,
+  UPDATE_SELECTED_ROOM
 } from '../actions/locationActions'
 
 const defaultState = Object.freeze({
   allLocations: [],
   selectedLocation: null,
+  selectedRoom: null,
   interiors: []
 })
 
@@ -53,6 +55,8 @@ const locationsReducer = (state = defaultState, action) => {
       return merge({}, state, {interiors: newInteriors})
     case UPDATE_SELECTED_LOCATION:
       return merge({}, state, {selectedLocation: action.location})
+    case UPDATE_SELECTED_ROOM:
+      return merge({}, state, {selectedRoom: action.room})
     default:
       return state
   }

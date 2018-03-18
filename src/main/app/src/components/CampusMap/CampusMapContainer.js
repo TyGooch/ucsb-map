@@ -8,6 +8,7 @@ import { updateSelectedLocation } from '../../actions/locationActions'
 const mapStateToProps = state => ({
   locations: Object.keys(state.locations.allLocations).map(key => state.locations.allLocations[key]),
   selectedLocation: state.locations.selectedLocation,
+  selectedRoom: state.locations.selectedRoom,
   // interiors: (state.locations.selectedLocation && state.locations.selectedLocation.shortName) ? state.locations.interiors[state.locations.selectedLocation.shortName] : null,
   interiors: state.locations.interiors,
   satelliteBasemapActive: state.sideBar.satelliteBasemapActive
